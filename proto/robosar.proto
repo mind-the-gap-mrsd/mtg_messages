@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package robosar_fms;
+
+message Accelerometer {
+
+    double acc_x = 1;
+    double acc_y = 2;
+    double acc_z = 3;
+}
+
+message Ultrasonic {
+    uint32 sensor_a = 1;
+    uint32 sensor_b = 2;
+    uint32 sensor_c = 3;
+    uint32 sensor_d = 4;
+    uint32 sensor_e = 5;
+}
+
+message Infrared {
+    uint32 sensor_a = 1;
+    uint32 sensor_b = 2;
+    uint32 sensor_c = 3;
+    uint32 sensor_d = 4;
+    uint32 sensor_e = 5;
+    uint32 sensor_f = 6;
+    uint32 sensor_g = 7;
+    uint32 sensor_h = 8;
+    uint32 sensor_i = 9;
+    uint32 sensor_j = 10;
+    uint32 sensor_k = 11;
+    uint32 sensor_l = 12;
+}
+
+message Gyroscope {
+
+    double gyro_x = 1;
+    double gyro_y = 2;
+    double gyro_z = 3;
+}
+
+message Encoder_count {
+    uint64 left = 1;
+    uint64 right = 2;
+}
+
+message Encoder_speed {
+    uint64 left = 1;
+    uint64 right = 2;
+}
+
+message SensorData {
+    uint64 timestamp_ns = 1;
+    Accelerometer accel_data = 2;
+    Gyroscope gyro_data = 3;
+    Encoder_count count_data = 4;
+    Encoder_speed speed_data = 5;
+    Infrared ir_data = 6;
+    Ultrasonic us_data = 7;
+}
+
