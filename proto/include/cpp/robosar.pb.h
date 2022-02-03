@@ -109,6 +109,13 @@ class Accelerometer : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
   static const ::google::protobuf::Descriptor* descriptor();
   static const Accelerometer& default_instance();
 
@@ -170,19 +177,22 @@ class Accelerometer : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   // accessors -------------------------------------------------------
 
-  // double acc_x = 1;
+  // required double acc_x = 1;
+  bool has_acc_x() const;
   void clear_acc_x();
   static const int kAccXFieldNumber = 1;
   double acc_x() const;
   void set_acc_x(double value);
 
-  // double acc_y = 2;
+  // required double acc_y = 2;
+  bool has_acc_y() const;
   void clear_acc_y();
   static const int kAccYFieldNumber = 2;
   double acc_y() const;
   void set_acc_y(double value);
 
-  // double acc_z = 3;
+  // required double acc_z = 3;
+  bool has_acc_z() const;
   void clear_acc_z();
   static const int kAccZFieldNumber = 3;
   double acc_z() const;
@@ -190,12 +200,22 @@ class Accelerometer : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   // @@protoc_insertion_point(class_scope:robosar_fms.Accelerometer)
  private:
+  void set_has_acc_x();
+  void clear_has_acc_x();
+  void set_has_acc_y();
+  void clear_has_acc_y();
+  void set_has_acc_z();
+  void clear_has_acc_z();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   double acc_x_;
   double acc_y_;
   double acc_z_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -226,6 +246,13 @@ class Ultrasonic : public ::google::protobuf::Message /* @@protoc_insertion_poin
     return *this;
   }
   #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
   static const ::google::protobuf::Descriptor* descriptor();
   static const Ultrasonic& default_instance();
 
@@ -287,31 +314,36 @@ class Ultrasonic : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   // accessors -------------------------------------------------------
 
-  // uint32 sensor_a = 1;
+  // required uint32 sensor_a = 1;
+  bool has_sensor_a() const;
   void clear_sensor_a();
   static const int kSensorAFieldNumber = 1;
   ::google::protobuf::uint32 sensor_a() const;
   void set_sensor_a(::google::protobuf::uint32 value);
 
-  // uint32 sensor_b = 2;
+  // required uint32 sensor_b = 2;
+  bool has_sensor_b() const;
   void clear_sensor_b();
   static const int kSensorBFieldNumber = 2;
   ::google::protobuf::uint32 sensor_b() const;
   void set_sensor_b(::google::protobuf::uint32 value);
 
-  // uint32 sensor_c = 3;
+  // required uint32 sensor_c = 3;
+  bool has_sensor_c() const;
   void clear_sensor_c();
   static const int kSensorCFieldNumber = 3;
   ::google::protobuf::uint32 sensor_c() const;
   void set_sensor_c(::google::protobuf::uint32 value);
 
-  // uint32 sensor_d = 4;
+  // required uint32 sensor_d = 4;
+  bool has_sensor_d() const;
   void clear_sensor_d();
   static const int kSensorDFieldNumber = 4;
   ::google::protobuf::uint32 sensor_d() const;
   void set_sensor_d(::google::protobuf::uint32 value);
 
-  // uint32 sensor_e = 5;
+  // required uint32 sensor_e = 5;
+  bool has_sensor_e() const;
   void clear_sensor_e();
   static const int kSensorEFieldNumber = 5;
   ::google::protobuf::uint32 sensor_e() const;
@@ -319,14 +351,28 @@ class Ultrasonic : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   // @@protoc_insertion_point(class_scope:robosar_fms.Ultrasonic)
  private:
+  void set_has_sensor_a();
+  void clear_has_sensor_a();
+  void set_has_sensor_b();
+  void clear_has_sensor_b();
+  void set_has_sensor_c();
+  void clear_has_sensor_c();
+  void set_has_sensor_d();
+  void clear_has_sensor_d();
+  void set_has_sensor_e();
+  void clear_has_sensor_e();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 sensor_a_;
   ::google::protobuf::uint32 sensor_b_;
   ::google::protobuf::uint32 sensor_c_;
   ::google::protobuf::uint32 sensor_d_;
   ::google::protobuf::uint32 sensor_e_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -357,6 +403,13 @@ class Infrared : public ::google::protobuf::Message /* @@protoc_insertion_point(
     return *this;
   }
   #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
   static const ::google::protobuf::Descriptor* descriptor();
   static const Infrared& default_instance();
 
@@ -418,73 +471,85 @@ class Infrared : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   // accessors -------------------------------------------------------
 
-  // uint32 sensor_a = 1;
+  // required uint32 sensor_a = 1;
+  bool has_sensor_a() const;
   void clear_sensor_a();
   static const int kSensorAFieldNumber = 1;
   ::google::protobuf::uint32 sensor_a() const;
   void set_sensor_a(::google::protobuf::uint32 value);
 
-  // uint32 sensor_b = 2;
+  // required uint32 sensor_b = 2;
+  bool has_sensor_b() const;
   void clear_sensor_b();
   static const int kSensorBFieldNumber = 2;
   ::google::protobuf::uint32 sensor_b() const;
   void set_sensor_b(::google::protobuf::uint32 value);
 
-  // uint32 sensor_c = 3;
+  // required uint32 sensor_c = 3;
+  bool has_sensor_c() const;
   void clear_sensor_c();
   static const int kSensorCFieldNumber = 3;
   ::google::protobuf::uint32 sensor_c() const;
   void set_sensor_c(::google::protobuf::uint32 value);
 
-  // uint32 sensor_d = 4;
+  // required uint32 sensor_d = 4;
+  bool has_sensor_d() const;
   void clear_sensor_d();
   static const int kSensorDFieldNumber = 4;
   ::google::protobuf::uint32 sensor_d() const;
   void set_sensor_d(::google::protobuf::uint32 value);
 
-  // uint32 sensor_e = 5;
+  // required uint32 sensor_e = 5;
+  bool has_sensor_e() const;
   void clear_sensor_e();
   static const int kSensorEFieldNumber = 5;
   ::google::protobuf::uint32 sensor_e() const;
   void set_sensor_e(::google::protobuf::uint32 value);
 
-  // uint32 sensor_f = 6;
+  // required uint32 sensor_f = 6;
+  bool has_sensor_f() const;
   void clear_sensor_f();
   static const int kSensorFFieldNumber = 6;
   ::google::protobuf::uint32 sensor_f() const;
   void set_sensor_f(::google::protobuf::uint32 value);
 
-  // uint32 sensor_g = 7;
+  // required uint32 sensor_g = 7;
+  bool has_sensor_g() const;
   void clear_sensor_g();
   static const int kSensorGFieldNumber = 7;
   ::google::protobuf::uint32 sensor_g() const;
   void set_sensor_g(::google::protobuf::uint32 value);
 
-  // uint32 sensor_h = 8;
+  // required uint32 sensor_h = 8;
+  bool has_sensor_h() const;
   void clear_sensor_h();
   static const int kSensorHFieldNumber = 8;
   ::google::protobuf::uint32 sensor_h() const;
   void set_sensor_h(::google::protobuf::uint32 value);
 
-  // uint32 sensor_i = 9;
+  // required uint32 sensor_i = 9;
+  bool has_sensor_i() const;
   void clear_sensor_i();
   static const int kSensorIFieldNumber = 9;
   ::google::protobuf::uint32 sensor_i() const;
   void set_sensor_i(::google::protobuf::uint32 value);
 
-  // uint32 sensor_j = 10;
+  // required uint32 sensor_j = 10;
+  bool has_sensor_j() const;
   void clear_sensor_j();
   static const int kSensorJFieldNumber = 10;
   ::google::protobuf::uint32 sensor_j() const;
   void set_sensor_j(::google::protobuf::uint32 value);
 
-  // uint32 sensor_k = 11;
+  // required uint32 sensor_k = 11;
+  bool has_sensor_k() const;
   void clear_sensor_k();
   static const int kSensorKFieldNumber = 11;
   ::google::protobuf::uint32 sensor_k() const;
   void set_sensor_k(::google::protobuf::uint32 value);
 
-  // uint32 sensor_l = 12;
+  // required uint32 sensor_l = 12;
+  bool has_sensor_l() const;
   void clear_sensor_l();
   static const int kSensorLFieldNumber = 12;
   ::google::protobuf::uint32 sensor_l() const;
@@ -492,8 +557,37 @@ class Infrared : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   // @@protoc_insertion_point(class_scope:robosar_fms.Infrared)
  private:
+  void set_has_sensor_a();
+  void clear_has_sensor_a();
+  void set_has_sensor_b();
+  void clear_has_sensor_b();
+  void set_has_sensor_c();
+  void clear_has_sensor_c();
+  void set_has_sensor_d();
+  void clear_has_sensor_d();
+  void set_has_sensor_e();
+  void clear_has_sensor_e();
+  void set_has_sensor_f();
+  void clear_has_sensor_f();
+  void set_has_sensor_g();
+  void clear_has_sensor_g();
+  void set_has_sensor_h();
+  void clear_has_sensor_h();
+  void set_has_sensor_i();
+  void clear_has_sensor_i();
+  void set_has_sensor_j();
+  void clear_has_sensor_j();
+  void set_has_sensor_k();
+  void clear_has_sensor_k();
+  void set_has_sensor_l();
+  void clear_has_sensor_l();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 sensor_a_;
   ::google::protobuf::uint32 sensor_b_;
   ::google::protobuf::uint32 sensor_c_;
@@ -506,7 +600,6 @@ class Infrared : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::uint32 sensor_j_;
   ::google::protobuf::uint32 sensor_k_;
   ::google::protobuf::uint32 sensor_l_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -537,6 +630,13 @@ class Gyroscope : public ::google::protobuf::Message /* @@protoc_insertion_point
     return *this;
   }
   #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
   static const ::google::protobuf::Descriptor* descriptor();
   static const Gyroscope& default_instance();
 
@@ -598,19 +698,22 @@ class Gyroscope : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // accessors -------------------------------------------------------
 
-  // double gyro_x = 1;
+  // required double gyro_x = 1;
+  bool has_gyro_x() const;
   void clear_gyro_x();
   static const int kGyroXFieldNumber = 1;
   double gyro_x() const;
   void set_gyro_x(double value);
 
-  // double gyro_y = 2;
+  // required double gyro_y = 2;
+  bool has_gyro_y() const;
   void clear_gyro_y();
   static const int kGyroYFieldNumber = 2;
   double gyro_y() const;
   void set_gyro_y(double value);
 
-  // double gyro_z = 3;
+  // required double gyro_z = 3;
+  bool has_gyro_z() const;
   void clear_gyro_z();
   static const int kGyroZFieldNumber = 3;
   double gyro_z() const;
@@ -618,12 +721,22 @@ class Gyroscope : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // @@protoc_insertion_point(class_scope:robosar_fms.Gyroscope)
  private:
+  void set_has_gyro_x();
+  void clear_has_gyro_x();
+  void set_has_gyro_y();
+  void clear_has_gyro_y();
+  void set_has_gyro_z();
+  void clear_has_gyro_z();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   double gyro_x_;
   double gyro_y_;
   double gyro_z_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -654,6 +767,13 @@ class Encoder_count : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
   static const ::google::protobuf::Descriptor* descriptor();
   static const Encoder_count& default_instance();
 
@@ -715,13 +835,15 @@ class Encoder_count : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   // accessors -------------------------------------------------------
 
-  // uint64 left = 1;
+  // required uint64 left = 1;
+  bool has_left() const;
   void clear_left();
   static const int kLeftFieldNumber = 1;
   ::google::protobuf::uint64 left() const;
   void set_left(::google::protobuf::uint64 value);
 
-  // uint64 right = 2;
+  // required uint64 right = 2;
+  bool has_right() const;
   void clear_right();
   static const int kRightFieldNumber = 2;
   ::google::protobuf::uint64 right() const;
@@ -729,11 +851,19 @@ class Encoder_count : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   // @@protoc_insertion_point(class_scope:robosar_fms.Encoder_count)
  private:
+  void set_has_left();
+  void clear_has_left();
+  void set_has_right();
+  void clear_has_right();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint64 left_;
   ::google::protobuf::uint64 right_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -764,6 +894,13 @@ class Encoder_speed : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
   static const ::google::protobuf::Descriptor* descriptor();
   static const Encoder_speed& default_instance();
 
@@ -825,13 +962,15 @@ class Encoder_speed : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   // accessors -------------------------------------------------------
 
-  // uint64 left = 1;
+  // required uint64 left = 1;
+  bool has_left() const;
   void clear_left();
   static const int kLeftFieldNumber = 1;
   ::google::protobuf::uint64 left() const;
   void set_left(::google::protobuf::uint64 value);
 
-  // uint64 right = 2;
+  // required uint64 right = 2;
+  bool has_right() const;
   void clear_right();
   static const int kRightFieldNumber = 2;
   ::google::protobuf::uint64 right() const;
@@ -839,11 +978,19 @@ class Encoder_speed : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   // @@protoc_insertion_point(class_scope:robosar_fms.Encoder_speed)
  private:
+  void set_has_left();
+  void clear_has_left();
+  void set_has_right();
+  void clear_has_right();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint64 left_;
   ::google::protobuf::uint64 right_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
@@ -874,6 +1021,13 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
     return *this;
   }
   #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
   static const ::google::protobuf::Descriptor* descriptor();
   static const SensorData& default_instance();
 
@@ -935,7 +1089,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   // accessors -------------------------------------------------------
 
-  // .robosar_fms.Accelerometer accel_data = 2;
+  // required .robosar_fms.Accelerometer accel_data = 2;
   bool has_accel_data() const;
   void clear_accel_data();
   static const int kAccelDataFieldNumber = 2;
@@ -947,7 +1101,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Accelerometer* mutable_accel_data();
   void set_allocated_accel_data(::robosar_fms::Accelerometer* accel_data);
 
-  // .robosar_fms.Gyroscope gyro_data = 3;
+  // required .robosar_fms.Gyroscope gyro_data = 3;
   bool has_gyro_data() const;
   void clear_gyro_data();
   static const int kGyroDataFieldNumber = 3;
@@ -959,7 +1113,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Gyroscope* mutable_gyro_data();
   void set_allocated_gyro_data(::robosar_fms::Gyroscope* gyro_data);
 
-  // .robosar_fms.Encoder_count count_data = 4;
+  // required .robosar_fms.Encoder_count count_data = 4;
   bool has_count_data() const;
   void clear_count_data();
   static const int kCountDataFieldNumber = 4;
@@ -971,7 +1125,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Encoder_count* mutable_count_data();
   void set_allocated_count_data(::robosar_fms::Encoder_count* count_data);
 
-  // .robosar_fms.Encoder_speed speed_data = 5;
+  // required .robosar_fms.Encoder_speed speed_data = 5;
   bool has_speed_data() const;
   void clear_speed_data();
   static const int kSpeedDataFieldNumber = 5;
@@ -983,7 +1137,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Encoder_speed* mutable_speed_data();
   void set_allocated_speed_data(::robosar_fms::Encoder_speed* speed_data);
 
-  // .robosar_fms.Infrared ir_data = 6;
+  // required .robosar_fms.Infrared ir_data = 6;
   bool has_ir_data() const;
   void clear_ir_data();
   static const int kIrDataFieldNumber = 6;
@@ -995,7 +1149,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Infrared* mutable_ir_data();
   void set_allocated_ir_data(::robosar_fms::Infrared* ir_data);
 
-  // .robosar_fms.Ultrasonic us_data = 7;
+  // required .robosar_fms.Ultrasonic us_data = 7;
   bool has_us_data() const;
   void clear_us_data();
   static const int kUsDataFieldNumber = 7;
@@ -1007,7 +1161,8 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Ultrasonic* mutable_us_data();
   void set_allocated_us_data(::robosar_fms::Ultrasonic* us_data);
 
-  // uint64 timestamp_ns = 1;
+  // required uint64 timestamp_ns = 1;
+  bool has_timestamp_ns() const;
   void clear_timestamp_ns();
   static const int kTimestampNsFieldNumber = 1;
   ::google::protobuf::uint64 timestamp_ns() const;
@@ -1015,8 +1170,27 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   // @@protoc_insertion_point(class_scope:robosar_fms.SensorData)
  private:
+  void set_has_timestamp_ns();
+  void clear_has_timestamp_ns();
+  void set_has_accel_data();
+  void clear_has_accel_data();
+  void set_has_gyro_data();
+  void clear_has_gyro_data();
+  void set_has_count_data();
+  void clear_has_count_data();
+  void set_has_speed_data();
+  void clear_has_speed_data();
+  void set_has_ir_data();
+  void clear_has_ir_data();
+  void set_has_us_data();
+  void clear_has_us_data();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::robosar_fms::Accelerometer* accel_data_;
   ::robosar_fms::Gyroscope* gyro_data_;
   ::robosar_fms::Encoder_count* count_data_;
@@ -1024,7 +1198,6 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Infrared* ir_data_;
   ::robosar_fms::Ultrasonic* us_data_;
   ::google::protobuf::uint64 timestamp_ns_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
 };
 // ===================================================================
@@ -1038,44 +1211,74 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
 #endif  // __GNUC__
 // Accelerometer
 
-// double acc_x = 1;
+// required double acc_x = 1;
+inline bool Accelerometer::has_acc_x() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void Accelerometer::set_has_acc_x() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void Accelerometer::clear_has_acc_x() {
+  _has_bits_[0] &= ~0x00000001u;
+}
 inline void Accelerometer::clear_acc_x() {
   acc_x_ = 0;
+  clear_has_acc_x();
 }
 inline double Accelerometer::acc_x() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Accelerometer.acc_x)
   return acc_x_;
 }
 inline void Accelerometer::set_acc_x(double value) {
-  
+  set_has_acc_x();
   acc_x_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Accelerometer.acc_x)
 }
 
-// double acc_y = 2;
+// required double acc_y = 2;
+inline bool Accelerometer::has_acc_y() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void Accelerometer::set_has_acc_y() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void Accelerometer::clear_has_acc_y() {
+  _has_bits_[0] &= ~0x00000002u;
+}
 inline void Accelerometer::clear_acc_y() {
   acc_y_ = 0;
+  clear_has_acc_y();
 }
 inline double Accelerometer::acc_y() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Accelerometer.acc_y)
   return acc_y_;
 }
 inline void Accelerometer::set_acc_y(double value) {
-  
+  set_has_acc_y();
   acc_y_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Accelerometer.acc_y)
 }
 
-// double acc_z = 3;
+// required double acc_z = 3;
+inline bool Accelerometer::has_acc_z() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void Accelerometer::set_has_acc_z() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void Accelerometer::clear_has_acc_z() {
+  _has_bits_[0] &= ~0x00000004u;
+}
 inline void Accelerometer::clear_acc_z() {
   acc_z_ = 0;
+  clear_has_acc_z();
 }
 inline double Accelerometer::acc_z() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Accelerometer.acc_z)
   return acc_z_;
 }
 inline void Accelerometer::set_acc_z(double value) {
-  
+  set_has_acc_z();
   acc_z_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Accelerometer.acc_z)
 }
@@ -1084,72 +1287,122 @@ inline void Accelerometer::set_acc_z(double value) {
 
 // Ultrasonic
 
-// uint32 sensor_a = 1;
+// required uint32 sensor_a = 1;
+inline bool Ultrasonic::has_sensor_a() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void Ultrasonic::set_has_sensor_a() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void Ultrasonic::clear_has_sensor_a() {
+  _has_bits_[0] &= ~0x00000001u;
+}
 inline void Ultrasonic::clear_sensor_a() {
   sensor_a_ = 0u;
+  clear_has_sensor_a();
 }
 inline ::google::protobuf::uint32 Ultrasonic::sensor_a() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Ultrasonic.sensor_a)
   return sensor_a_;
 }
 inline void Ultrasonic::set_sensor_a(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_a();
   sensor_a_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Ultrasonic.sensor_a)
 }
 
-// uint32 sensor_b = 2;
+// required uint32 sensor_b = 2;
+inline bool Ultrasonic::has_sensor_b() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void Ultrasonic::set_has_sensor_b() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void Ultrasonic::clear_has_sensor_b() {
+  _has_bits_[0] &= ~0x00000002u;
+}
 inline void Ultrasonic::clear_sensor_b() {
   sensor_b_ = 0u;
+  clear_has_sensor_b();
 }
 inline ::google::protobuf::uint32 Ultrasonic::sensor_b() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Ultrasonic.sensor_b)
   return sensor_b_;
 }
 inline void Ultrasonic::set_sensor_b(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_b();
   sensor_b_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Ultrasonic.sensor_b)
 }
 
-// uint32 sensor_c = 3;
+// required uint32 sensor_c = 3;
+inline bool Ultrasonic::has_sensor_c() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void Ultrasonic::set_has_sensor_c() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void Ultrasonic::clear_has_sensor_c() {
+  _has_bits_[0] &= ~0x00000004u;
+}
 inline void Ultrasonic::clear_sensor_c() {
   sensor_c_ = 0u;
+  clear_has_sensor_c();
 }
 inline ::google::protobuf::uint32 Ultrasonic::sensor_c() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Ultrasonic.sensor_c)
   return sensor_c_;
 }
 inline void Ultrasonic::set_sensor_c(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_c();
   sensor_c_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Ultrasonic.sensor_c)
 }
 
-// uint32 sensor_d = 4;
+// required uint32 sensor_d = 4;
+inline bool Ultrasonic::has_sensor_d() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void Ultrasonic::set_has_sensor_d() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void Ultrasonic::clear_has_sensor_d() {
+  _has_bits_[0] &= ~0x00000008u;
+}
 inline void Ultrasonic::clear_sensor_d() {
   sensor_d_ = 0u;
+  clear_has_sensor_d();
 }
 inline ::google::protobuf::uint32 Ultrasonic::sensor_d() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Ultrasonic.sensor_d)
   return sensor_d_;
 }
 inline void Ultrasonic::set_sensor_d(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_d();
   sensor_d_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Ultrasonic.sensor_d)
 }
 
-// uint32 sensor_e = 5;
+// required uint32 sensor_e = 5;
+inline bool Ultrasonic::has_sensor_e() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void Ultrasonic::set_has_sensor_e() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void Ultrasonic::clear_has_sensor_e() {
+  _has_bits_[0] &= ~0x00000010u;
+}
 inline void Ultrasonic::clear_sensor_e() {
   sensor_e_ = 0u;
+  clear_has_sensor_e();
 }
 inline ::google::protobuf::uint32 Ultrasonic::sensor_e() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Ultrasonic.sensor_e)
   return sensor_e_;
 }
 inline void Ultrasonic::set_sensor_e(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_e();
   sensor_e_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Ultrasonic.sensor_e)
 }
@@ -1158,170 +1411,290 @@ inline void Ultrasonic::set_sensor_e(::google::protobuf::uint32 value) {
 
 // Infrared
 
-// uint32 sensor_a = 1;
+// required uint32 sensor_a = 1;
+inline bool Infrared::has_sensor_a() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void Infrared::set_has_sensor_a() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void Infrared::clear_has_sensor_a() {
+  _has_bits_[0] &= ~0x00000001u;
+}
 inline void Infrared::clear_sensor_a() {
   sensor_a_ = 0u;
+  clear_has_sensor_a();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_a() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_a)
   return sensor_a_;
 }
 inline void Infrared::set_sensor_a(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_a();
   sensor_a_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_a)
 }
 
-// uint32 sensor_b = 2;
+// required uint32 sensor_b = 2;
+inline bool Infrared::has_sensor_b() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void Infrared::set_has_sensor_b() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void Infrared::clear_has_sensor_b() {
+  _has_bits_[0] &= ~0x00000002u;
+}
 inline void Infrared::clear_sensor_b() {
   sensor_b_ = 0u;
+  clear_has_sensor_b();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_b() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_b)
   return sensor_b_;
 }
 inline void Infrared::set_sensor_b(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_b();
   sensor_b_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_b)
 }
 
-// uint32 sensor_c = 3;
+// required uint32 sensor_c = 3;
+inline bool Infrared::has_sensor_c() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void Infrared::set_has_sensor_c() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void Infrared::clear_has_sensor_c() {
+  _has_bits_[0] &= ~0x00000004u;
+}
 inline void Infrared::clear_sensor_c() {
   sensor_c_ = 0u;
+  clear_has_sensor_c();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_c() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_c)
   return sensor_c_;
 }
 inline void Infrared::set_sensor_c(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_c();
   sensor_c_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_c)
 }
 
-// uint32 sensor_d = 4;
+// required uint32 sensor_d = 4;
+inline bool Infrared::has_sensor_d() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void Infrared::set_has_sensor_d() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void Infrared::clear_has_sensor_d() {
+  _has_bits_[0] &= ~0x00000008u;
+}
 inline void Infrared::clear_sensor_d() {
   sensor_d_ = 0u;
+  clear_has_sensor_d();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_d() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_d)
   return sensor_d_;
 }
 inline void Infrared::set_sensor_d(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_d();
   sensor_d_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_d)
 }
 
-// uint32 sensor_e = 5;
+// required uint32 sensor_e = 5;
+inline bool Infrared::has_sensor_e() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void Infrared::set_has_sensor_e() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void Infrared::clear_has_sensor_e() {
+  _has_bits_[0] &= ~0x00000010u;
+}
 inline void Infrared::clear_sensor_e() {
   sensor_e_ = 0u;
+  clear_has_sensor_e();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_e() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_e)
   return sensor_e_;
 }
 inline void Infrared::set_sensor_e(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_e();
   sensor_e_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_e)
 }
 
-// uint32 sensor_f = 6;
+// required uint32 sensor_f = 6;
+inline bool Infrared::has_sensor_f() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void Infrared::set_has_sensor_f() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void Infrared::clear_has_sensor_f() {
+  _has_bits_[0] &= ~0x00000020u;
+}
 inline void Infrared::clear_sensor_f() {
   sensor_f_ = 0u;
+  clear_has_sensor_f();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_f() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_f)
   return sensor_f_;
 }
 inline void Infrared::set_sensor_f(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_f();
   sensor_f_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_f)
 }
 
-// uint32 sensor_g = 7;
+// required uint32 sensor_g = 7;
+inline bool Infrared::has_sensor_g() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void Infrared::set_has_sensor_g() {
+  _has_bits_[0] |= 0x00000040u;
+}
+inline void Infrared::clear_has_sensor_g() {
+  _has_bits_[0] &= ~0x00000040u;
+}
 inline void Infrared::clear_sensor_g() {
   sensor_g_ = 0u;
+  clear_has_sensor_g();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_g() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_g)
   return sensor_g_;
 }
 inline void Infrared::set_sensor_g(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_g();
   sensor_g_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_g)
 }
 
-// uint32 sensor_h = 8;
+// required uint32 sensor_h = 8;
+inline bool Infrared::has_sensor_h() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+inline void Infrared::set_has_sensor_h() {
+  _has_bits_[0] |= 0x00000080u;
+}
+inline void Infrared::clear_has_sensor_h() {
+  _has_bits_[0] &= ~0x00000080u;
+}
 inline void Infrared::clear_sensor_h() {
   sensor_h_ = 0u;
+  clear_has_sensor_h();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_h() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_h)
   return sensor_h_;
 }
 inline void Infrared::set_sensor_h(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_h();
   sensor_h_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_h)
 }
 
-// uint32 sensor_i = 9;
+// required uint32 sensor_i = 9;
+inline bool Infrared::has_sensor_i() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+inline void Infrared::set_has_sensor_i() {
+  _has_bits_[0] |= 0x00000100u;
+}
+inline void Infrared::clear_has_sensor_i() {
+  _has_bits_[0] &= ~0x00000100u;
+}
 inline void Infrared::clear_sensor_i() {
   sensor_i_ = 0u;
+  clear_has_sensor_i();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_i() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_i)
   return sensor_i_;
 }
 inline void Infrared::set_sensor_i(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_i();
   sensor_i_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_i)
 }
 
-// uint32 sensor_j = 10;
+// required uint32 sensor_j = 10;
+inline bool Infrared::has_sensor_j() const {
+  return (_has_bits_[0] & 0x00000200u) != 0;
+}
+inline void Infrared::set_has_sensor_j() {
+  _has_bits_[0] |= 0x00000200u;
+}
+inline void Infrared::clear_has_sensor_j() {
+  _has_bits_[0] &= ~0x00000200u;
+}
 inline void Infrared::clear_sensor_j() {
   sensor_j_ = 0u;
+  clear_has_sensor_j();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_j() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_j)
   return sensor_j_;
 }
 inline void Infrared::set_sensor_j(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_j();
   sensor_j_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_j)
 }
 
-// uint32 sensor_k = 11;
+// required uint32 sensor_k = 11;
+inline bool Infrared::has_sensor_k() const {
+  return (_has_bits_[0] & 0x00000400u) != 0;
+}
+inline void Infrared::set_has_sensor_k() {
+  _has_bits_[0] |= 0x00000400u;
+}
+inline void Infrared::clear_has_sensor_k() {
+  _has_bits_[0] &= ~0x00000400u;
+}
 inline void Infrared::clear_sensor_k() {
   sensor_k_ = 0u;
+  clear_has_sensor_k();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_k() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_k)
   return sensor_k_;
 }
 inline void Infrared::set_sensor_k(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_k();
   sensor_k_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_k)
 }
 
-// uint32 sensor_l = 12;
+// required uint32 sensor_l = 12;
+inline bool Infrared::has_sensor_l() const {
+  return (_has_bits_[0] & 0x00000800u) != 0;
+}
+inline void Infrared::set_has_sensor_l() {
+  _has_bits_[0] |= 0x00000800u;
+}
+inline void Infrared::clear_has_sensor_l() {
+  _has_bits_[0] &= ~0x00000800u;
+}
 inline void Infrared::clear_sensor_l() {
   sensor_l_ = 0u;
+  clear_has_sensor_l();
 }
 inline ::google::protobuf::uint32 Infrared::sensor_l() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Infrared.sensor_l)
   return sensor_l_;
 }
 inline void Infrared::set_sensor_l(::google::protobuf::uint32 value) {
-  
+  set_has_sensor_l();
   sensor_l_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Infrared.sensor_l)
 }
@@ -1330,44 +1703,74 @@ inline void Infrared::set_sensor_l(::google::protobuf::uint32 value) {
 
 // Gyroscope
 
-// double gyro_x = 1;
+// required double gyro_x = 1;
+inline bool Gyroscope::has_gyro_x() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void Gyroscope::set_has_gyro_x() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void Gyroscope::clear_has_gyro_x() {
+  _has_bits_[0] &= ~0x00000001u;
+}
 inline void Gyroscope::clear_gyro_x() {
   gyro_x_ = 0;
+  clear_has_gyro_x();
 }
 inline double Gyroscope::gyro_x() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Gyroscope.gyro_x)
   return gyro_x_;
 }
 inline void Gyroscope::set_gyro_x(double value) {
-  
+  set_has_gyro_x();
   gyro_x_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Gyroscope.gyro_x)
 }
 
-// double gyro_y = 2;
+// required double gyro_y = 2;
+inline bool Gyroscope::has_gyro_y() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void Gyroscope::set_has_gyro_y() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void Gyroscope::clear_has_gyro_y() {
+  _has_bits_[0] &= ~0x00000002u;
+}
 inline void Gyroscope::clear_gyro_y() {
   gyro_y_ = 0;
+  clear_has_gyro_y();
 }
 inline double Gyroscope::gyro_y() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Gyroscope.gyro_y)
   return gyro_y_;
 }
 inline void Gyroscope::set_gyro_y(double value) {
-  
+  set_has_gyro_y();
   gyro_y_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Gyroscope.gyro_y)
 }
 
-// double gyro_z = 3;
+// required double gyro_z = 3;
+inline bool Gyroscope::has_gyro_z() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void Gyroscope::set_has_gyro_z() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void Gyroscope::clear_has_gyro_z() {
+  _has_bits_[0] &= ~0x00000004u;
+}
 inline void Gyroscope::clear_gyro_z() {
   gyro_z_ = 0;
+  clear_has_gyro_z();
 }
 inline double Gyroscope::gyro_z() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Gyroscope.gyro_z)
   return gyro_z_;
 }
 inline void Gyroscope::set_gyro_z(double value) {
-  
+  set_has_gyro_z();
   gyro_z_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Gyroscope.gyro_z)
 }
@@ -1376,30 +1779,50 @@ inline void Gyroscope::set_gyro_z(double value) {
 
 // Encoder_count
 
-// uint64 left = 1;
+// required uint64 left = 1;
+inline bool Encoder_count::has_left() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void Encoder_count::set_has_left() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void Encoder_count::clear_has_left() {
+  _has_bits_[0] &= ~0x00000001u;
+}
 inline void Encoder_count::clear_left() {
   left_ = GOOGLE_ULONGLONG(0);
+  clear_has_left();
 }
 inline ::google::protobuf::uint64 Encoder_count::left() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Encoder_count.left)
   return left_;
 }
 inline void Encoder_count::set_left(::google::protobuf::uint64 value) {
-  
+  set_has_left();
   left_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Encoder_count.left)
 }
 
-// uint64 right = 2;
+// required uint64 right = 2;
+inline bool Encoder_count::has_right() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void Encoder_count::set_has_right() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void Encoder_count::clear_has_right() {
+  _has_bits_[0] &= ~0x00000002u;
+}
 inline void Encoder_count::clear_right() {
   right_ = GOOGLE_ULONGLONG(0);
+  clear_has_right();
 }
 inline ::google::protobuf::uint64 Encoder_count::right() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Encoder_count.right)
   return right_;
 }
 inline void Encoder_count::set_right(::google::protobuf::uint64 value) {
-  
+  set_has_right();
   right_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Encoder_count.right)
 }
@@ -1408,30 +1831,50 @@ inline void Encoder_count::set_right(::google::protobuf::uint64 value) {
 
 // Encoder_speed
 
-// uint64 left = 1;
+// required uint64 left = 1;
+inline bool Encoder_speed::has_left() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void Encoder_speed::set_has_left() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void Encoder_speed::clear_has_left() {
+  _has_bits_[0] &= ~0x00000001u;
+}
 inline void Encoder_speed::clear_left() {
   left_ = GOOGLE_ULONGLONG(0);
+  clear_has_left();
 }
 inline ::google::protobuf::uint64 Encoder_speed::left() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Encoder_speed.left)
   return left_;
 }
 inline void Encoder_speed::set_left(::google::protobuf::uint64 value) {
-  
+  set_has_left();
   left_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Encoder_speed.left)
 }
 
-// uint64 right = 2;
+// required uint64 right = 2;
+inline bool Encoder_speed::has_right() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void Encoder_speed::set_has_right() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void Encoder_speed::clear_has_right() {
+  _has_bits_[0] &= ~0x00000002u;
+}
 inline void Encoder_speed::clear_right() {
   right_ = GOOGLE_ULONGLONG(0);
+  clear_has_right();
 }
 inline ::google::protobuf::uint64 Encoder_speed::right() const {
   // @@protoc_insertion_point(field_get:robosar_fms.Encoder_speed.right)
   return right_;
 }
 inline void Encoder_speed::set_right(::google::protobuf::uint64 value) {
-  
+  set_has_right();
   right_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.Encoder_speed.right)
 }
@@ -1440,29 +1883,43 @@ inline void Encoder_speed::set_right(::google::protobuf::uint64 value) {
 
 // SensorData
 
-// uint64 timestamp_ns = 1;
+// required uint64 timestamp_ns = 1;
+inline bool SensorData::has_timestamp_ns() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void SensorData::set_has_timestamp_ns() {
+  _has_bits_[0] |= 0x00000040u;
+}
+inline void SensorData::clear_has_timestamp_ns() {
+  _has_bits_[0] &= ~0x00000040u;
+}
 inline void SensorData::clear_timestamp_ns() {
   timestamp_ns_ = GOOGLE_ULONGLONG(0);
+  clear_has_timestamp_ns();
 }
 inline ::google::protobuf::uint64 SensorData::timestamp_ns() const {
   // @@protoc_insertion_point(field_get:robosar_fms.SensorData.timestamp_ns)
   return timestamp_ns_;
 }
 inline void SensorData::set_timestamp_ns(::google::protobuf::uint64 value) {
-  
+  set_has_timestamp_ns();
   timestamp_ns_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.SensorData.timestamp_ns)
 }
 
-// .robosar_fms.Accelerometer accel_data = 2;
+// required .robosar_fms.Accelerometer accel_data = 2;
 inline bool SensorData::has_accel_data() const {
-  return this != internal_default_instance() && accel_data_ != NULL;
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void SensorData::set_has_accel_data() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void SensorData::clear_has_accel_data() {
+  _has_bits_[0] &= ~0x00000001u;
 }
 inline void SensorData::clear_accel_data() {
-  if (GetArenaNoVirtual() == NULL && accel_data_ != NULL) {
-    delete accel_data_;
-  }
-  accel_data_ = NULL;
+  if (accel_data_ != NULL) accel_data_->Clear();
+  clear_has_accel_data();
 }
 inline const ::robosar_fms::Accelerometer& SensorData::_internal_accel_data() const {
   return *accel_data_;
@@ -1475,13 +1932,13 @@ inline const ::robosar_fms::Accelerometer& SensorData::accel_data() const {
 }
 inline ::robosar_fms::Accelerometer* SensorData::release_accel_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.accel_data)
-  
+  clear_has_accel_data();
   ::robosar_fms::Accelerometer* temp = accel_data_;
   accel_data_ = NULL;
   return temp;
 }
 inline ::robosar_fms::Accelerometer* SensorData::mutable_accel_data() {
-  
+  set_has_accel_data();
   if (accel_data_ == NULL) {
     auto* p = CreateMaybeMessage<::robosar_fms::Accelerometer>(GetArenaNoVirtual());
     accel_data_ = p;
@@ -1500,23 +1957,27 @@ inline void SensorData::set_allocated_accel_data(::robosar_fms::Accelerometer* a
       accel_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, accel_data, submessage_arena);
     }
-    
+    set_has_accel_data();
   } else {
-    
+    clear_has_accel_data();
   }
   accel_data_ = accel_data;
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.accel_data)
 }
 
-// .robosar_fms.Gyroscope gyro_data = 3;
+// required .robosar_fms.Gyroscope gyro_data = 3;
 inline bool SensorData::has_gyro_data() const {
-  return this != internal_default_instance() && gyro_data_ != NULL;
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void SensorData::set_has_gyro_data() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void SensorData::clear_has_gyro_data() {
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline void SensorData::clear_gyro_data() {
-  if (GetArenaNoVirtual() == NULL && gyro_data_ != NULL) {
-    delete gyro_data_;
-  }
-  gyro_data_ = NULL;
+  if (gyro_data_ != NULL) gyro_data_->Clear();
+  clear_has_gyro_data();
 }
 inline const ::robosar_fms::Gyroscope& SensorData::_internal_gyro_data() const {
   return *gyro_data_;
@@ -1529,13 +1990,13 @@ inline const ::robosar_fms::Gyroscope& SensorData::gyro_data() const {
 }
 inline ::robosar_fms::Gyroscope* SensorData::release_gyro_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.gyro_data)
-  
+  clear_has_gyro_data();
   ::robosar_fms::Gyroscope* temp = gyro_data_;
   gyro_data_ = NULL;
   return temp;
 }
 inline ::robosar_fms::Gyroscope* SensorData::mutable_gyro_data() {
-  
+  set_has_gyro_data();
   if (gyro_data_ == NULL) {
     auto* p = CreateMaybeMessage<::robosar_fms::Gyroscope>(GetArenaNoVirtual());
     gyro_data_ = p;
@@ -1554,23 +2015,27 @@ inline void SensorData::set_allocated_gyro_data(::robosar_fms::Gyroscope* gyro_d
       gyro_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, gyro_data, submessage_arena);
     }
-    
+    set_has_gyro_data();
   } else {
-    
+    clear_has_gyro_data();
   }
   gyro_data_ = gyro_data;
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.gyro_data)
 }
 
-// .robosar_fms.Encoder_count count_data = 4;
+// required .robosar_fms.Encoder_count count_data = 4;
 inline bool SensorData::has_count_data() const {
-  return this != internal_default_instance() && count_data_ != NULL;
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void SensorData::set_has_count_data() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void SensorData::clear_has_count_data() {
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline void SensorData::clear_count_data() {
-  if (GetArenaNoVirtual() == NULL && count_data_ != NULL) {
-    delete count_data_;
-  }
-  count_data_ = NULL;
+  if (count_data_ != NULL) count_data_->Clear();
+  clear_has_count_data();
 }
 inline const ::robosar_fms::Encoder_count& SensorData::_internal_count_data() const {
   return *count_data_;
@@ -1583,13 +2048,13 @@ inline const ::robosar_fms::Encoder_count& SensorData::count_data() const {
 }
 inline ::robosar_fms::Encoder_count* SensorData::release_count_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.count_data)
-  
+  clear_has_count_data();
   ::robosar_fms::Encoder_count* temp = count_data_;
   count_data_ = NULL;
   return temp;
 }
 inline ::robosar_fms::Encoder_count* SensorData::mutable_count_data() {
-  
+  set_has_count_data();
   if (count_data_ == NULL) {
     auto* p = CreateMaybeMessage<::robosar_fms::Encoder_count>(GetArenaNoVirtual());
     count_data_ = p;
@@ -1608,23 +2073,27 @@ inline void SensorData::set_allocated_count_data(::robosar_fms::Encoder_count* c
       count_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, count_data, submessage_arena);
     }
-    
+    set_has_count_data();
   } else {
-    
+    clear_has_count_data();
   }
   count_data_ = count_data;
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.count_data)
 }
 
-// .robosar_fms.Encoder_speed speed_data = 5;
+// required .robosar_fms.Encoder_speed speed_data = 5;
 inline bool SensorData::has_speed_data() const {
-  return this != internal_default_instance() && speed_data_ != NULL;
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void SensorData::set_has_speed_data() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void SensorData::clear_has_speed_data() {
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline void SensorData::clear_speed_data() {
-  if (GetArenaNoVirtual() == NULL && speed_data_ != NULL) {
-    delete speed_data_;
-  }
-  speed_data_ = NULL;
+  if (speed_data_ != NULL) speed_data_->Clear();
+  clear_has_speed_data();
 }
 inline const ::robosar_fms::Encoder_speed& SensorData::_internal_speed_data() const {
   return *speed_data_;
@@ -1637,13 +2106,13 @@ inline const ::robosar_fms::Encoder_speed& SensorData::speed_data() const {
 }
 inline ::robosar_fms::Encoder_speed* SensorData::release_speed_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.speed_data)
-  
+  clear_has_speed_data();
   ::robosar_fms::Encoder_speed* temp = speed_data_;
   speed_data_ = NULL;
   return temp;
 }
 inline ::robosar_fms::Encoder_speed* SensorData::mutable_speed_data() {
-  
+  set_has_speed_data();
   if (speed_data_ == NULL) {
     auto* p = CreateMaybeMessage<::robosar_fms::Encoder_speed>(GetArenaNoVirtual());
     speed_data_ = p;
@@ -1662,23 +2131,27 @@ inline void SensorData::set_allocated_speed_data(::robosar_fms::Encoder_speed* s
       speed_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, speed_data, submessage_arena);
     }
-    
+    set_has_speed_data();
   } else {
-    
+    clear_has_speed_data();
   }
   speed_data_ = speed_data;
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.speed_data)
 }
 
-// .robosar_fms.Infrared ir_data = 6;
+// required .robosar_fms.Infrared ir_data = 6;
 inline bool SensorData::has_ir_data() const {
-  return this != internal_default_instance() && ir_data_ != NULL;
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void SensorData::set_has_ir_data() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void SensorData::clear_has_ir_data() {
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline void SensorData::clear_ir_data() {
-  if (GetArenaNoVirtual() == NULL && ir_data_ != NULL) {
-    delete ir_data_;
-  }
-  ir_data_ = NULL;
+  if (ir_data_ != NULL) ir_data_->Clear();
+  clear_has_ir_data();
 }
 inline const ::robosar_fms::Infrared& SensorData::_internal_ir_data() const {
   return *ir_data_;
@@ -1691,13 +2164,13 @@ inline const ::robosar_fms::Infrared& SensorData::ir_data() const {
 }
 inline ::robosar_fms::Infrared* SensorData::release_ir_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.ir_data)
-  
+  clear_has_ir_data();
   ::robosar_fms::Infrared* temp = ir_data_;
   ir_data_ = NULL;
   return temp;
 }
 inline ::robosar_fms::Infrared* SensorData::mutable_ir_data() {
-  
+  set_has_ir_data();
   if (ir_data_ == NULL) {
     auto* p = CreateMaybeMessage<::robosar_fms::Infrared>(GetArenaNoVirtual());
     ir_data_ = p;
@@ -1716,23 +2189,27 @@ inline void SensorData::set_allocated_ir_data(::robosar_fms::Infrared* ir_data) 
       ir_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, ir_data, submessage_arena);
     }
-    
+    set_has_ir_data();
   } else {
-    
+    clear_has_ir_data();
   }
   ir_data_ = ir_data;
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.ir_data)
 }
 
-// .robosar_fms.Ultrasonic us_data = 7;
+// required .robosar_fms.Ultrasonic us_data = 7;
 inline bool SensorData::has_us_data() const {
-  return this != internal_default_instance() && us_data_ != NULL;
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void SensorData::set_has_us_data() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void SensorData::clear_has_us_data() {
+  _has_bits_[0] &= ~0x00000020u;
 }
 inline void SensorData::clear_us_data() {
-  if (GetArenaNoVirtual() == NULL && us_data_ != NULL) {
-    delete us_data_;
-  }
-  us_data_ = NULL;
+  if (us_data_ != NULL) us_data_->Clear();
+  clear_has_us_data();
 }
 inline const ::robosar_fms::Ultrasonic& SensorData::_internal_us_data() const {
   return *us_data_;
@@ -1745,13 +2222,13 @@ inline const ::robosar_fms::Ultrasonic& SensorData::us_data() const {
 }
 inline ::robosar_fms::Ultrasonic* SensorData::release_us_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.us_data)
-  
+  clear_has_us_data();
   ::robosar_fms::Ultrasonic* temp = us_data_;
   us_data_ = NULL;
   return temp;
 }
 inline ::robosar_fms::Ultrasonic* SensorData::mutable_us_data() {
-  
+  set_has_us_data();
   if (us_data_ == NULL) {
     auto* p = CreateMaybeMessage<::robosar_fms::Ultrasonic>(GetArenaNoVirtual());
     us_data_ = p;
@@ -1770,9 +2247,9 @@ inline void SensorData::set_allocated_us_data(::robosar_fms::Ultrasonic* us_data
       us_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, us_data, submessage_arena);
     }
-    
+    set_has_us_data();
   } else {
-    
+    clear_has_us_data();
   }
   us_data_ = us_data;
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.us_data)

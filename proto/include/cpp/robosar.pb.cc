@@ -182,7 +182,7 @@ void InitDefaults() {
 ::google::protobuf::Metadata file_level_metadata[7];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Accelerometer, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Accelerometer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -190,7 +190,10 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Accelerometer, acc_x_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Accelerometer, acc_y_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Accelerometer, acc_z_),
-  ~0u,  // no _has_bits_
+  0,
+  1,
+  2,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Ultrasonic, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Ultrasonic, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -200,7 +203,12 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Ultrasonic, sensor_c_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Ultrasonic, sensor_d_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Ultrasonic, sensor_e_),
-  ~0u,  // no _has_bits_
+  0,
+  1,
+  2,
+  3,
+  4,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Infrared, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Infrared, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -217,7 +225,19 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Infrared, sensor_j_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Infrared, sensor_k_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Infrared, sensor_l_),
-  ~0u,  // no _has_bits_
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Gyroscope, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Gyroscope, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -225,21 +245,28 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Gyroscope, gyro_x_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Gyroscope, gyro_y_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Gyroscope, gyro_z_),
-  ~0u,  // no _has_bits_
+  0,
+  1,
+  2,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Encoder_count, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Encoder_count, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Encoder_count, left_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Encoder_count, right_),
-  ~0u,  // no _has_bits_
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Encoder_speed, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Encoder_speed, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Encoder_speed, left_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Encoder_speed, right_),
-  ~0u,  // no _has_bits_
+  0,
+  1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -251,15 +278,22 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, speed_data_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, ir_data_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, us_data_),
+  6,
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::robosar_fms::Accelerometer)},
-  { 8, -1, sizeof(::robosar_fms::Ultrasonic)},
-  { 18, -1, sizeof(::robosar_fms::Infrared)},
-  { 35, -1, sizeof(::robosar_fms::Gyroscope)},
-  { 43, -1, sizeof(::robosar_fms::Encoder_count)},
-  { 50, -1, sizeof(::robosar_fms::Encoder_speed)},
-  { 57, -1, sizeof(::robosar_fms::SensorData)},
+  { 0, 8, sizeof(::robosar_fms::Accelerometer)},
+  { 11, 21, sizeof(::robosar_fms::Ultrasonic)},
+  { 26, 43, sizeof(::robosar_fms::Infrared)},
+  { 55, 63, sizeof(::robosar_fms::Gyroscope)},
+  { 66, 73, sizeof(::robosar_fms::Encoder_count)},
+  { 75, 82, sizeof(::robosar_fms::Encoder_speed)},
+  { 84, 96, sizeof(::robosar_fms::SensorData)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -294,31 +328,31 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n\rrobosar.proto\022\013robosar_fms\"<\n\rAccelero"
-      "meter\022\r\n\005acc_x\030\001 \001(\001\022\r\n\005acc_y\030\002 \001(\001\022\r\n\005a"
-      "cc_z\030\003 \001(\001\"f\n\nUltrasonic\022\020\n\010sensor_a\030\001 \001"
-      "(\r\022\020\n\010sensor_b\030\002 \001(\r\022\020\n\010sensor_c\030\003 \001(\r\022\020"
-      "\n\010sensor_d\030\004 \001(\r\022\020\n\010sensor_e\030\005 \001(\r\"\342\001\n\010I"
-      "nfrared\022\020\n\010sensor_a\030\001 \001(\r\022\020\n\010sensor_b\030\002 "
-      "\001(\r\022\020\n\010sensor_c\030\003 \001(\r\022\020\n\010sensor_d\030\004 \001(\r\022"
-      "\020\n\010sensor_e\030\005 \001(\r\022\020\n\010sensor_f\030\006 \001(\r\022\020\n\010s"
-      "ensor_g\030\007 \001(\r\022\020\n\010sensor_h\030\010 \001(\r\022\020\n\010senso"
-      "r_i\030\t \001(\r\022\020\n\010sensor_j\030\n \001(\r\022\020\n\010sensor_k\030"
-      "\013 \001(\r\022\020\n\010sensor_l\030\014 \001(\r\";\n\tGyroscope\022\016\n\006"
-      "gyro_x\030\001 \001(\001\022\016\n\006gyro_y\030\002 \001(\001\022\016\n\006gyro_z\030\003"
-      " \001(\001\",\n\rEncoder_count\022\014\n\004left\030\001 \001(\004\022\r\n\005r"
-      "ight\030\002 \001(\004\",\n\rEncoder_speed\022\014\n\004left\030\001 \001("
-      "\004\022\r\n\005right\030\002 \001(\004\"\257\002\n\nSensorData\022\024\n\014times"
-      "tamp_ns\030\001 \001(\004\022.\n\naccel_data\030\002 \001(\0132\032.robo"
-      "sar_fms.Accelerometer\022)\n\tgyro_data\030\003 \001(\013"
+      "meter\022\r\n\005acc_x\030\001 \002(\001\022\r\n\005acc_y\030\002 \002(\001\022\r\n\005a"
+      "cc_z\030\003 \002(\001\"f\n\nUltrasonic\022\020\n\010sensor_a\030\001 \002"
+      "(\r\022\020\n\010sensor_b\030\002 \002(\r\022\020\n\010sensor_c\030\003 \002(\r\022\020"
+      "\n\010sensor_d\030\004 \002(\r\022\020\n\010sensor_e\030\005 \002(\r\"\342\001\n\010I"
+      "nfrared\022\020\n\010sensor_a\030\001 \002(\r\022\020\n\010sensor_b\030\002 "
+      "\002(\r\022\020\n\010sensor_c\030\003 \002(\r\022\020\n\010sensor_d\030\004 \002(\r\022"
+      "\020\n\010sensor_e\030\005 \002(\r\022\020\n\010sensor_f\030\006 \002(\r\022\020\n\010s"
+      "ensor_g\030\007 \002(\r\022\020\n\010sensor_h\030\010 \002(\r\022\020\n\010senso"
+      "r_i\030\t \002(\r\022\020\n\010sensor_j\030\n \002(\r\022\020\n\010sensor_k\030"
+      "\013 \002(\r\022\020\n\010sensor_l\030\014 \002(\r\";\n\tGyroscope\022\016\n\006"
+      "gyro_x\030\001 \002(\001\022\016\n\006gyro_y\030\002 \002(\001\022\016\n\006gyro_z\030\003"
+      " \002(\001\",\n\rEncoder_count\022\014\n\004left\030\001 \002(\004\022\r\n\005r"
+      "ight\030\002 \002(\004\",\n\rEncoder_speed\022\014\n\004left\030\001 \002("
+      "\004\022\r\n\005right\030\002 \002(\004\"\257\002\n\nSensorData\022\024\n\014times"
+      "tamp_ns\030\001 \002(\004\022.\n\naccel_data\030\002 \002(\0132\032.robo"
+      "sar_fms.Accelerometer\022)\n\tgyro_data\030\003 \002(\013"
       "2\026.robosar_fms.Gyroscope\022.\n\ncount_data\030\004"
-      " \001(\0132\032.robosar_fms.Encoder_count\022.\n\nspee"
-      "d_data\030\005 \001(\0132\032.robosar_fms.Encoder_speed"
-      "\022&\n\007ir_data\030\006 \001(\0132\025.robosar_fms.Infrared"
-      "\022(\n\007us_data\030\007 \001(\0132\027.robosar_fms.Ultrason"
-      "icb\006proto3"
+      " \002(\0132\032.robosar_fms.Encoder_count\022.\n\nspee"
+      "d_data\030\005 \002(\0132\032.robosar_fms.Encoder_speed"
+      "\022&\n\007ir_data\030\006 \002(\0132\025.robosar_fms.Infrared"
+      "\022(\n\007us_data\030\007 \002(\0132\027.robosar_fms.Ultrason"
+      "ic"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 890);
+      descriptor, 882);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "robosar.proto", &protobuf_RegisterTypes);
 }
@@ -355,7 +389,8 @@ Accelerometer::Accelerometer()
 }
 Accelerometer::Accelerometer(const Accelerometer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&acc_x_, &from.acc_x_,
     static_cast<size_t>(reinterpret_cast<char*>(&acc_z_) -
@@ -397,9 +432,13 @@ void Accelerometer::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&acc_x_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&acc_z_) -
-      reinterpret_cast<char*>(&acc_x_)) + sizeof(acc_z_));
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 7u) {
+    ::memset(&acc_x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&acc_z_) -
+        reinterpret_cast<char*>(&acc_x_)) + sizeof(acc_z_));
+  }
+  _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
@@ -413,11 +452,11 @@ bool Accelerometer::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // double acc_x = 1;
+      // required double acc_x = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
-
+          set_has_acc_x();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &acc_x_)));
@@ -427,11 +466,11 @@ bool Accelerometer::MergePartialFromCodedStream(
         break;
       }
 
-      // double acc_y = 2;
+      // required double acc_y = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-
+          set_has_acc_y();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &acc_y_)));
@@ -441,11 +480,11 @@ bool Accelerometer::MergePartialFromCodedStream(
         break;
       }
 
-      // double acc_z = 3;
+      // required double acc_z = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
-
+          set_has_acc_z();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &acc_z_)));
@@ -481,24 +520,25 @@ void Accelerometer::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // double acc_x = 1;
-  if (this->acc_x() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required double acc_x = 1;
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->acc_x(), output);
   }
 
-  // double acc_y = 2;
-  if (this->acc_y() != 0) {
+  // required double acc_y = 2;
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->acc_y(), output);
   }
 
-  // double acc_z = 3;
-  if (this->acc_z() != 0) {
+  // required double acc_z = 3;
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->acc_z(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:robosar_fms.Accelerometer)
 }
@@ -510,53 +550,73 @@ void Accelerometer::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // double acc_x = 1;
-  if (this->acc_x() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required double acc_x = 1;
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->acc_x(), target);
   }
 
-  // double acc_y = 2;
-  if (this->acc_y() != 0) {
+  // required double acc_y = 2;
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->acc_y(), target);
   }
 
-  // double acc_z = 3;
-  if (this->acc_z() != 0) {
+  // required double acc_z = 3;
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->acc_z(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:robosar_fms.Accelerometer)
   return target;
 }
 
+size_t Accelerometer::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:robosar_fms.Accelerometer)
+  size_t total_size = 0;
+
+  if (has_acc_x()) {
+    // required double acc_x = 1;
+    total_size += 1 + 8;
+  }
+
+  if (has_acc_y()) {
+    // required double acc_y = 2;
+    total_size += 1 + 8;
+  }
+
+  if (has_acc_z()) {
+    // required double acc_z = 3;
+    total_size += 1 + 8;
+  }
+
+  return total_size;
+}
 size_t Accelerometer::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:robosar_fms.Accelerometer)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
-  // double acc_x = 1;
-  if (this->acc_x() != 0) {
+  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+    // required double acc_x = 1;
     total_size += 1 + 8;
-  }
 
-  // double acc_y = 2;
-  if (this->acc_y() != 0) {
+    // required double acc_y = 2;
     total_size += 1 + 8;
-  }
 
-  // double acc_z = 3;
-  if (this->acc_z() != 0) {
+    // required double acc_z = 3;
     total_size += 1 + 8;
-  }
 
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -584,14 +644,18 @@ void Accelerometer::MergeFrom(const Accelerometer& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.acc_x() != 0) {
-    set_acc_x(from.acc_x());
-  }
-  if (from.acc_y() != 0) {
-    set_acc_y(from.acc_y());
-  }
-  if (from.acc_z() != 0) {
-    set_acc_z(from.acc_z());
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
+      acc_x_ = from.acc_x_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      acc_y_ = from.acc_y_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      acc_z_ = from.acc_z_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
 }
 
@@ -610,6 +674,7 @@ void Accelerometer::CopyFrom(const Accelerometer& from) {
 }
 
 bool Accelerometer::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
   return true;
 }
 
@@ -622,6 +687,7 @@ void Accelerometer::InternalSwap(Accelerometer* other) {
   swap(acc_x_, other->acc_x_);
   swap(acc_y_, other->acc_y_);
   swap(acc_z_, other->acc_z_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -652,7 +718,8 @@ Ultrasonic::Ultrasonic()
 }
 Ultrasonic::Ultrasonic(const Ultrasonic& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&sensor_a_, &from.sensor_a_,
     static_cast<size_t>(reinterpret_cast<char*>(&sensor_e_) -
@@ -694,9 +761,13 @@ void Ultrasonic::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&sensor_a_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&sensor_e_) -
-      reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_e_));
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 31u) {
+    ::memset(&sensor_a_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&sensor_e_) -
+        reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_e_));
+  }
+  _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
@@ -710,11 +781,11 @@ bool Ultrasonic::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // uint32 sensor_a = 1;
+      // required uint32 sensor_a = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
+          set_has_sensor_a();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_a_)));
@@ -724,11 +795,11 @@ bool Ultrasonic::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_b = 2;
+      // required uint32 sensor_b = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
+          set_has_sensor_b();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_b_)));
@@ -738,11 +809,11 @@ bool Ultrasonic::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_c = 3;
+      // required uint32 sensor_c = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-
+          set_has_sensor_c();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_c_)));
@@ -752,11 +823,11 @@ bool Ultrasonic::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_d = 4;
+      // required uint32 sensor_d = 4;
       case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-
+          set_has_sensor_d();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_d_)));
@@ -766,11 +837,11 @@ bool Ultrasonic::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_e = 5;
+      // required uint32 sensor_e = 5;
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-
+          set_has_sensor_e();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_e_)));
@@ -806,34 +877,35 @@ void Ultrasonic::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint32 sensor_a = 1;
-  if (this->sensor_a() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint32 sensor_a = 1;
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->sensor_a(), output);
   }
 
-  // uint32 sensor_b = 2;
-  if (this->sensor_b() != 0) {
+  // required uint32 sensor_b = 2;
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->sensor_b(), output);
   }
 
-  // uint32 sensor_c = 3;
-  if (this->sensor_c() != 0) {
+  // required uint32 sensor_c = 3;
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->sensor_c(), output);
   }
 
-  // uint32 sensor_d = 4;
-  if (this->sensor_d() != 0) {
+  // required uint32 sensor_d = 4;
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->sensor_d(), output);
   }
 
-  // uint32 sensor_e = 5;
-  if (this->sensor_e() != 0) {
+  // required uint32 sensor_e = 5;
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->sensor_e(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:robosar_fms.Ultrasonic)
 }
@@ -845,83 +917,119 @@ void Ultrasonic::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint32 sensor_a = 1;
-  if (this->sensor_a() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint32 sensor_a = 1;
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->sensor_a(), target);
   }
 
-  // uint32 sensor_b = 2;
-  if (this->sensor_b() != 0) {
+  // required uint32 sensor_b = 2;
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->sensor_b(), target);
   }
 
-  // uint32 sensor_c = 3;
-  if (this->sensor_c() != 0) {
+  // required uint32 sensor_c = 3;
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->sensor_c(), target);
   }
 
-  // uint32 sensor_d = 4;
-  if (this->sensor_d() != 0) {
+  // required uint32 sensor_d = 4;
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->sensor_d(), target);
   }
 
-  // uint32 sensor_e = 5;
-  if (this->sensor_e() != 0) {
+  // required uint32 sensor_e = 5;
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->sensor_e(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:robosar_fms.Ultrasonic)
   return target;
 }
 
-size_t Ultrasonic::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:robosar_fms.Ultrasonic)
+size_t Ultrasonic::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:robosar_fms.Ultrasonic)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // uint32 sensor_a = 1;
-  if (this->sensor_a() != 0) {
+  if (has_sensor_a()) {
+    // required uint32 sensor_a = 1;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_a());
   }
 
-  // uint32 sensor_b = 2;
-  if (this->sensor_b() != 0) {
+  if (has_sensor_b()) {
+    // required uint32 sensor_b = 2;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_b());
   }
 
-  // uint32 sensor_c = 3;
-  if (this->sensor_c() != 0) {
+  if (has_sensor_c()) {
+    // required uint32 sensor_c = 3;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_c());
   }
 
-  // uint32 sensor_d = 4;
-  if (this->sensor_d() != 0) {
+  if (has_sensor_d()) {
+    // required uint32 sensor_d = 4;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_d());
   }
 
-  // uint32 sensor_e = 5;
-  if (this->sensor_e() != 0) {
+  if (has_sensor_e()) {
+    // required uint32 sensor_e = 5;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_e());
   }
 
+  return total_size;
+}
+size_t Ultrasonic::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:robosar_fms.Ultrasonic)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  if (((_has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
+    // required uint32 sensor_a = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_a());
+
+    // required uint32 sensor_b = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_b());
+
+    // required uint32 sensor_c = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_c());
+
+    // required uint32 sensor_d = 4;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_d());
+
+    // required uint32 sensor_e = 5;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_e());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -949,20 +1057,24 @@ void Ultrasonic::MergeFrom(const Ultrasonic& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.sensor_a() != 0) {
-    set_sensor_a(from.sensor_a());
-  }
-  if (from.sensor_b() != 0) {
-    set_sensor_b(from.sensor_b());
-  }
-  if (from.sensor_c() != 0) {
-    set_sensor_c(from.sensor_c());
-  }
-  if (from.sensor_d() != 0) {
-    set_sensor_d(from.sensor_d());
-  }
-  if (from.sensor_e() != 0) {
-    set_sensor_e(from.sensor_e());
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 31u) {
+    if (cached_has_bits & 0x00000001u) {
+      sensor_a_ = from.sensor_a_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      sensor_b_ = from.sensor_b_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      sensor_c_ = from.sensor_c_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      sensor_d_ = from.sensor_d_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      sensor_e_ = from.sensor_e_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
 }
 
@@ -981,6 +1093,7 @@ void Ultrasonic::CopyFrom(const Ultrasonic& from) {
 }
 
 bool Ultrasonic::IsInitialized() const {
+  if ((_has_bits_[0] & 0x0000001f) != 0x0000001f) return false;
   return true;
 }
 
@@ -995,6 +1108,7 @@ void Ultrasonic::InternalSwap(Ultrasonic* other) {
   swap(sensor_c_, other->sensor_c_);
   swap(sensor_d_, other->sensor_d_);
   swap(sensor_e_, other->sensor_e_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -1032,7 +1146,8 @@ Infrared::Infrared()
 }
 Infrared::Infrared(const Infrared& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&sensor_a_, &from.sensor_a_,
     static_cast<size_t>(reinterpret_cast<char*>(&sensor_l_) -
@@ -1074,9 +1189,18 @@ void Infrared::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&sensor_a_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&sensor_l_) -
-      reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_l_));
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 255u) {
+    ::memset(&sensor_a_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&sensor_h_) -
+        reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_h_));
+  }
+  if (cached_has_bits & 3840u) {
+    ::memset(&sensor_i_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&sensor_l_) -
+        reinterpret_cast<char*>(&sensor_i_)) + sizeof(sensor_l_));
+  }
+  _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
@@ -1090,11 +1214,11 @@ bool Infrared::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // uint32 sensor_a = 1;
+      // required uint32 sensor_a = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
+          set_has_sensor_a();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_a_)));
@@ -1104,11 +1228,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_b = 2;
+      // required uint32 sensor_b = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
+          set_has_sensor_b();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_b_)));
@@ -1118,11 +1242,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_c = 3;
+      // required uint32 sensor_c = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-
+          set_has_sensor_c();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_c_)));
@@ -1132,11 +1256,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_d = 4;
+      // required uint32 sensor_d = 4;
       case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-
+          set_has_sensor_d();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_d_)));
@@ -1146,11 +1270,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_e = 5;
+      // required uint32 sensor_e = 5;
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-
+          set_has_sensor_e();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_e_)));
@@ -1160,11 +1284,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_f = 6;
+      // required uint32 sensor_f = 6;
       case 6: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-
+          set_has_sensor_f();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_f_)));
@@ -1174,11 +1298,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_g = 7;
+      // required uint32 sensor_g = 7;
       case 7: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-
+          set_has_sensor_g();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_g_)));
@@ -1188,11 +1312,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_h = 8;
+      // required uint32 sensor_h = 8;
       case 8: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-
+          set_has_sensor_h();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_h_)));
@@ -1202,11 +1326,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_i = 9;
+      // required uint32 sensor_i = 9;
       case 9: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-
+          set_has_sensor_i();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_i_)));
@@ -1216,11 +1340,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_j = 10;
+      // required uint32 sensor_j = 10;
       case 10: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-
+          set_has_sensor_j();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_j_)));
@@ -1230,11 +1354,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_k = 11;
+      // required uint32 sensor_k = 11;
       case 11: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
-
+          set_has_sensor_k();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_k_)));
@@ -1244,11 +1368,11 @@ bool Infrared::MergePartialFromCodedStream(
         break;
       }
 
-      // uint32 sensor_l = 12;
+      // required uint32 sensor_l = 12;
       case 12: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(96u /* 96 & 0xFF */)) {
-
+          set_has_sensor_l();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sensor_l_)));
@@ -1284,69 +1408,70 @@ void Infrared::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint32 sensor_a = 1;
-  if (this->sensor_a() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint32 sensor_a = 1;
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->sensor_a(), output);
   }
 
-  // uint32 sensor_b = 2;
-  if (this->sensor_b() != 0) {
+  // required uint32 sensor_b = 2;
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->sensor_b(), output);
   }
 
-  // uint32 sensor_c = 3;
-  if (this->sensor_c() != 0) {
+  // required uint32 sensor_c = 3;
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->sensor_c(), output);
   }
 
-  // uint32 sensor_d = 4;
-  if (this->sensor_d() != 0) {
+  // required uint32 sensor_d = 4;
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->sensor_d(), output);
   }
 
-  // uint32 sensor_e = 5;
-  if (this->sensor_e() != 0) {
+  // required uint32 sensor_e = 5;
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->sensor_e(), output);
   }
 
-  // uint32 sensor_f = 6;
-  if (this->sensor_f() != 0) {
+  // required uint32 sensor_f = 6;
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->sensor_f(), output);
   }
 
-  // uint32 sensor_g = 7;
-  if (this->sensor_g() != 0) {
+  // required uint32 sensor_g = 7;
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(7, this->sensor_g(), output);
   }
 
-  // uint32 sensor_h = 8;
-  if (this->sensor_h() != 0) {
+  // required uint32 sensor_h = 8;
+  if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(8, this->sensor_h(), output);
   }
 
-  // uint32 sensor_i = 9;
-  if (this->sensor_i() != 0) {
+  // required uint32 sensor_i = 9;
+  if (cached_has_bits & 0x00000100u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(9, this->sensor_i(), output);
   }
 
-  // uint32 sensor_j = 10;
-  if (this->sensor_j() != 0) {
+  // required uint32 sensor_j = 10;
+  if (cached_has_bits & 0x00000200u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(10, this->sensor_j(), output);
   }
 
-  // uint32 sensor_k = 11;
-  if (this->sensor_k() != 0) {
+  // required uint32 sensor_k = 11;
+  if (cached_has_bits & 0x00000400u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(11, this->sensor_k(), output);
   }
 
-  // uint32 sensor_l = 12;
-  if (this->sensor_l() != 0) {
+  // required uint32 sensor_l = 12;
+  if (cached_has_bits & 0x00000800u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(12, this->sensor_l(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:robosar_fms.Infrared)
 }
@@ -1358,167 +1483,238 @@ void Infrared::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint32 sensor_a = 1;
-  if (this->sensor_a() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint32 sensor_a = 1;
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->sensor_a(), target);
   }
 
-  // uint32 sensor_b = 2;
-  if (this->sensor_b() != 0) {
+  // required uint32 sensor_b = 2;
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->sensor_b(), target);
   }
 
-  // uint32 sensor_c = 3;
-  if (this->sensor_c() != 0) {
+  // required uint32 sensor_c = 3;
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->sensor_c(), target);
   }
 
-  // uint32 sensor_d = 4;
-  if (this->sensor_d() != 0) {
+  // required uint32 sensor_d = 4;
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->sensor_d(), target);
   }
 
-  // uint32 sensor_e = 5;
-  if (this->sensor_e() != 0) {
+  // required uint32 sensor_e = 5;
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->sensor_e(), target);
   }
 
-  // uint32 sensor_f = 6;
-  if (this->sensor_f() != 0) {
+  // required uint32 sensor_f = 6;
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->sensor_f(), target);
   }
 
-  // uint32 sensor_g = 7;
-  if (this->sensor_g() != 0) {
+  // required uint32 sensor_g = 7;
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(7, this->sensor_g(), target);
   }
 
-  // uint32 sensor_h = 8;
-  if (this->sensor_h() != 0) {
+  // required uint32 sensor_h = 8;
+  if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(8, this->sensor_h(), target);
   }
 
-  // uint32 sensor_i = 9;
-  if (this->sensor_i() != 0) {
+  // required uint32 sensor_i = 9;
+  if (cached_has_bits & 0x00000100u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(9, this->sensor_i(), target);
   }
 
-  // uint32 sensor_j = 10;
-  if (this->sensor_j() != 0) {
+  // required uint32 sensor_j = 10;
+  if (cached_has_bits & 0x00000200u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(10, this->sensor_j(), target);
   }
 
-  // uint32 sensor_k = 11;
-  if (this->sensor_k() != 0) {
+  // required uint32 sensor_k = 11;
+  if (cached_has_bits & 0x00000400u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(11, this->sensor_k(), target);
   }
 
-  // uint32 sensor_l = 12;
-  if (this->sensor_l() != 0) {
+  // required uint32 sensor_l = 12;
+  if (cached_has_bits & 0x00000800u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(12, this->sensor_l(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:robosar_fms.Infrared)
   return target;
 }
 
-size_t Infrared::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:robosar_fms.Infrared)
+size_t Infrared::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:robosar_fms.Infrared)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // uint32 sensor_a = 1;
-  if (this->sensor_a() != 0) {
+  if (has_sensor_a()) {
+    // required uint32 sensor_a = 1;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_a());
   }
 
-  // uint32 sensor_b = 2;
-  if (this->sensor_b() != 0) {
+  if (has_sensor_b()) {
+    // required uint32 sensor_b = 2;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_b());
   }
 
-  // uint32 sensor_c = 3;
-  if (this->sensor_c() != 0) {
+  if (has_sensor_c()) {
+    // required uint32 sensor_c = 3;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_c());
   }
 
-  // uint32 sensor_d = 4;
-  if (this->sensor_d() != 0) {
+  if (has_sensor_d()) {
+    // required uint32 sensor_d = 4;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_d());
   }
 
-  // uint32 sensor_e = 5;
-  if (this->sensor_e() != 0) {
+  if (has_sensor_e()) {
+    // required uint32 sensor_e = 5;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_e());
   }
 
-  // uint32 sensor_f = 6;
-  if (this->sensor_f() != 0) {
+  if (has_sensor_f()) {
+    // required uint32 sensor_f = 6;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_f());
   }
 
-  // uint32 sensor_g = 7;
-  if (this->sensor_g() != 0) {
+  if (has_sensor_g()) {
+    // required uint32 sensor_g = 7;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_g());
   }
 
-  // uint32 sensor_h = 8;
-  if (this->sensor_h() != 0) {
+  if (has_sensor_h()) {
+    // required uint32 sensor_h = 8;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_h());
   }
 
-  // uint32 sensor_i = 9;
-  if (this->sensor_i() != 0) {
+  if (has_sensor_i()) {
+    // required uint32 sensor_i = 9;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_i());
   }
 
-  // uint32 sensor_j = 10;
-  if (this->sensor_j() != 0) {
+  if (has_sensor_j()) {
+    // required uint32 sensor_j = 10;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_j());
   }
 
-  // uint32 sensor_k = 11;
-  if (this->sensor_k() != 0) {
+  if (has_sensor_k()) {
+    // required uint32 sensor_k = 11;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_k());
   }
 
-  // uint32 sensor_l = 12;
-  if (this->sensor_l() != 0) {
+  if (has_sensor_l()) {
+    // required uint32 sensor_l = 12;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->sensor_l());
   }
 
+  return total_size;
+}
+size_t Infrared::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:robosar_fms.Infrared)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  if (((_has_bits_[0] & 0x00000fff) ^ 0x00000fff) == 0) {  // All required fields are present.
+    // required uint32 sensor_a = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_a());
+
+    // required uint32 sensor_b = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_b());
+
+    // required uint32 sensor_c = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_c());
+
+    // required uint32 sensor_d = 4;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_d());
+
+    // required uint32 sensor_e = 5;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_e());
+
+    // required uint32 sensor_f = 6;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_f());
+
+    // required uint32 sensor_g = 7;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_g());
+
+    // required uint32 sensor_h = 8;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_h());
+
+    // required uint32 sensor_i = 9;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_i());
+
+    // required uint32 sensor_j = 10;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_j());
+
+    // required uint32 sensor_k = 11;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_k());
+
+    // required uint32 sensor_l = 12;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->sensor_l());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1546,41 +1742,48 @@ void Infrared::MergeFrom(const Infrared& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.sensor_a() != 0) {
-    set_sensor_a(from.sensor_a());
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 255u) {
+    if (cached_has_bits & 0x00000001u) {
+      sensor_a_ = from.sensor_a_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      sensor_b_ = from.sensor_b_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      sensor_c_ = from.sensor_c_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      sensor_d_ = from.sensor_d_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      sensor_e_ = from.sensor_e_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      sensor_f_ = from.sensor_f_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      sensor_g_ = from.sensor_g_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      sensor_h_ = from.sensor_h_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
-  if (from.sensor_b() != 0) {
-    set_sensor_b(from.sensor_b());
-  }
-  if (from.sensor_c() != 0) {
-    set_sensor_c(from.sensor_c());
-  }
-  if (from.sensor_d() != 0) {
-    set_sensor_d(from.sensor_d());
-  }
-  if (from.sensor_e() != 0) {
-    set_sensor_e(from.sensor_e());
-  }
-  if (from.sensor_f() != 0) {
-    set_sensor_f(from.sensor_f());
-  }
-  if (from.sensor_g() != 0) {
-    set_sensor_g(from.sensor_g());
-  }
-  if (from.sensor_h() != 0) {
-    set_sensor_h(from.sensor_h());
-  }
-  if (from.sensor_i() != 0) {
-    set_sensor_i(from.sensor_i());
-  }
-  if (from.sensor_j() != 0) {
-    set_sensor_j(from.sensor_j());
-  }
-  if (from.sensor_k() != 0) {
-    set_sensor_k(from.sensor_k());
-  }
-  if (from.sensor_l() != 0) {
-    set_sensor_l(from.sensor_l());
+  if (cached_has_bits & 3840u) {
+    if (cached_has_bits & 0x00000100u) {
+      sensor_i_ = from.sensor_i_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      sensor_j_ = from.sensor_j_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      sensor_k_ = from.sensor_k_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      sensor_l_ = from.sensor_l_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
 }
 
@@ -1599,6 +1802,7 @@ void Infrared::CopyFrom(const Infrared& from) {
 }
 
 bool Infrared::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000fff) != 0x00000fff) return false;
   return true;
 }
 
@@ -1620,6 +1824,7 @@ void Infrared::InternalSwap(Infrared* other) {
   swap(sensor_j_, other->sensor_j_);
   swap(sensor_k_, other->sensor_k_);
   swap(sensor_l_, other->sensor_l_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -1648,7 +1853,8 @@ Gyroscope::Gyroscope()
 }
 Gyroscope::Gyroscope(const Gyroscope& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&gyro_x_, &from.gyro_x_,
     static_cast<size_t>(reinterpret_cast<char*>(&gyro_z_) -
@@ -1690,9 +1896,13 @@ void Gyroscope::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&gyro_x_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&gyro_z_) -
-      reinterpret_cast<char*>(&gyro_x_)) + sizeof(gyro_z_));
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 7u) {
+    ::memset(&gyro_x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&gyro_z_) -
+        reinterpret_cast<char*>(&gyro_x_)) + sizeof(gyro_z_));
+  }
+  _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
@@ -1706,11 +1916,11 @@ bool Gyroscope::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // double gyro_x = 1;
+      // required double gyro_x = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
-
+          set_has_gyro_x();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &gyro_x_)));
@@ -1720,11 +1930,11 @@ bool Gyroscope::MergePartialFromCodedStream(
         break;
       }
 
-      // double gyro_y = 2;
+      // required double gyro_y = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-
+          set_has_gyro_y();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &gyro_y_)));
@@ -1734,11 +1944,11 @@ bool Gyroscope::MergePartialFromCodedStream(
         break;
       }
 
-      // double gyro_z = 3;
+      // required double gyro_z = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
-
+          set_has_gyro_z();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &gyro_z_)));
@@ -1774,24 +1984,25 @@ void Gyroscope::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // double gyro_x = 1;
-  if (this->gyro_x() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required double gyro_x = 1;
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->gyro_x(), output);
   }
 
-  // double gyro_y = 2;
-  if (this->gyro_y() != 0) {
+  // required double gyro_y = 2;
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->gyro_y(), output);
   }
 
-  // double gyro_z = 3;
-  if (this->gyro_z() != 0) {
+  // required double gyro_z = 3;
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->gyro_z(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:robosar_fms.Gyroscope)
 }
@@ -1803,53 +2014,73 @@ void Gyroscope::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // double gyro_x = 1;
-  if (this->gyro_x() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required double gyro_x = 1;
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->gyro_x(), target);
   }
 
-  // double gyro_y = 2;
-  if (this->gyro_y() != 0) {
+  // required double gyro_y = 2;
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->gyro_y(), target);
   }
 
-  // double gyro_z = 3;
-  if (this->gyro_z() != 0) {
+  // required double gyro_z = 3;
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->gyro_z(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:robosar_fms.Gyroscope)
   return target;
 }
 
+size_t Gyroscope::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:robosar_fms.Gyroscope)
+  size_t total_size = 0;
+
+  if (has_gyro_x()) {
+    // required double gyro_x = 1;
+    total_size += 1 + 8;
+  }
+
+  if (has_gyro_y()) {
+    // required double gyro_y = 2;
+    total_size += 1 + 8;
+  }
+
+  if (has_gyro_z()) {
+    // required double gyro_z = 3;
+    total_size += 1 + 8;
+  }
+
+  return total_size;
+}
 size_t Gyroscope::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:robosar_fms.Gyroscope)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
-  // double gyro_x = 1;
-  if (this->gyro_x() != 0) {
+  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+    // required double gyro_x = 1;
     total_size += 1 + 8;
-  }
 
-  // double gyro_y = 2;
-  if (this->gyro_y() != 0) {
+    // required double gyro_y = 2;
     total_size += 1 + 8;
-  }
 
-  // double gyro_z = 3;
-  if (this->gyro_z() != 0) {
+    // required double gyro_z = 3;
     total_size += 1 + 8;
-  }
 
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1877,14 +2108,18 @@ void Gyroscope::MergeFrom(const Gyroscope& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.gyro_x() != 0) {
-    set_gyro_x(from.gyro_x());
-  }
-  if (from.gyro_y() != 0) {
-    set_gyro_y(from.gyro_y());
-  }
-  if (from.gyro_z() != 0) {
-    set_gyro_z(from.gyro_z());
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
+      gyro_x_ = from.gyro_x_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      gyro_y_ = from.gyro_y_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      gyro_z_ = from.gyro_z_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
 }
 
@@ -1903,6 +2138,7 @@ void Gyroscope::CopyFrom(const Gyroscope& from) {
 }
 
 bool Gyroscope::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
   return true;
 }
 
@@ -1915,6 +2151,7 @@ void Gyroscope::InternalSwap(Gyroscope* other) {
   swap(gyro_x_, other->gyro_x_);
   swap(gyro_y_, other->gyro_y_);
   swap(gyro_z_, other->gyro_z_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -1942,7 +2179,8 @@ Encoder_count::Encoder_count()
 }
 Encoder_count::Encoder_count(const Encoder_count& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&left_, &from.left_,
     static_cast<size_t>(reinterpret_cast<char*>(&right_) -
@@ -1984,9 +2222,13 @@ void Encoder_count::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&left_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&right_) -
-      reinterpret_cast<char*>(&left_)) + sizeof(right_));
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 3u) {
+    ::memset(&left_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&right_) -
+        reinterpret_cast<char*>(&left_)) + sizeof(right_));
+  }
+  _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
@@ -2000,11 +2242,11 @@ bool Encoder_count::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // uint64 left = 1;
+      // required uint64 left = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
+          set_has_left();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &left_)));
@@ -2014,11 +2256,11 @@ bool Encoder_count::MergePartialFromCodedStream(
         break;
       }
 
-      // uint64 right = 2;
+      // required uint64 right = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
+          set_has_right();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &right_)));
@@ -2054,19 +2296,20 @@ void Encoder_count::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint64 left = 1;
-  if (this->left() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint64 left = 1;
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->left(), output);
   }
 
-  // uint64 right = 2;
-  if (this->right() != 0) {
+  // required uint64 right = 2;
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt64(2, this->right(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:robosar_fms.Encoder_count)
 }
@@ -2078,47 +2321,68 @@ void Encoder_count::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint64 left = 1;
-  if (this->left() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint64 left = 1;
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->left(), target);
   }
 
-  // uint64 right = 2;
-  if (this->right() != 0) {
+  // required uint64 right = 2;
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(2, this->right(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:robosar_fms.Encoder_count)
   return target;
 }
 
-size_t Encoder_count::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:robosar_fms.Encoder_count)
+size_t Encoder_count::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:robosar_fms.Encoder_count)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // uint64 left = 1;
-  if (this->left() != 0) {
+  if (has_left()) {
+    // required uint64 left = 1;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->left());
   }
 
-  // uint64 right = 2;
-  if (this->right() != 0) {
+  if (has_right()) {
+    // required uint64 right = 2;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->right());
   }
 
+  return total_size;
+}
+size_t Encoder_count::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:robosar_fms.Encoder_count)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+    // required uint64 left = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt64Size(
+        this->left());
+
+    // required uint64 right = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt64Size(
+        this->right());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2146,11 +2410,15 @@ void Encoder_count::MergeFrom(const Encoder_count& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.left() != 0) {
-    set_left(from.left());
-  }
-  if (from.right() != 0) {
-    set_right(from.right());
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      left_ = from.left_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      right_ = from.right_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
 }
 
@@ -2169,6 +2437,7 @@ void Encoder_count::CopyFrom(const Encoder_count& from) {
 }
 
 bool Encoder_count::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
@@ -2180,6 +2449,7 @@ void Encoder_count::InternalSwap(Encoder_count* other) {
   using std::swap;
   swap(left_, other->left_);
   swap(right_, other->right_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -2207,7 +2477,8 @@ Encoder_speed::Encoder_speed()
 }
 Encoder_speed::Encoder_speed(const Encoder_speed& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&left_, &from.left_,
     static_cast<size_t>(reinterpret_cast<char*>(&right_) -
@@ -2249,9 +2520,13 @@ void Encoder_speed::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&left_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&right_) -
-      reinterpret_cast<char*>(&left_)) + sizeof(right_));
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 3u) {
+    ::memset(&left_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&right_) -
+        reinterpret_cast<char*>(&left_)) + sizeof(right_));
+  }
+  _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
@@ -2265,11 +2540,11 @@ bool Encoder_speed::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // uint64 left = 1;
+      // required uint64 left = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
+          set_has_left();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &left_)));
@@ -2279,11 +2554,11 @@ bool Encoder_speed::MergePartialFromCodedStream(
         break;
       }
 
-      // uint64 right = 2;
+      // required uint64 right = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
+          set_has_right();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &right_)));
@@ -2319,19 +2594,20 @@ void Encoder_speed::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint64 left = 1;
-  if (this->left() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint64 left = 1;
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->left(), output);
   }
 
-  // uint64 right = 2;
-  if (this->right() != 0) {
+  // required uint64 right = 2;
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt64(2, this->right(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:robosar_fms.Encoder_speed)
 }
@@ -2343,47 +2619,68 @@ void Encoder_speed::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint64 left = 1;
-  if (this->left() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint64 left = 1;
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->left(), target);
   }
 
-  // uint64 right = 2;
-  if (this->right() != 0) {
+  // required uint64 right = 2;
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(2, this->right(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:robosar_fms.Encoder_speed)
   return target;
 }
 
-size_t Encoder_speed::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:robosar_fms.Encoder_speed)
+size_t Encoder_speed::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:robosar_fms.Encoder_speed)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // uint64 left = 1;
-  if (this->left() != 0) {
+  if (has_left()) {
+    // required uint64 left = 1;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->left());
   }
 
-  // uint64 right = 2;
-  if (this->right() != 0) {
+  if (has_right()) {
+    // required uint64 right = 2;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->right());
   }
 
+  return total_size;
+}
+size_t Encoder_speed::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:robosar_fms.Encoder_speed)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+    // required uint64 left = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt64Size(
+        this->left());
+
+    // required uint64 right = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt64Size(
+        this->right());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2411,11 +2708,15 @@ void Encoder_speed::MergeFrom(const Encoder_speed& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.left() != 0) {
-    set_left(from.left());
-  }
-  if (from.right() != 0) {
-    set_right(from.right());
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      left_ = from.left_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      right_ = from.right_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
 }
 
@@ -2434,6 +2735,7 @@ void Encoder_speed::CopyFrom(const Encoder_speed& from) {
 }
 
 bool Encoder_speed::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
@@ -2445,6 +2747,7 @@ void Encoder_speed::InternalSwap(Encoder_speed* other) {
   using std::swap;
   swap(left_, other->left_);
   swap(right_, other->right_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
@@ -2489,7 +2792,8 @@ SensorData::SensorData()
 }
 SensorData::SensorData(const SensorData& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_accel_data()) {
     accel_data_ = new ::robosar_fms::Accelerometer(*from.accel_data_);
@@ -2565,31 +2869,35 @@ void SensorData::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == NULL && accel_data_ != NULL) {
-    delete accel_data_;
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 63u) {
+    if (cached_has_bits & 0x00000001u) {
+      GOOGLE_DCHECK(accel_data_ != NULL);
+      accel_data_->Clear();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(gyro_data_ != NULL);
+      gyro_data_->Clear();
+    }
+    if (cached_has_bits & 0x00000004u) {
+      GOOGLE_DCHECK(count_data_ != NULL);
+      count_data_->Clear();
+    }
+    if (cached_has_bits & 0x00000008u) {
+      GOOGLE_DCHECK(speed_data_ != NULL);
+      speed_data_->Clear();
+    }
+    if (cached_has_bits & 0x00000010u) {
+      GOOGLE_DCHECK(ir_data_ != NULL);
+      ir_data_->Clear();
+    }
+    if (cached_has_bits & 0x00000020u) {
+      GOOGLE_DCHECK(us_data_ != NULL);
+      us_data_->Clear();
+    }
   }
-  accel_data_ = NULL;
-  if (GetArenaNoVirtual() == NULL && gyro_data_ != NULL) {
-    delete gyro_data_;
-  }
-  gyro_data_ = NULL;
-  if (GetArenaNoVirtual() == NULL && count_data_ != NULL) {
-    delete count_data_;
-  }
-  count_data_ = NULL;
-  if (GetArenaNoVirtual() == NULL && speed_data_ != NULL) {
-    delete speed_data_;
-  }
-  speed_data_ = NULL;
-  if (GetArenaNoVirtual() == NULL && ir_data_ != NULL) {
-    delete ir_data_;
-  }
-  ir_data_ = NULL;
-  if (GetArenaNoVirtual() == NULL && us_data_ != NULL) {
-    delete us_data_;
-  }
-  us_data_ = NULL;
   timestamp_ns_ = GOOGLE_ULONGLONG(0);
+  _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
@@ -2603,11 +2911,11 @@ bool SensorData::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // uint64 timestamp_ns = 1;
+      // required uint64 timestamp_ns = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
+          set_has_timestamp_ns();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &timestamp_ns_)));
@@ -2617,7 +2925,7 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // .robosar_fms.Accelerometer accel_data = 2;
+      // required .robosar_fms.Accelerometer accel_data = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
@@ -2629,7 +2937,7 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // .robosar_fms.Gyroscope gyro_data = 3;
+      // required .robosar_fms.Gyroscope gyro_data = 3;
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
@@ -2641,7 +2949,7 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // .robosar_fms.Encoder_count count_data = 4;
+      // required .robosar_fms.Encoder_count count_data = 4;
       case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
@@ -2653,7 +2961,7 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // .robosar_fms.Encoder_speed speed_data = 5;
+      // required .robosar_fms.Encoder_speed speed_data = 5;
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
@@ -2665,7 +2973,7 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // .robosar_fms.Infrared ir_data = 6;
+      // required .robosar_fms.Infrared ir_data = 6;
       case 6: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
@@ -2677,7 +2985,7 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // .robosar_fms.Ultrasonic us_data = 7;
+      // required .robosar_fms.Ultrasonic us_data = 7;
       case 7: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
@@ -2715,50 +3023,51 @@ void SensorData::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint64 timestamp_ns = 1;
-  if (this->timestamp_ns() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint64 timestamp_ns = 1;
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->timestamp_ns(), output);
   }
 
-  // .robosar_fms.Accelerometer accel_data = 2;
-  if (this->has_accel_data()) {
+  // required .robosar_fms.Accelerometer accel_data = 2;
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, this->_internal_accel_data(), output);
   }
 
-  // .robosar_fms.Gyroscope gyro_data = 3;
-  if (this->has_gyro_data()) {
+  // required .robosar_fms.Gyroscope gyro_data = 3;
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, this->_internal_gyro_data(), output);
   }
 
-  // .robosar_fms.Encoder_count count_data = 4;
-  if (this->has_count_data()) {
+  // required .robosar_fms.Encoder_count count_data = 4;
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, this->_internal_count_data(), output);
   }
 
-  // .robosar_fms.Encoder_speed speed_data = 5;
-  if (this->has_speed_data()) {
+  // required .robosar_fms.Encoder_speed speed_data = 5;
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, this->_internal_speed_data(), output);
   }
 
-  // .robosar_fms.Infrared ir_data = 6;
-  if (this->has_ir_data()) {
+  // required .robosar_fms.Infrared ir_data = 6;
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       6, this->_internal_ir_data(), output);
   }
 
-  // .robosar_fms.Ultrasonic us_data = 7;
-  if (this->has_us_data()) {
+  // required .robosar_fms.Ultrasonic us_data = 7;
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       7, this->_internal_us_data(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:robosar_fms.SensorData)
 }
@@ -2770,119 +3079,165 @@ void SensorData::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // uint64 timestamp_ns = 1;
-  if (this->timestamp_ns() != 0) {
+  cached_has_bits = _has_bits_[0];
+  // required uint64 timestamp_ns = 1;
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->timestamp_ns(), target);
   }
 
-  // .robosar_fms.Accelerometer accel_data = 2;
-  if (this->has_accel_data()) {
+  // required .robosar_fms.Accelerometer accel_data = 2;
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         2, this->_internal_accel_data(), deterministic, target);
   }
 
-  // .robosar_fms.Gyroscope gyro_data = 3;
-  if (this->has_gyro_data()) {
+  // required .robosar_fms.Gyroscope gyro_data = 3;
+  if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         3, this->_internal_gyro_data(), deterministic, target);
   }
 
-  // .robosar_fms.Encoder_count count_data = 4;
-  if (this->has_count_data()) {
+  // required .robosar_fms.Encoder_count count_data = 4;
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         4, this->_internal_count_data(), deterministic, target);
   }
 
-  // .robosar_fms.Encoder_speed speed_data = 5;
-  if (this->has_speed_data()) {
+  // required .robosar_fms.Encoder_speed speed_data = 5;
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         5, this->_internal_speed_data(), deterministic, target);
   }
 
-  // .robosar_fms.Infrared ir_data = 6;
-  if (this->has_ir_data()) {
+  // required .robosar_fms.Infrared ir_data = 6;
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         6, this->_internal_ir_data(), deterministic, target);
   }
 
-  // .robosar_fms.Ultrasonic us_data = 7;
-  if (this->has_us_data()) {
+  // required .robosar_fms.Ultrasonic us_data = 7;
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         7, this->_internal_us_data(), deterministic, target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:robosar_fms.SensorData)
   return target;
 }
 
-size_t SensorData::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:robosar_fms.SensorData)
+size_t SensorData::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:robosar_fms.SensorData)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // .robosar_fms.Accelerometer accel_data = 2;
-  if (this->has_accel_data()) {
+  if (has_accel_data()) {
+    // required .robosar_fms.Accelerometer accel_data = 2;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *accel_data_);
   }
 
-  // .robosar_fms.Gyroscope gyro_data = 3;
-  if (this->has_gyro_data()) {
+  if (has_gyro_data()) {
+    // required .robosar_fms.Gyroscope gyro_data = 3;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *gyro_data_);
   }
 
-  // .robosar_fms.Encoder_count count_data = 4;
-  if (this->has_count_data()) {
+  if (has_count_data()) {
+    // required .robosar_fms.Encoder_count count_data = 4;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *count_data_);
   }
 
-  // .robosar_fms.Encoder_speed speed_data = 5;
-  if (this->has_speed_data()) {
+  if (has_speed_data()) {
+    // required .robosar_fms.Encoder_speed speed_data = 5;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *speed_data_);
   }
 
-  // .robosar_fms.Infrared ir_data = 6;
-  if (this->has_ir_data()) {
+  if (has_ir_data()) {
+    // required .robosar_fms.Infrared ir_data = 6;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *ir_data_);
   }
 
-  // .robosar_fms.Ultrasonic us_data = 7;
-  if (this->has_us_data()) {
+  if (has_us_data()) {
+    // required .robosar_fms.Ultrasonic us_data = 7;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *us_data_);
   }
 
-  // uint64 timestamp_ns = 1;
-  if (this->timestamp_ns() != 0) {
+  if (has_timestamp_ns()) {
+    // required uint64 timestamp_ns = 1;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->timestamp_ns());
   }
 
+  return total_size;
+}
+size_t SensorData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:robosar_fms.SensorData)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  if (((_has_bits_[0] & 0x0000007f) ^ 0x0000007f) == 0) {  // All required fields are present.
+    // required .robosar_fms.Accelerometer accel_data = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *accel_data_);
+
+    // required .robosar_fms.Gyroscope gyro_data = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *gyro_data_);
+
+    // required .robosar_fms.Encoder_count count_data = 4;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *count_data_);
+
+    // required .robosar_fms.Encoder_speed speed_data = 5;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *speed_data_);
+
+    // required .robosar_fms.Infrared ir_data = 6;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *ir_data_);
+
+    // required .robosar_fms.Ultrasonic us_data = 7;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *us_data_);
+
+    // required uint64 timestamp_ns = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt64Size(
+        this->timestamp_ns());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2910,26 +3265,30 @@ void SensorData::MergeFrom(const SensorData& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_accel_data()) {
-    mutable_accel_data()->::robosar_fms::Accelerometer::MergeFrom(from.accel_data());
-  }
-  if (from.has_gyro_data()) {
-    mutable_gyro_data()->::robosar_fms::Gyroscope::MergeFrom(from.gyro_data());
-  }
-  if (from.has_count_data()) {
-    mutable_count_data()->::robosar_fms::Encoder_count::MergeFrom(from.count_data());
-  }
-  if (from.has_speed_data()) {
-    mutable_speed_data()->::robosar_fms::Encoder_speed::MergeFrom(from.speed_data());
-  }
-  if (from.has_ir_data()) {
-    mutable_ir_data()->::robosar_fms::Infrared::MergeFrom(from.ir_data());
-  }
-  if (from.has_us_data()) {
-    mutable_us_data()->::robosar_fms::Ultrasonic::MergeFrom(from.us_data());
-  }
-  if (from.timestamp_ns() != 0) {
-    set_timestamp_ns(from.timestamp_ns());
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 127u) {
+    if (cached_has_bits & 0x00000001u) {
+      mutable_accel_data()->::robosar_fms::Accelerometer::MergeFrom(from.accel_data());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      mutable_gyro_data()->::robosar_fms::Gyroscope::MergeFrom(from.gyro_data());
+    }
+    if (cached_has_bits & 0x00000004u) {
+      mutable_count_data()->::robosar_fms::Encoder_count::MergeFrom(from.count_data());
+    }
+    if (cached_has_bits & 0x00000008u) {
+      mutable_speed_data()->::robosar_fms::Encoder_speed::MergeFrom(from.speed_data());
+    }
+    if (cached_has_bits & 0x00000010u) {
+      mutable_ir_data()->::robosar_fms::Infrared::MergeFrom(from.ir_data());
+    }
+    if (cached_has_bits & 0x00000020u) {
+      mutable_us_data()->::robosar_fms::Ultrasonic::MergeFrom(from.us_data());
+    }
+    if (cached_has_bits & 0x00000040u) {
+      timestamp_ns_ = from.timestamp_ns_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
 }
 
@@ -2948,6 +3307,25 @@ void SensorData::CopyFrom(const SensorData& from) {
 }
 
 bool SensorData::IsInitialized() const {
+  if ((_has_bits_[0] & 0x0000007f) != 0x0000007f) return false;
+  if (has_accel_data()) {
+    if (!this->accel_data_->IsInitialized()) return false;
+  }
+  if (has_gyro_data()) {
+    if (!this->gyro_data_->IsInitialized()) return false;
+  }
+  if (has_count_data()) {
+    if (!this->count_data_->IsInitialized()) return false;
+  }
+  if (has_speed_data()) {
+    if (!this->speed_data_->IsInitialized()) return false;
+  }
+  if (has_ir_data()) {
+    if (!this->ir_data_->IsInitialized()) return false;
+  }
+  if (has_us_data()) {
+    if (!this->us_data_->IsInitialized()) return false;
+  }
   return true;
 }
 
@@ -2964,6 +3342,7 @@ void SensorData::InternalSwap(SensorData* other) {
   swap(ir_data_, other->ir_data_);
   swap(us_data_, other->us_data_);
   swap(timestamp_ns_, other->timestamp_ns_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
