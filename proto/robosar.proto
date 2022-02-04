@@ -51,11 +51,12 @@ message Encoder_speed {
 
 message SensorData {
     required uint64 timestamp_ns = 1;
-    required Accelerometer accel_data = 2;
-    required Gyroscope gyro_data = 3;
-    required Encoder_count count_data = 4;
-    required Encoder_speed speed_data = 5;
-    required Infrared ir_data = 6;
-    required Ultrasonic us_data = 7;
+    required uint32 seq_id = 2;
+    required Accelerometer accel_data = 3;
+    required Gyroscope gyro_data = 4;
+    required Encoder_count count_data = 5;
+    required Encoder_speed speed_data = 6;
+    required Infrared ir_data = 7;
+    required Ultrasonic us_data = 8;
 }
 

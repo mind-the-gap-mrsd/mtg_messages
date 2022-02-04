@@ -1089,10 +1089,10 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   // accessors -------------------------------------------------------
 
-  // required .robosar_fms.Accelerometer accel_data = 2;
+  // required .robosar_fms.Accelerometer accel_data = 3;
   bool has_accel_data() const;
   void clear_accel_data();
-  static const int kAccelDataFieldNumber = 2;
+  static const int kAccelDataFieldNumber = 3;
   private:
   const ::robosar_fms::Accelerometer& _internal_accel_data() const;
   public:
@@ -1101,10 +1101,10 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Accelerometer* mutable_accel_data();
   void set_allocated_accel_data(::robosar_fms::Accelerometer* accel_data);
 
-  // required .robosar_fms.Gyroscope gyro_data = 3;
+  // required .robosar_fms.Gyroscope gyro_data = 4;
   bool has_gyro_data() const;
   void clear_gyro_data();
-  static const int kGyroDataFieldNumber = 3;
+  static const int kGyroDataFieldNumber = 4;
   private:
   const ::robosar_fms::Gyroscope& _internal_gyro_data() const;
   public:
@@ -1113,10 +1113,10 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Gyroscope* mutable_gyro_data();
   void set_allocated_gyro_data(::robosar_fms::Gyroscope* gyro_data);
 
-  // required .robosar_fms.Encoder_count count_data = 4;
+  // required .robosar_fms.Encoder_count count_data = 5;
   bool has_count_data() const;
   void clear_count_data();
-  static const int kCountDataFieldNumber = 4;
+  static const int kCountDataFieldNumber = 5;
   private:
   const ::robosar_fms::Encoder_count& _internal_count_data() const;
   public:
@@ -1125,10 +1125,10 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Encoder_count* mutable_count_data();
   void set_allocated_count_data(::robosar_fms::Encoder_count* count_data);
 
-  // required .robosar_fms.Encoder_speed speed_data = 5;
+  // required .robosar_fms.Encoder_speed speed_data = 6;
   bool has_speed_data() const;
   void clear_speed_data();
-  static const int kSpeedDataFieldNumber = 5;
+  static const int kSpeedDataFieldNumber = 6;
   private:
   const ::robosar_fms::Encoder_speed& _internal_speed_data() const;
   public:
@@ -1137,10 +1137,10 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Encoder_speed* mutable_speed_data();
   void set_allocated_speed_data(::robosar_fms::Encoder_speed* speed_data);
 
-  // required .robosar_fms.Infrared ir_data = 6;
+  // required .robosar_fms.Infrared ir_data = 7;
   bool has_ir_data() const;
   void clear_ir_data();
-  static const int kIrDataFieldNumber = 6;
+  static const int kIrDataFieldNumber = 7;
   private:
   const ::robosar_fms::Infrared& _internal_ir_data() const;
   public:
@@ -1149,10 +1149,10 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Infrared* mutable_ir_data();
   void set_allocated_ir_data(::robosar_fms::Infrared* ir_data);
 
-  // required .robosar_fms.Ultrasonic us_data = 7;
+  // required .robosar_fms.Ultrasonic us_data = 8;
   bool has_us_data() const;
   void clear_us_data();
-  static const int kUsDataFieldNumber = 7;
+  static const int kUsDataFieldNumber = 8;
   private:
   const ::robosar_fms::Ultrasonic& _internal_us_data() const;
   public:
@@ -1168,10 +1168,19 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::google::protobuf::uint64 timestamp_ns() const;
   void set_timestamp_ns(::google::protobuf::uint64 value);
 
+  // required uint32 seq_id = 2;
+  bool has_seq_id() const;
+  void clear_seq_id();
+  static const int kSeqIdFieldNumber = 2;
+  ::google::protobuf::uint32 seq_id() const;
+  void set_seq_id(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:robosar_fms.SensorData)
  private:
   void set_has_timestamp_ns();
   void clear_has_timestamp_ns();
+  void set_has_seq_id();
+  void clear_has_seq_id();
   void set_has_accel_data();
   void clear_has_accel_data();
   void set_has_gyro_data();
@@ -1198,6 +1207,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Infrared* ir_data_;
   ::robosar_fms::Ultrasonic* us_data_;
   ::google::protobuf::uint64 timestamp_ns_;
+  ::google::protobuf::uint32 seq_id_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
 };
 // ===================================================================
@@ -1907,7 +1917,31 @@ inline void SensorData::set_timestamp_ns(::google::protobuf::uint64 value) {
   // @@protoc_insertion_point(field_set:robosar_fms.SensorData.timestamp_ns)
 }
 
-// required .robosar_fms.Accelerometer accel_data = 2;
+// required uint32 seq_id = 2;
+inline bool SensorData::has_seq_id() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+inline void SensorData::set_has_seq_id() {
+  _has_bits_[0] |= 0x00000080u;
+}
+inline void SensorData::clear_has_seq_id() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+inline void SensorData::clear_seq_id() {
+  seq_id_ = 0u;
+  clear_has_seq_id();
+}
+inline ::google::protobuf::uint32 SensorData::seq_id() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.SensorData.seq_id)
+  return seq_id_;
+}
+inline void SensorData::set_seq_id(::google::protobuf::uint32 value) {
+  set_has_seq_id();
+  seq_id_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.SensorData.seq_id)
+}
+
+// required .robosar_fms.Accelerometer accel_data = 3;
 inline bool SensorData::has_accel_data() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -1965,7 +1999,7 @@ inline void SensorData::set_allocated_accel_data(::robosar_fms::Accelerometer* a
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.accel_data)
 }
 
-// required .robosar_fms.Gyroscope gyro_data = 3;
+// required .robosar_fms.Gyroscope gyro_data = 4;
 inline bool SensorData::has_gyro_data() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -2023,7 +2057,7 @@ inline void SensorData::set_allocated_gyro_data(::robosar_fms::Gyroscope* gyro_d
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.gyro_data)
 }
 
-// required .robosar_fms.Encoder_count count_data = 4;
+// required .robosar_fms.Encoder_count count_data = 5;
 inline bool SensorData::has_count_data() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -2081,7 +2115,7 @@ inline void SensorData::set_allocated_count_data(::robosar_fms::Encoder_count* c
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.count_data)
 }
 
-// required .robosar_fms.Encoder_speed speed_data = 5;
+// required .robosar_fms.Encoder_speed speed_data = 6;
 inline bool SensorData::has_speed_data() const {
   return (_has_bits_[0] & 0x00000008u) != 0;
 }
@@ -2139,7 +2173,7 @@ inline void SensorData::set_allocated_speed_data(::robosar_fms::Encoder_speed* s
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.speed_data)
 }
 
-// required .robosar_fms.Infrared ir_data = 6;
+// required .robosar_fms.Infrared ir_data = 7;
 inline bool SensorData::has_ir_data() const {
   return (_has_bits_[0] & 0x00000010u) != 0;
 }
@@ -2197,7 +2231,7 @@ inline void SensorData::set_allocated_ir_data(::robosar_fms::Infrared* ir_data) 
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.ir_data)
 }
 
-// required .robosar_fms.Ultrasonic us_data = 7;
+// required .robosar_fms.Ultrasonic us_data = 8;
 inline bool SensorData::has_us_data() const {
   return (_has_bits_[0] & 0x00000020u) != 0;
 }

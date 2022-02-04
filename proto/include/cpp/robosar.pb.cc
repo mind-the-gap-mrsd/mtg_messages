@@ -272,6 +272,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, timestamp_ns_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, seq_id_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, accel_data_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, gyro_data_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, count_data_),
@@ -279,6 +280,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, ir_data_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, us_data_),
   6,
+  7,
   0,
   1,
   2,
@@ -293,7 +295,7 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 55, 63, sizeof(::robosar_fms::Gyroscope)},
   { 66, 73, sizeof(::robosar_fms::Encoder_count)},
   { 75, 82, sizeof(::robosar_fms::Encoder_speed)},
-  { 84, 96, sizeof(::robosar_fms::SensorData)},
+  { 84, 97, sizeof(::robosar_fms::SensorData)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -341,18 +343,18 @@ void AddDescriptorsImpl() {
       "gyro_x\030\001 \002(\001\022\016\n\006gyro_y\030\002 \002(\001\022\016\n\006gyro_z\030\003"
       " \002(\001\",\n\rEncoder_count\022\014\n\004left\030\001 \002(\004\022\r\n\005r"
       "ight\030\002 \002(\004\",\n\rEncoder_speed\022\014\n\004left\030\001 \002("
-      "\004\022\r\n\005right\030\002 \002(\004\"\257\002\n\nSensorData\022\024\n\014times"
-      "tamp_ns\030\001 \002(\004\022.\n\naccel_data\030\002 \002(\0132\032.robo"
-      "sar_fms.Accelerometer\022)\n\tgyro_data\030\003 \002(\013"
-      "2\026.robosar_fms.Gyroscope\022.\n\ncount_data\030\004"
-      " \002(\0132\032.robosar_fms.Encoder_count\022.\n\nspee"
-      "d_data\030\005 \002(\0132\032.robosar_fms.Encoder_speed"
-      "\022&\n\007ir_data\030\006 \002(\0132\025.robosar_fms.Infrared"
-      "\022(\n\007us_data\030\007 \002(\0132\027.robosar_fms.Ultrason"
-      "ic"
+      "\004\022\r\n\005right\030\002 \002(\004\"\277\002\n\nSensorData\022\024\n\014times"
+      "tamp_ns\030\001 \002(\004\022\016\n\006seq_id\030\002 \002(\r\022.\n\naccel_d"
+      "ata\030\003 \002(\0132\032.robosar_fms.Accelerometer\022)\n"
+      "\tgyro_data\030\004 \002(\0132\026.robosar_fms.Gyroscope"
+      "\022.\n\ncount_data\030\005 \002(\0132\032.robosar_fms.Encod"
+      "er_count\022.\n\nspeed_data\030\006 \002(\0132\032.robosar_f"
+      "ms.Encoder_speed\022&\n\007ir_data\030\007 \002(\0132\025.robo"
+      "sar_fms.Infrared\022(\n\007us_data\030\010 \002(\0132\027.robo"
+      "sar_fms.Ultrasonic"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 882);
+      descriptor, 898);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "robosar.proto", &protobuf_RegisterTypes);
 }
@@ -2775,6 +2777,7 @@ void SensorData::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SensorData::kTimestampNsFieldNumber;
+const int SensorData::kSeqIdFieldNumber;
 const int SensorData::kAccelDataFieldNumber;
 const int SensorData::kGyroDataFieldNumber;
 const int SensorData::kCountDataFieldNumber;
@@ -2825,14 +2828,16 @@ SensorData::SensorData(const SensorData& from)
   } else {
     us_data_ = NULL;
   }
-  timestamp_ns_ = from.timestamp_ns_;
+  ::memcpy(&timestamp_ns_, &from.timestamp_ns_,
+    static_cast<size_t>(reinterpret_cast<char*>(&seq_id_) -
+    reinterpret_cast<char*>(&timestamp_ns_)) + sizeof(seq_id_));
   // @@protoc_insertion_point(copy_constructor:robosar_fms.SensorData)
 }
 
 void SensorData::SharedCtor() {
   ::memset(&accel_data_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&timestamp_ns_) -
-      reinterpret_cast<char*>(&accel_data_)) + sizeof(timestamp_ns_));
+      reinterpret_cast<char*>(&seq_id_) -
+      reinterpret_cast<char*>(&accel_data_)) + sizeof(seq_id_));
 }
 
 SensorData::~SensorData() {
@@ -2896,7 +2901,11 @@ void SensorData::Clear() {
       us_data_->Clear();
     }
   }
-  timestamp_ns_ = GOOGLE_ULONGLONG(0);
+  if (cached_has_bits & 192u) {
+    ::memset(&timestamp_ns_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&seq_id_) -
+        reinterpret_cast<char*>(&timestamp_ns_)) + sizeof(seq_id_));
+  }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -2925,10 +2934,24 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // required .robosar_fms.Accelerometer accel_data = 2;
+      // required uint32 seq_id = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+          set_has_seq_id();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &seq_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required .robosar_fms.Accelerometer accel_data = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_accel_data()));
         } else {
@@ -2937,10 +2960,10 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // required .robosar_fms.Gyroscope gyro_data = 3;
-      case 3: {
+      // required .robosar_fms.Gyroscope gyro_data = 4;
+      case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_gyro_data()));
         } else {
@@ -2949,10 +2972,10 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // required .robosar_fms.Encoder_count count_data = 4;
-      case 4: {
+      // required .robosar_fms.Encoder_count count_data = 5;
+      case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_count_data()));
         } else {
@@ -2961,10 +2984,10 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // required .robosar_fms.Encoder_speed speed_data = 5;
-      case 5: {
+      // required .robosar_fms.Encoder_speed speed_data = 6;
+      case 6: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_speed_data()));
         } else {
@@ -2973,10 +2996,10 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // required .robosar_fms.Infrared ir_data = 6;
-      case 6: {
+      // required .robosar_fms.Infrared ir_data = 7;
+      case 7: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_ir_data()));
         } else {
@@ -2985,10 +3008,10 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
-      // required .robosar_fms.Ultrasonic us_data = 7;
-      case 7: {
+      // required .robosar_fms.Ultrasonic us_data = 8;
+      case 8: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_us_data()));
         } else {
@@ -3029,40 +3052,45 @@ void SensorData::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->timestamp_ns(), output);
   }
 
-  // required .robosar_fms.Accelerometer accel_data = 2;
+  // required uint32 seq_id = 2;
+  if (cached_has_bits & 0x00000080u) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->seq_id(), output);
+  }
+
+  // required .robosar_fms.Accelerometer accel_data = 3;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_accel_data(), output);
+      3, this->_internal_accel_data(), output);
   }
 
-  // required .robosar_fms.Gyroscope gyro_data = 3;
+  // required .robosar_fms.Gyroscope gyro_data = 4;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_gyro_data(), output);
+      4, this->_internal_gyro_data(), output);
   }
 
-  // required .robosar_fms.Encoder_count count_data = 4;
+  // required .robosar_fms.Encoder_count count_data = 5;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_count_data(), output);
+      5, this->_internal_count_data(), output);
   }
 
-  // required .robosar_fms.Encoder_speed speed_data = 5;
+  // required .robosar_fms.Encoder_speed speed_data = 6;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_speed_data(), output);
+      6, this->_internal_speed_data(), output);
   }
 
-  // required .robosar_fms.Infrared ir_data = 6;
+  // required .robosar_fms.Infrared ir_data = 7;
   if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_ir_data(), output);
+      7, this->_internal_ir_data(), output);
   }
 
-  // required .robosar_fms.Ultrasonic us_data = 7;
+  // required .robosar_fms.Ultrasonic us_data = 8;
   if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_internal_us_data(), output);
+      8, this->_internal_us_data(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3085,46 +3113,51 @@ void SensorData::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->timestamp_ns(), target);
   }
 
-  // required .robosar_fms.Accelerometer accel_data = 2;
+  // required uint32 seq_id = 2;
+  if (cached_has_bits & 0x00000080u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->seq_id(), target);
+  }
+
+  // required .robosar_fms.Accelerometer accel_data = 3;
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_accel_data(), deterministic, target);
+        3, this->_internal_accel_data(), deterministic, target);
   }
 
-  // required .robosar_fms.Gyroscope gyro_data = 3;
+  // required .robosar_fms.Gyroscope gyro_data = 4;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_gyro_data(), deterministic, target);
+        4, this->_internal_gyro_data(), deterministic, target);
   }
 
-  // required .robosar_fms.Encoder_count count_data = 4;
+  // required .robosar_fms.Encoder_count count_data = 5;
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_count_data(), deterministic, target);
+        5, this->_internal_count_data(), deterministic, target);
   }
 
-  // required .robosar_fms.Encoder_speed speed_data = 5;
+  // required .robosar_fms.Encoder_speed speed_data = 6;
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_speed_data(), deterministic, target);
+        6, this->_internal_speed_data(), deterministic, target);
   }
 
-  // required .robosar_fms.Infrared ir_data = 6;
+  // required .robosar_fms.Infrared ir_data = 7;
   if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->_internal_ir_data(), deterministic, target);
+        7, this->_internal_ir_data(), deterministic, target);
   }
 
-  // required .robosar_fms.Ultrasonic us_data = 7;
+  // required .robosar_fms.Ultrasonic us_data = 8;
   if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, this->_internal_us_data(), deterministic, target);
+        8, this->_internal_us_data(), deterministic, target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3140,42 +3173,42 @@ size_t SensorData::RequiredFieldsByteSizeFallback() const {
   size_t total_size = 0;
 
   if (has_accel_data()) {
-    // required .robosar_fms.Accelerometer accel_data = 2;
+    // required .robosar_fms.Accelerometer accel_data = 3;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *accel_data_);
   }
 
   if (has_gyro_data()) {
-    // required .robosar_fms.Gyroscope gyro_data = 3;
+    // required .robosar_fms.Gyroscope gyro_data = 4;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *gyro_data_);
   }
 
   if (has_count_data()) {
-    // required .robosar_fms.Encoder_count count_data = 4;
+    // required .robosar_fms.Encoder_count count_data = 5;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *count_data_);
   }
 
   if (has_speed_data()) {
-    // required .robosar_fms.Encoder_speed speed_data = 5;
+    // required .robosar_fms.Encoder_speed speed_data = 6;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *speed_data_);
   }
 
   if (has_ir_data()) {
-    // required .robosar_fms.Infrared ir_data = 6;
+    // required .robosar_fms.Infrared ir_data = 7;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *ir_data_);
   }
 
   if (has_us_data()) {
-    // required .robosar_fms.Ultrasonic us_data = 7;
+    // required .robosar_fms.Ultrasonic us_data = 8;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *us_data_);
@@ -3186,6 +3219,13 @@ size_t SensorData::RequiredFieldsByteSizeFallback() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->timestamp_ns());
+  }
+
+  if (has_seq_id()) {
+    // required uint32 seq_id = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->seq_id());
   }
 
   return total_size;
@@ -3199,33 +3239,33 @@ size_t SensorData::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (((_has_bits_[0] & 0x0000007f) ^ 0x0000007f) == 0) {  // All required fields are present.
-    // required .robosar_fms.Accelerometer accel_data = 2;
+  if (((_has_bits_[0] & 0x000000ff) ^ 0x000000ff) == 0) {  // All required fields are present.
+    // required .robosar_fms.Accelerometer accel_data = 3;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *accel_data_);
 
-    // required .robosar_fms.Gyroscope gyro_data = 3;
+    // required .robosar_fms.Gyroscope gyro_data = 4;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *gyro_data_);
 
-    // required .robosar_fms.Encoder_count count_data = 4;
+    // required .robosar_fms.Encoder_count count_data = 5;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *count_data_);
 
-    // required .robosar_fms.Encoder_speed speed_data = 5;
+    // required .robosar_fms.Encoder_speed speed_data = 6;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *speed_data_);
 
-    // required .robosar_fms.Infrared ir_data = 6;
+    // required .robosar_fms.Infrared ir_data = 7;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *ir_data_);
 
-    // required .robosar_fms.Ultrasonic us_data = 7;
+    // required .robosar_fms.Ultrasonic us_data = 8;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *us_data_);
@@ -3234,6 +3274,11 @@ size_t SensorData::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->timestamp_ns());
+
+    // required uint32 seq_id = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->seq_id());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
@@ -3266,7 +3311,7 @@ void SensorData::MergeFrom(const SensorData& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 127u) {
+  if (cached_has_bits & 255u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_accel_data()->::robosar_fms::Accelerometer::MergeFrom(from.accel_data());
     }
@@ -3288,6 +3333,9 @@ void SensorData::MergeFrom(const SensorData& from) {
     if (cached_has_bits & 0x00000040u) {
       timestamp_ns_ = from.timestamp_ns_;
     }
+    if (cached_has_bits & 0x00000080u) {
+      seq_id_ = from.seq_id_;
+    }
     _has_bits_[0] |= cached_has_bits;
   }
 }
@@ -3307,7 +3355,7 @@ void SensorData::CopyFrom(const SensorData& from) {
 }
 
 bool SensorData::IsInitialized() const {
-  if ((_has_bits_[0] & 0x0000007f) != 0x0000007f) return false;
+  if ((_has_bits_[0] & 0x000000ff) != 0x000000ff) return false;
   if (has_accel_data()) {
     if (!this->accel_data_->IsInitialized()) return false;
   }
@@ -3342,6 +3390,7 @@ void SensorData::InternalSwap(SensorData* other) {
   swap(ir_data_, other->ir_data_);
   swap(us_data_, other->us_data_);
   swap(timestamp_ns_, other->timestamp_ns_);
+  swap(seq_id_, other->seq_id_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
