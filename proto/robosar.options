@@ -1,0 +1,2 @@
+# robosar.options
+robosar_fms.LaserScanner.values max_count:700 fixed_length:true

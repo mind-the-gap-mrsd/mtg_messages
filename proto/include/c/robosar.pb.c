@@ -24,7 +24,10 @@ PB_BIND(robosar_fms_Encoder_count, robosar_fms_Encoder_count, AUTO)
 PB_BIND(robosar_fms_Encoder_speed, robosar_fms_Encoder_speed, AUTO)
 
 
-PB_BIND(robosar_fms_SensorData, robosar_fms_SensorData, AUTO)
+PB_BIND(robosar_fms_LaserScanner, robosar_fms_LaserScanner, 4)
+
+
+PB_BIND(robosar_fms_SensorData, robosar_fms_SensorData, 4)
 
 
 
