@@ -2,6 +2,8 @@ syntax = "proto2";
 
 package robosar_fms;
 
+option cc_enable_arenas = true;
+
 message Accelerometer {
 
     required double acc_x = 1;

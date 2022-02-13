@@ -386,10 +386,10 @@ void AddDescriptorsImpl() {
       "ncoder_speed\022&\n\007ir_data\030\007 \002(\0132\025.robosar_"
       "fms.Infrared\022(\n\007us_data\030\010 \002(\0132\027.robosar_"
       "fms.Ultrasonic\022+\n\010lrf_data\030\t \002(\0132\031.robos"
-      "ar_fms.LaserScanner"
+      "ar_fms.LaserScannerB\003\370\001\001"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 979);
+      descriptor, 984);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "robosar.proto", &protobuf_RegisterTypes);
 }
@@ -424,6 +424,14 @@ Accelerometer::Accelerometer()
   SharedCtor();
   // @@protoc_insertion_point(constructor:robosar_fms.Accelerometer)
 }
+Accelerometer::Accelerometer(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_Accelerometer.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:robosar_fms.Accelerometer)
+}
 Accelerometer::Accelerometer(const Accelerometer& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
@@ -447,8 +455,15 @@ Accelerometer::~Accelerometer() {
 }
 
 void Accelerometer::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
 }
 
+void Accelerometer::ArenaDtor(void* object) {
+  Accelerometer* _this = reinterpret_cast< Accelerometer* >(object);
+  (void)_this;
+}
+void Accelerometer::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
 void Accelerometer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -717,6 +732,21 @@ bool Accelerometer::IsInitialized() const {
 
 void Accelerometer::Swap(Accelerometer* other) {
   if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    Accelerometer* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void Accelerometer::UnsafeArenaSwap(Accelerometer* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
   InternalSwap(other);
 }
 void Accelerometer::InternalSwap(Accelerometer* other) {
@@ -753,6 +783,14 @@ Ultrasonic::Ultrasonic()
   SharedCtor();
   // @@protoc_insertion_point(constructor:robosar_fms.Ultrasonic)
 }
+Ultrasonic::Ultrasonic(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_Ultrasonic.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:robosar_fms.Ultrasonic)
+}
 Ultrasonic::Ultrasonic(const Ultrasonic& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
@@ -776,8 +814,15 @@ Ultrasonic::~Ultrasonic() {
 }
 
 void Ultrasonic::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
 }
 
+void Ultrasonic::ArenaDtor(void* object) {
+  Ultrasonic* _this = reinterpret_cast< Ultrasonic* >(object);
+  (void)_this;
+}
+void Ultrasonic::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
 void Ultrasonic::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -1136,6 +1181,21 @@ bool Ultrasonic::IsInitialized() const {
 
 void Ultrasonic::Swap(Ultrasonic* other) {
   if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    Ultrasonic* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void Ultrasonic::UnsafeArenaSwap(Ultrasonic* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
   InternalSwap(other);
 }
 void Ultrasonic::InternalSwap(Ultrasonic* other) {
@@ -1181,6 +1241,14 @@ Infrared::Infrared()
   SharedCtor();
   // @@protoc_insertion_point(constructor:robosar_fms.Infrared)
 }
+Infrared::Infrared(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_Infrared.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:robosar_fms.Infrared)
+}
 Infrared::Infrared(const Infrared& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
@@ -1204,8 +1272,15 @@ Infrared::~Infrared() {
 }
 
 void Infrared::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
 }
 
+void Infrared::ArenaDtor(void* object) {
+  Infrared* _this = reinterpret_cast< Infrared* >(object);
+  (void)_this;
+}
+void Infrared::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
 void Infrared::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -1845,6 +1920,21 @@ bool Infrared::IsInitialized() const {
 
 void Infrared::Swap(Infrared* other) {
   if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    Infrared* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void Infrared::UnsafeArenaSwap(Infrared* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
   InternalSwap(other);
 }
 void Infrared::InternalSwap(Infrared* other) {
@@ -1888,6 +1978,14 @@ Gyroscope::Gyroscope()
   SharedCtor();
   // @@protoc_insertion_point(constructor:robosar_fms.Gyroscope)
 }
+Gyroscope::Gyroscope(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_Gyroscope.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:robosar_fms.Gyroscope)
+}
 Gyroscope::Gyroscope(const Gyroscope& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
@@ -1911,8 +2009,15 @@ Gyroscope::~Gyroscope() {
 }
 
 void Gyroscope::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
 }
 
+void Gyroscope::ArenaDtor(void* object) {
+  Gyroscope* _this = reinterpret_cast< Gyroscope* >(object);
+  (void)_this;
+}
+void Gyroscope::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
 void Gyroscope::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -2181,6 +2286,21 @@ bool Gyroscope::IsInitialized() const {
 
 void Gyroscope::Swap(Gyroscope* other) {
   if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    Gyroscope* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void Gyroscope::UnsafeArenaSwap(Gyroscope* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
   InternalSwap(other);
 }
 void Gyroscope::InternalSwap(Gyroscope* other) {
@@ -2214,6 +2334,14 @@ Encoder_count::Encoder_count()
   SharedCtor();
   // @@protoc_insertion_point(constructor:robosar_fms.Encoder_count)
 }
+Encoder_count::Encoder_count(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_Encoder_count.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:robosar_fms.Encoder_count)
+}
 Encoder_count::Encoder_count(const Encoder_count& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
@@ -2237,8 +2365,15 @@ Encoder_count::~Encoder_count() {
 }
 
 void Encoder_count::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
 }
 
+void Encoder_count::ArenaDtor(void* object) {
+  Encoder_count* _this = reinterpret_cast< Encoder_count* >(object);
+  (void)_this;
+}
+void Encoder_count::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
 void Encoder_count::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -2480,6 +2615,21 @@ bool Encoder_count::IsInitialized() const {
 
 void Encoder_count::Swap(Encoder_count* other) {
   if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    Encoder_count* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void Encoder_count::UnsafeArenaSwap(Encoder_count* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
   InternalSwap(other);
 }
 void Encoder_count::InternalSwap(Encoder_count* other) {
@@ -2512,6 +2662,14 @@ Encoder_speed::Encoder_speed()
   SharedCtor();
   // @@protoc_insertion_point(constructor:robosar_fms.Encoder_speed)
 }
+Encoder_speed::Encoder_speed(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_Encoder_speed.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:robosar_fms.Encoder_speed)
+}
 Encoder_speed::Encoder_speed(const Encoder_speed& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
@@ -2535,8 +2693,15 @@ Encoder_speed::~Encoder_speed() {
 }
 
 void Encoder_speed::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
 }
 
+void Encoder_speed::ArenaDtor(void* object) {
+  Encoder_speed* _this = reinterpret_cast< Encoder_speed* >(object);
+  (void)_this;
+}
+void Encoder_speed::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
 void Encoder_speed::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -2778,6 +2943,21 @@ bool Encoder_speed::IsInitialized() const {
 
 void Encoder_speed::Swap(Encoder_speed* other) {
   if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    Encoder_speed* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void Encoder_speed::UnsafeArenaSwap(Encoder_speed* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
   InternalSwap(other);
 }
 void Encoder_speed::InternalSwap(Encoder_speed* other) {
@@ -2809,6 +2989,15 @@ LaserScanner::LaserScanner()
   SharedCtor();
   // @@protoc_insertion_point(constructor:robosar_fms.LaserScanner)
 }
+LaserScanner::LaserScanner(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena),
+  values_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_LaserScanner.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:robosar_fms.LaserScanner)
+}
 LaserScanner::LaserScanner(const LaserScanner& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
@@ -2827,8 +3016,15 @@ LaserScanner::~LaserScanner() {
 }
 
 void LaserScanner::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
 }
 
+void LaserScanner::ArenaDtor(void* object) {
+  LaserScanner* _this = reinterpret_cast< LaserScanner* >(object);
+  (void)_this;
+}
+void LaserScanner::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
 void LaserScanner::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -3030,6 +3226,21 @@ bool LaserScanner::IsInitialized() const {
 
 void LaserScanner::Swap(LaserScanner* other) {
   if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    LaserScanner* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void LaserScanner::UnsafeArenaSwap(LaserScanner* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
   InternalSwap(other);
 }
 void LaserScanner::InternalSwap(LaserScanner* other) {
@@ -3063,6 +3274,97 @@ void SensorData::InitAsDefaultInstance() {
   ::robosar_fms::_SensorData_default_instance_._instance.get_mutable()->lrf_data_ = const_cast< ::robosar_fms::LaserScanner*>(
       ::robosar_fms::LaserScanner::internal_default_instance());
 }
+void SensorData::unsafe_arena_set_allocated_accel_data(
+    ::robosar_fms::Accelerometer* accel_data) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete accel_data_;
+  }
+  accel_data_ = accel_data;
+  if (accel_data) {
+    set_has_accel_data();
+  } else {
+    clear_has_accel_data();
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:robosar_fms.SensorData.accel_data)
+}
+void SensorData::unsafe_arena_set_allocated_gyro_data(
+    ::robosar_fms::Gyroscope* gyro_data) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete gyro_data_;
+  }
+  gyro_data_ = gyro_data;
+  if (gyro_data) {
+    set_has_gyro_data();
+  } else {
+    clear_has_gyro_data();
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:robosar_fms.SensorData.gyro_data)
+}
+void SensorData::unsafe_arena_set_allocated_count_data(
+    ::robosar_fms::Encoder_count* count_data) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete count_data_;
+  }
+  count_data_ = count_data;
+  if (count_data) {
+    set_has_count_data();
+  } else {
+    clear_has_count_data();
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:robosar_fms.SensorData.count_data)
+}
+void SensorData::unsafe_arena_set_allocated_speed_data(
+    ::robosar_fms::Encoder_speed* speed_data) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete speed_data_;
+  }
+  speed_data_ = speed_data;
+  if (speed_data) {
+    set_has_speed_data();
+  } else {
+    clear_has_speed_data();
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:robosar_fms.SensorData.speed_data)
+}
+void SensorData::unsafe_arena_set_allocated_ir_data(
+    ::robosar_fms::Infrared* ir_data) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete ir_data_;
+  }
+  ir_data_ = ir_data;
+  if (ir_data) {
+    set_has_ir_data();
+  } else {
+    clear_has_ir_data();
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:robosar_fms.SensorData.ir_data)
+}
+void SensorData::unsafe_arena_set_allocated_us_data(
+    ::robosar_fms::Ultrasonic* us_data) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete us_data_;
+  }
+  us_data_ = us_data;
+  if (us_data) {
+    set_has_us_data();
+  } else {
+    clear_has_us_data();
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:robosar_fms.SensorData.us_data)
+}
+void SensorData::unsafe_arena_set_allocated_lrf_data(
+    ::robosar_fms::LaserScanner* lrf_data) {
+  if (GetArenaNoVirtual() == NULL) {
+    delete lrf_data_;
+  }
+  lrf_data_ = lrf_data;
+  if (lrf_data) {
+    set_has_lrf_data();
+  } else {
+    clear_has_lrf_data();
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:robosar_fms.SensorData.lrf_data)
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SensorData::kTimestampNsFieldNumber;
 const int SensorData::kSeqIdFieldNumber;
@@ -3081,6 +3383,14 @@ SensorData::SensorData()
       &protobuf_robosar_2eproto::scc_info_SensorData.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:robosar_fms.SensorData)
+}
+SensorData::SensorData(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_SensorData.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:robosar_fms.SensorData)
 }
 SensorData::SensorData(const SensorData& from)
   : ::google::protobuf::Message(),
@@ -3140,6 +3450,7 @@ SensorData::~SensorData() {
 }
 
 void SensorData::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
   if (this != internal_default_instance()) delete accel_data_;
   if (this != internal_default_instance()) delete gyro_data_;
   if (this != internal_default_instance()) delete count_data_;
@@ -3149,6 +3460,12 @@ void SensorData::SharedDtor() {
   if (this != internal_default_instance()) delete lrf_data_;
 }
 
+void SensorData::ArenaDtor(void* object) {
+  SensorData* _this = reinterpret_cast< SensorData* >(object);
+  (void)_this;
+}
+void SensorData::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
 void SensorData::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -3715,6 +4032,21 @@ bool SensorData::IsInitialized() const {
 
 void SensorData::Swap(SensorData* other) {
   if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    SensorData* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void SensorData::UnsafeArenaSwap(SensorData* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
   InternalSwap(other);
 }
 void SensorData::InternalSwap(SensorData* other) {
@@ -3743,28 +4075,28 @@ void SensorData::InternalSwap(SensorData* other) {
 namespace google {
 namespace protobuf {
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::Accelerometer* Arena::CreateMaybeMessage< ::robosar_fms::Accelerometer >(Arena* arena) {
-  return Arena::CreateInternal< ::robosar_fms::Accelerometer >(arena);
+  return Arena::CreateMessageInternal< ::robosar_fms::Accelerometer >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::Ultrasonic* Arena::CreateMaybeMessage< ::robosar_fms::Ultrasonic >(Arena* arena) {
-  return Arena::CreateInternal< ::robosar_fms::Ultrasonic >(arena);
+  return Arena::CreateMessageInternal< ::robosar_fms::Ultrasonic >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::Infrared* Arena::CreateMaybeMessage< ::robosar_fms::Infrared >(Arena* arena) {
-  return Arena::CreateInternal< ::robosar_fms::Infrared >(arena);
+  return Arena::CreateMessageInternal< ::robosar_fms::Infrared >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::Gyroscope* Arena::CreateMaybeMessage< ::robosar_fms::Gyroscope >(Arena* arena) {
-  return Arena::CreateInternal< ::robosar_fms::Gyroscope >(arena);
+  return Arena::CreateMessageInternal< ::robosar_fms::Gyroscope >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::Encoder_count* Arena::CreateMaybeMessage< ::robosar_fms::Encoder_count >(Arena* arena) {
-  return Arena::CreateInternal< ::robosar_fms::Encoder_count >(arena);
+  return Arena::CreateMessageInternal< ::robosar_fms::Encoder_count >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::Encoder_speed* Arena::CreateMaybeMessage< ::robosar_fms::Encoder_speed >(Arena* arena) {
-  return Arena::CreateInternal< ::robosar_fms::Encoder_speed >(arena);
+  return Arena::CreateMessageInternal< ::robosar_fms::Encoder_speed >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::LaserScanner* Arena::CreateMaybeMessage< ::robosar_fms::LaserScanner >(Arena* arena) {
-  return Arena::CreateInternal< ::robosar_fms::LaserScanner >(arena);
+  return Arena::CreateMessageInternal< ::robosar_fms::LaserScanner >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::SensorData* Arena::CreateMaybeMessage< ::robosar_fms::SensorData >(Arena* arena) {
-  return Arena::CreateInternal< ::robosar_fms::SensorData >(arena);
+  return Arena::CreateMessageInternal< ::robosar_fms::SensorData >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

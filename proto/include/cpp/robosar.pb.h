@@ -120,6 +120,12 @@ class Accelerometer : public ::google::protobuf::Message /* @@protoc_insertion_p
     return _internal_metadata_.mutable_unknown_fields();
   }
 
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Accelerometer& default_instance();
 
@@ -131,6 +137,7 @@ class Accelerometer : public ::google::protobuf::Message /* @@protoc_insertion_p
   static constexpr int kIndexInFileMessages =
     0;
 
+  void UnsafeArenaSwap(Accelerometer* other);
   void Swap(Accelerometer* other);
   friend void swap(Accelerometer& a, Accelerometer& b) {
     a.Swap(&b);
@@ -166,12 +173,17 @@ class Accelerometer : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SharedDtor();
   void SetCachedSize(int size) const final;
   void InternalSwap(Accelerometer* other);
+  protected:
+  explicit Accelerometer(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
@@ -215,6 +227,9 @@ class Accelerometer : public ::google::protobuf::Message /* @@protoc_insertion_p
   size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   double acc_x_;
@@ -257,6 +272,12 @@ class Ultrasonic : public ::google::protobuf::Message /* @@protoc_insertion_poin
     return _internal_metadata_.mutable_unknown_fields();
   }
 
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Ultrasonic& default_instance();
 
@@ -268,6 +289,7 @@ class Ultrasonic : public ::google::protobuf::Message /* @@protoc_insertion_poin
   static constexpr int kIndexInFileMessages =
     1;
 
+  void UnsafeArenaSwap(Ultrasonic* other);
   void Swap(Ultrasonic* other);
   friend void swap(Ultrasonic& a, Ultrasonic& b) {
     a.Swap(&b);
@@ -303,12 +325,17 @@ class Ultrasonic : public ::google::protobuf::Message /* @@protoc_insertion_poin
   void SharedDtor();
   void SetCachedSize(int size) const final;
   void InternalSwap(Ultrasonic* other);
+  protected:
+  explicit Ultrasonic(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
@@ -370,6 +397,9 @@ class Ultrasonic : public ::google::protobuf::Message /* @@protoc_insertion_poin
   size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 sensor_a_;
@@ -414,6 +444,12 @@ class Infrared : public ::google::protobuf::Message /* @@protoc_insertion_point(
     return _internal_metadata_.mutable_unknown_fields();
   }
 
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Infrared& default_instance();
 
@@ -425,6 +461,7 @@ class Infrared : public ::google::protobuf::Message /* @@protoc_insertion_point(
   static constexpr int kIndexInFileMessages =
     2;
 
+  void UnsafeArenaSwap(Infrared* other);
   void Swap(Infrared* other);
   friend void swap(Infrared& a, Infrared& b) {
     a.Swap(&b);
@@ -460,12 +497,17 @@ class Infrared : public ::google::protobuf::Message /* @@protoc_insertion_point(
   void SharedDtor();
   void SetCachedSize(int size) const final;
   void InternalSwap(Infrared* other);
+  protected:
+  explicit Infrared(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
@@ -590,6 +632,9 @@ class Infrared : public ::google::protobuf::Message /* @@protoc_insertion_point(
   size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint32 sensor_a_;
@@ -641,6 +686,12 @@ class Gyroscope : public ::google::protobuf::Message /* @@protoc_insertion_point
     return _internal_metadata_.mutable_unknown_fields();
   }
 
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Gyroscope& default_instance();
 
@@ -652,6 +703,7 @@ class Gyroscope : public ::google::protobuf::Message /* @@protoc_insertion_point
   static constexpr int kIndexInFileMessages =
     3;
 
+  void UnsafeArenaSwap(Gyroscope* other);
   void Swap(Gyroscope* other);
   friend void swap(Gyroscope& a, Gyroscope& b) {
     a.Swap(&b);
@@ -687,12 +739,17 @@ class Gyroscope : public ::google::protobuf::Message /* @@protoc_insertion_point
   void SharedDtor();
   void SetCachedSize(int size) const final;
   void InternalSwap(Gyroscope* other);
+  protected:
+  explicit Gyroscope(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
@@ -736,6 +793,9 @@ class Gyroscope : public ::google::protobuf::Message /* @@protoc_insertion_point
   size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   double gyro_x_;
@@ -778,6 +838,12 @@ class Encoder_count : public ::google::protobuf::Message /* @@protoc_insertion_p
     return _internal_metadata_.mutable_unknown_fields();
   }
 
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Encoder_count& default_instance();
 
@@ -789,6 +855,7 @@ class Encoder_count : public ::google::protobuf::Message /* @@protoc_insertion_p
   static constexpr int kIndexInFileMessages =
     4;
 
+  void UnsafeArenaSwap(Encoder_count* other);
   void Swap(Encoder_count* other);
   friend void swap(Encoder_count& a, Encoder_count& b) {
     a.Swap(&b);
@@ -824,12 +891,17 @@ class Encoder_count : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SharedDtor();
   void SetCachedSize(int size) const final;
   void InternalSwap(Encoder_count* other);
+  protected:
+  explicit Encoder_count(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
@@ -864,6 +936,9 @@ class Encoder_count : public ::google::protobuf::Message /* @@protoc_insertion_p
   size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint64 left_;
@@ -905,6 +980,12 @@ class Encoder_speed : public ::google::protobuf::Message /* @@protoc_insertion_p
     return _internal_metadata_.mutable_unknown_fields();
   }
 
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Encoder_speed& default_instance();
 
@@ -916,6 +997,7 @@ class Encoder_speed : public ::google::protobuf::Message /* @@protoc_insertion_p
   static constexpr int kIndexInFileMessages =
     5;
 
+  void UnsafeArenaSwap(Encoder_speed* other);
   void Swap(Encoder_speed* other);
   friend void swap(Encoder_speed& a, Encoder_speed& b) {
     a.Swap(&b);
@@ -951,12 +1033,17 @@ class Encoder_speed : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SharedDtor();
   void SetCachedSize(int size) const final;
   void InternalSwap(Encoder_speed* other);
+  protected:
+  explicit Encoder_speed(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
@@ -991,6 +1078,9 @@ class Encoder_speed : public ::google::protobuf::Message /* @@protoc_insertion_p
   size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::uint64 left_;
@@ -1032,6 +1122,12 @@ class LaserScanner : public ::google::protobuf::Message /* @@protoc_insertion_po
     return _internal_metadata_.mutable_unknown_fields();
   }
 
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
   static const ::google::protobuf::Descriptor* descriptor();
   static const LaserScanner& default_instance();
 
@@ -1043,6 +1139,7 @@ class LaserScanner : public ::google::protobuf::Message /* @@protoc_insertion_po
   static constexpr int kIndexInFileMessages =
     6;
 
+  void UnsafeArenaSwap(LaserScanner* other);
   void Swap(LaserScanner* other);
   friend void swap(LaserScanner& a, LaserScanner& b) {
     a.Swap(&b);
@@ -1078,12 +1175,17 @@ class LaserScanner : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SharedDtor();
   void SetCachedSize(int size) const final;
   void InternalSwap(LaserScanner* other);
+  protected:
+  explicit LaserScanner(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
@@ -1109,6 +1211,9 @@ class LaserScanner : public ::google::protobuf::Message /* @@protoc_insertion_po
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::RepeatedField< ::google::protobuf::uint64 > values_;
@@ -1150,6 +1255,12 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
     return _internal_metadata_.mutable_unknown_fields();
   }
 
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
   static const ::google::protobuf::Descriptor* descriptor();
   static const SensorData& default_instance();
 
@@ -1161,6 +1272,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   static constexpr int kIndexInFileMessages =
     7;
 
+  void UnsafeArenaSwap(SensorData* other);
   void Swap(SensorData* other);
   friend void swap(SensorData& a, SensorData& b) {
     a.Swap(&b);
@@ -1196,12 +1308,17 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   void SharedDtor();
   void SetCachedSize(int size) const final;
   void InternalSwap(SensorData* other);
+  protected:
+  explicit SensorData(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
@@ -1222,6 +1339,9 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Accelerometer* release_accel_data();
   ::robosar_fms::Accelerometer* mutable_accel_data();
   void set_allocated_accel_data(::robosar_fms::Accelerometer* accel_data);
+  void unsafe_arena_set_allocated_accel_data(
+      ::robosar_fms::Accelerometer* accel_data);
+  ::robosar_fms::Accelerometer* unsafe_arena_release_accel_data();
 
   // required .robosar_fms.Gyroscope gyro_data = 4;
   bool has_gyro_data() const;
@@ -1234,6 +1354,9 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Gyroscope* release_gyro_data();
   ::robosar_fms::Gyroscope* mutable_gyro_data();
   void set_allocated_gyro_data(::robosar_fms::Gyroscope* gyro_data);
+  void unsafe_arena_set_allocated_gyro_data(
+      ::robosar_fms::Gyroscope* gyro_data);
+  ::robosar_fms::Gyroscope* unsafe_arena_release_gyro_data();
 
   // required .robosar_fms.Encoder_count count_data = 5;
   bool has_count_data() const;
@@ -1246,6 +1369,9 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Encoder_count* release_count_data();
   ::robosar_fms::Encoder_count* mutable_count_data();
   void set_allocated_count_data(::robosar_fms::Encoder_count* count_data);
+  void unsafe_arena_set_allocated_count_data(
+      ::robosar_fms::Encoder_count* count_data);
+  ::robosar_fms::Encoder_count* unsafe_arena_release_count_data();
 
   // required .robosar_fms.Encoder_speed speed_data = 6;
   bool has_speed_data() const;
@@ -1258,6 +1384,9 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Encoder_speed* release_speed_data();
   ::robosar_fms::Encoder_speed* mutable_speed_data();
   void set_allocated_speed_data(::robosar_fms::Encoder_speed* speed_data);
+  void unsafe_arena_set_allocated_speed_data(
+      ::robosar_fms::Encoder_speed* speed_data);
+  ::robosar_fms::Encoder_speed* unsafe_arena_release_speed_data();
 
   // required .robosar_fms.Infrared ir_data = 7;
   bool has_ir_data() const;
@@ -1270,6 +1399,9 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Infrared* release_ir_data();
   ::robosar_fms::Infrared* mutable_ir_data();
   void set_allocated_ir_data(::robosar_fms::Infrared* ir_data);
+  void unsafe_arena_set_allocated_ir_data(
+      ::robosar_fms::Infrared* ir_data);
+  ::robosar_fms::Infrared* unsafe_arena_release_ir_data();
 
   // required .robosar_fms.Ultrasonic us_data = 8;
   bool has_us_data() const;
@@ -1282,6 +1414,9 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Ultrasonic* release_us_data();
   ::robosar_fms::Ultrasonic* mutable_us_data();
   void set_allocated_us_data(::robosar_fms::Ultrasonic* us_data);
+  void unsafe_arena_set_allocated_us_data(
+      ::robosar_fms::Ultrasonic* us_data);
+  ::robosar_fms::Ultrasonic* unsafe_arena_release_us_data();
 
   // required .robosar_fms.LaserScanner lrf_data = 9;
   bool has_lrf_data() const;
@@ -1294,6 +1429,9 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::LaserScanner* release_lrf_data();
   ::robosar_fms::LaserScanner* mutable_lrf_data();
   void set_allocated_lrf_data(::robosar_fms::LaserScanner* lrf_data);
+  void unsafe_arena_set_allocated_lrf_data(
+      ::robosar_fms::LaserScanner* lrf_data);
+  ::robosar_fms::LaserScanner* unsafe_arena_release_lrf_data();
 
   // required uint64 timestamp_ns = 1;
   bool has_timestamp_ns() const;
@@ -1334,6 +1472,9 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::robosar_fms::Accelerometer* accel_data_;
@@ -2139,6 +2280,16 @@ inline ::robosar_fms::Accelerometer* SensorData::release_accel_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.accel_data)
   clear_has_accel_data();
   ::robosar_fms::Accelerometer* temp = accel_data_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  accel_data_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::Accelerometer* SensorData::unsafe_arena_release_accel_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.SensorData.accel_data)
+  clear_has_accel_data();
+  ::robosar_fms::Accelerometer* temp = accel_data_;
   accel_data_ = NULL;
   return temp;
 }
@@ -2157,7 +2308,8 @@ inline void SensorData::set_allocated_accel_data(::robosar_fms::Accelerometer* a
     delete accel_data_;
   }
   if (accel_data) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(accel_data);
     if (message_arena != submessage_arena) {
       accel_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, accel_data, submessage_arena);
@@ -2197,6 +2349,16 @@ inline ::robosar_fms::Gyroscope* SensorData::release_gyro_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.gyro_data)
   clear_has_gyro_data();
   ::robosar_fms::Gyroscope* temp = gyro_data_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  gyro_data_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::Gyroscope* SensorData::unsafe_arena_release_gyro_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.SensorData.gyro_data)
+  clear_has_gyro_data();
+  ::robosar_fms::Gyroscope* temp = gyro_data_;
   gyro_data_ = NULL;
   return temp;
 }
@@ -2215,7 +2377,8 @@ inline void SensorData::set_allocated_gyro_data(::robosar_fms::Gyroscope* gyro_d
     delete gyro_data_;
   }
   if (gyro_data) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(gyro_data);
     if (message_arena != submessage_arena) {
       gyro_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, gyro_data, submessage_arena);
@@ -2255,6 +2418,16 @@ inline ::robosar_fms::Encoder_count* SensorData::release_count_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.count_data)
   clear_has_count_data();
   ::robosar_fms::Encoder_count* temp = count_data_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  count_data_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::Encoder_count* SensorData::unsafe_arena_release_count_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.SensorData.count_data)
+  clear_has_count_data();
+  ::robosar_fms::Encoder_count* temp = count_data_;
   count_data_ = NULL;
   return temp;
 }
@@ -2273,7 +2446,8 @@ inline void SensorData::set_allocated_count_data(::robosar_fms::Encoder_count* c
     delete count_data_;
   }
   if (count_data) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(count_data);
     if (message_arena != submessage_arena) {
       count_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, count_data, submessage_arena);
@@ -2313,6 +2487,16 @@ inline ::robosar_fms::Encoder_speed* SensorData::release_speed_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.speed_data)
   clear_has_speed_data();
   ::robosar_fms::Encoder_speed* temp = speed_data_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  speed_data_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::Encoder_speed* SensorData::unsafe_arena_release_speed_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.SensorData.speed_data)
+  clear_has_speed_data();
+  ::robosar_fms::Encoder_speed* temp = speed_data_;
   speed_data_ = NULL;
   return temp;
 }
@@ -2331,7 +2515,8 @@ inline void SensorData::set_allocated_speed_data(::robosar_fms::Encoder_speed* s
     delete speed_data_;
   }
   if (speed_data) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(speed_data);
     if (message_arena != submessage_arena) {
       speed_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, speed_data, submessage_arena);
@@ -2371,6 +2556,16 @@ inline ::robosar_fms::Infrared* SensorData::release_ir_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.ir_data)
   clear_has_ir_data();
   ::robosar_fms::Infrared* temp = ir_data_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  ir_data_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::Infrared* SensorData::unsafe_arena_release_ir_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.SensorData.ir_data)
+  clear_has_ir_data();
+  ::robosar_fms::Infrared* temp = ir_data_;
   ir_data_ = NULL;
   return temp;
 }
@@ -2389,7 +2584,8 @@ inline void SensorData::set_allocated_ir_data(::robosar_fms::Infrared* ir_data) 
     delete ir_data_;
   }
   if (ir_data) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(ir_data);
     if (message_arena != submessage_arena) {
       ir_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, ir_data, submessage_arena);
@@ -2429,6 +2625,16 @@ inline ::robosar_fms::Ultrasonic* SensorData::release_us_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.us_data)
   clear_has_us_data();
   ::robosar_fms::Ultrasonic* temp = us_data_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  us_data_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::Ultrasonic* SensorData::unsafe_arena_release_us_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.SensorData.us_data)
+  clear_has_us_data();
+  ::robosar_fms::Ultrasonic* temp = us_data_;
   us_data_ = NULL;
   return temp;
 }
@@ -2447,7 +2653,8 @@ inline void SensorData::set_allocated_us_data(::robosar_fms::Ultrasonic* us_data
     delete us_data_;
   }
   if (us_data) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(us_data);
     if (message_arena != submessage_arena) {
       us_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, us_data, submessage_arena);
@@ -2487,6 +2694,16 @@ inline ::robosar_fms::LaserScanner* SensorData::release_lrf_data() {
   // @@protoc_insertion_point(field_release:robosar_fms.SensorData.lrf_data)
   clear_has_lrf_data();
   ::robosar_fms::LaserScanner* temp = lrf_data_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  lrf_data_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::LaserScanner* SensorData::unsafe_arena_release_lrf_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.SensorData.lrf_data)
+  clear_has_lrf_data();
+  ::robosar_fms::LaserScanner* temp = lrf_data_;
   lrf_data_ = NULL;
   return temp;
 }
@@ -2505,7 +2722,8 @@ inline void SensorData::set_allocated_lrf_data(::robosar_fms::LaserScanner* lrf_
     delete lrf_data_;
   }
   if (lrf_data) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(lrf_data);
     if (message_arena != submessage_arena) {
       lrf_data = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, lrf_data, submessage_arena);
