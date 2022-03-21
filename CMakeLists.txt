@@ -10,6 +10,8 @@ project(robosar_messages)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
+  message_generation
+  nav_msgs
   std_msgs
 )
 
@@ -54,11 +56,10 @@ find_package(Protobuf REQUIRED)
 # )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  taskgen_getwaypts.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -68,10 +69,11 @@ find_package(Protobuf REQUIRED)
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  nav_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -105,7 +107,7 @@ find_package(Protobuf REQUIRED)
 catkin_package(
   INCLUDE_DIRS proto/include/cpp
   LIBRARIES robosar_messages
-  CATKIN_DEPENDS roscpp rospy std_msgs
+  CATKIN_DEPENDS roscpp rospy std_msgs nav_msgs message_runtime
   DEPENDS system_lib
 )
 
@@ -182,11 +184,11 @@ target_link_libraries(${PROJECT_NAME} ${Protobuf_LIBRARIES})
 # )
 
 ## Mark cpp header files for installation
-# install(DIRECTORY proto/include/cpp/
-#   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-#   FILES_MATCHING PATTERN "*.h"
-#   PATTERN ".svn" EXCLUDE
-# )
+install(DIRECTORY include/${PROJECT_NAME}/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+  FILES_MATCHING PATTERN "*.h"
+  PATTERN ".svn" EXCLUDE 
+)
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 # install(FILES
