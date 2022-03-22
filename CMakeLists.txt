@@ -59,6 +59,7 @@ find_package(Protobuf REQUIRED)
 add_service_files(
   FILES
   agent_status.srv
+  taskgen_getwaypts.srv
 )
 
 ## Generate actions in the 'action' folder
