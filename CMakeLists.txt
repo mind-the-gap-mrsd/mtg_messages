@@ -58,6 +58,7 @@ find_package(Protobuf REQUIRED)
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
+  agent_status.srv
   taskgen_getwaypts.srv
 )
 
