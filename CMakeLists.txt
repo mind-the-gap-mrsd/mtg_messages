@@ -59,11 +59,8 @@ add_service_files(
   FILES
   agent_status.srv
   taskgen_getwaypts.srv
-<<<<<<< HEAD
   auto_taskgen_getwaypts.srv
-=======
   sys_odom_reset.srv
->>>>>>> main
 )
 
 ## Generate actions in the 'action' folder
