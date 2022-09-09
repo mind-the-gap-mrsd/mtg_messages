@@ -22,6 +22,7 @@
 namespace protobuf_robosar_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_robosar_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Accelerometer;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_robosar_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AgentStatus;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_robosar_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AprilTagDetection;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_robosar_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Encoder_count;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_robosar_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Encoder_speed;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_robosar_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Gyroscope;
@@ -70,6 +71,11 @@ class AgentStatusDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<AgentStatus>
       _instance;
 } _AgentStatus_default_instance_;
+class AprilTagDetectionDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AprilTagDetection>
+      _instance;
+} _AprilTagDetection_default_instance_;
 class SensorDataDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<SensorData>
@@ -189,6 +195,20 @@ static void InitDefaultsAgentStatus() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_AgentStatus =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAgentStatus}, {}};
 
+static void InitDefaultsAprilTagDetection() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::robosar_fms::_AprilTagDetection_default_instance_;
+    new (ptr) ::robosar_fms::AprilTagDetection();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::robosar_fms::AprilTagDetection::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_AprilTagDetection =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAprilTagDetection}, {}};
+
 static void InitDefaultsSensorData() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -200,8 +220,8 @@ static void InitDefaultsSensorData() {
   ::robosar_fms::SensorData::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<8> scc_info_SensorData =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 8, InitDefaultsSensorData}, {
+::google::protobuf::internal::SCCInfo<9> scc_info_SensorData =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 9, InitDefaultsSensorData}, {
       &protobuf_robosar_2eproto::scc_info_Accelerometer.base,
       &protobuf_robosar_2eproto::scc_info_Gyroscope.base,
       &protobuf_robosar_2eproto::scc_info_Encoder_count.base,
@@ -209,7 +229,8 @@ static void InitDefaultsSensorData() {
       &protobuf_robosar_2eproto::scc_info_Infrared.base,
       &protobuf_robosar_2eproto::scc_info_Ultrasonic.base,
       &protobuf_robosar_2eproto::scc_info_LaserScanner.base,
-      &protobuf_robosar_2eproto::scc_info_AgentStatus.base,}};
+      &protobuf_robosar_2eproto::scc_info_AgentStatus.base,
+      &protobuf_robosar_2eproto::scc_info_AprilTagDetection.base,}};
 
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_Accelerometer.base);
@@ -220,10 +241,11 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_Encoder_speed.base);
   ::google::protobuf::internal::InitSCC(&scc_info_LaserScanner.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AgentStatus.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AprilTagDetection.base);
   ::google::protobuf::internal::InitSCC(&scc_info_SensorData.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[9];
+::google::protobuf::Metadata file_level_metadata[10];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::Accelerometer, _has_bits_),
@@ -324,6 +346,13 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::AgentStatus, battery_level_),
   0,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::AprilTagDetection, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::AprilTagDetection, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::AprilTagDetection, tag_id_),
+  0,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -339,6 +368,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, us_data_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, lrf_data_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, agent_status_data_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::robosar_fms::SensorData, april_detection_),
   8,
   9,
   0,
@@ -349,6 +379,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   5,
   6,
   7,
+  ~0u,
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 8, sizeof(::robosar_fms::Accelerometer)},
@@ -359,7 +390,8 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 75, 82, sizeof(::robosar_fms::Encoder_speed)},
   { 84, 90, sizeof(::robosar_fms::LaserScanner)},
   { 91, 97, sizeof(::robosar_fms::AgentStatus)},
-  { 98, 113, sizeof(::robosar_fms::SensorData)},
+  { 98, 104, sizeof(::robosar_fms::AprilTagDetection)},
+  { 105, 121, sizeof(::robosar_fms::SensorData)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -371,6 +403,7 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::robosar_fms::_Encoder_speed_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::robosar_fms::_LaserScanner_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::robosar_fms::_AgentStatus_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::robosar_fms::_AprilTagDetection_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::robosar_fms::_SensorData_default_instance_),
 };
 
@@ -389,7 +422,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 9);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 10);
 }
 
 void AddDescriptorsImpl() {
@@ -411,20 +444,23 @@ void AddDescriptorsImpl() {
       "ight\030\002 \002(\004\",\n\rEncoder_speed\022\014\n\004left\030\001 \002("
       "\004\022\r\n\005right\030\002 \002(\004\"\"\n\014LaserScanner\022\022\n\006valu"
       "es\030\001 \003(\004B\002\020\001\"$\n\013AgentStatus\022\025\n\rbattery_l"
-      "evel\030\001 \002(\004\"\241\003\n\nSensorData\022\024\n\014timestamp_n"
-      "s\030\001 \002(\004\022\016\n\006seq_id\030\002 \002(\r\022.\n\naccel_data\030\003 "
-      "\002(\0132\032.robosar_fms.Accelerometer\022)\n\tgyro_"
-      "data\030\004 \002(\0132\026.robosar_fms.Gyroscope\022.\n\nco"
-      "unt_data\030\005 \002(\0132\032.robosar_fms.Encoder_cou"
-      "nt\022.\n\nspeed_data\030\006 \002(\0132\032.robosar_fms.Enc"
-      "oder_speed\022&\n\007ir_data\030\007 \002(\0132\025.robosar_fm"
-      "s.Infrared\022(\n\007us_data\030\010 \002(\0132\027.robosar_fm"
-      "s.Ultrasonic\022+\n\010lrf_data\030\t \002(\0132\031.robosar"
-      "_fms.LaserScanner\0223\n\021agent_status_data\030\n"
-      " \002(\0132\030.robosar_fms.AgentStatusB\003\370\001\001"
+      "evel\030\001 \002(\004\"#\n\021AprilTagDetection\022\016\n\006tag_i"
+      "d\030\001 \002(\r\"\332\003\n\nSensorData\022\024\n\014timestamp_ns\030\001"
+      " \002(\004\022\016\n\006seq_id\030\002 \002(\r\022.\n\naccel_data\030\003 \002(\013"
+      "2\032.robosar_fms.Accelerometer\022)\n\tgyro_dat"
+      "a\030\004 \002(\0132\026.robosar_fms.Gyroscope\022.\n\ncount"
+      "_data\030\005 \002(\0132\032.robosar_fms.Encoder_count\022"
+      ".\n\nspeed_data\030\006 \002(\0132\032.robosar_fms.Encode"
+      "r_speed\022&\n\007ir_data\030\007 \002(\0132\025.robosar_fms.I"
+      "nfrared\022(\n\007us_data\030\010 \002(\0132\027.robosar_fms.U"
+      "ltrasonic\022+\n\010lrf_data\030\t \002(\0132\031.robosar_fm"
+      "s.LaserScanner\0223\n\021agent_status_data\030\n \002("
+      "\0132\030.robosar_fms.AgentStatus\0227\n\017april_det"
+      "ection\030\013 \003(\0132\036.robosar_fms.AprilTagDetec"
+      "tionB\003\370\001\001"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1075);
+      descriptor, 1169);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "robosar.proto", &protobuf_RegisterTypes);
 }
@@ -3551,6 +3587,264 @@ void AgentStatus::InternalSwap(AgentStatus* other) {
 
 // ===================================================================
 
+void AprilTagDetection::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AprilTagDetection::kTagIdFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AprilTagDetection::AprilTagDetection()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_robosar_2eproto::scc_info_AprilTagDetection.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:robosar_fms.AprilTagDetection)
+}
+AprilTagDetection::AprilTagDetection(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_AprilTagDetection.base);
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:robosar_fms.AprilTagDetection)
+}
+AprilTagDetection::AprilTagDetection(const AprilTagDetection& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  tag_id_ = from.tag_id_;
+  // @@protoc_insertion_point(copy_constructor:robosar_fms.AprilTagDetection)
+}
+
+void AprilTagDetection::SharedCtor() {
+  tag_id_ = 0u;
+}
+
+AprilTagDetection::~AprilTagDetection() {
+  // @@protoc_insertion_point(destructor:robosar_fms.AprilTagDetection)
+  SharedDtor();
+}
+
+void AprilTagDetection::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+}
+
+void AprilTagDetection::ArenaDtor(void* object) {
+  AprilTagDetection* _this = reinterpret_cast< AprilTagDetection* >(object);
+  (void)_this;
+}
+void AprilTagDetection::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void AprilTagDetection::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AprilTagDetection::descriptor() {
+  ::protobuf_robosar_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_robosar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AprilTagDetection& AprilTagDetection::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_AprilTagDetection.base);
+  return *internal_default_instance();
+}
+
+
+void AprilTagDetection::Clear() {
+// @@protoc_insertion_point(message_clear_start:robosar_fms.AprilTagDetection)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  tag_id_ = 0u;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool AprilTagDetection::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:robosar_fms.AprilTagDetection)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required uint32 tag_id = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+          set_has_tag_id();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &tag_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:robosar_fms.AprilTagDetection)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:robosar_fms.AprilTagDetection)
+  return false;
+#undef DO_
+}
+
+void AprilTagDetection::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:robosar_fms.AprilTagDetection)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required uint32 tag_id = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->tag_id(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:robosar_fms.AprilTagDetection)
+}
+
+::google::protobuf::uint8* AprilTagDetection::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:robosar_fms.AprilTagDetection)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required uint32 tag_id = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->tag_id(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:robosar_fms.AprilTagDetection)
+  return target;
+}
+
+size_t AprilTagDetection::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:robosar_fms.AprilTagDetection)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  // required uint32 tag_id = 1;
+  if (has_tag_id()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->tag_id());
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AprilTagDetection::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:robosar_fms.AprilTagDetection)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AprilTagDetection* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AprilTagDetection>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:robosar_fms.AprilTagDetection)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:robosar_fms.AprilTagDetection)
+    MergeFrom(*source);
+  }
+}
+
+void AprilTagDetection::MergeFrom(const AprilTagDetection& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:robosar_fms.AprilTagDetection)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_tag_id()) {
+    set_tag_id(from.tag_id());
+  }
+}
+
+void AprilTagDetection::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:robosar_fms.AprilTagDetection)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AprilTagDetection::CopyFrom(const AprilTagDetection& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:robosar_fms.AprilTagDetection)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AprilTagDetection::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  return true;
+}
+
+void AprilTagDetection::Swap(AprilTagDetection* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    AprilTagDetection* temp = New(GetArenaNoVirtual());
+    temp->MergeFrom(*other);
+    other->CopyFrom(*this);
+    InternalSwap(temp);
+    if (GetArenaNoVirtual() == NULL) {
+      delete temp;
+    }
+  }
+}
+void AprilTagDetection::UnsafeArenaSwap(AprilTagDetection* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void AprilTagDetection::InternalSwap(AprilTagDetection* other) {
+  using std::swap;
+  swap(tag_id_, other->tag_id_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AprilTagDetection::GetMetadata() const {
+  protobuf_robosar_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_robosar_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void SensorData::InitAsDefaultInstance() {
   ::robosar_fms::_SensorData_default_instance_._instance.get_mutable()->accel_data_ = const_cast< ::robosar_fms::Accelerometer*>(
       ::robosar_fms::Accelerometer::internal_default_instance());
@@ -3684,6 +3978,7 @@ const int SensorData::kIrDataFieldNumber;
 const int SensorData::kUsDataFieldNumber;
 const int SensorData::kLrfDataFieldNumber;
 const int SensorData::kAgentStatusDataFieldNumber;
+const int SensorData::kAprilDetectionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SensorData::SensorData()
@@ -3695,7 +3990,8 @@ SensorData::SensorData()
 }
 SensorData::SensorData(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
+  _internal_metadata_(arena),
+  april_detection_(arena) {
   ::google::protobuf::internal::InitSCC(&protobuf_robosar_2eproto::scc_info_SensorData.base);
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -3704,7 +4000,8 @@ SensorData::SensorData(::google::protobuf::Arena* arena)
 SensorData::SensorData(const SensorData& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_) {
+      _has_bits_(from._has_bits_),
+      april_detection_(from.april_detection_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_accel_data()) {
     accel_data_ = new ::robosar_fms::Accelerometer(*from.accel_data_);
@@ -3801,6 +4098,7 @@ void SensorData::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  april_detection_.Clear();
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 255u) {
     if (cached_has_bits & 0x00000001u) {
@@ -3979,6 +4277,18 @@ bool SensorData::MergePartialFromCodedStream(
         break;
       }
 
+      // repeated .robosar_fms.AprilTagDetection april_detection = 11;
+      case 11: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_april_detection()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -4064,6 +4374,15 @@ void SensorData::SerializeWithCachedSizes(
       10, this->_internal_agent_status_data(), output);
   }
 
+  // repeated .robosar_fms.AprilTagDetection april_detection = 11;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->april_detection_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      11,
+      this->april_detection(static_cast<int>(i)),
+      output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -4143,6 +4462,14 @@ void SensorData::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         10, this->_internal_agent_status_data(), deterministic, target);
+  }
+
+  // repeated .robosar_fms.AprilTagDetection april_detection = 11;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->april_detection_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        11, this->april_detection(static_cast<int>(i)), deterministic, target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4292,6 +4619,17 @@ size_t SensorData::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
+  // repeated .robosar_fms.AprilTagDetection april_detection = 11;
+  {
+    unsigned int count = static_cast<unsigned int>(this->april_detection_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->april_detection(static_cast<int>(i)));
+    }
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -4319,6 +4657,7 @@ void SensorData::MergeFrom(const SensorData& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  april_detection_.MergeFrom(from.april_detection_);
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 255u) {
     if (cached_has_bits & 0x00000001u) {
@@ -4373,6 +4712,7 @@ void SensorData::CopyFrom(const SensorData& from) {
 
 bool SensorData::IsInitialized() const {
   if ((_has_bits_[0] & 0x000003ff) != 0x000003ff) return false;
+  if (!::google::protobuf::internal::AllAreInitialized(this->april_detection())) return false;
   if (has_accel_data()) {
     if (!this->accel_data_->IsInitialized()) return false;
   }
@@ -4418,6 +4758,7 @@ void SensorData::UnsafeArenaSwap(SensorData* other) {
 }
 void SensorData::InternalSwap(SensorData* other) {
   using std::swap;
+  CastToBase(&april_detection_)->InternalSwap(CastToBase(&other->april_detection_));
   swap(accel_data_, other->accel_data_);
   swap(gyro_data_, other->gyro_data_);
   swap(count_data_, other->count_data_);
@@ -4465,6 +4806,9 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::LaserScanner* Arena
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::AgentStatus* Arena::CreateMaybeMessage< ::robosar_fms::AgentStatus >(Arena* arena) {
   return Arena::CreateMessageInternal< ::robosar_fms::AgentStatus >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::AprilTagDetection* Arena::CreateMaybeMessage< ::robosar_fms::AprilTagDetection >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::robosar_fms::AprilTagDetection >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::robosar_fms::SensorData* Arena::CreateMaybeMessage< ::robosar_fms::SensorData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::robosar_fms::SensorData >(arena);
