@@ -38,7 +38,7 @@ namespace protobuf_robosar_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[8];
+  static const ::google::protobuf::internal::ParseTable schema[9];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -49,6 +49,9 @@ namespace robosar_fms {
 class Accelerometer;
 class AccelerometerDefaultTypeInternal;
 extern AccelerometerDefaultTypeInternal _Accelerometer_default_instance_;
+class AgentStatus;
+class AgentStatusDefaultTypeInternal;
+extern AgentStatusDefaultTypeInternal _AgentStatus_default_instance_;
 class Encoder_count;
 class Encoder_countDefaultTypeInternal;
 extern Encoder_countDefaultTypeInternal _Encoder_count_default_instance_;
@@ -74,6 +77,7 @@ extern UltrasonicDefaultTypeInternal _Ultrasonic_default_instance_;
 namespace google {
 namespace protobuf {
 template<> ::robosar_fms::Accelerometer* Arena::CreateMaybeMessage<::robosar_fms::Accelerometer>(Arena*);
+template<> ::robosar_fms::AgentStatus* Arena::CreateMaybeMessage<::robosar_fms::AgentStatus>(Arena*);
 template<> ::robosar_fms::Encoder_count* Arena::CreateMaybeMessage<::robosar_fms::Encoder_count>(Arena*);
 template<> ::robosar_fms::Encoder_speed* Arena::CreateMaybeMessage<::robosar_fms::Encoder_speed>(Arena*);
 template<> ::robosar_fms::Gyroscope* Arena::CreateMaybeMessage<::robosar_fms::Gyroscope>(Arena*);
@@ -1222,6 +1226,135 @@ class LaserScanner : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
+class AgentStatus : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:robosar_fms.AgentStatus) */ {
+ public:
+  AgentStatus();
+  virtual ~AgentStatus();
+
+  AgentStatus(const AgentStatus& from);
+
+  inline AgentStatus& operator=(const AgentStatus& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AgentStatus(AgentStatus&& from) noexcept
+    : AgentStatus() {
+    *this = ::std::move(from);
+  }
+
+  inline AgentStatus& operator=(AgentStatus&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AgentStatus& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AgentStatus* internal_default_instance() {
+    return reinterpret_cast<const AgentStatus*>(
+               &_AgentStatus_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  void UnsafeArenaSwap(AgentStatus* other);
+  void Swap(AgentStatus* other);
+  friend void swap(AgentStatus& a, AgentStatus& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AgentStatus* New() const final {
+    return CreateMaybeMessage<AgentStatus>(NULL);
+  }
+
+  AgentStatus* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AgentStatus>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AgentStatus& from);
+  void MergeFrom(const AgentStatus& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AgentStatus* other);
+  protected:
+  explicit AgentStatus(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required uint64 battery_level = 1;
+  bool has_battery_level() const;
+  void clear_battery_level();
+  static const int kBatteryLevelFieldNumber = 1;
+  ::google::protobuf::uint64 battery_level() const;
+  void set_battery_level(::google::protobuf::uint64 value);
+
+  // @@protoc_insertion_point(class_scope:robosar_fms.AgentStatus)
+ private:
+  void set_has_battery_level();
+  void clear_has_battery_level();
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::uint64 battery_level_;
+  friend struct ::protobuf_robosar_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:robosar_fms.SensorData) */ {
  public:
   SensorData();
@@ -1270,7 +1403,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
                &_SensorData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   void UnsafeArenaSwap(SensorData* other);
   void Swap(SensorData* other);
@@ -1433,6 +1566,21 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
       ::robosar_fms::LaserScanner* lrf_data);
   ::robosar_fms::LaserScanner* unsafe_arena_release_lrf_data();
 
+  // required .robosar_fms.AgentStatus agent_status_data = 10;
+  bool has_agent_status_data() const;
+  void clear_agent_status_data();
+  static const int kAgentStatusDataFieldNumber = 10;
+  private:
+  const ::robosar_fms::AgentStatus& _internal_agent_status_data() const;
+  public:
+  const ::robosar_fms::AgentStatus& agent_status_data() const;
+  ::robosar_fms::AgentStatus* release_agent_status_data();
+  ::robosar_fms::AgentStatus* mutable_agent_status_data();
+  void set_allocated_agent_status_data(::robosar_fms::AgentStatus* agent_status_data);
+  void unsafe_arena_set_allocated_agent_status_data(
+      ::robosar_fms::AgentStatus* agent_status_data);
+  ::robosar_fms::AgentStatus* unsafe_arena_release_agent_status_data();
+
   // required uint64 timestamp_ns = 1;
   bool has_timestamp_ns() const;
   void clear_timestamp_ns();
@@ -1467,6 +1615,8 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   void clear_has_us_data();
   void set_has_lrf_data();
   void clear_has_lrf_data();
+  void set_has_agent_status_data();
+  void clear_has_agent_status_data();
 
   // helper for ByteSizeLong()
   size_t RequiredFieldsByteSizeFallback() const;
@@ -1484,6 +1634,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::robosar_fms::Infrared* ir_data_;
   ::robosar_fms::Ultrasonic* us_data_;
   ::robosar_fms::LaserScanner* lrf_data_;
+  ::robosar_fms::AgentStatus* agent_status_data_;
   ::google::protobuf::uint64 timestamp_ns_;
   ::google::protobuf::uint32 seq_id_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
@@ -2203,17 +2354,45 @@ LaserScanner::mutable_values() {
 
 // -------------------------------------------------------------------
 
+// AgentStatus
+
+// required uint64 battery_level = 1;
+inline bool AgentStatus::has_battery_level() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void AgentStatus::set_has_battery_level() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void AgentStatus::clear_has_battery_level() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void AgentStatus::clear_battery_level() {
+  battery_level_ = GOOGLE_ULONGLONG(0);
+  clear_has_battery_level();
+}
+inline ::google::protobuf::uint64 AgentStatus::battery_level() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AgentStatus.battery_level)
+  return battery_level_;
+}
+inline void AgentStatus::set_battery_level(::google::protobuf::uint64 value) {
+  set_has_battery_level();
+  battery_level_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AgentStatus.battery_level)
+}
+
+// -------------------------------------------------------------------
+
 // SensorData
 
 // required uint64 timestamp_ns = 1;
 inline bool SensorData::has_timestamp_ns() const {
-  return (_has_bits_[0] & 0x00000080u) != 0;
+  return (_has_bits_[0] & 0x00000100u) != 0;
 }
 inline void SensorData::set_has_timestamp_ns() {
-  _has_bits_[0] |= 0x00000080u;
+  _has_bits_[0] |= 0x00000100u;
 }
 inline void SensorData::clear_has_timestamp_ns() {
-  _has_bits_[0] &= ~0x00000080u;
+  _has_bits_[0] &= ~0x00000100u;
 }
 inline void SensorData::clear_timestamp_ns() {
   timestamp_ns_ = GOOGLE_ULONGLONG(0);
@@ -2231,13 +2410,13 @@ inline void SensorData::set_timestamp_ns(::google::protobuf::uint64 value) {
 
 // required uint32 seq_id = 2;
 inline bool SensorData::has_seq_id() const {
-  return (_has_bits_[0] & 0x00000100u) != 0;
+  return (_has_bits_[0] & 0x00000200u) != 0;
 }
 inline void SensorData::set_has_seq_id() {
-  _has_bits_[0] |= 0x00000100u;
+  _has_bits_[0] |= 0x00000200u;
 }
 inline void SensorData::clear_has_seq_id() {
-  _has_bits_[0] &= ~0x00000100u;
+  _has_bits_[0] &= ~0x00000200u;
 }
 inline void SensorData::clear_seq_id() {
   seq_id_ = 0u;
@@ -2736,9 +2915,80 @@ inline void SensorData::set_allocated_lrf_data(::robosar_fms::LaserScanner* lrf_
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.lrf_data)
 }
 
+// required .robosar_fms.AgentStatus agent_status_data = 10;
+inline bool SensorData::has_agent_status_data() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+inline void SensorData::set_has_agent_status_data() {
+  _has_bits_[0] |= 0x00000080u;
+}
+inline void SensorData::clear_has_agent_status_data() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+inline void SensorData::clear_agent_status_data() {
+  if (agent_status_data_ != NULL) agent_status_data_->Clear();
+  clear_has_agent_status_data();
+}
+inline const ::robosar_fms::AgentStatus& SensorData::_internal_agent_status_data() const {
+  return *agent_status_data_;
+}
+inline const ::robosar_fms::AgentStatus& SensorData::agent_status_data() const {
+  const ::robosar_fms::AgentStatus* p = agent_status_data_;
+  // @@protoc_insertion_point(field_get:robosar_fms.SensorData.agent_status_data)
+  return p != NULL ? *p : *reinterpret_cast<const ::robosar_fms::AgentStatus*>(
+      &::robosar_fms::_AgentStatus_default_instance_);
+}
+inline ::robosar_fms::AgentStatus* SensorData::release_agent_status_data() {
+  // @@protoc_insertion_point(field_release:robosar_fms.SensorData.agent_status_data)
+  clear_has_agent_status_data();
+  ::robosar_fms::AgentStatus* temp = agent_status_data_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  agent_status_data_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::AgentStatus* SensorData::unsafe_arena_release_agent_status_data() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.SensorData.agent_status_data)
+  clear_has_agent_status_data();
+  ::robosar_fms::AgentStatus* temp = agent_status_data_;
+  agent_status_data_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::AgentStatus* SensorData::mutable_agent_status_data() {
+  set_has_agent_status_data();
+  if (agent_status_data_ == NULL) {
+    auto* p = CreateMaybeMessage<::robosar_fms::AgentStatus>(GetArenaNoVirtual());
+    agent_status_data_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:robosar_fms.SensorData.agent_status_data)
+  return agent_status_data_;
+}
+inline void SensorData::set_allocated_agent_status_data(::robosar_fms::AgentStatus* agent_status_data) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete agent_status_data_;
+  }
+  if (agent_status_data) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(agent_status_data);
+    if (message_arena != submessage_arena) {
+      agent_status_data = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, agent_status_data, submessage_arena);
+    }
+    set_has_agent_status_data();
+  } else {
+    clear_has_agent_status_data();
+  }
+  agent_status_data_ = agent_status_data;
+  // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.agent_status_data)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

@@ -55,6 +55,10 @@ message LaserScanner {
     repeated uint64 values = 1 [packed = true];
 }
 
+message AgentStatus {
+    required uint64 battery_level = 1;
+}
+
 message SensorData {
     required uint64 timestamp_ns = 1;
     required uint32 seq_id = 2;
@@ -65,5 +69,6 @@ message SensorData {
     required Infrared ir_data = 7;
     required Ultrasonic us_data = 8;
     required LaserScanner lrf_data = 9;
+    required AgentStatus agent_status_data = 10;
 }
 
