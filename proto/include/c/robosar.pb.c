@@ -33,6 +33,9 @@ PB_BIND(robosar_fms_AgentStatus, robosar_fms_AgentStatus, AUTO)
 PB_BIND(robosar_fms_AprilTagDetection, robosar_fms_AprilTagDetection, AUTO)
 
 
+PB_BIND(robosar_fms_AllDetections, robosar_fms_AllDetections, AUTO)
+
+
 PB_BIND(robosar_fms_SensorData, robosar_fms_SensorData, 4)
 
 
