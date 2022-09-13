@@ -53,6 +53,7 @@ find_package(Protobuf REQUIRED)
 add_message_files(
   FILES
   task_allocation.msg
+  agents_status.msg
 )
 
 ## Generate services in the 'srv' folder
