@@ -59,6 +59,15 @@ message AgentStatus {
     required uint64 battery_level = 1;
 }
 
+message AprilTagDetection {
+    required uint32 tag_id = 1;
+}
+
+message AllDetections {
+    repeated AprilTagDetection tag_detections = 1;
+}
+
+
 message SensorData {
     required uint64 timestamp_ns = 1;
     required uint32 seq_id = 2;
@@ -70,5 +79,6 @@ message SensorData {
     required Ultrasonic us_data = 8;
     required LaserScanner lrf_data = 9;
     required AgentStatus agent_status_data = 10;
+    required AllDetections april_detections = 11;
 }
 
