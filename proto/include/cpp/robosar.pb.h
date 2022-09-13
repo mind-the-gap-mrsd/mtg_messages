@@ -1850,7 +1850,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
       ::robosar_fms::AgentStatus* agent_status_data);
   ::robosar_fms::AgentStatus* unsafe_arena_release_agent_status_data();
 
-  // optional .robosar_fms.AllDetections april_detections = 11;
+  // required .robosar_fms.AllDetections april_detections = 11;
   bool has_april_detections() const;
   void clear_april_detections();
   static const int kAprilDetectionsFieldNumber = 11;
@@ -3333,7 +3333,7 @@ inline void SensorData::set_allocated_agent_status_data(::robosar_fms::AgentStat
   // @@protoc_insertion_point(field_set_allocated:robosar_fms.SensorData.agent_status_data)
 }
 
-// optional .robosar_fms.AllDetections april_detections = 11;
+// required .robosar_fms.AllDetections april_detections = 11;
 inline bool SensorData::has_april_detections() const {
   return (_has_bits_[0] & 0x00000100u) != 0;
 }

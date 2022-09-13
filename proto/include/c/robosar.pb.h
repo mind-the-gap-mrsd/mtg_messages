@@ -84,7 +84,6 @@ typedef struct _robosar_fms_SensorData {
     robosar_fms_Ultrasonic us_data; 
     robosar_fms_LaserScanner lrf_data; 
     robosar_fms_AgentStatus agent_status_data; 
-    bool has_april_detections;
     robosar_fms_AllDetections april_detections; 
 } robosar_fms_SensorData;
 
@@ -104,7 +103,7 @@ extern "C" {
 #define robosar_fms_AgentStatus_init_default     {0}
 #define robosar_fms_AprilTagDetection_init_default {0}
 #define robosar_fms_AllDetections_init_default   {0, {robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default}}
-#define robosar_fms_SensorData_init_default      {0, 0, robosar_fms_Accelerometer_init_default, robosar_fms_Gyroscope_init_default, robosar_fms_Encoder_count_init_default, robosar_fms_Encoder_speed_init_default, robosar_fms_Infrared_init_default, robosar_fms_Ultrasonic_init_default, robosar_fms_LaserScanner_init_default, robosar_fms_AgentStatus_init_default, false, robosar_fms_AllDetections_init_default}
+#define robosar_fms_SensorData_init_default      {0, 0, robosar_fms_Accelerometer_init_default, robosar_fms_Gyroscope_init_default, robosar_fms_Encoder_count_init_default, robosar_fms_Encoder_speed_init_default, robosar_fms_Infrared_init_default, robosar_fms_Ultrasonic_init_default, robosar_fms_LaserScanner_init_default, robosar_fms_AgentStatus_init_default, robosar_fms_AllDetections_init_default}
 #define robosar_fms_Accelerometer_init_zero      {0, 0, 0}
 #define robosar_fms_Ultrasonic_init_zero         {0, 0, 0, 0, 0}
 #define robosar_fms_Infrared_init_zero           {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
@@ -115,7 +114,7 @@ extern "C" {
 #define robosar_fms_AgentStatus_init_zero        {0}
 #define robosar_fms_AprilTagDetection_init_zero  {0}
 #define robosar_fms_AllDetections_init_zero      {0, {robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero}}
-#define robosar_fms_SensorData_init_zero         {0, 0, robosar_fms_Accelerometer_init_zero, robosar_fms_Gyroscope_init_zero, robosar_fms_Encoder_count_init_zero, robosar_fms_Encoder_speed_init_zero, robosar_fms_Infrared_init_zero, robosar_fms_Ultrasonic_init_zero, robosar_fms_LaserScanner_init_zero, robosar_fms_AgentStatus_init_zero, false, robosar_fms_AllDetections_init_zero}
+#define robosar_fms_SensorData_init_zero         {0, 0, robosar_fms_Accelerometer_init_zero, robosar_fms_Gyroscope_init_zero, robosar_fms_Encoder_count_init_zero, robosar_fms_Encoder_speed_init_zero, robosar_fms_Infrared_init_zero, robosar_fms_Ultrasonic_init_zero, robosar_fms_LaserScanner_init_zero, robosar_fms_AgentStatus_init_zero, robosar_fms_AllDetections_init_zero}
 
 /* Field tags (for use in manual encoding/decoding) */
 #define robosar_fms_Accelerometer_acc_x_tag      1
@@ -245,7 +244,7 @@ X(a, STATIC,   REQUIRED, MESSAGE,  ir_data,           7) \
 X(a, STATIC,   REQUIRED, MESSAGE,  us_data,           8) \
 X(a, STATIC,   REQUIRED, MESSAGE,  lrf_data,          9) \
 X(a, STATIC,   REQUIRED, MESSAGE,  agent_status_data,  10) \
-X(a, STATIC,   OPTIONAL, MESSAGE,  april_detections,  11)
+X(a, STATIC,   REQUIRED, MESSAGE,  april_detections,  11)
 #define robosar_fms_SensorData_CALLBACK NULL
 #define robosar_fms_SensorData_DEFAULT NULL
 #define robosar_fms_SensorData_accel_data_MSGTYPE robosar_fms_Accelerometer
