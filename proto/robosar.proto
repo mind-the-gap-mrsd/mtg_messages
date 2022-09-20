@@ -59,8 +59,32 @@ message AgentStatus {
     required uint64 battery_level = 1;
 }
 
+message AprilTagRot {
+    required double r11 = 1;
+    required double r12 = 2;
+    required double r13 = 3;
+    required double r21 = 4;
+    required double r22 = 5;
+    required double r23 = 6;
+    required double r31 = 7;
+    required double r32 = 8;
+    required double r33 = 9;
+}
+
+message AprilTagTrans {
+    required double x = 1;
+    required double y = 2;
+    required double z = 3;
+}
+
+message AprilTagPose {
+    required AprilTagRot R = 1;
+    required AprilTagTrans t = 2;
+}
+
 message AprilTagDetection {
     required uint32 tag_id = 1;
+    required AprilTagPose pose = 2;
 }
 
 message AllDetections {

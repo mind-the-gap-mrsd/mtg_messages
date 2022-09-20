@@ -30,10 +30,19 @@ PB_BIND(robosar_fms_LaserScanner, robosar_fms_LaserScanner, 4)
 PB_BIND(robosar_fms_AgentStatus, robosar_fms_AgentStatus, AUTO)
 
 
+PB_BIND(robosar_fms_AprilTagRot, robosar_fms_AprilTagRot, AUTO)
+
+
+PB_BIND(robosar_fms_AprilTagTrans, robosar_fms_AprilTagTrans, AUTO)
+
+
+PB_BIND(robosar_fms_AprilTagPose, robosar_fms_AprilTagPose, AUTO)
+
+
 PB_BIND(robosar_fms_AprilTagDetection, robosar_fms_AprilTagDetection, AUTO)
 
 
-PB_BIND(robosar_fms_AllDetections, robosar_fms_AllDetections, AUTO)
+PB_BIND(robosar_fms_AllDetections, robosar_fms_AllDetections, 2)
 
 
 PB_BIND(robosar_fms_SensorData, robosar_fms_SensorData, 4)

@@ -20,9 +20,23 @@ typedef struct _robosar_fms_AgentStatus {
     uint64_t battery_level; 
 } robosar_fms_AgentStatus;
 
-typedef struct _robosar_fms_AprilTagDetection { 
-    uint32_t tag_id; 
-} robosar_fms_AprilTagDetection;
+typedef struct _robosar_fms_AprilTagRot { 
+    double r11; 
+    double r12; 
+    double r13; 
+    double r21; 
+    double r22; 
+    double r23; 
+    double r31; 
+    double r32; 
+    double r33; 
+} robosar_fms_AprilTagRot;
+
+typedef struct _robosar_fms_AprilTagTrans { 
+    double x; 
+    double y; 
+    double z; 
+} robosar_fms_AprilTagTrans;
 
 typedef struct _robosar_fms_Encoder_count { 
     uint64_t left; 
@@ -68,6 +82,16 @@ typedef struct _robosar_fms_Ultrasonic {
     uint32_t sensor_e; 
 } robosar_fms_Ultrasonic;
 
+typedef struct _robosar_fms_AprilTagPose { 
+    robosar_fms_AprilTagRot R; 
+    robosar_fms_AprilTagTrans t; 
+} robosar_fms_AprilTagPose;
+
+typedef struct _robosar_fms_AprilTagDetection { 
+    uint32_t tag_id; 
+    robosar_fms_AprilTagPose pose; 
+} robosar_fms_AprilTagDetection;
+
 typedef struct _robosar_fms_AllDetections { 
     pb_size_t tag_detections_count;
     robosar_fms_AprilTagDetection tag_detections[10]; 
@@ -101,7 +125,10 @@ extern "C" {
 #define robosar_fms_Encoder_speed_init_default   {0, 0}
 #define robosar_fms_LaserScanner_init_default    {0, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}}
 #define robosar_fms_AgentStatus_init_default     {0}
-#define robosar_fms_AprilTagDetection_init_default {0}
+#define robosar_fms_AprilTagRot_init_default     {0, 0, 0, 0, 0, 0, 0, 0, 0}
+#define robosar_fms_AprilTagTrans_init_default   {0, 0, 0}
+#define robosar_fms_AprilTagPose_init_default    {robosar_fms_AprilTagRot_init_default, robosar_fms_AprilTagTrans_init_default}
+#define robosar_fms_AprilTagDetection_init_default {0, robosar_fms_AprilTagPose_init_default}
 #define robosar_fms_AllDetections_init_default   {0, {robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default, robosar_fms_AprilTagDetection_init_default}}
 #define robosar_fms_SensorData_init_default      {0, 0, robosar_fms_Accelerometer_init_default, robosar_fms_Gyroscope_init_default, robosar_fms_Encoder_count_init_default, robosar_fms_Encoder_speed_init_default, robosar_fms_Infrared_init_default, robosar_fms_Ultrasonic_init_default, robosar_fms_LaserScanner_init_default, robosar_fms_AgentStatus_init_default, robosar_fms_AllDetections_init_default}
 #define robosar_fms_Accelerometer_init_zero      {0, 0, 0}
@@ -112,7 +139,10 @@ extern "C" {
 #define robosar_fms_Encoder_speed_init_zero      {0, 0}
 #define robosar_fms_LaserScanner_init_zero       {0, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}}
 #define robosar_fms_AgentStatus_init_zero        {0}
-#define robosar_fms_AprilTagDetection_init_zero  {0}
+#define robosar_fms_AprilTagRot_init_zero        {0, 0, 0, 0, 0, 0, 0, 0, 0}
+#define robosar_fms_AprilTagTrans_init_zero      {0, 0, 0}
+#define robosar_fms_AprilTagPose_init_zero       {robosar_fms_AprilTagRot_init_zero, robosar_fms_AprilTagTrans_init_zero}
+#define robosar_fms_AprilTagDetection_init_zero  {0, robosar_fms_AprilTagPose_init_zero}
 #define robosar_fms_AllDetections_init_zero      {0, {robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero, robosar_fms_AprilTagDetection_init_zero}}
 #define robosar_fms_SensorData_init_zero         {0, 0, robosar_fms_Accelerometer_init_zero, robosar_fms_Gyroscope_init_zero, robosar_fms_Encoder_count_init_zero, robosar_fms_Encoder_speed_init_zero, robosar_fms_Infrared_init_zero, robosar_fms_Ultrasonic_init_zero, robosar_fms_LaserScanner_init_zero, robosar_fms_AgentStatus_init_zero, robosar_fms_AllDetections_init_zero}
 
@@ -121,7 +151,18 @@ extern "C" {
 #define robosar_fms_Accelerometer_acc_y_tag      2
 #define robosar_fms_Accelerometer_acc_z_tag      3
 #define robosar_fms_AgentStatus_battery_level_tag 1
-#define robosar_fms_AprilTagDetection_tag_id_tag 1
+#define robosar_fms_AprilTagRot_r11_tag          1
+#define robosar_fms_AprilTagRot_r12_tag          2
+#define robosar_fms_AprilTagRot_r13_tag          3
+#define robosar_fms_AprilTagRot_r21_tag          4
+#define robosar_fms_AprilTagRot_r22_tag          5
+#define robosar_fms_AprilTagRot_r23_tag          6
+#define robosar_fms_AprilTagRot_r31_tag          7
+#define robosar_fms_AprilTagRot_r32_tag          8
+#define robosar_fms_AprilTagRot_r33_tag          9
+#define robosar_fms_AprilTagTrans_x_tag          1
+#define robosar_fms_AprilTagTrans_y_tag          2
+#define robosar_fms_AprilTagTrans_z_tag          3
 #define robosar_fms_Encoder_count_left_tag       1
 #define robosar_fms_Encoder_count_right_tag      2
 #define robosar_fms_Encoder_speed_left_tag       1
@@ -147,6 +188,10 @@ extern "C" {
 #define robosar_fms_Ultrasonic_sensor_c_tag      3
 #define robosar_fms_Ultrasonic_sensor_d_tag      4
 #define robosar_fms_Ultrasonic_sensor_e_tag      5
+#define robosar_fms_AprilTagPose_R_tag           1
+#define robosar_fms_AprilTagPose_t_tag           2
+#define robosar_fms_AprilTagDetection_tag_id_tag 1
+#define robosar_fms_AprilTagDetection_pose_tag   2
 #define robosar_fms_AllDetections_tag_detections_tag 1
 #define robosar_fms_SensorData_timestamp_ns_tag  1
 #define robosar_fms_SensorData_seq_id_tag        2
@@ -222,10 +267,40 @@ X(a, STATIC,   REQUIRED, UINT64,   battery_level,     1)
 #define robosar_fms_AgentStatus_CALLBACK NULL
 #define robosar_fms_AgentStatus_DEFAULT NULL
 
+#define robosar_fms_AprilTagRot_FIELDLIST(X, a) \
+X(a, STATIC,   REQUIRED, DOUBLE,   r11,               1) \
+X(a, STATIC,   REQUIRED, DOUBLE,   r12,               2) \
+X(a, STATIC,   REQUIRED, DOUBLE,   r13,               3) \
+X(a, STATIC,   REQUIRED, DOUBLE,   r21,               4) \
+X(a, STATIC,   REQUIRED, DOUBLE,   r22,               5) \
+X(a, STATIC,   REQUIRED, DOUBLE,   r23,               6) \
+X(a, STATIC,   REQUIRED, DOUBLE,   r31,               7) \
+X(a, STATIC,   REQUIRED, DOUBLE,   r32,               8) \
+X(a, STATIC,   REQUIRED, DOUBLE,   r33,               9)
+#define robosar_fms_AprilTagRot_CALLBACK NULL
+#define robosar_fms_AprilTagRot_DEFAULT NULL
+
+#define robosar_fms_AprilTagTrans_FIELDLIST(X, a) \
+X(a, STATIC,   REQUIRED, DOUBLE,   x,                 1) \
+X(a, STATIC,   REQUIRED, DOUBLE,   y,                 2) \
+X(a, STATIC,   REQUIRED, DOUBLE,   z,                 3)
+#define robosar_fms_AprilTagTrans_CALLBACK NULL
+#define robosar_fms_AprilTagTrans_DEFAULT NULL
+
+#define robosar_fms_AprilTagPose_FIELDLIST(X, a) \
+X(a, STATIC,   REQUIRED, MESSAGE,  R,                 1) \
+X(a, STATIC,   REQUIRED, MESSAGE,  t,                 2)
+#define robosar_fms_AprilTagPose_CALLBACK NULL
+#define robosar_fms_AprilTagPose_DEFAULT NULL
+#define robosar_fms_AprilTagPose_R_MSGTYPE robosar_fms_AprilTagRot
+#define robosar_fms_AprilTagPose_t_MSGTYPE robosar_fms_AprilTagTrans
+
 #define robosar_fms_AprilTagDetection_FIELDLIST(X, a) \
-X(a, STATIC,   REQUIRED, UINT32,   tag_id,            1)
+X(a, STATIC,   REQUIRED, UINT32,   tag_id,            1) \
+X(a, STATIC,   REQUIRED, MESSAGE,  pose,              2)
 #define robosar_fms_AprilTagDetection_CALLBACK NULL
 #define robosar_fms_AprilTagDetection_DEFAULT NULL
+#define robosar_fms_AprilTagDetection_pose_MSGTYPE robosar_fms_AprilTagPose
 
 #define robosar_fms_AllDetections_FIELDLIST(X, a) \
 X(a, STATIC,   REPEATED, MESSAGE,  tag_detections,    1)
@@ -265,6 +340,9 @@ extern const pb_msgdesc_t robosar_fms_Encoder_count_msg;
 extern const pb_msgdesc_t robosar_fms_Encoder_speed_msg;
 extern const pb_msgdesc_t robosar_fms_LaserScanner_msg;
 extern const pb_msgdesc_t robosar_fms_AgentStatus_msg;
+extern const pb_msgdesc_t robosar_fms_AprilTagRot_msg;
+extern const pb_msgdesc_t robosar_fms_AprilTagTrans_msg;
+extern const pb_msgdesc_t robosar_fms_AprilTagPose_msg;
 extern const pb_msgdesc_t robosar_fms_AprilTagDetection_msg;
 extern const pb_msgdesc_t robosar_fms_AllDetections_msg;
 extern const pb_msgdesc_t robosar_fms_SensorData_msg;
@@ -278,6 +356,9 @@ extern const pb_msgdesc_t robosar_fms_SensorData_msg;
 #define robosar_fms_Encoder_speed_fields &robosar_fms_Encoder_speed_msg
 #define robosar_fms_LaserScanner_fields &robosar_fms_LaserScanner_msg
 #define robosar_fms_AgentStatus_fields &robosar_fms_AgentStatus_msg
+#define robosar_fms_AprilTagRot_fields &robosar_fms_AprilTagRot_msg
+#define robosar_fms_AprilTagTrans_fields &robosar_fms_AprilTagTrans_msg
+#define robosar_fms_AprilTagPose_fields &robosar_fms_AprilTagPose_msg
 #define robosar_fms_AprilTagDetection_fields &robosar_fms_AprilTagDetection_msg
 #define robosar_fms_AllDetections_fields &robosar_fms_AllDetections_msg
 #define robosar_fms_SensorData_fields &robosar_fms_SensorData_msg
@@ -285,14 +366,17 @@ extern const pb_msgdesc_t robosar_fms_SensorData_msg;
 /* Maximum encoded size of messages (where known) */
 #define robosar_fms_Accelerometer_size           27
 #define robosar_fms_AgentStatus_size             11
-#define robosar_fms_AllDetections_size           80
-#define robosar_fms_AprilTagDetection_size       6
+#define robosar_fms_AllDetections_size           1220
+#define robosar_fms_AprilTagDetection_size       120
+#define robosar_fms_AprilTagPose_size            112
+#define robosar_fms_AprilTagRot_size             81
+#define robosar_fms_AprilTagTrans_size           27
 #define robosar_fms_Encoder_count_size           22
 #define robosar_fms_Encoder_speed_size           22
 #define robosar_fms_Gyroscope_size               27
 #define robosar_fms_Infrared_size                72
 #define robosar_fms_LaserScanner_size            7700
-#define robosar_fms_SensorData_size              8027
+#define robosar_fms_SensorData_size              9168
 #define robosar_fms_Ultrasonic_size              30
 
 #ifdef __cplusplus

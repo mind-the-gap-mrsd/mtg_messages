@@ -38,7 +38,7 @@ namespace protobuf_robosar_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[11];
+  static const ::google::protobuf::internal::ParseTable schema[14];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -58,6 +58,15 @@ extern AllDetectionsDefaultTypeInternal _AllDetections_default_instance_;
 class AprilTagDetection;
 class AprilTagDetectionDefaultTypeInternal;
 extern AprilTagDetectionDefaultTypeInternal _AprilTagDetection_default_instance_;
+class AprilTagPose;
+class AprilTagPoseDefaultTypeInternal;
+extern AprilTagPoseDefaultTypeInternal _AprilTagPose_default_instance_;
+class AprilTagRot;
+class AprilTagRotDefaultTypeInternal;
+extern AprilTagRotDefaultTypeInternal _AprilTagRot_default_instance_;
+class AprilTagTrans;
+class AprilTagTransDefaultTypeInternal;
+extern AprilTagTransDefaultTypeInternal _AprilTagTrans_default_instance_;
 class Encoder_count;
 class Encoder_countDefaultTypeInternal;
 extern Encoder_countDefaultTypeInternal _Encoder_count_default_instance_;
@@ -86,6 +95,9 @@ template<> ::robosar_fms::Accelerometer* Arena::CreateMaybeMessage<::robosar_fms
 template<> ::robosar_fms::AgentStatus* Arena::CreateMaybeMessage<::robosar_fms::AgentStatus>(Arena*);
 template<> ::robosar_fms::AllDetections* Arena::CreateMaybeMessage<::robosar_fms::AllDetections>(Arena*);
 template<> ::robosar_fms::AprilTagDetection* Arena::CreateMaybeMessage<::robosar_fms::AprilTagDetection>(Arena*);
+template<> ::robosar_fms::AprilTagPose* Arena::CreateMaybeMessage<::robosar_fms::AprilTagPose>(Arena*);
+template<> ::robosar_fms::AprilTagRot* Arena::CreateMaybeMessage<::robosar_fms::AprilTagRot>(Arena*);
+template<> ::robosar_fms::AprilTagTrans* Arena::CreateMaybeMessage<::robosar_fms::AprilTagTrans>(Arena*);
 template<> ::robosar_fms::Encoder_count* Arena::CreateMaybeMessage<::robosar_fms::Encoder_count>(Arena*);
 template<> ::robosar_fms::Encoder_speed* Arena::CreateMaybeMessage<::robosar_fms::Encoder_speed>(Arena*);
 template<> ::robosar_fms::Gyroscope* Arena::CreateMaybeMessage<::robosar_fms::Gyroscope>(Arena*);
@@ -1363,6 +1375,528 @@ class AgentStatus : public ::google::protobuf::Message /* @@protoc_insertion_poi
 };
 // -------------------------------------------------------------------
 
+class AprilTagRot : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:robosar_fms.AprilTagRot) */ {
+ public:
+  AprilTagRot();
+  virtual ~AprilTagRot();
+
+  AprilTagRot(const AprilTagRot& from);
+
+  inline AprilTagRot& operator=(const AprilTagRot& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AprilTagRot(AprilTagRot&& from) noexcept
+    : AprilTagRot() {
+    *this = ::std::move(from);
+  }
+
+  inline AprilTagRot& operator=(AprilTagRot&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AprilTagRot& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AprilTagRot* internal_default_instance() {
+    return reinterpret_cast<const AprilTagRot*>(
+               &_AprilTagRot_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    8;
+
+  void UnsafeArenaSwap(AprilTagRot* other);
+  void Swap(AprilTagRot* other);
+  friend void swap(AprilTagRot& a, AprilTagRot& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AprilTagRot* New() const final {
+    return CreateMaybeMessage<AprilTagRot>(NULL);
+  }
+
+  AprilTagRot* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AprilTagRot>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AprilTagRot& from);
+  void MergeFrom(const AprilTagRot& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AprilTagRot* other);
+  protected:
+  explicit AprilTagRot(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required double r11 = 1;
+  bool has_r11() const;
+  void clear_r11();
+  static const int kR11FieldNumber = 1;
+  double r11() const;
+  void set_r11(double value);
+
+  // required double r12 = 2;
+  bool has_r12() const;
+  void clear_r12();
+  static const int kR12FieldNumber = 2;
+  double r12() const;
+  void set_r12(double value);
+
+  // required double r13 = 3;
+  bool has_r13() const;
+  void clear_r13();
+  static const int kR13FieldNumber = 3;
+  double r13() const;
+  void set_r13(double value);
+
+  // required double r21 = 4;
+  bool has_r21() const;
+  void clear_r21();
+  static const int kR21FieldNumber = 4;
+  double r21() const;
+  void set_r21(double value);
+
+  // required double r22 = 5;
+  bool has_r22() const;
+  void clear_r22();
+  static const int kR22FieldNumber = 5;
+  double r22() const;
+  void set_r22(double value);
+
+  // required double r23 = 6;
+  bool has_r23() const;
+  void clear_r23();
+  static const int kR23FieldNumber = 6;
+  double r23() const;
+  void set_r23(double value);
+
+  // required double r31 = 7;
+  bool has_r31() const;
+  void clear_r31();
+  static const int kR31FieldNumber = 7;
+  double r31() const;
+  void set_r31(double value);
+
+  // required double r32 = 8;
+  bool has_r32() const;
+  void clear_r32();
+  static const int kR32FieldNumber = 8;
+  double r32() const;
+  void set_r32(double value);
+
+  // required double r33 = 9;
+  bool has_r33() const;
+  void clear_r33();
+  static const int kR33FieldNumber = 9;
+  double r33() const;
+  void set_r33(double value);
+
+  // @@protoc_insertion_point(class_scope:robosar_fms.AprilTagRot)
+ private:
+  void set_has_r11();
+  void clear_has_r11();
+  void set_has_r12();
+  void clear_has_r12();
+  void set_has_r13();
+  void clear_has_r13();
+  void set_has_r21();
+  void clear_has_r21();
+  void set_has_r22();
+  void clear_has_r22();
+  void set_has_r23();
+  void clear_has_r23();
+  void set_has_r31();
+  void clear_has_r31();
+  void set_has_r32();
+  void clear_has_r32();
+  void set_has_r33();
+  void clear_has_r33();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  double r11_;
+  double r12_;
+  double r13_;
+  double r21_;
+  double r22_;
+  double r23_;
+  double r31_;
+  double r32_;
+  double r33_;
+  friend struct ::protobuf_robosar_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AprilTagTrans : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:robosar_fms.AprilTagTrans) */ {
+ public:
+  AprilTagTrans();
+  virtual ~AprilTagTrans();
+
+  AprilTagTrans(const AprilTagTrans& from);
+
+  inline AprilTagTrans& operator=(const AprilTagTrans& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AprilTagTrans(AprilTagTrans&& from) noexcept
+    : AprilTagTrans() {
+    *this = ::std::move(from);
+  }
+
+  inline AprilTagTrans& operator=(AprilTagTrans&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AprilTagTrans& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AprilTagTrans* internal_default_instance() {
+    return reinterpret_cast<const AprilTagTrans*>(
+               &_AprilTagTrans_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    9;
+
+  void UnsafeArenaSwap(AprilTagTrans* other);
+  void Swap(AprilTagTrans* other);
+  friend void swap(AprilTagTrans& a, AprilTagTrans& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AprilTagTrans* New() const final {
+    return CreateMaybeMessage<AprilTagTrans>(NULL);
+  }
+
+  AprilTagTrans* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AprilTagTrans>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AprilTagTrans& from);
+  void MergeFrom(const AprilTagTrans& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AprilTagTrans* other);
+  protected:
+  explicit AprilTagTrans(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required double x = 1;
+  bool has_x() const;
+  void clear_x();
+  static const int kXFieldNumber = 1;
+  double x() const;
+  void set_x(double value);
+
+  // required double y = 2;
+  bool has_y() const;
+  void clear_y();
+  static const int kYFieldNumber = 2;
+  double y() const;
+  void set_y(double value);
+
+  // required double z = 3;
+  bool has_z() const;
+  void clear_z();
+  static const int kZFieldNumber = 3;
+  double z() const;
+  void set_z(double value);
+
+  // @@protoc_insertion_point(class_scope:robosar_fms.AprilTagTrans)
+ private:
+  void set_has_x();
+  void clear_has_x();
+  void set_has_y();
+  void clear_has_y();
+  void set_has_z();
+  void clear_has_z();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  double x_;
+  double y_;
+  double z_;
+  friend struct ::protobuf_robosar_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AprilTagPose : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:robosar_fms.AprilTagPose) */ {
+ public:
+  AprilTagPose();
+  virtual ~AprilTagPose();
+
+  AprilTagPose(const AprilTagPose& from);
+
+  inline AprilTagPose& operator=(const AprilTagPose& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AprilTagPose(AprilTagPose&& from) noexcept
+    : AprilTagPose() {
+    *this = ::std::move(from);
+  }
+
+  inline AprilTagPose& operator=(AprilTagPose&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  inline ::google::protobuf::Arena* GetArena() const final {
+    return GetArenaNoVirtual();
+  }
+  inline void* GetMaybeArenaPointer() const final {
+    return MaybeArenaPtr();
+  }
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AprilTagPose& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AprilTagPose* internal_default_instance() {
+    return reinterpret_cast<const AprilTagPose*>(
+               &_AprilTagPose_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    10;
+
+  void UnsafeArenaSwap(AprilTagPose* other);
+  void Swap(AprilTagPose* other);
+  friend void swap(AprilTagPose& a, AprilTagPose& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AprilTagPose* New() const final {
+    return CreateMaybeMessage<AprilTagPose>(NULL);
+  }
+
+  AprilTagPose* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AprilTagPose>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AprilTagPose& from);
+  void MergeFrom(const AprilTagPose& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AprilTagPose* other);
+  protected:
+  explicit AprilTagPose(::google::protobuf::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required .robosar_fms.AprilTagRot R = 1;
+  bool has_r() const;
+  void clear_r();
+  static const int kRFieldNumber = 1;
+  private:
+  const ::robosar_fms::AprilTagRot& _internal_r() const;
+  public:
+  const ::robosar_fms::AprilTagRot& r() const;
+  ::robosar_fms::AprilTagRot* release_r();
+  ::robosar_fms::AprilTagRot* mutable_r();
+  void set_allocated_r(::robosar_fms::AprilTagRot* r);
+  void unsafe_arena_set_allocated_r(
+      ::robosar_fms::AprilTagRot* r);
+  ::robosar_fms::AprilTagRot* unsafe_arena_release_r();
+
+  // required .robosar_fms.AprilTagTrans t = 2;
+  bool has_t() const;
+  void clear_t();
+  static const int kTFieldNumber = 2;
+  private:
+  const ::robosar_fms::AprilTagTrans& _internal_t() const;
+  public:
+  const ::robosar_fms::AprilTagTrans& t() const;
+  ::robosar_fms::AprilTagTrans* release_t();
+  ::robosar_fms::AprilTagTrans* mutable_t();
+  void set_allocated_t(::robosar_fms::AprilTagTrans* t);
+  void unsafe_arena_set_allocated_t(
+      ::robosar_fms::AprilTagTrans* t);
+  ::robosar_fms::AprilTagTrans* unsafe_arena_release_t();
+
+  // @@protoc_insertion_point(class_scope:robosar_fms.AprilTagPose)
+ private:
+  void set_has_r();
+  void clear_has_r();
+  void set_has_t();
+  void clear_has_t();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::robosar_fms::AprilTagRot* r_;
+  ::robosar_fms::AprilTagTrans* t_;
+  friend struct ::protobuf_robosar_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class AprilTagDetection : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:robosar_fms.AprilTagDetection) */ {
  public:
   AprilTagDetection();
@@ -1411,7 +1945,7 @@ class AprilTagDetection : public ::google::protobuf::Message /* @@protoc_inserti
                &_AprilTagDetection_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    11;
 
   void UnsafeArenaSwap(AprilTagDetection* other);
   void Swap(AprilTagDetection* other);
@@ -1469,6 +2003,21 @@ class AprilTagDetection : public ::google::protobuf::Message /* @@protoc_inserti
 
   // accessors -------------------------------------------------------
 
+  // required .robosar_fms.AprilTagPose pose = 2;
+  bool has_pose() const;
+  void clear_pose();
+  static const int kPoseFieldNumber = 2;
+  private:
+  const ::robosar_fms::AprilTagPose& _internal_pose() const;
+  public:
+  const ::robosar_fms::AprilTagPose& pose() const;
+  ::robosar_fms::AprilTagPose* release_pose();
+  ::robosar_fms::AprilTagPose* mutable_pose();
+  void set_allocated_pose(::robosar_fms::AprilTagPose* pose);
+  void unsafe_arena_set_allocated_pose(
+      ::robosar_fms::AprilTagPose* pose);
+  ::robosar_fms::AprilTagPose* unsafe_arena_release_pose();
+
   // required uint32 tag_id = 1;
   bool has_tag_id() const;
   void clear_tag_id();
@@ -1480,6 +2029,11 @@ class AprilTagDetection : public ::google::protobuf::Message /* @@protoc_inserti
  private:
   void set_has_tag_id();
   void clear_has_tag_id();
+  void set_has_pose();
+  void clear_has_pose();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
@@ -1487,6 +2041,7 @@ class AprilTagDetection : public ::google::protobuf::Message /* @@protoc_inserti
   typedef void DestructorSkippable_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::robosar_fms::AprilTagPose* pose_;
   ::google::protobuf::uint32 tag_id_;
   friend struct ::protobuf_robosar_2eproto::TableStruct;
 };
@@ -1540,7 +2095,7 @@ class AllDetections : public ::google::protobuf::Message /* @@protoc_insertion_p
                &_AllDetections_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    12;
 
   void UnsafeArenaSwap(AllDetections* other);
   void Swap(AllDetections* other);
@@ -1672,7 +2227,7 @@ class SensorData : public ::google::protobuf::Message /* @@protoc_insertion_poin
                &_SensorData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    13;
 
   void UnsafeArenaSwap(SensorData* other);
   void Swap(SensorData* other);
@@ -2669,17 +3224,455 @@ inline void AgentStatus::set_battery_level(::google::protobuf::uint64 value) {
 
 // -------------------------------------------------------------------
 
+// AprilTagRot
+
+// required double r11 = 1;
+inline bool AprilTagRot::has_r11() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void AprilTagRot::set_has_r11() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void AprilTagRot::clear_has_r11() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void AprilTagRot::clear_r11() {
+  r11_ = 0;
+  clear_has_r11();
+}
+inline double AprilTagRot::r11() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagRot.r11)
+  return r11_;
+}
+inline void AprilTagRot::set_r11(double value) {
+  set_has_r11();
+  r11_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagRot.r11)
+}
+
+// required double r12 = 2;
+inline bool AprilTagRot::has_r12() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void AprilTagRot::set_has_r12() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void AprilTagRot::clear_has_r12() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void AprilTagRot::clear_r12() {
+  r12_ = 0;
+  clear_has_r12();
+}
+inline double AprilTagRot::r12() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagRot.r12)
+  return r12_;
+}
+inline void AprilTagRot::set_r12(double value) {
+  set_has_r12();
+  r12_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagRot.r12)
+}
+
+// required double r13 = 3;
+inline bool AprilTagRot::has_r13() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void AprilTagRot::set_has_r13() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void AprilTagRot::clear_has_r13() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void AprilTagRot::clear_r13() {
+  r13_ = 0;
+  clear_has_r13();
+}
+inline double AprilTagRot::r13() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagRot.r13)
+  return r13_;
+}
+inline void AprilTagRot::set_r13(double value) {
+  set_has_r13();
+  r13_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagRot.r13)
+}
+
+// required double r21 = 4;
+inline bool AprilTagRot::has_r21() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void AprilTagRot::set_has_r21() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void AprilTagRot::clear_has_r21() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void AprilTagRot::clear_r21() {
+  r21_ = 0;
+  clear_has_r21();
+}
+inline double AprilTagRot::r21() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagRot.r21)
+  return r21_;
+}
+inline void AprilTagRot::set_r21(double value) {
+  set_has_r21();
+  r21_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagRot.r21)
+}
+
+// required double r22 = 5;
+inline bool AprilTagRot::has_r22() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void AprilTagRot::set_has_r22() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void AprilTagRot::clear_has_r22() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void AprilTagRot::clear_r22() {
+  r22_ = 0;
+  clear_has_r22();
+}
+inline double AprilTagRot::r22() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagRot.r22)
+  return r22_;
+}
+inline void AprilTagRot::set_r22(double value) {
+  set_has_r22();
+  r22_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagRot.r22)
+}
+
+// required double r23 = 6;
+inline bool AprilTagRot::has_r23() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void AprilTagRot::set_has_r23() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void AprilTagRot::clear_has_r23() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline void AprilTagRot::clear_r23() {
+  r23_ = 0;
+  clear_has_r23();
+}
+inline double AprilTagRot::r23() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagRot.r23)
+  return r23_;
+}
+inline void AprilTagRot::set_r23(double value) {
+  set_has_r23();
+  r23_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagRot.r23)
+}
+
+// required double r31 = 7;
+inline bool AprilTagRot::has_r31() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void AprilTagRot::set_has_r31() {
+  _has_bits_[0] |= 0x00000040u;
+}
+inline void AprilTagRot::clear_has_r31() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline void AprilTagRot::clear_r31() {
+  r31_ = 0;
+  clear_has_r31();
+}
+inline double AprilTagRot::r31() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagRot.r31)
+  return r31_;
+}
+inline void AprilTagRot::set_r31(double value) {
+  set_has_r31();
+  r31_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagRot.r31)
+}
+
+// required double r32 = 8;
+inline bool AprilTagRot::has_r32() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+inline void AprilTagRot::set_has_r32() {
+  _has_bits_[0] |= 0x00000080u;
+}
+inline void AprilTagRot::clear_has_r32() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+inline void AprilTagRot::clear_r32() {
+  r32_ = 0;
+  clear_has_r32();
+}
+inline double AprilTagRot::r32() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagRot.r32)
+  return r32_;
+}
+inline void AprilTagRot::set_r32(double value) {
+  set_has_r32();
+  r32_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagRot.r32)
+}
+
+// required double r33 = 9;
+inline bool AprilTagRot::has_r33() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+inline void AprilTagRot::set_has_r33() {
+  _has_bits_[0] |= 0x00000100u;
+}
+inline void AprilTagRot::clear_has_r33() {
+  _has_bits_[0] &= ~0x00000100u;
+}
+inline void AprilTagRot::clear_r33() {
+  r33_ = 0;
+  clear_has_r33();
+}
+inline double AprilTagRot::r33() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagRot.r33)
+  return r33_;
+}
+inline void AprilTagRot::set_r33(double value) {
+  set_has_r33();
+  r33_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagRot.r33)
+}
+
+// -------------------------------------------------------------------
+
+// AprilTagTrans
+
+// required double x = 1;
+inline bool AprilTagTrans::has_x() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void AprilTagTrans::set_has_x() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void AprilTagTrans::clear_has_x() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void AprilTagTrans::clear_x() {
+  x_ = 0;
+  clear_has_x();
+}
+inline double AprilTagTrans::x() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagTrans.x)
+  return x_;
+}
+inline void AprilTagTrans::set_x(double value) {
+  set_has_x();
+  x_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagTrans.x)
+}
+
+// required double y = 2;
+inline bool AprilTagTrans::has_y() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void AprilTagTrans::set_has_y() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void AprilTagTrans::clear_has_y() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void AprilTagTrans::clear_y() {
+  y_ = 0;
+  clear_has_y();
+}
+inline double AprilTagTrans::y() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagTrans.y)
+  return y_;
+}
+inline void AprilTagTrans::set_y(double value) {
+  set_has_y();
+  y_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagTrans.y)
+}
+
+// required double z = 3;
+inline bool AprilTagTrans::has_z() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void AprilTagTrans::set_has_z() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void AprilTagTrans::clear_has_z() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void AprilTagTrans::clear_z() {
+  z_ = 0;
+  clear_has_z();
+}
+inline double AprilTagTrans::z() const {
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagTrans.z)
+  return z_;
+}
+inline void AprilTagTrans::set_z(double value) {
+  set_has_z();
+  z_ = value;
+  // @@protoc_insertion_point(field_set:robosar_fms.AprilTagTrans.z)
+}
+
+// -------------------------------------------------------------------
+
+// AprilTagPose
+
+// required .robosar_fms.AprilTagRot R = 1;
+inline bool AprilTagPose::has_r() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void AprilTagPose::set_has_r() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void AprilTagPose::clear_has_r() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void AprilTagPose::clear_r() {
+  if (r_ != NULL) r_->Clear();
+  clear_has_r();
+}
+inline const ::robosar_fms::AprilTagRot& AprilTagPose::_internal_r() const {
+  return *r_;
+}
+inline const ::robosar_fms::AprilTagRot& AprilTagPose::r() const {
+  const ::robosar_fms::AprilTagRot* p = r_;
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagPose.R)
+  return p != NULL ? *p : *reinterpret_cast<const ::robosar_fms::AprilTagRot*>(
+      &::robosar_fms::_AprilTagRot_default_instance_);
+}
+inline ::robosar_fms::AprilTagRot* AprilTagPose::release_r() {
+  // @@protoc_insertion_point(field_release:robosar_fms.AprilTagPose.R)
+  clear_has_r();
+  ::robosar_fms::AprilTagRot* temp = r_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  r_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::AprilTagRot* AprilTagPose::unsafe_arena_release_r() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.AprilTagPose.R)
+  clear_has_r();
+  ::robosar_fms::AprilTagRot* temp = r_;
+  r_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::AprilTagRot* AprilTagPose::mutable_r() {
+  set_has_r();
+  if (r_ == NULL) {
+    auto* p = CreateMaybeMessage<::robosar_fms::AprilTagRot>(GetArenaNoVirtual());
+    r_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:robosar_fms.AprilTagPose.R)
+  return r_;
+}
+inline void AprilTagPose::set_allocated_r(::robosar_fms::AprilTagRot* r) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete r_;
+  }
+  if (r) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(r);
+    if (message_arena != submessage_arena) {
+      r = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, r, submessage_arena);
+    }
+    set_has_r();
+  } else {
+    clear_has_r();
+  }
+  r_ = r;
+  // @@protoc_insertion_point(field_set_allocated:robosar_fms.AprilTagPose.R)
+}
+
+// required .robosar_fms.AprilTagTrans t = 2;
+inline bool AprilTagPose::has_t() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void AprilTagPose::set_has_t() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void AprilTagPose::clear_has_t() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void AprilTagPose::clear_t() {
+  if (t_ != NULL) t_->Clear();
+  clear_has_t();
+}
+inline const ::robosar_fms::AprilTagTrans& AprilTagPose::_internal_t() const {
+  return *t_;
+}
+inline const ::robosar_fms::AprilTagTrans& AprilTagPose::t() const {
+  const ::robosar_fms::AprilTagTrans* p = t_;
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagPose.t)
+  return p != NULL ? *p : *reinterpret_cast<const ::robosar_fms::AprilTagTrans*>(
+      &::robosar_fms::_AprilTagTrans_default_instance_);
+}
+inline ::robosar_fms::AprilTagTrans* AprilTagPose::release_t() {
+  // @@protoc_insertion_point(field_release:robosar_fms.AprilTagPose.t)
+  clear_has_t();
+  ::robosar_fms::AprilTagTrans* temp = t_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  t_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::AprilTagTrans* AprilTagPose::unsafe_arena_release_t() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.AprilTagPose.t)
+  clear_has_t();
+  ::robosar_fms::AprilTagTrans* temp = t_;
+  t_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::AprilTagTrans* AprilTagPose::mutable_t() {
+  set_has_t();
+  if (t_ == NULL) {
+    auto* p = CreateMaybeMessage<::robosar_fms::AprilTagTrans>(GetArenaNoVirtual());
+    t_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:robosar_fms.AprilTagPose.t)
+  return t_;
+}
+inline void AprilTagPose::set_allocated_t(::robosar_fms::AprilTagTrans* t) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete t_;
+  }
+  if (t) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(t);
+    if (message_arena != submessage_arena) {
+      t = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, t, submessage_arena);
+    }
+    set_has_t();
+  } else {
+    clear_has_t();
+  }
+  t_ = t;
+  // @@protoc_insertion_point(field_set_allocated:robosar_fms.AprilTagPose.t)
+}
+
+// -------------------------------------------------------------------
+
 // AprilTagDetection
 
 // required uint32 tag_id = 1;
 inline bool AprilTagDetection::has_tag_id() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
+  return (_has_bits_[0] & 0x00000002u) != 0;
 }
 inline void AprilTagDetection::set_has_tag_id() {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000002u;
 }
 inline void AprilTagDetection::clear_has_tag_id() {
-  _has_bits_[0] &= ~0x00000001u;
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline void AprilTagDetection::clear_tag_id() {
   tag_id_ = 0u;
@@ -2693,6 +3686,75 @@ inline void AprilTagDetection::set_tag_id(::google::protobuf::uint32 value) {
   set_has_tag_id();
   tag_id_ = value;
   // @@protoc_insertion_point(field_set:robosar_fms.AprilTagDetection.tag_id)
+}
+
+// required .robosar_fms.AprilTagPose pose = 2;
+inline bool AprilTagDetection::has_pose() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void AprilTagDetection::set_has_pose() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void AprilTagDetection::clear_has_pose() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void AprilTagDetection::clear_pose() {
+  if (pose_ != NULL) pose_->Clear();
+  clear_has_pose();
+}
+inline const ::robosar_fms::AprilTagPose& AprilTagDetection::_internal_pose() const {
+  return *pose_;
+}
+inline const ::robosar_fms::AprilTagPose& AprilTagDetection::pose() const {
+  const ::robosar_fms::AprilTagPose* p = pose_;
+  // @@protoc_insertion_point(field_get:robosar_fms.AprilTagDetection.pose)
+  return p != NULL ? *p : *reinterpret_cast<const ::robosar_fms::AprilTagPose*>(
+      &::robosar_fms::_AprilTagPose_default_instance_);
+}
+inline ::robosar_fms::AprilTagPose* AprilTagDetection::release_pose() {
+  // @@protoc_insertion_point(field_release:robosar_fms.AprilTagDetection.pose)
+  clear_has_pose();
+  ::robosar_fms::AprilTagPose* temp = pose_;
+  if (GetArenaNoVirtual() != NULL) {
+    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp);
+  }
+  pose_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::AprilTagPose* AprilTagDetection::unsafe_arena_release_pose() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:robosar_fms.AprilTagDetection.pose)
+  clear_has_pose();
+  ::robosar_fms::AprilTagPose* temp = pose_;
+  pose_ = NULL;
+  return temp;
+}
+inline ::robosar_fms::AprilTagPose* AprilTagDetection::mutable_pose() {
+  set_has_pose();
+  if (pose_ == NULL) {
+    auto* p = CreateMaybeMessage<::robosar_fms::AprilTagPose>(GetArenaNoVirtual());
+    pose_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:robosar_fms.AprilTagDetection.pose)
+  return pose_;
+}
+inline void AprilTagDetection::set_allocated_pose(::robosar_fms::AprilTagPose* pose) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete pose_;
+  }
+  if (pose) {
+    ::google::protobuf::Arena* submessage_arena =
+      ::google::protobuf::Arena::GetArena(pose);
+    if (message_arena != submessage_arena) {
+      pose = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, pose, submessage_arena);
+    }
+    set_has_pose();
+  } else {
+    clear_has_pose();
+  }
+  pose_ = pose;
+  // @@protoc_insertion_point(field_set_allocated:robosar_fms.AprilTagDetection.pose)
 }
 
 // -------------------------------------------------------------------
@@ -3405,6 +4467,12 @@ inline void SensorData::set_allocated_april_detections(::robosar_fms::AllDetecti
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
