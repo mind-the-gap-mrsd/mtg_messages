@@ -1,6 +1,0 @@
-#goal definition
-string agent_name
-nav_msgs/Path path
----
-#result definition
-bool success

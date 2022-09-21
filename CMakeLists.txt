@@ -62,7 +62,7 @@ add_service_files(
   agent_status.srv
   taskgen_getwaypts.srv
   sys_odom_reset.srv
-  invoke_controller.srv
+  robosar_controller.srv
 )
 
 ## Generate actions in the 'action' folder
