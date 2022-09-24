@@ -55,6 +55,7 @@ add_message_files(
   task_allocation.msg
   agents_status.msg
   controller_status.msg
+  mission_command.msg
 )
 
 ## Generate services in the 'srv' folder
