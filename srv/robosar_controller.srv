@@ -1,0 +1,7 @@
+#goal definition
+bool stop_controller
+string[] agent_names
+nav_msgs/Path[] paths
+---
+#result definition
+bool success

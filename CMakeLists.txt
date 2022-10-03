@@ -54,6 +54,8 @@ add_message_files(
   FILES
   task_allocation.msg
   agents_status.msg
+  controller_status.msg
+  mission_command.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -62,6 +64,7 @@ add_service_files(
   agent_status.srv
   taskgen_getwaypts.srv
   sys_odom_reset.srv
+  robosar_controller.srv
 )
 
 ## Generate actions in the 'action' folder
@@ -111,7 +114,7 @@ catkin_package(
   INCLUDE_DIRS proto/include/cpp
   LIBRARIES robosar_messages
   CATKIN_DEPENDS roscpp rospy std_msgs nav_msgs message_runtime
-  DEPENDS system_lib
+  #DEPENDS system_lib
 )
 
 ###########
