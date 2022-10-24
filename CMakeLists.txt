@@ -44,7 +44,7 @@ find_package(Protobuf REQUIRED)
 ##     find_package(catkin REQUIRED COMPONENTS ...)
 ##   * add "message_runtime" and every package in MSG_DEP_SET to
 ##     catkin_package(CATKIN_DEPENDS ...)
-##   * uncomment the add_*_files sections below as needed
+##   * uncomment the add_*_files sections belplanner_ow as needed
 ##     and list every .msg/.srv/.action file to be processed
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
@@ -56,6 +56,8 @@ add_message_files(
   agents_status.msg
   controller_status.msg
   mission_command.msg
+  Frontier.msg
+  PointArray.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -65,6 +67,7 @@ add_service_files(
   taskgen_getwaypts.srv
   sys_odom_reset.srv
   robosar_controller.srv
+  frontier_exploration.srv
 )
 
 ## Generate actions in the 'action' folder
