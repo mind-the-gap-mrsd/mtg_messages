@@ -56,7 +56,6 @@ add_message_files(
   agents_status.msg
   controller_status.msg
   mission_command.msg
-  Frontier.msg
   PointArray.msg
 )
 
@@ -67,7 +66,6 @@ add_service_files(
   taskgen_getwaypts.srv
   sys_odom_reset.srv
   robosar_controller.srv
-  frontier_exploration.srv
 )
 
 ## Generate actions in the 'action' folder
