@@ -67,6 +67,7 @@ add_service_files(
   sys_odom_reset.srv
   robosar_controller.srv
   rrt_path_cost.srv
+  task_graph.srv
 )
 
 ## Generate actions in the 'action' folder
