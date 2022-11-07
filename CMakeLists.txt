@@ -69,6 +69,7 @@ add_service_files(
   rrt_path_cost.srv
   task_graph_getter.srv
   task_graph_setter.srv
+  frontier_filter.srv
 )
 
 ## Generate actions in the 'action' folder
