@@ -1,3 +1,0 @@
-geometry_msgs/Point[] frontiers
-nav_msgs/OccupancyGrid map_data
----
