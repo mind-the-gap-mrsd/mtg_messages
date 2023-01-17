@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package robosar_fms;
+package mtg_fms;
 
 option cc_enable_arenas = true;
 

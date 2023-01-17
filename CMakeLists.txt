@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(robosar_messages)
+project(mtg_messages)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -65,7 +65,7 @@ add_service_files(
   agent_status.srv
   taskgen_getwaypts.srv
   sys_odom_reset.srv
-  robosar_controller.srv
+  mtg_controller.srv
   rrt_path_cost.srv
   task_graph_getter.srv
   task_graph_setter.srv
@@ -119,7 +119,7 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS proto/include/cpp
-  LIBRARIES robosar_messages
+  LIBRARIES mtg_messages
   CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs nav_msgs message_runtime actionlib_msgs
   #DEPENDS system_lib
 )
@@ -138,7 +138,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/robosar_messages.cpp
+#   src/${PROJECT_NAME}/mtg_messages.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -149,7 +149,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_library(${PROJECT_NAME} proto/include/cpp/robosar.pb.cc)
+add_library(${PROJECT_NAME} proto/include/cpp/mtg.pb.cc)
 
 target_link_libraries(${PROJECT_NAME} ${Protobuf_LIBRARIES})
 
@@ -215,7 +215,7 @@ install(DIRECTORY include/${PROJECT_NAME}/
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_robosar_messages.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_mtg_messages.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

@@ -1,7 +1,7 @@
-# robosar_messages
+# mtg_messages
 ROS messages and agent-server comm protocol
 
 ### Building proto messages
 
-* python ./../robosar_khepera_code/nanopb/generator/nanopb_generator.py -v -D proto/include/c proto/robosar.proto
-* protoc robosar.proto --cpp_out=include/cpp
+* python ./../mtg_khepera_code/nanopb/generator/nanopb_generator.py -v -D proto/include/c proto/mtg.proto
+* protoc mtg.proto --cpp_out=include/cpp
