@@ -5,380 +5,279 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_mtg_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Accelerometer;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AgentStatus;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AprilTagRot;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AprilTagTrans;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Encoder_count;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Encoder_speed;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Gyroscope;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Infrared;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LaserScanner;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Ultrasonic;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_AllDetections;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_AprilTagDetection;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_mtg_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_AprilTagPose;
-}  // namespace protobuf_mtg_2eproto
+PROTOBUF_PRAGMA_INIT_SEG
 namespace mtg_fms {
-class AccelerometerDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Accelerometer>
-      _instance;
-} _Accelerometer_default_instance_;
-class UltrasonicDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Ultrasonic>
-      _instance;
-} _Ultrasonic_default_instance_;
-class InfraredDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Infrared>
-      _instance;
-} _Infrared_default_instance_;
-class GyroscopeDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Gyroscope>
-      _instance;
-} _Gyroscope_default_instance_;
-class Encoder_countDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Encoder_count>
-      _instance;
-} _Encoder_count_default_instance_;
-class Encoder_speedDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Encoder_speed>
-      _instance;
-} _Encoder_speed_default_instance_;
-class LaserScannerDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LaserScanner>
-      _instance;
-} _LaserScanner_default_instance_;
-class AgentStatusDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<AgentStatus>
-      _instance;
-} _AgentStatus_default_instance_;
-class AprilTagRotDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<AprilTagRot>
-      _instance;
-} _AprilTagRot_default_instance_;
-class AprilTagTransDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<AprilTagTrans>
-      _instance;
-} _AprilTagTrans_default_instance_;
-class AprilTagPoseDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<AprilTagPose>
-      _instance;
-} _AprilTagPose_default_instance_;
-class AprilTagDetectionDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<AprilTagDetection>
-      _instance;
-} _AprilTagDetection_default_instance_;
-class AllDetectionsDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<AllDetections>
-      _instance;
-} _AllDetections_default_instance_;
-class SensorDataDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<SensorData>
-      _instance;
-} _SensorData_default_instance_;
+constexpr Accelerometer::Accelerometer(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : acc_x_(0)
+  , acc_y_(0)
+  , acc_z_(0){}
+struct AccelerometerDefaultTypeInternal {
+  constexpr AccelerometerDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AccelerometerDefaultTypeInternal() {}
+  union {
+    Accelerometer _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AccelerometerDefaultTypeInternal _Accelerometer_default_instance_;
+constexpr Ultrasonic::Ultrasonic(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : sensor_a_(0u)
+  , sensor_b_(0u)
+  , sensor_c_(0u)
+  , sensor_d_(0u)
+  , sensor_e_(0u){}
+struct UltrasonicDefaultTypeInternal {
+  constexpr UltrasonicDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~UltrasonicDefaultTypeInternal() {}
+  union {
+    Ultrasonic _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT UltrasonicDefaultTypeInternal _Ultrasonic_default_instance_;
+constexpr Infrared::Infrared(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : sensor_a_(0u)
+  , sensor_b_(0u)
+  , sensor_c_(0u)
+  , sensor_d_(0u)
+  , sensor_e_(0u)
+  , sensor_f_(0u)
+  , sensor_g_(0u)
+  , sensor_h_(0u)
+  , sensor_i_(0u)
+  , sensor_j_(0u)
+  , sensor_k_(0u)
+  , sensor_l_(0u){}
+struct InfraredDefaultTypeInternal {
+  constexpr InfraredDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~InfraredDefaultTypeInternal() {}
+  union {
+    Infrared _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT InfraredDefaultTypeInternal _Infrared_default_instance_;
+constexpr Gyroscope::Gyroscope(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : gyro_x_(0)
+  , gyro_y_(0)
+  , gyro_z_(0){}
+struct GyroscopeDefaultTypeInternal {
+  constexpr GyroscopeDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~GyroscopeDefaultTypeInternal() {}
+  union {
+    Gyroscope _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GyroscopeDefaultTypeInternal _Gyroscope_default_instance_;
+constexpr Encoder_count::Encoder_count(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : left_(uint64_t{0u})
+  , right_(uint64_t{0u}){}
+struct Encoder_countDefaultTypeInternal {
+  constexpr Encoder_countDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~Encoder_countDefaultTypeInternal() {}
+  union {
+    Encoder_count _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Encoder_countDefaultTypeInternal _Encoder_count_default_instance_;
+constexpr Encoder_speed::Encoder_speed(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : left_(uint64_t{0u})
+  , right_(uint64_t{0u}){}
+struct Encoder_speedDefaultTypeInternal {
+  constexpr Encoder_speedDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~Encoder_speedDefaultTypeInternal() {}
+  union {
+    Encoder_speed _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Encoder_speedDefaultTypeInternal _Encoder_speed_default_instance_;
+constexpr LaserScanner::LaserScanner(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : values_()
+  , _values_cached_byte_size_(){}
+struct LaserScannerDefaultTypeInternal {
+  constexpr LaserScannerDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~LaserScannerDefaultTypeInternal() {}
+  union {
+    LaserScanner _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LaserScannerDefaultTypeInternal _LaserScanner_default_instance_;
+constexpr AgentStatus::AgentStatus(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : battery_level_(uint64_t{0u}){}
+struct AgentStatusDefaultTypeInternal {
+  constexpr AgentStatusDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AgentStatusDefaultTypeInternal() {}
+  union {
+    AgentStatus _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AgentStatusDefaultTypeInternal _AgentStatus_default_instance_;
+constexpr AprilTagRot::AprilTagRot(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : r11_(0)
+  , r12_(0)
+  , r13_(0)
+  , r21_(0)
+  , r22_(0)
+  , r23_(0)
+  , r31_(0)
+  , r32_(0)
+  , r33_(0){}
+struct AprilTagRotDefaultTypeInternal {
+  constexpr AprilTagRotDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AprilTagRotDefaultTypeInternal() {}
+  union {
+    AprilTagRot _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AprilTagRotDefaultTypeInternal _AprilTagRot_default_instance_;
+constexpr AprilTagTrans::AprilTagTrans(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : x_(0)
+  , y_(0)
+  , z_(0){}
+struct AprilTagTransDefaultTypeInternal {
+  constexpr AprilTagTransDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AprilTagTransDefaultTypeInternal() {}
+  union {
+    AprilTagTrans _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AprilTagTransDefaultTypeInternal _AprilTagTrans_default_instance_;
+constexpr AprilTagPose::AprilTagPose(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : r_(nullptr)
+  , t_(nullptr){}
+struct AprilTagPoseDefaultTypeInternal {
+  constexpr AprilTagPoseDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AprilTagPoseDefaultTypeInternal() {}
+  union {
+    AprilTagPose _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AprilTagPoseDefaultTypeInternal _AprilTagPose_default_instance_;
+constexpr AprilTagDetection::AprilTagDetection(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : pose_(nullptr)
+  , tag_id_(0u){}
+struct AprilTagDetectionDefaultTypeInternal {
+  constexpr AprilTagDetectionDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AprilTagDetectionDefaultTypeInternal() {}
+  union {
+    AprilTagDetection _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AprilTagDetectionDefaultTypeInternal _AprilTagDetection_default_instance_;
+constexpr AllDetections::AllDetections(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : tag_detections_(){}
+struct AllDetectionsDefaultTypeInternal {
+  constexpr AllDetectionsDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AllDetectionsDefaultTypeInternal() {}
+  union {
+    AllDetections _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AllDetectionsDefaultTypeInternal _AllDetections_default_instance_;
+constexpr SensorData::SensorData(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : accel_data_(nullptr)
+  , gyro_data_(nullptr)
+  , count_data_(nullptr)
+  , speed_data_(nullptr)
+  , ir_data_(nullptr)
+  , us_data_(nullptr)
+  , lrf_data_(nullptr)
+  , agent_status_data_(nullptr)
+  , april_detections_(nullptr)
+  , timestamp_ns_(uint64_t{0u})
+  , seq_id_(0u){}
+struct SensorDataDefaultTypeInternal {
+  constexpr SensorDataDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~SensorDataDefaultTypeInternal() {}
+  union {
+    SensorData _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SensorDataDefaultTypeInternal _SensorData_default_instance_;
 }  // namespace mtg_fms
-namespace protobuf_mtg_2eproto {
-static void InitDefaultsAccelerometer() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_mtg_2eproto[14];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_mtg_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_mtg_2eproto = nullptr;
 
-  {
-    void* ptr = &::mtg_fms::_Accelerometer_default_instance_;
-    new (ptr) ::mtg_fms::Accelerometer();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::Accelerometer::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_Accelerometer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAccelerometer}, {}};
-
-static void InitDefaultsUltrasonic() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_Ultrasonic_default_instance_;
-    new (ptr) ::mtg_fms::Ultrasonic();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::Ultrasonic::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_Ultrasonic =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsUltrasonic}, {}};
-
-static void InitDefaultsInfrared() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_Infrared_default_instance_;
-    new (ptr) ::mtg_fms::Infrared();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::Infrared::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_Infrared =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsInfrared}, {}};
-
-static void InitDefaultsGyroscope() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_Gyroscope_default_instance_;
-    new (ptr) ::mtg_fms::Gyroscope();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::Gyroscope::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_Gyroscope =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsGyroscope}, {}};
-
-static void InitDefaultsEncoder_count() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_Encoder_count_default_instance_;
-    new (ptr) ::mtg_fms::Encoder_count();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::Encoder_count::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_Encoder_count =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEncoder_count}, {}};
-
-static void InitDefaultsEncoder_speed() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_Encoder_speed_default_instance_;
-    new (ptr) ::mtg_fms::Encoder_speed();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::Encoder_speed::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_Encoder_speed =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEncoder_speed}, {}};
-
-static void InitDefaultsLaserScanner() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_LaserScanner_default_instance_;
-    new (ptr) ::mtg_fms::LaserScanner();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::LaserScanner::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_LaserScanner =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLaserScanner}, {}};
-
-static void InitDefaultsAgentStatus() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_AgentStatus_default_instance_;
-    new (ptr) ::mtg_fms::AgentStatus();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::AgentStatus::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_AgentStatus =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAgentStatus}, {}};
-
-static void InitDefaultsAprilTagRot() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_AprilTagRot_default_instance_;
-    new (ptr) ::mtg_fms::AprilTagRot();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::AprilTagRot::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_AprilTagRot =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAprilTagRot}, {}};
-
-static void InitDefaultsAprilTagTrans() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_AprilTagTrans_default_instance_;
-    new (ptr) ::mtg_fms::AprilTagTrans();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::AprilTagTrans::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_AprilTagTrans =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAprilTagTrans}, {}};
-
-static void InitDefaultsAprilTagPose() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_AprilTagPose_default_instance_;
-    new (ptr) ::mtg_fms::AprilTagPose();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::AprilTagPose::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<2> scc_info_AprilTagPose =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsAprilTagPose}, {
-      &protobuf_mtg_2eproto::scc_info_AprilTagRot.base,
-      &protobuf_mtg_2eproto::scc_info_AprilTagTrans.base,}};
-
-static void InitDefaultsAprilTagDetection() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_AprilTagDetection_default_instance_;
-    new (ptr) ::mtg_fms::AprilTagDetection();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::AprilTagDetection::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<1> scc_info_AprilTagDetection =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAprilTagDetection}, {
-      &protobuf_mtg_2eproto::scc_info_AprilTagPose.base,}};
-
-static void InitDefaultsAllDetections() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_AllDetections_default_instance_;
-    new (ptr) ::mtg_fms::AllDetections();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::AllDetections::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<1> scc_info_AllDetections =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAllDetections}, {
-      &protobuf_mtg_2eproto::scc_info_AprilTagDetection.base,}};
-
-static void InitDefaultsSensorData() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mtg_fms::_SensorData_default_instance_;
-    new (ptr) ::mtg_fms::SensorData();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mtg_fms::SensorData::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<9> scc_info_SensorData =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 9, InitDefaultsSensorData}, {
-      &protobuf_mtg_2eproto::scc_info_Accelerometer.base,
-      &protobuf_mtg_2eproto::scc_info_Gyroscope.base,
-      &protobuf_mtg_2eproto::scc_info_Encoder_count.base,
-      &protobuf_mtg_2eproto::scc_info_Encoder_speed.base,
-      &protobuf_mtg_2eproto::scc_info_Infrared.base,
-      &protobuf_mtg_2eproto::scc_info_Ultrasonic.base,
-      &protobuf_mtg_2eproto::scc_info_LaserScanner.base,
-      &protobuf_mtg_2eproto::scc_info_AgentStatus.base,
-      &protobuf_mtg_2eproto::scc_info_AllDetections.base,}};
-
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_Accelerometer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_Ultrasonic.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_Infrared.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_Gyroscope.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_Encoder_count.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_Encoder_speed.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LaserScanner.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_AgentStatus.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_AprilTagRot.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_AprilTagTrans.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_AprilTagPose.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_AprilTagDetection.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_AllDetections.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_SensorData.base);
-}
-
-::google::protobuf::Metadata file_level_metadata[14];
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Accelerometer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Accelerometer, _internal_metadata_),
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_mtg_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Accelerometer, acc_x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Accelerometer, acc_y_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Accelerometer, acc_z_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, acc_x_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, acc_y_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, acc_z_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Ultrasonic, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Ultrasonic, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_a_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_b_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_c_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_d_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_e_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_a_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_b_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_c_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_d_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_e_),
   0,
   1,
   2,
   3,
   4,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_a_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_b_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_c_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_d_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_e_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_f_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_g_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_h_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_i_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_j_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_k_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Infrared, sensor_l_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_a_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_b_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_c_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_d_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_e_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_f_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_g_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_h_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_i_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_j_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_k_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_l_),
   0,
   1,
   2,
@@ -391,63 +290,62 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   9,
   10,
   11,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Gyroscope, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Gyroscope, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Gyroscope, gyro_x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Gyroscope, gyro_y_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Gyroscope, gyro_z_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, gyro_x_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, gyro_y_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, gyro_z_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Encoder_count, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Encoder_count, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Encoder_count, left_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Encoder_count, right_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, left_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, right_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Encoder_speed, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Encoder_speed, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Encoder_speed, left_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::Encoder_speed, right_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, left_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, right_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::LaserScanner, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::LaserScanner, _internal_metadata_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::LaserScanner, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::LaserScanner, values_),
-  ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AgentStatus, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AgentStatus, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::LaserScanner, values_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AgentStatus, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AgentStatus, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AgentStatus, battery_level_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AgentStatus, battery_level_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, r11_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, r12_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, r13_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, r21_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, r22_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, r23_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, r31_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, r32_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagRot, r33_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r11_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r12_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r13_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r21_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r22_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r23_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r31_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r32_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r33_),
   0,
   1,
   2,
@@ -457,58 +355,57 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   6,
   7,
   8,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagTrans, x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagTrans, y_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagTrans, z_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, x_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, y_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, z_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagPose, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagPose, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagPose, r_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagPose, t_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, r_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, t_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagDetection, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagDetection, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagDetection, tag_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AprilTagDetection, pose_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, tag_id_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, pose_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AllDetections, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AllDetections, _internal_metadata_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AllDetections, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::AllDetections, tag_detections_),
-  ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AllDetections, tag_detections_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, timestamp_ns_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, seq_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, accel_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, gyro_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, count_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, speed_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, ir_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, us_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, lrf_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, agent_status_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mtg_fms::SensorData, april_detections_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, timestamp_ns_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, seq_id_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, accel_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, gyro_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, count_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, speed_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, ir_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, us_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, lrf_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, agent_status_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, april_detections_),
   9,
   10,
   0,
@@ -521,150 +418,124 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   7,
   8,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 8, sizeof(::mtg_fms::Accelerometer)},
   { 11, 21, sizeof(::mtg_fms::Ultrasonic)},
   { 26, 43, sizeof(::mtg_fms::Infrared)},
   { 55, 63, sizeof(::mtg_fms::Gyroscope)},
   { 66, 73, sizeof(::mtg_fms::Encoder_count)},
   { 75, 82, sizeof(::mtg_fms::Encoder_speed)},
-  { 84, 90, sizeof(::mtg_fms::LaserScanner)},
-  { 91, 97, sizeof(::mtg_fms::AgentStatus)},
-  { 98, 112, sizeof(::mtg_fms::AprilTagRot)},
-  { 121, 129, sizeof(::mtg_fms::AprilTagTrans)},
-  { 132, 139, sizeof(::mtg_fms::AprilTagPose)},
-  { 141, 148, sizeof(::mtg_fms::AprilTagDetection)},
-  { 150, 156, sizeof(::mtg_fms::AllDetections)},
-  { 157, 173, sizeof(::mtg_fms::SensorData)},
+  { 84, -1, sizeof(::mtg_fms::LaserScanner)},
+  { 90, 96, sizeof(::mtg_fms::AgentStatus)},
+  { 97, 111, sizeof(::mtg_fms::AprilTagRot)},
+  { 120, 128, sizeof(::mtg_fms::AprilTagTrans)},
+  { 131, 138, sizeof(::mtg_fms::AprilTagPose)},
+  { 140, 147, sizeof(::mtg_fms::AprilTagDetection)},
+  { 149, -1, sizeof(::mtg_fms::AllDetections)},
+  { 155, 171, sizeof(::mtg_fms::SensorData)},
 };
 
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_Accelerometer_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_Ultrasonic_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_Infrared_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_Gyroscope_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_Encoder_count_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_Encoder_speed_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_LaserScanner_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_AgentStatus_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_AprilTagRot_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_AprilTagTrans_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_AprilTagPose_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_AprilTagDetection_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_AllDetections_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::mtg_fms::_SensorData_default_instance_),
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Accelerometer_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Ultrasonic_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Infrared_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Gyroscope_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Encoder_count_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Encoder_speed_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_LaserScanner_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AgentStatus_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AprilTagRot_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AprilTagTrans_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AprilTagPose_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AprilTagDetection_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AllDetections_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_SensorData_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "mtg.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
+const char descriptor_table_protodef_mtg_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
+  "\n\tmtg.proto\022\007mtg_fms\"<\n\rAccelerometer\022\r\n"
+  "\005acc_x\030\001 \002(\001\022\r\n\005acc_y\030\002 \002(\001\022\r\n\005acc_z\030\003 \002"
+  "(\001\"f\n\nUltrasonic\022\020\n\010sensor_a\030\001 \002(\r\022\020\n\010se"
+  "nsor_b\030\002 \002(\r\022\020\n\010sensor_c\030\003 \002(\r\022\020\n\010sensor"
+  "_d\030\004 \002(\r\022\020\n\010sensor_e\030\005 \002(\r\"\342\001\n\010Infrared\022"
+  "\020\n\010sensor_a\030\001 \002(\r\022\020\n\010sensor_b\030\002 \002(\r\022\020\n\010s"
+  "ensor_c\030\003 \002(\r\022\020\n\010sensor_d\030\004 \002(\r\022\020\n\010senso"
+  "r_e\030\005 \002(\r\022\020\n\010sensor_f\030\006 \002(\r\022\020\n\010sensor_g\030"
+  "\007 \002(\r\022\020\n\010sensor_h\030\010 \002(\r\022\020\n\010sensor_i\030\t \002("
+  "\r\022\020\n\010sensor_j\030\n \002(\r\022\020\n\010sensor_k\030\013 \002(\r\022\020\n"
+  "\010sensor_l\030\014 \002(\r\";\n\tGyroscope\022\016\n\006gyro_x\030\001"
+  " \002(\001\022\016\n\006gyro_y\030\002 \002(\001\022\016\n\006gyro_z\030\003 \002(\001\",\n\r"
+  "Encoder_count\022\014\n\004left\030\001 \002(\004\022\r\n\005right\030\002 \002"
+  "(\004\",\n\rEncoder_speed\022\014\n\004left\030\001 \002(\004\022\r\n\005rig"
+  "ht\030\002 \002(\004\"\"\n\014LaserScanner\022\022\n\006values\030\001 \003(\004"
+  "B\002\020\001\"$\n\013AgentStatus\022\025\n\rbattery_level\030\001 \002"
+  "(\004\"\202\001\n\013AprilTagRot\022\013\n\003r11\030\001 \002(\001\022\013\n\003r12\030\002"
+  " \002(\001\022\013\n\003r13\030\003 \002(\001\022\013\n\003r21\030\004 \002(\001\022\013\n\003r22\030\005 "
+  "\002(\001\022\013\n\003r23\030\006 \002(\001\022\013\n\003r31\030\007 \002(\001\022\013\n\003r32\030\010 \002"
+  "(\001\022\013\n\003r33\030\t \002(\001\"0\n\rAprilTagTrans\022\t\n\001x\030\001 "
+  "\002(\001\022\t\n\001y\030\002 \002(\001\022\t\n\001z\030\003 \002(\001\"R\n\014AprilTagPos"
+  "e\022\037\n\001R\030\001 \002(\0132\024.mtg_fms.AprilTagRot\022!\n\001t\030"
+  "\002 \002(\0132\026.mtg_fms.AprilTagTrans\"H\n\021AprilTa"
+  "gDetection\022\016\n\006tag_id\030\001 \002(\r\022#\n\004pose\030\002 \002(\013"
+  "2\025.mtg_fms.AprilTagPose\"C\n\rAllDetections"
+  "\0222\n\016tag_detections\030\001 \003(\0132\032.mtg_fms.April"
+  "TagDetection\"\263\003\n\nSensorData\022\024\n\014timestamp"
+  "_ns\030\001 \002(\004\022\016\n\006seq_id\030\002 \002(\r\022*\n\naccel_data\030"
+  "\003 \002(\0132\026.mtg_fms.Accelerometer\022%\n\tgyro_da"
+  "ta\030\004 \002(\0132\022.mtg_fms.Gyroscope\022*\n\ncount_da"
+  "ta\030\005 \002(\0132\026.mtg_fms.Encoder_count\022*\n\nspee"
+  "d_data\030\006 \002(\0132\026.mtg_fms.Encoder_speed\022\"\n\007"
+  "ir_data\030\007 \002(\0132\021.mtg_fms.Infrared\022$\n\007us_d"
+  "ata\030\010 \002(\0132\023.mtg_fms.Ultrasonic\022\'\n\010lrf_da"
+  "ta\030\t \002(\0132\025.mtg_fms.LaserScanner\022/\n\021agent"
+  "_status_data\030\n \002(\0132\024.mtg_fms.AgentStatus"
+  "\0220\n\020april_detections\030\013 \002(\0132\026.mtg_fms.All"
+  "DetectionsB\003\370\001\001"
+  ;
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_mtg_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_mtg_2eproto = {
+  false, false, 1495, descriptor_table_protodef_mtg_2eproto, "mtg.proto", 
+  &descriptor_table_mtg_2eproto_once, nullptr, 0, 14,
+  schemas, file_default_instances, TableStruct_mtg_2eproto::offsets,
+  file_level_metadata_mtg_2eproto, file_level_enum_descriptors_mtg_2eproto, file_level_service_descriptors_mtg_2eproto,
+};
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_mtg_2eproto_getter() {
+  return &descriptor_table_mtg_2eproto;
 }
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 14);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\rmtg.proto\022\013mtg_fms\"<\n\rAccelero"
-      "meter\022\r\n\005acc_x\030\001 \002(\001\022\r\n\005acc_y\030\002 \002(\001\022\r\n\005a"
-      "cc_z\030\003 \002(\001\"f\n\nUltrasonic\022\020\n\010sensor_a\030\001 \002"
-      "(\r\022\020\n\010sensor_b\030\002 \002(\r\022\020\n\010sensor_c\030\003 \002(\r\022\020"
-      "\n\010sensor_d\030\004 \002(\r\022\020\n\010sensor_e\030\005 \002(\r\"\342\001\n\010I"
-      "nfrared\022\020\n\010sensor_a\030\001 \002(\r\022\020\n\010sensor_b\030\002 "
-      "\002(\r\022\020\n\010sensor_c\030\003 \002(\r\022\020\n\010sensor_d\030\004 \002(\r\022"
-      "\020\n\010sensor_e\030\005 \002(\r\022\020\n\010sensor_f\030\006 \002(\r\022\020\n\010s"
-      "ensor_g\030\007 \002(\r\022\020\n\010sensor_h\030\010 \002(\r\022\020\n\010senso"
-      "r_i\030\t \002(\r\022\020\n\010sensor_j\030\n \002(\r\022\020\n\010sensor_k\030"
-      "\013 \002(\r\022\020\n\010sensor_l\030\014 \002(\r\";\n\tGyroscope\022\016\n\006"
-      "gyro_x\030\001 \002(\001\022\016\n\006gyro_y\030\002 \002(\001\022\016\n\006gyro_z\030\003"
-      " \002(\001\",\n\rEncoder_count\022\014\n\004left\030\001 \002(\004\022\r\n\005r"
-      "ight\030\002 \002(\004\",\n\rEncoder_speed\022\014\n\004left\030\001 \002("
-      "\004\022\r\n\005right\030\002 \002(\004\"\"\n\014LaserScanner\022\022\n\006valu"
-      "es\030\001 \003(\004B\002\020\001\"$\n\013AgentStatus\022\025\n\rbattery_l"
-      "evel\030\001 \002(\004\"\202\001\n\013AprilTagRot\022\013\n\003r11\030\001 \002(\001\022"
-      "\013\n\003r12\030\002 \002(\001\022\013\n\003r13\030\003 \002(\001\022\013\n\003r21\030\004 \002(\001\022\013"
-      "\n\003r22\030\005 \002(\001\022\013\n\003r23\030\006 \002(\001\022\013\n\003r31\030\007 \002(\001\022\013\n"
-      "\003r32\030\010 \002(\001\022\013\n\003r33\030\t \002(\001\"0\n\rAprilTagTrans"
-      "\022\t\n\001x\030\001 \002(\001\022\t\n\001y\030\002 \002(\001\022\t\n\001z\030\003 \002(\001\"Z\n\014Apr"
-      "ilTagPose\022#\n\001R\030\001 \002(\0132\030.mtg_fms.April"
-      "TagRot\022%\n\001t\030\002 \002(\0132\032.mtg_fms.AprilTag"
-      "Trans\"L\n\021AprilTagDetection\022\016\n\006tag_id\030\001 \002"
-      "(\r\022\'\n\004pose\030\002 \002(\0132\031.mtg_fms.AprilTagP"
-      "ose\"G\n\rAllDetections\0226\n\016tag_detections\030\001"
-      " \003(\0132\036.mtg_fms.AprilTagDetection\"\327\003\n"
-      "\nSensorData\022\024\n\014timestamp_ns\030\001 \002(\004\022\016\n\006seq"
-      "_id\030\002 \002(\r\022.\n\naccel_data\030\003 \002(\0132\032.mtg_"
-      "fms.Accelerometer\022)\n\tgyro_data\030\004 \002(\0132\026.r"
-      "obosar_fms.Gyroscope\022.\n\ncount_data\030\005 \002(\013"
-      "2\032.mtg_fms.Encoder_count\022.\n\nspeed_da"
-      "ta\030\006 \002(\0132\032.mtg_fms.Encoder_speed\022&\n\007"
-      "ir_data\030\007 \002(\0132\025.mtg_fms.Infrared\022(\n\007"
-      "us_data\030\010 \002(\0132\027.mtg_fms.Ultrasonic\022+"
-      "\n\010lrf_data\030\t \002(\0132\031.mtg_fms.LaserScan"
-      "ner\0223\n\021agent_status_data\030\n \002(\0132\030.mtg"
-      "_fms.AgentStatus\0224\n\020april_detections\030\013 \002"
-      "(\0132\032.mtg_fms.AllDetectionsB\003\370\001\001"
-  };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1555);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "mtg.proto", &protobuf_RegisterTypes);
-}
-
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_mtg_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_mtg_2eproto(&descriptor_table_mtg_2eproto);
 namespace mtg_fms {
 
 // ===================================================================
 
-void Accelerometer::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Accelerometer::kAccXFieldNumber;
-const int Accelerometer::kAccYFieldNumber;
-const int Accelerometer::kAccZFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class Accelerometer::_Internal {
+ public:
+  using HasBits = decltype(std::declval<Accelerometer>()._has_bits_);
+  static void set_has_acc_x(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_acc_y(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_acc_z(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000007) ^ 0x00000007) != 0;
+  }
+};
 
-Accelerometer::Accelerometer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_Accelerometer.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.Accelerometer)
-}
-Accelerometer::Accelerometer(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Accelerometer.base);
+Accelerometer::Accelerometer(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Accelerometer)
 }
 Accelerometer::Accelerometer(const Accelerometer& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&acc_x_, &from.acc_x_,
     static_cast<size_t>(reinterpret_cast<char*>(&acc_z_) -
     reinterpret_cast<char*>(&acc_x_)) + sizeof(acc_z_));
@@ -672,183 +543,131 @@ Accelerometer::Accelerometer(const Accelerometer& from)
 }
 
 void Accelerometer::SharedCtor() {
-  ::memset(&acc_x_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&acc_z_) -
-      reinterpret_cast<char*>(&acc_x_)) + sizeof(acc_z_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&acc_x_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&acc_z_) -
+    reinterpret_cast<char*>(&acc_x_)) + sizeof(acc_z_));
 }
 
 Accelerometer::~Accelerometer() {
   // @@protoc_insertion_point(destructor:mtg_fms.Accelerometer)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Accelerometer::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void Accelerometer::ArenaDtor(void* object) {
   Accelerometer* _this = reinterpret_cast< Accelerometer* >(object);
   (void)_this;
 }
-void Accelerometer::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void Accelerometer::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void Accelerometer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Accelerometer::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const Accelerometer& Accelerometer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Accelerometer.base);
-  return *internal_default_instance();
-}
-
 
 void Accelerometer::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Accelerometer)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&acc_x_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&acc_z_) -
         reinterpret_cast<char*>(&acc_x_)) + sizeof(acc_z_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool Accelerometer::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.Accelerometer)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* Accelerometer::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required double acc_x = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
-          set_has_acc_x();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &acc_x_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          _Internal::set_has_acc_x(&has_bits);
+          acc_x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double acc_y = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-          set_has_acc_y();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &acc_y_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          _Internal::set_has_acc_y(&has_bits);
+          acc_y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double acc_z = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
-          set_has_acc_z();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &acc_z_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+          _Internal::set_has_acc_z(&has_bits);
+          acc_z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.Accelerometer)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.Accelerometer)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void Accelerometer::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.Accelerometer)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required double acc_x = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->acc_x(), output);
-  }
-
-  // required double acc_y = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->acc_y(), output);
-  }
-
-  // required double acc_z = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->acc_z(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.Accelerometer)
-}
-
-::google::protobuf::uint8* Accelerometer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Accelerometer::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Accelerometer)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required double acc_x = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->acc_x(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_acc_x(), target);
   }
 
   // required double acc_y = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->acc_y(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_acc_y(), target);
   }
 
   // required double acc_z = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->acc_z(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_acc_z(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Accelerometer)
   return target;
@@ -858,17 +677,17 @@ size_t Accelerometer::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.Accelerometer)
   size_t total_size = 0;
 
-  if (has_acc_x()) {
+  if (_internal_has_acc_x()) {
     // required double acc_x = 1;
     total_size += 1 + 8;
   }
 
-  if (has_acc_y()) {
+  if (_internal_has_acc_y()) {
     // required double acc_y = 2;
     total_size += 1 + 8;
   }
 
-  if (has_acc_z()) {
+  if (_internal_has_acc_z()) {
     // required double acc_z = 3;
     total_size += 1 + 8;
   }
@@ -879,11 +698,6 @@ size_t Accelerometer::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Accelerometer)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required double acc_x = 1;
     total_size += 1 + 8;
@@ -897,20 +711,28 @@ size_t Accelerometer::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Accelerometer::MergeFrom(const ::google::protobuf::Message& from) {
+void Accelerometer::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Accelerometer)
   GOOGLE_DCHECK_NE(&from, this);
   const Accelerometer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Accelerometer>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Accelerometer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Accelerometer)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Accelerometer)
     MergeFrom(*source);
@@ -920,12 +742,12 @@ void Accelerometer::MergeFrom(const ::google::protobuf::Message& from) {
 void Accelerometer::MergeFrom(const Accelerometer& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Accelerometer)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       acc_x_ = from.acc_x_;
     }
@@ -939,7 +761,7 @@ void Accelerometer::MergeFrom(const Accelerometer& from) {
   }
 }
 
-void Accelerometer::CopyFrom(const ::google::protobuf::Message& from) {
+void Accelerometer::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Accelerometer)
   if (&from == this) return;
   Clear();
@@ -954,76 +776,63 @@ void Accelerometer::CopyFrom(const Accelerometer& from) {
 }
 
 bool Accelerometer::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void Accelerometer::Swap(Accelerometer* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    Accelerometer* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void Accelerometer::UnsafeArenaSwap(Accelerometer* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void Accelerometer::InternalSwap(Accelerometer* other) {
   using std::swap;
-  swap(acc_x_, other->acc_x_);
-  swap(acc_y_, other->acc_y_);
-  swap(acc_z_, other->acc_z_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Accelerometer, acc_z_)
+      + sizeof(Accelerometer::acc_z_)
+      - PROTOBUF_FIELD_OFFSET(Accelerometer, acc_x_)>(
+          reinterpret_cast<char*>(&acc_x_),
+          reinterpret_cast<char*>(&other->acc_x_));
 }
 
-::google::protobuf::Metadata Accelerometer::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Accelerometer::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[0]);
 }
-
 
 // ===================================================================
 
-void Ultrasonic::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Ultrasonic::kSensorAFieldNumber;
-const int Ultrasonic::kSensorBFieldNumber;
-const int Ultrasonic::kSensorCFieldNumber;
-const int Ultrasonic::kSensorDFieldNumber;
-const int Ultrasonic::kSensorEFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class Ultrasonic::_Internal {
+ public:
+  using HasBits = decltype(std::declval<Ultrasonic>()._has_bits_);
+  static void set_has_sensor_a(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_sensor_b(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_sensor_c(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static void set_has_sensor_d(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+  static void set_has_sensor_e(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x0000001f) ^ 0x0000001f) != 0;
+  }
+};
 
-Ultrasonic::Ultrasonic()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_Ultrasonic.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.Ultrasonic)
-}
-Ultrasonic::Ultrasonic(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Ultrasonic.base);
+Ultrasonic::Ultrasonic(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Ultrasonic)
 }
 Ultrasonic::Ultrasonic(const Ultrasonic& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&sensor_a_, &from.sensor_a_,
     static_cast<size_t>(reinterpret_cast<char*>(&sensor_e_) -
     reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_e_));
@@ -1031,231 +840,159 @@ Ultrasonic::Ultrasonic(const Ultrasonic& from)
 }
 
 void Ultrasonic::SharedCtor() {
-  ::memset(&sensor_a_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&sensor_e_) -
-      reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_e_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&sensor_a_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&sensor_e_) -
+    reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_e_));
 }
 
 Ultrasonic::~Ultrasonic() {
   // @@protoc_insertion_point(destructor:mtg_fms.Ultrasonic)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Ultrasonic::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void Ultrasonic::ArenaDtor(void* object) {
   Ultrasonic* _this = reinterpret_cast< Ultrasonic* >(object);
   (void)_this;
 }
-void Ultrasonic::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void Ultrasonic::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void Ultrasonic::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Ultrasonic::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const Ultrasonic& Ultrasonic::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Ultrasonic.base);
-  return *internal_default_instance();
-}
-
 
 void Ultrasonic::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Ultrasonic)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     ::memset(&sensor_a_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&sensor_e_) -
         reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_e_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool Ultrasonic::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.Ultrasonic)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* Ultrasonic::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required uint32 sensor_a = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_sensor_a();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_a_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_sensor_a(&has_bits);
+          sensor_a_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_b = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_sensor_b();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_b_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_sensor_b(&has_bits);
+          sensor_b_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_c = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_sensor_c();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_c_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_sensor_c(&has_bits);
+          sensor_c_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_d = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_sensor_d();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_d_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_sensor_d(&has_bits);
+          sensor_d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_e = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_sensor_e();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_e_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_sensor_e(&has_bits);
+          sensor_e_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.Ultrasonic)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.Ultrasonic)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void Ultrasonic::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.Ultrasonic)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint32 sensor_a = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->sensor_a(), output);
-  }
-
-  // required uint32 sensor_b = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->sensor_b(), output);
-  }
-
-  // required uint32 sensor_c = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->sensor_c(), output);
-  }
-
-  // required uint32 sensor_d = 4;
-  if (cached_has_bits & 0x00000008u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->sensor_d(), output);
-  }
-
-  // required uint32 sensor_e = 5;
-  if (cached_has_bits & 0x00000010u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->sensor_e(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.Ultrasonic)
-}
-
-::google::protobuf::uint8* Ultrasonic::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Ultrasonic::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Ultrasonic)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required uint32 sensor_a = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->sensor_a(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_sensor_a(), target);
   }
 
   // required uint32 sensor_b = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->sensor_b(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_sensor_b(), target);
   }
 
   // required uint32 sensor_c = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->sensor_c(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_sensor_c(), target);
   }
 
   // required uint32 sensor_d = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->sensor_d(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_sensor_d(), target);
   }
 
   // required uint32 sensor_e = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->sensor_e(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_sensor_e(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Ultrasonic)
   return target;
@@ -1265,39 +1002,39 @@ size_t Ultrasonic::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.Ultrasonic)
   size_t total_size = 0;
 
-  if (has_sensor_a()) {
+  if (_internal_has_sensor_a()) {
     // required uint32 sensor_a = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_a());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_a());
   }
 
-  if (has_sensor_b()) {
+  if (_internal_has_sensor_b()) {
     // required uint32 sensor_b = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_b());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_b());
   }
 
-  if (has_sensor_c()) {
+  if (_internal_has_sensor_c()) {
     // required uint32 sensor_c = 3;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_c());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_c());
   }
 
-  if (has_sensor_d()) {
+  if (_internal_has_sensor_d()) {
     // required uint32 sensor_d = 4;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_d());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_d());
   }
 
-  if (has_sensor_e()) {
+  if (_internal_has_sensor_e()) {
     // required uint32 sensor_e = 5;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_e());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_e());
   }
 
   return total_size;
@@ -1306,54 +1043,57 @@ size_t Ultrasonic::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Ultrasonic)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
     // required uint32 sensor_a = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_a());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_a());
 
     // required uint32 sensor_b = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_b());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_b());
 
     // required uint32 sensor_c = 3;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_c());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_c());
 
     // required uint32 sensor_d = 4;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_d());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_d());
 
     // required uint32 sensor_e = 5;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_e());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_e());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Ultrasonic::MergeFrom(const ::google::protobuf::Message& from) {
+void Ultrasonic::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Ultrasonic)
   GOOGLE_DCHECK_NE(&from, this);
   const Ultrasonic* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Ultrasonic>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Ultrasonic>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Ultrasonic)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Ultrasonic)
     MergeFrom(*source);
@@ -1363,12 +1103,12 @@ void Ultrasonic::MergeFrom(const ::google::protobuf::Message& from) {
 void Ultrasonic::MergeFrom(const Ultrasonic& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Ultrasonic)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
       sensor_a_ = from.sensor_a_;
     }
@@ -1388,7 +1128,7 @@ void Ultrasonic::MergeFrom(const Ultrasonic& from) {
   }
 }
 
-void Ultrasonic::CopyFrom(const ::google::protobuf::Message& from) {
+void Ultrasonic::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Ultrasonic)
   if (&from == this) return;
   Clear();
@@ -1403,85 +1143,84 @@ void Ultrasonic::CopyFrom(const Ultrasonic& from) {
 }
 
 bool Ultrasonic::IsInitialized() const {
-  if ((_has_bits_[0] & 0x0000001f) != 0x0000001f) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void Ultrasonic::Swap(Ultrasonic* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    Ultrasonic* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void Ultrasonic::UnsafeArenaSwap(Ultrasonic* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void Ultrasonic::InternalSwap(Ultrasonic* other) {
   using std::swap;
-  swap(sensor_a_, other->sensor_a_);
-  swap(sensor_b_, other->sensor_b_);
-  swap(sensor_c_, other->sensor_c_);
-  swap(sensor_d_, other->sensor_d_);
-  swap(sensor_e_, other->sensor_e_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Ultrasonic, sensor_e_)
+      + sizeof(Ultrasonic::sensor_e_)
+      - PROTOBUF_FIELD_OFFSET(Ultrasonic, sensor_a_)>(
+          reinterpret_cast<char*>(&sensor_a_),
+          reinterpret_cast<char*>(&other->sensor_a_));
 }
 
-::google::protobuf::Metadata Ultrasonic::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Ultrasonic::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[1]);
 }
-
 
 // ===================================================================
 
-void Infrared::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Infrared::kSensorAFieldNumber;
-const int Infrared::kSensorBFieldNumber;
-const int Infrared::kSensorCFieldNumber;
-const int Infrared::kSensorDFieldNumber;
-const int Infrared::kSensorEFieldNumber;
-const int Infrared::kSensorFFieldNumber;
-const int Infrared::kSensorGFieldNumber;
-const int Infrared::kSensorHFieldNumber;
-const int Infrared::kSensorIFieldNumber;
-const int Infrared::kSensorJFieldNumber;
-const int Infrared::kSensorKFieldNumber;
-const int Infrared::kSensorLFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class Infrared::_Internal {
+ public:
+  using HasBits = decltype(std::declval<Infrared>()._has_bits_);
+  static void set_has_sensor_a(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_sensor_b(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_sensor_c(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static void set_has_sensor_d(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+  static void set_has_sensor_e(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
+  }
+  static void set_has_sensor_f(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
+  }
+  static void set_has_sensor_g(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
+  static void set_has_sensor_h(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
+  }
+  static void set_has_sensor_i(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
+  }
+  static void set_has_sensor_j(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
+  }
+  static void set_has_sensor_k(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
+  }
+  static void set_has_sensor_l(HasBits* has_bits) {
+    (*has_bits)[0] |= 2048u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000fff) ^ 0x00000fff) != 0;
+  }
+};
 
-Infrared::Infrared()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_Infrared.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.Infrared)
-}
-Infrared::Infrared(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Infrared.base);
+Infrared::Infrared(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Infrared)
 }
 Infrared::Infrared(const Infrared& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&sensor_a_, &from.sensor_a_,
     static_cast<size_t>(reinterpret_cast<char*>(&sensor_l_) -
     reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_l_));
@@ -1489,404 +1228,262 @@ Infrared::Infrared(const Infrared& from)
 }
 
 void Infrared::SharedCtor() {
-  ::memset(&sensor_a_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&sensor_l_) -
-      reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_l_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&sensor_a_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&sensor_l_) -
+    reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_l_));
 }
 
 Infrared::~Infrared() {
   // @@protoc_insertion_point(destructor:mtg_fms.Infrared)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Infrared::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void Infrared::ArenaDtor(void* object) {
   Infrared* _this = reinterpret_cast< Infrared* >(object);
   (void)_this;
 }
-void Infrared::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void Infrared::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void Infrared::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Infrared::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const Infrared& Infrared::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Infrared.base);
-  return *internal_default_instance();
-}
-
 
 void Infrared::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Infrared)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     ::memset(&sensor_a_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&sensor_h_) -
         reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_h_));
   }
-  if (cached_has_bits & 3840u) {
+  if (cached_has_bits & 0x00000f00u) {
     ::memset(&sensor_i_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&sensor_l_) -
         reinterpret_cast<char*>(&sensor_i_)) + sizeof(sensor_l_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool Infrared::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.Infrared)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* Infrared::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required uint32 sensor_a = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_sensor_a();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_a_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_sensor_a(&has_bits);
+          sensor_a_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_b = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_sensor_b();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_b_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_sensor_b(&has_bits);
+          sensor_b_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_c = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_sensor_c();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_c_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_sensor_c(&has_bits);
+          sensor_c_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_d = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_sensor_d();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_d_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          _Internal::set_has_sensor_d(&has_bits);
+          sensor_d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_e = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_sensor_e();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_e_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          _Internal::set_has_sensor_e(&has_bits);
+          sensor_e_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_f = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_sensor_f();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_f_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          _Internal::set_has_sensor_f(&has_bits);
+          sensor_f_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_g = 7;
-      case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_sensor_g();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_g_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          _Internal::set_has_sensor_g(&has_bits);
+          sensor_g_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_h = 8;
-      case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_sensor_h();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_h_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          _Internal::set_has_sensor_h(&has_bits);
+          sensor_h_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_i = 9;
-      case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_sensor_i();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_i_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          _Internal::set_has_sensor_i(&has_bits);
+          sensor_i_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_j = 10;
-      case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-          set_has_sensor_j();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_j_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+          _Internal::set_has_sensor_j(&has_bits);
+          sensor_j_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_k = 11;
-      case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
-          set_has_sensor_k();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_k_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+          _Internal::set_has_sensor_k(&has_bits);
+          sensor_k_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 sensor_l = 12;
-      case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(96u /* 96 & 0xFF */)) {
-          set_has_sensor_l();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &sensor_l_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
+          _Internal::set_has_sensor_l(&has_bits);
+          sensor_l_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.Infrared)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.Infrared)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void Infrared::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.Infrared)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint32 sensor_a = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->sensor_a(), output);
-  }
-
-  // required uint32 sensor_b = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->sensor_b(), output);
-  }
-
-  // required uint32 sensor_c = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->sensor_c(), output);
-  }
-
-  // required uint32 sensor_d = 4;
-  if (cached_has_bits & 0x00000008u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->sensor_d(), output);
-  }
-
-  // required uint32 sensor_e = 5;
-  if (cached_has_bits & 0x00000010u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->sensor_e(), output);
-  }
-
-  // required uint32 sensor_f = 6;
-  if (cached_has_bits & 0x00000020u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->sensor_f(), output);
-  }
-
-  // required uint32 sensor_g = 7;
-  if (cached_has_bits & 0x00000040u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(7, this->sensor_g(), output);
-  }
-
-  // required uint32 sensor_h = 8;
-  if (cached_has_bits & 0x00000080u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(8, this->sensor_h(), output);
-  }
-
-  // required uint32 sensor_i = 9;
-  if (cached_has_bits & 0x00000100u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(9, this->sensor_i(), output);
-  }
-
-  // required uint32 sensor_j = 10;
-  if (cached_has_bits & 0x00000200u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(10, this->sensor_j(), output);
-  }
-
-  // required uint32 sensor_k = 11;
-  if (cached_has_bits & 0x00000400u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(11, this->sensor_k(), output);
-  }
-
-  // required uint32 sensor_l = 12;
-  if (cached_has_bits & 0x00000800u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(12, this->sensor_l(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.Infrared)
-}
-
-::google::protobuf::uint8* Infrared::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Infrared::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Infrared)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required uint32 sensor_a = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->sensor_a(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_sensor_a(), target);
   }
 
   // required uint32 sensor_b = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->sensor_b(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_sensor_b(), target);
   }
 
   // required uint32 sensor_c = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->sensor_c(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_sensor_c(), target);
   }
 
   // required uint32 sensor_d = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->sensor_d(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_sensor_d(), target);
   }
 
   // required uint32 sensor_e = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->sensor_e(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_sensor_e(), target);
   }
 
   // required uint32 sensor_f = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->sensor_f(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->_internal_sensor_f(), target);
   }
 
   // required uint32 sensor_g = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(7, this->sensor_g(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(7, this->_internal_sensor_g(), target);
   }
 
   // required uint32 sensor_h = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(8, this->sensor_h(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(8, this->_internal_sensor_h(), target);
   }
 
   // required uint32 sensor_i = 9;
   if (cached_has_bits & 0x00000100u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(9, this->sensor_i(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(9, this->_internal_sensor_i(), target);
   }
 
   // required uint32 sensor_j = 10;
   if (cached_has_bits & 0x00000200u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(10, this->sensor_j(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(10, this->_internal_sensor_j(), target);
   }
 
   // required uint32 sensor_k = 11;
   if (cached_has_bits & 0x00000400u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(11, this->sensor_k(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(11, this->_internal_sensor_k(), target);
   }
 
   // required uint32 sensor_l = 12;
   if (cached_has_bits & 0x00000800u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(12, this->sensor_l(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(12, this->_internal_sensor_l(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Infrared)
   return target;
@@ -1896,88 +1493,88 @@ size_t Infrared::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.Infrared)
   size_t total_size = 0;
 
-  if (has_sensor_a()) {
+  if (_internal_has_sensor_a()) {
     // required uint32 sensor_a = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_a());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_a());
   }
 
-  if (has_sensor_b()) {
+  if (_internal_has_sensor_b()) {
     // required uint32 sensor_b = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_b());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_b());
   }
 
-  if (has_sensor_c()) {
+  if (_internal_has_sensor_c()) {
     // required uint32 sensor_c = 3;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_c());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_c());
   }
 
-  if (has_sensor_d()) {
+  if (_internal_has_sensor_d()) {
     // required uint32 sensor_d = 4;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_d());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_d());
   }
 
-  if (has_sensor_e()) {
+  if (_internal_has_sensor_e()) {
     // required uint32 sensor_e = 5;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_e());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_e());
   }
 
-  if (has_sensor_f()) {
+  if (_internal_has_sensor_f()) {
     // required uint32 sensor_f = 6;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_f());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_f());
   }
 
-  if (has_sensor_g()) {
+  if (_internal_has_sensor_g()) {
     // required uint32 sensor_g = 7;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_g());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_g());
   }
 
-  if (has_sensor_h()) {
+  if (_internal_has_sensor_h()) {
     // required uint32 sensor_h = 8;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_h());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_h());
   }
 
-  if (has_sensor_i()) {
+  if (_internal_has_sensor_i()) {
     // required uint32 sensor_i = 9;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_i());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_i());
   }
 
-  if (has_sensor_j()) {
+  if (_internal_has_sensor_j()) {
     // required uint32 sensor_j = 10;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_j());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_j());
   }
 
-  if (has_sensor_k()) {
+  if (_internal_has_sensor_k()) {
     // required uint32 sensor_k = 11;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_k());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_k());
   }
 
-  if (has_sensor_l()) {
+  if (_internal_has_sensor_l()) {
     // required uint32 sensor_l = 12;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_l());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_l());
   }
 
   return total_size;
@@ -1986,89 +1583,92 @@ size_t Infrared::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Infrared)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000fff) ^ 0x00000fff) == 0) {  // All required fields are present.
     // required uint32 sensor_a = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_a());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_a());
 
     // required uint32 sensor_b = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_b());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_b());
 
     // required uint32 sensor_c = 3;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_c());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_c());
 
     // required uint32 sensor_d = 4;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_d());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_d());
 
     // required uint32 sensor_e = 5;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_e());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_e());
 
     // required uint32 sensor_f = 6;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_f());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_f());
 
     // required uint32 sensor_g = 7;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_g());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_g());
 
     // required uint32 sensor_h = 8;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_h());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_h());
 
     // required uint32 sensor_i = 9;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_i());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_i());
 
     // required uint32 sensor_j = 10;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_j());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_j());
 
     // required uint32 sensor_k = 11;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_k());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_k());
 
     // required uint32 sensor_l = 12;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->sensor_l());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_sensor_l());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Infrared::MergeFrom(const ::google::protobuf::Message& from) {
+void Infrared::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Infrared)
   GOOGLE_DCHECK_NE(&from, this);
   const Infrared* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Infrared>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Infrared>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Infrared)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Infrared)
     MergeFrom(*source);
@@ -2078,12 +1678,12 @@ void Infrared::MergeFrom(const ::google::protobuf::Message& from) {
 void Infrared::MergeFrom(const Infrared& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Infrared)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       sensor_a_ = from.sensor_a_;
     }
@@ -2110,7 +1710,7 @@ void Infrared::MergeFrom(const Infrared& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 3840u) {
+  if (cached_has_bits & 0x00000f00u) {
     if (cached_has_bits & 0x00000100u) {
       sensor_i_ = from.sensor_i_;
     }
@@ -2127,7 +1727,7 @@ void Infrared::MergeFrom(const Infrared& from) {
   }
 }
 
-void Infrared::CopyFrom(const ::google::protobuf::Message& from) {
+void Infrared::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Infrared)
   if (&from == this) return;
   Clear();
@@ -2142,83 +1742,57 @@ void Infrared::CopyFrom(const Infrared& from) {
 }
 
 bool Infrared::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000fff) != 0x00000fff) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void Infrared::Swap(Infrared* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    Infrared* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void Infrared::UnsafeArenaSwap(Infrared* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void Infrared::InternalSwap(Infrared* other) {
   using std::swap;
-  swap(sensor_a_, other->sensor_a_);
-  swap(sensor_b_, other->sensor_b_);
-  swap(sensor_c_, other->sensor_c_);
-  swap(sensor_d_, other->sensor_d_);
-  swap(sensor_e_, other->sensor_e_);
-  swap(sensor_f_, other->sensor_f_);
-  swap(sensor_g_, other->sensor_g_);
-  swap(sensor_h_, other->sensor_h_);
-  swap(sensor_i_, other->sensor_i_);
-  swap(sensor_j_, other->sensor_j_);
-  swap(sensor_k_, other->sensor_k_);
-  swap(sensor_l_, other->sensor_l_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Infrared, sensor_l_)
+      + sizeof(Infrared::sensor_l_)
+      - PROTOBUF_FIELD_OFFSET(Infrared, sensor_a_)>(
+          reinterpret_cast<char*>(&sensor_a_),
+          reinterpret_cast<char*>(&other->sensor_a_));
 }
 
-::google::protobuf::Metadata Infrared::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Infrared::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[2]);
 }
-
 
 // ===================================================================
 
-void Gyroscope::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Gyroscope::kGyroXFieldNumber;
-const int Gyroscope::kGyroYFieldNumber;
-const int Gyroscope::kGyroZFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class Gyroscope::_Internal {
+ public:
+  using HasBits = decltype(std::declval<Gyroscope>()._has_bits_);
+  static void set_has_gyro_x(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_gyro_y(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_gyro_z(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000007) ^ 0x00000007) != 0;
+  }
+};
 
-Gyroscope::Gyroscope()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_Gyroscope.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.Gyroscope)
-}
-Gyroscope::Gyroscope(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Gyroscope.base);
+Gyroscope::Gyroscope(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Gyroscope)
 }
 Gyroscope::Gyroscope(const Gyroscope& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&gyro_x_, &from.gyro_x_,
     static_cast<size_t>(reinterpret_cast<char*>(&gyro_z_) -
     reinterpret_cast<char*>(&gyro_x_)) + sizeof(gyro_z_));
@@ -2226,183 +1800,131 @@ Gyroscope::Gyroscope(const Gyroscope& from)
 }
 
 void Gyroscope::SharedCtor() {
-  ::memset(&gyro_x_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&gyro_z_) -
-      reinterpret_cast<char*>(&gyro_x_)) + sizeof(gyro_z_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&gyro_x_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&gyro_z_) -
+    reinterpret_cast<char*>(&gyro_x_)) + sizeof(gyro_z_));
 }
 
 Gyroscope::~Gyroscope() {
   // @@protoc_insertion_point(destructor:mtg_fms.Gyroscope)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Gyroscope::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void Gyroscope::ArenaDtor(void* object) {
   Gyroscope* _this = reinterpret_cast< Gyroscope* >(object);
   (void)_this;
 }
-void Gyroscope::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void Gyroscope::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void Gyroscope::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Gyroscope::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const Gyroscope& Gyroscope::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Gyroscope.base);
-  return *internal_default_instance();
-}
-
 
 void Gyroscope::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Gyroscope)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&gyro_x_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&gyro_z_) -
         reinterpret_cast<char*>(&gyro_x_)) + sizeof(gyro_z_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool Gyroscope::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.Gyroscope)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* Gyroscope::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required double gyro_x = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
-          set_has_gyro_x();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &gyro_x_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          _Internal::set_has_gyro_x(&has_bits);
+          gyro_x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double gyro_y = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-          set_has_gyro_y();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &gyro_y_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          _Internal::set_has_gyro_y(&has_bits);
+          gyro_y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double gyro_z = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
-          set_has_gyro_z();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &gyro_z_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+          _Internal::set_has_gyro_z(&has_bits);
+          gyro_z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.Gyroscope)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.Gyroscope)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void Gyroscope::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.Gyroscope)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required double gyro_x = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->gyro_x(), output);
-  }
-
-  // required double gyro_y = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->gyro_y(), output);
-  }
-
-  // required double gyro_z = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->gyro_z(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.Gyroscope)
-}
-
-::google::protobuf::uint8* Gyroscope::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Gyroscope::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Gyroscope)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required double gyro_x = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->gyro_x(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_gyro_x(), target);
   }
 
   // required double gyro_y = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->gyro_y(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_gyro_y(), target);
   }
 
   // required double gyro_z = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->gyro_z(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_gyro_z(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Gyroscope)
   return target;
@@ -2412,17 +1934,17 @@ size_t Gyroscope::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.Gyroscope)
   size_t total_size = 0;
 
-  if (has_gyro_x()) {
+  if (_internal_has_gyro_x()) {
     // required double gyro_x = 1;
     total_size += 1 + 8;
   }
 
-  if (has_gyro_y()) {
+  if (_internal_has_gyro_y()) {
     // required double gyro_y = 2;
     total_size += 1 + 8;
   }
 
-  if (has_gyro_z()) {
+  if (_internal_has_gyro_z()) {
     // required double gyro_z = 3;
     total_size += 1 + 8;
   }
@@ -2433,11 +1955,6 @@ size_t Gyroscope::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Gyroscope)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required double gyro_x = 1;
     total_size += 1 + 8;
@@ -2451,20 +1968,28 @@ size_t Gyroscope::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Gyroscope::MergeFrom(const ::google::protobuf::Message& from) {
+void Gyroscope::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Gyroscope)
   GOOGLE_DCHECK_NE(&from, this);
   const Gyroscope* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Gyroscope>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Gyroscope>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Gyroscope)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Gyroscope)
     MergeFrom(*source);
@@ -2474,12 +1999,12 @@ void Gyroscope::MergeFrom(const ::google::protobuf::Message& from) {
 void Gyroscope::MergeFrom(const Gyroscope& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Gyroscope)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       gyro_x_ = from.gyro_x_;
     }
@@ -2493,7 +2018,7 @@ void Gyroscope::MergeFrom(const Gyroscope& from) {
   }
 }
 
-void Gyroscope::CopyFrom(const ::google::protobuf::Message& from) {
+void Gyroscope::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Gyroscope)
   if (&from == this) return;
   Clear();
@@ -2508,73 +2033,54 @@ void Gyroscope::CopyFrom(const Gyroscope& from) {
 }
 
 bool Gyroscope::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void Gyroscope::Swap(Gyroscope* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    Gyroscope* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void Gyroscope::UnsafeArenaSwap(Gyroscope* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void Gyroscope::InternalSwap(Gyroscope* other) {
   using std::swap;
-  swap(gyro_x_, other->gyro_x_);
-  swap(gyro_y_, other->gyro_y_);
-  swap(gyro_z_, other->gyro_z_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Gyroscope, gyro_z_)
+      + sizeof(Gyroscope::gyro_z_)
+      - PROTOBUF_FIELD_OFFSET(Gyroscope, gyro_x_)>(
+          reinterpret_cast<char*>(&gyro_x_),
+          reinterpret_cast<char*>(&other->gyro_x_));
 }
 
-::google::protobuf::Metadata Gyroscope::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Gyroscope::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[3]);
 }
-
 
 // ===================================================================
 
-void Encoder_count::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Encoder_count::kLeftFieldNumber;
-const int Encoder_count::kRightFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class Encoder_count::_Internal {
+ public:
+  using HasBits = decltype(std::declval<Encoder_count>()._has_bits_);
+  static void set_has_left(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_right(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
+  }
+};
 
-Encoder_count::Encoder_count()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_Encoder_count.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.Encoder_count)
-}
-Encoder_count::Encoder_count(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Encoder_count.base);
+Encoder_count::Encoder_count(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Encoder_count)
 }
 Encoder_count::Encoder_count(const Encoder_count& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&left_, &from.left_,
     static_cast<size_t>(reinterpret_cast<char*>(&right_) -
     reinterpret_cast<char*>(&left_)) + sizeof(right_));
@@ -2582,159 +2088,117 @@ Encoder_count::Encoder_count(const Encoder_count& from)
 }
 
 void Encoder_count::SharedCtor() {
-  ::memset(&left_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&right_) -
-      reinterpret_cast<char*>(&left_)) + sizeof(right_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&left_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&right_) -
+    reinterpret_cast<char*>(&left_)) + sizeof(right_));
 }
 
 Encoder_count::~Encoder_count() {
   // @@protoc_insertion_point(destructor:mtg_fms.Encoder_count)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Encoder_count::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void Encoder_count::ArenaDtor(void* object) {
   Encoder_count* _this = reinterpret_cast< Encoder_count* >(object);
   (void)_this;
 }
-void Encoder_count::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void Encoder_count::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void Encoder_count::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Encoder_count::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const Encoder_count& Encoder_count::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Encoder_count.base);
-  return *internal_default_instance();
-}
-
 
 void Encoder_count::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Encoder_count)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&left_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&right_) -
         reinterpret_cast<char*>(&left_)) + sizeof(right_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool Encoder_count::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.Encoder_count)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* Encoder_count::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required uint64 left = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_left();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &left_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_left(&has_bits);
+          left_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint64 right = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_right();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &right_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_right(&has_bits);
+          right_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.Encoder_count)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.Encoder_count)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void Encoder_count::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.Encoder_count)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint64 left = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->left(), output);
-  }
-
-  // required uint64 right = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(2, this->right(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.Encoder_count)
-}
-
-::google::protobuf::uint8* Encoder_count::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Encoder_count::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Encoder_count)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required uint64 left = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->left(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_left(), target);
   }
 
   // required uint64 right = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(2, this->right(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->_internal_right(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Encoder_count)
   return target;
@@ -2744,18 +2208,18 @@ size_t Encoder_count::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.Encoder_count)
   size_t total_size = 0;
 
-  if (has_left()) {
+  if (_internal_has_left()) {
     // required uint64 left = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->left());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_left());
   }
 
-  if (has_right()) {
+  if (_internal_has_right()) {
     // required uint64 right = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->right());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_right());
   }
 
   return total_size;
@@ -2764,39 +2228,42 @@ size_t Encoder_count::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Encoder_count)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required uint64 left = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->left());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_left());
 
     // required uint64 right = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->right());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_right());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Encoder_count::MergeFrom(const ::google::protobuf::Message& from) {
+void Encoder_count::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Encoder_count)
   GOOGLE_DCHECK_NE(&from, this);
   const Encoder_count* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Encoder_count>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Encoder_count>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Encoder_count)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Encoder_count)
     MergeFrom(*source);
@@ -2806,12 +2273,12 @@ void Encoder_count::MergeFrom(const ::google::protobuf::Message& from) {
 void Encoder_count::MergeFrom(const Encoder_count& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Encoder_count)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       left_ = from.left_;
     }
@@ -2822,7 +2289,7 @@ void Encoder_count::MergeFrom(const Encoder_count& from) {
   }
 }
 
-void Encoder_count::CopyFrom(const ::google::protobuf::Message& from) {
+void Encoder_count::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Encoder_count)
   if (&from == this) return;
   Clear();
@@ -2837,72 +2304,54 @@ void Encoder_count::CopyFrom(const Encoder_count& from) {
 }
 
 bool Encoder_count::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void Encoder_count::Swap(Encoder_count* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    Encoder_count* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void Encoder_count::UnsafeArenaSwap(Encoder_count* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void Encoder_count::InternalSwap(Encoder_count* other) {
   using std::swap;
-  swap(left_, other->left_);
-  swap(right_, other->right_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Encoder_count, right_)
+      + sizeof(Encoder_count::right_)
+      - PROTOBUF_FIELD_OFFSET(Encoder_count, left_)>(
+          reinterpret_cast<char*>(&left_),
+          reinterpret_cast<char*>(&other->left_));
 }
 
-::google::protobuf::Metadata Encoder_count::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Encoder_count::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[4]);
 }
-
 
 // ===================================================================
 
-void Encoder_speed::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Encoder_speed::kLeftFieldNumber;
-const int Encoder_speed::kRightFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class Encoder_speed::_Internal {
+ public:
+  using HasBits = decltype(std::declval<Encoder_speed>()._has_bits_);
+  static void set_has_left(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_right(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
+  }
+};
 
-Encoder_speed::Encoder_speed()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_Encoder_speed.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.Encoder_speed)
-}
-Encoder_speed::Encoder_speed(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Encoder_speed.base);
+Encoder_speed::Encoder_speed(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Encoder_speed)
 }
 Encoder_speed::Encoder_speed(const Encoder_speed& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&left_, &from.left_,
     static_cast<size_t>(reinterpret_cast<char*>(&right_) -
     reinterpret_cast<char*>(&left_)) + sizeof(right_));
@@ -2910,159 +2359,117 @@ Encoder_speed::Encoder_speed(const Encoder_speed& from)
 }
 
 void Encoder_speed::SharedCtor() {
-  ::memset(&left_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&right_) -
-      reinterpret_cast<char*>(&left_)) + sizeof(right_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&left_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&right_) -
+    reinterpret_cast<char*>(&left_)) + sizeof(right_));
 }
 
 Encoder_speed::~Encoder_speed() {
   // @@protoc_insertion_point(destructor:mtg_fms.Encoder_speed)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Encoder_speed::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void Encoder_speed::ArenaDtor(void* object) {
   Encoder_speed* _this = reinterpret_cast< Encoder_speed* >(object);
   (void)_this;
 }
-void Encoder_speed::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void Encoder_speed::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void Encoder_speed::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Encoder_speed::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const Encoder_speed& Encoder_speed::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_Encoder_speed.base);
-  return *internal_default_instance();
-}
-
 
 void Encoder_speed::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Encoder_speed)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&left_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&right_) -
         reinterpret_cast<char*>(&left_)) + sizeof(right_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool Encoder_speed::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.Encoder_speed)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* Encoder_speed::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required uint64 left = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_left();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &left_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_left(&has_bits);
+          left_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint64 right = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_right();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &right_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_right(&has_bits);
+          right_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.Encoder_speed)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.Encoder_speed)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void Encoder_speed::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.Encoder_speed)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint64 left = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->left(), output);
-  }
-
-  // required uint64 right = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(2, this->right(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.Encoder_speed)
-}
-
-::google::protobuf::uint8* Encoder_speed::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Encoder_speed::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Encoder_speed)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required uint64 left = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->left(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_left(), target);
   }
 
   // required uint64 right = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(2, this->right(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->_internal_right(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Encoder_speed)
   return target;
@@ -3072,18 +2479,18 @@ size_t Encoder_speed::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.Encoder_speed)
   size_t total_size = 0;
 
-  if (has_left()) {
+  if (_internal_has_left()) {
     // required uint64 left = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->left());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_left());
   }
 
-  if (has_right()) {
+  if (_internal_has_right()) {
     // required uint64 right = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->right());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_right());
   }
 
   return total_size;
@@ -3092,39 +2499,42 @@ size_t Encoder_speed::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Encoder_speed)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required uint64 left = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->left());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_left());
 
     // required uint64 right = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->right());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_right());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Encoder_speed::MergeFrom(const ::google::protobuf::Message& from) {
+void Encoder_speed::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Encoder_speed)
   GOOGLE_DCHECK_NE(&from, this);
   const Encoder_speed* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Encoder_speed>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Encoder_speed>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Encoder_speed)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Encoder_speed)
     MergeFrom(*source);
@@ -3134,12 +2544,12 @@ void Encoder_speed::MergeFrom(const ::google::protobuf::Message& from) {
 void Encoder_speed::MergeFrom(const Encoder_speed& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Encoder_speed)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       left_ = from.left_;
     }
@@ -3150,7 +2560,7 @@ void Encoder_speed::MergeFrom(const Encoder_speed& from) {
   }
 }
 
-void Encoder_speed::CopyFrom(const ::google::protobuf::Message& from) {
+void Encoder_speed::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Encoder_speed)
   if (&from == this) return;
   Clear();
@@ -3165,73 +2575,45 @@ void Encoder_speed::CopyFrom(const Encoder_speed& from) {
 }
 
 bool Encoder_speed::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void Encoder_speed::Swap(Encoder_speed* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    Encoder_speed* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void Encoder_speed::UnsafeArenaSwap(Encoder_speed* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void Encoder_speed::InternalSwap(Encoder_speed* other) {
   using std::swap;
-  swap(left_, other->left_);
-  swap(right_, other->right_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Encoder_speed, right_)
+      + sizeof(Encoder_speed::right_)
+      - PROTOBUF_FIELD_OFFSET(Encoder_speed, left_)>(
+          reinterpret_cast<char*>(&left_),
+          reinterpret_cast<char*>(&other->left_));
 }
 
-::google::protobuf::Metadata Encoder_speed::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Encoder_speed::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[5]);
 }
-
 
 // ===================================================================
 
-void LaserScanner::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int LaserScanner::kValuesFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class LaserScanner::_Internal {
+ public:
+};
 
-LaserScanner::LaserScanner()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_LaserScanner.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.LaserScanner)
-}
-LaserScanner::LaserScanner(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena),
+LaserScanner::LaserScanner(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   values_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_LaserScanner.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.LaserScanner)
 }
 LaserScanner::LaserScanner(const LaserScanner& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       values_(from.values_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:mtg_fms.LaserScanner)
 }
 
@@ -3241,139 +2623,90 @@ void LaserScanner::SharedCtor() {
 LaserScanner::~LaserScanner() {
   // @@protoc_insertion_point(destructor:mtg_fms.LaserScanner)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void LaserScanner::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void LaserScanner::ArenaDtor(void* object) {
   LaserScanner* _this = reinterpret_cast< LaserScanner* >(object);
   (void)_this;
 }
-void LaserScanner::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void LaserScanner::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void LaserScanner::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LaserScanner::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const LaserScanner& LaserScanner::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_LaserScanner.base);
-  return *internal_default_instance();
-}
-
 
 void LaserScanner::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.LaserScanner)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   values_.Clear();
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool LaserScanner::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.LaserScanner)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* LaserScanner::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // repeated uint64 values = 1 [packed = true];
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, this->mutable_values())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 1, 10u, input, this->mutable_values())));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt64Parser(_internal_mutable_values(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
+          _internal_add_values(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* LaserScanner::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.LaserScanner)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated uint64 values = 1 [packed = true];
+  {
+    int byte_size = _values_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteUInt64Packed(
+          1, _internal_values(), byte_size, target);
     }
   }
-success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.LaserScanner)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.LaserScanner)
-  return false;
-#undef DO_
-}
 
-void LaserScanner::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.LaserScanner)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated uint64 values = 1 [packed = true];
-  if (this->values_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(1, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(static_cast< ::google::protobuf::uint32>(
-        _values_cached_byte_size_));
-  }
-  for (int i = 0, n = this->values_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64NoTag(
-      this->values(i), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.LaserScanner)
-}
-
-::google::protobuf::uint8* LaserScanner::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.LaserScanner)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated uint64 values = 1 [packed = true];
-  if (this->values_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      1,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-        static_cast< ::google::protobuf::int32>(
-            _values_cached_byte_size_), target);
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteUInt64NoTagToArray(this->values_, target);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.LaserScanner)
   return target;
@@ -3383,41 +2716,43 @@ size_t LaserScanner::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.LaserScanner)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint64 values = 1 [packed = true];
   {
-    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       UInt64Size(this->values_);
     if (data_size > 0) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-            static_cast< ::google::protobuf::int32>(data_size));
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
-    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _values_cached_byte_size_ = cached_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _values_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
     total_size += data_size;
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void LaserScanner::MergeFrom(const ::google::protobuf::Message& from) {
+void LaserScanner::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.LaserScanner)
   GOOGLE_DCHECK_NE(&from, this);
   const LaserScanner* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LaserScanner>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LaserScanner>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.LaserScanner)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.LaserScanner)
     MergeFrom(*source);
@@ -3427,14 +2762,14 @@ void LaserScanner::MergeFrom(const ::google::protobuf::Message& from) {
 void LaserScanner::MergeFrom(const LaserScanner& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.LaserScanner)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   values_.MergeFrom(from.values_);
 }
 
-void LaserScanner::CopyFrom(const ::google::protobuf::Message& from) {
+void LaserScanner::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.LaserScanner)
   if (&from == this) return;
   Clear();
@@ -3452,193 +2787,135 @@ bool LaserScanner::IsInitialized() const {
   return true;
 }
 
-void LaserScanner::Swap(LaserScanner* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    LaserScanner* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void LaserScanner::UnsafeArenaSwap(LaserScanner* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void LaserScanner::InternalSwap(LaserScanner* other) {
   using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   values_.InternalSwap(&other->values_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata LaserScanner::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata LaserScanner::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[6]);
 }
-
 
 // ===================================================================
 
-void AgentStatus::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int AgentStatus::kBatteryLevelFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class AgentStatus::_Internal {
+ public:
+  using HasBits = decltype(std::declval<AgentStatus>()._has_bits_);
+  static void set_has_battery_level(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
+  }
+};
 
-AgentStatus::AgentStatus()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_AgentStatus.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.AgentStatus)
-}
-AgentStatus::AgentStatus(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AgentStatus.base);
+AgentStatus::AgentStatus(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AgentStatus)
 }
 AgentStatus::AgentStatus(const AgentStatus& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   battery_level_ = from.battery_level_;
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AgentStatus)
 }
 
 void AgentStatus::SharedCtor() {
-  battery_level_ = GOOGLE_ULONGLONG(0);
+battery_level_ = uint64_t{0u};
 }
 
 AgentStatus::~AgentStatus() {
   // @@protoc_insertion_point(destructor:mtg_fms.AgentStatus)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AgentStatus::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void AgentStatus::ArenaDtor(void* object) {
   AgentStatus* _this = reinterpret_cast< AgentStatus* >(object);
   (void)_this;
 }
-void AgentStatus::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void AgentStatus::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void AgentStatus::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* AgentStatus::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const AgentStatus& AgentStatus::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AgentStatus.base);
-  return *internal_default_instance();
-}
-
 
 void AgentStatus::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AgentStatus)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  battery_level_ = GOOGLE_ULONGLONG(0);
+  battery_level_ = uint64_t{0u};
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool AgentStatus::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.AgentStatus)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* AgentStatus::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required uint64 battery_level = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_battery_level();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &battery_level_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_battery_level(&has_bits);
+          battery_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.AgentStatus)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.AgentStatus)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void AgentStatus::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.AgentStatus)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint64 battery_level = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->battery_level(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.AgentStatus)
-}
-
-::google::protobuf::uint8* AgentStatus::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* AgentStatus::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AgentStatus)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required uint64 battery_level = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->battery_level(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_battery_level(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AgentStatus)
   return target;
@@ -3648,31 +2925,34 @@ size_t AgentStatus::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AgentStatus)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   // required uint64 battery_level = 1;
-  if (has_battery_level()) {
+  if (_internal_has_battery_level()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->battery_level());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_battery_level());
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void AgentStatus::MergeFrom(const ::google::protobuf::Message& from) {
+void AgentStatus::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AgentStatus)
   GOOGLE_DCHECK_NE(&from, this);
   const AgentStatus* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const AgentStatus>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AgentStatus>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AgentStatus)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AgentStatus)
     MergeFrom(*source);
@@ -3682,16 +2962,16 @@ void AgentStatus::MergeFrom(const ::google::protobuf::Message& from) {
 void AgentStatus::MergeFrom(const AgentStatus& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AgentStatus)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_battery_level()) {
-    set_battery_level(from.battery_level());
+  if (from._internal_has_battery_level()) {
+    _internal_set_battery_level(from._internal_battery_level());
   }
 }
 
-void AgentStatus::CopyFrom(const ::google::protobuf::Message& from) {
+void AgentStatus::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AgentStatus)
   if (&from == this) return;
   Clear();
@@ -3706,78 +2986,70 @@ void AgentStatus::CopyFrom(const AgentStatus& from) {
 }
 
 bool AgentStatus::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void AgentStatus::Swap(AgentStatus* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    AgentStatus* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void AgentStatus::UnsafeArenaSwap(AgentStatus* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void AgentStatus::InternalSwap(AgentStatus* other) {
   using std::swap;
-  swap(battery_level_, other->battery_level_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(battery_level_, other->battery_level_);
 }
 
-::google::protobuf::Metadata AgentStatus::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata AgentStatus::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[7]);
 }
-
 
 // ===================================================================
 
-void AprilTagRot::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int AprilTagRot::kR11FieldNumber;
-const int AprilTagRot::kR12FieldNumber;
-const int AprilTagRot::kR13FieldNumber;
-const int AprilTagRot::kR21FieldNumber;
-const int AprilTagRot::kR22FieldNumber;
-const int AprilTagRot::kR23FieldNumber;
-const int AprilTagRot::kR31FieldNumber;
-const int AprilTagRot::kR32FieldNumber;
-const int AprilTagRot::kR33FieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class AprilTagRot::_Internal {
+ public:
+  using HasBits = decltype(std::declval<AprilTagRot>()._has_bits_);
+  static void set_has_r11(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_r12(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_r13(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static void set_has_r21(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+  static void set_has_r22(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
+  }
+  static void set_has_r23(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
+  }
+  static void set_has_r31(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
+  static void set_has_r32(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
+  }
+  static void set_has_r33(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x000001ff) ^ 0x000001ff) != 0;
+  }
+};
 
-AprilTagRot::AprilTagRot()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_AprilTagRot.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.AprilTagRot)
-}
-AprilTagRot::AprilTagRot(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AprilTagRot.base);
+AprilTagRot::AprilTagRot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AprilTagRot)
 }
 AprilTagRot::AprilTagRot(const AprilTagRot& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&r11_, &from.r11_,
     static_cast<size_t>(reinterpret_cast<char*>(&r33_) -
     reinterpret_cast<char*>(&r11_)) + sizeof(r33_));
@@ -3785,328 +3057,216 @@ AprilTagRot::AprilTagRot(const AprilTagRot& from)
 }
 
 void AprilTagRot::SharedCtor() {
-  ::memset(&r11_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&r33_) -
-      reinterpret_cast<char*>(&r11_)) + sizeof(r33_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&r11_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&r33_) -
+    reinterpret_cast<char*>(&r11_)) + sizeof(r33_));
 }
 
 AprilTagRot::~AprilTagRot() {
   // @@protoc_insertion_point(destructor:mtg_fms.AprilTagRot)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AprilTagRot::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void AprilTagRot::ArenaDtor(void* object) {
   AprilTagRot* _this = reinterpret_cast< AprilTagRot* >(object);
   (void)_this;
 }
-void AprilTagRot::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void AprilTagRot::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void AprilTagRot::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* AprilTagRot::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const AprilTagRot& AprilTagRot::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AprilTagRot.base);
-  return *internal_default_instance();
-}
-
 
 void AprilTagRot::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AprilTagRot)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     ::memset(&r11_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&r32_) -
         reinterpret_cast<char*>(&r11_)) + sizeof(r32_));
   }
   r33_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool AprilTagRot::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.AprilTagRot)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* AprilTagRot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required double r11 = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
-          set_has_r11();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &r11_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          _Internal::set_has_r11(&has_bits);
+          r11_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double r12 = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-          set_has_r12();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &r12_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          _Internal::set_has_r12(&has_bits);
+          r12_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double r13 = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
-          set_has_r13();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &r13_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+          _Internal::set_has_r13(&has_bits);
+          r13_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double r21 = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(33u /* 33 & 0xFF */)) {
-          set_has_r21();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &r21_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 33)) {
+          _Internal::set_has_r21(&has_bits);
+          r21_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double r22 = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(41u /* 41 & 0xFF */)) {
-          set_has_r22();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &r22_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+          _Internal::set_has_r22(&has_bits);
+          r22_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double r23 = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(49u /* 49 & 0xFF */)) {
-          set_has_r23();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &r23_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+          _Internal::set_has_r23(&has_bits);
+          r23_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double r31 = 7;
-      case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(57u /* 57 & 0xFF */)) {
-          set_has_r31();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &r31_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+          _Internal::set_has_r31(&has_bits);
+          r31_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double r32 = 8;
-      case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(65u /* 65 & 0xFF */)) {
-          set_has_r32();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &r32_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
+          _Internal::set_has_r32(&has_bits);
+          r32_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double r33 = 9;
-      case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(73u /* 73 & 0xFF */)) {
-          set_has_r33();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &r33_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 73)) {
+          _Internal::set_has_r33(&has_bits);
+          r33_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.AprilTagRot)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.AprilTagRot)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void AprilTagRot::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.AprilTagRot)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required double r11 = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->r11(), output);
-  }
-
-  // required double r12 = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->r12(), output);
-  }
-
-  // required double r13 = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->r13(), output);
-  }
-
-  // required double r21 = 4;
-  if (cached_has_bits & 0x00000008u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(4, this->r21(), output);
-  }
-
-  // required double r22 = 5;
-  if (cached_has_bits & 0x00000010u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(5, this->r22(), output);
-  }
-
-  // required double r23 = 6;
-  if (cached_has_bits & 0x00000020u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(6, this->r23(), output);
-  }
-
-  // required double r31 = 7;
-  if (cached_has_bits & 0x00000040u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(7, this->r31(), output);
-  }
-
-  // required double r32 = 8;
-  if (cached_has_bits & 0x00000080u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(8, this->r32(), output);
-  }
-
-  // required double r33 = 9;
-  if (cached_has_bits & 0x00000100u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(9, this->r33(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.AprilTagRot)
-}
-
-::google::protobuf::uint8* AprilTagRot::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* AprilTagRot::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AprilTagRot)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required double r11 = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->r11(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_r11(), target);
   }
 
   // required double r12 = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->r12(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_r12(), target);
   }
 
   // required double r13 = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->r13(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_r13(), target);
   }
 
   // required double r21 = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(4, this->r21(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_r21(), target);
   }
 
   // required double r22 = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(5, this->r22(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_r22(), target);
   }
 
   // required double r23 = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(6, this->r23(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_r23(), target);
   }
 
   // required double r31 = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(7, this->r31(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_r31(), target);
   }
 
   // required double r32 = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(8, this->r32(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_r32(), target);
   }
 
   // required double r33 = 9;
   if (cached_has_bits & 0x00000100u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(9, this->r33(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(9, this->_internal_r33(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AprilTagRot)
   return target;
@@ -4116,47 +3276,47 @@ size_t AprilTagRot::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.AprilTagRot)
   size_t total_size = 0;
 
-  if (has_r11()) {
+  if (_internal_has_r11()) {
     // required double r11 = 1;
     total_size += 1 + 8;
   }
 
-  if (has_r12()) {
+  if (_internal_has_r12()) {
     // required double r12 = 2;
     total_size += 1 + 8;
   }
 
-  if (has_r13()) {
+  if (_internal_has_r13()) {
     // required double r13 = 3;
     total_size += 1 + 8;
   }
 
-  if (has_r21()) {
+  if (_internal_has_r21()) {
     // required double r21 = 4;
     total_size += 1 + 8;
   }
 
-  if (has_r22()) {
+  if (_internal_has_r22()) {
     // required double r22 = 5;
     total_size += 1 + 8;
   }
 
-  if (has_r23()) {
+  if (_internal_has_r23()) {
     // required double r23 = 6;
     total_size += 1 + 8;
   }
 
-  if (has_r31()) {
+  if (_internal_has_r31()) {
     // required double r31 = 7;
     total_size += 1 + 8;
   }
 
-  if (has_r32()) {
+  if (_internal_has_r32()) {
     // required double r32 = 8;
     total_size += 1 + 8;
   }
 
-  if (has_r33()) {
+  if (_internal_has_r33()) {
     // required double r33 = 9;
     total_size += 1 + 8;
   }
@@ -4167,11 +3327,6 @@ size_t AprilTagRot::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AprilTagRot)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x000001ff) ^ 0x000001ff) == 0) {  // All required fields are present.
     // required double r11 = 1;
     total_size += 1 + 8;
@@ -4203,20 +3358,28 @@ size_t AprilTagRot::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void AprilTagRot::MergeFrom(const ::google::protobuf::Message& from) {
+void AprilTagRot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AprilTagRot)
   GOOGLE_DCHECK_NE(&from, this);
   const AprilTagRot* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const AprilTagRot>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AprilTagRot>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AprilTagRot)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AprilTagRot)
     MergeFrom(*source);
@@ -4226,12 +3389,12 @@ void AprilTagRot::MergeFrom(const ::google::protobuf::Message& from) {
 void AprilTagRot::MergeFrom(const AprilTagRot& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagRot)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       r11_ = from.r11_;
     }
@@ -4259,11 +3422,11 @@ void AprilTagRot::MergeFrom(const AprilTagRot& from) {
     _has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00000100u) {
-    set_r33(from.r33());
+    _internal_set_r33(from._internal_r33());
   }
 }
 
-void AprilTagRot::CopyFrom(const ::google::protobuf::Message& from) {
+void AprilTagRot::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AprilTagRot)
   if (&from == this) return;
   Clear();
@@ -4278,80 +3441,57 @@ void AprilTagRot::CopyFrom(const AprilTagRot& from) {
 }
 
 bool AprilTagRot::IsInitialized() const {
-  if ((_has_bits_[0] & 0x000001ff) != 0x000001ff) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void AprilTagRot::Swap(AprilTagRot* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    AprilTagRot* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void AprilTagRot::UnsafeArenaSwap(AprilTagRot* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void AprilTagRot::InternalSwap(AprilTagRot* other) {
   using std::swap;
-  swap(r11_, other->r11_);
-  swap(r12_, other->r12_);
-  swap(r13_, other->r13_);
-  swap(r21_, other->r21_);
-  swap(r22_, other->r22_);
-  swap(r23_, other->r23_);
-  swap(r31_, other->r31_);
-  swap(r32_, other->r32_);
-  swap(r33_, other->r33_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(AprilTagRot, r33_)
+      + sizeof(AprilTagRot::r33_)
+      - PROTOBUF_FIELD_OFFSET(AprilTagRot, r11_)>(
+          reinterpret_cast<char*>(&r11_),
+          reinterpret_cast<char*>(&other->r11_));
 }
 
-::google::protobuf::Metadata AprilTagRot::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata AprilTagRot::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[8]);
 }
-
 
 // ===================================================================
 
-void AprilTagTrans::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int AprilTagTrans::kXFieldNumber;
-const int AprilTagTrans::kYFieldNumber;
-const int AprilTagTrans::kZFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class AprilTagTrans::_Internal {
+ public:
+  using HasBits = decltype(std::declval<AprilTagTrans>()._has_bits_);
+  static void set_has_x(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_y(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_z(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000007) ^ 0x00000007) != 0;
+  }
+};
 
-AprilTagTrans::AprilTagTrans()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_AprilTagTrans.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.AprilTagTrans)
-}
-AprilTagTrans::AprilTagTrans(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AprilTagTrans.base);
+AprilTagTrans::AprilTagTrans(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AprilTagTrans)
 }
 AprilTagTrans::AprilTagTrans(const AprilTagTrans& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&z_) -
     reinterpret_cast<char*>(&x_)) + sizeof(z_));
@@ -4359,183 +3499,131 @@ AprilTagTrans::AprilTagTrans(const AprilTagTrans& from)
 }
 
 void AprilTagTrans::SharedCtor() {
-  ::memset(&x_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&z_) -
-      reinterpret_cast<char*>(&x_)) + sizeof(z_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&z_) -
+    reinterpret_cast<char*>(&x_)) + sizeof(z_));
 }
 
 AprilTagTrans::~AprilTagTrans() {
   // @@protoc_insertion_point(destructor:mtg_fms.AprilTagTrans)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AprilTagTrans::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void AprilTagTrans::ArenaDtor(void* object) {
   AprilTagTrans* _this = reinterpret_cast< AprilTagTrans* >(object);
   (void)_this;
 }
-void AprilTagTrans::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void AprilTagTrans::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void AprilTagTrans::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* AprilTagTrans::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const AprilTagTrans& AprilTagTrans::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AprilTagTrans.base);
-  return *internal_default_instance();
-}
-
 
 void AprilTagTrans::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AprilTagTrans)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&x_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&z_) -
         reinterpret_cast<char*>(&x_)) + sizeof(z_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool AprilTagTrans::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.AprilTagTrans)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* AprilTagTrans::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required double x = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(9u /* 9 & 0xFF */)) {
-          set_has_x();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &x_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+          _Internal::set_has_x(&has_bits);
+          x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double y = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-          set_has_y();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &y_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+          _Internal::set_has_y(&has_bits);
+          y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       // required double z = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
-          set_has_z();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &z_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+          _Internal::set_has_z(&has_bits);
+          z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.AprilTagTrans)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.AprilTagTrans)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void AprilTagTrans::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.AprilTagTrans)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required double x = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->x(), output);
-  }
-
-  // required double y = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->y(), output);
-  }
-
-  // required double z = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->z(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.AprilTagTrans)
-}
-
-::google::protobuf::uint8* AprilTagTrans::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* AprilTagTrans::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AprilTagTrans)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required double x = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->x(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_x(), target);
   }
 
   // required double y = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->y(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_y(), target);
   }
 
   // required double z = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->z(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_z(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AprilTagTrans)
   return target;
@@ -4545,17 +3633,17 @@ size_t AprilTagTrans::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.AprilTagTrans)
   size_t total_size = 0;
 
-  if (has_x()) {
+  if (_internal_has_x()) {
     // required double x = 1;
     total_size += 1 + 8;
   }
 
-  if (has_y()) {
+  if (_internal_has_y()) {
     // required double y = 2;
     total_size += 1 + 8;
   }
 
-  if (has_z()) {
+  if (_internal_has_z()) {
     // required double z = 3;
     total_size += 1 + 8;
   }
@@ -4566,11 +3654,6 @@ size_t AprilTagTrans::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AprilTagTrans)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required double x = 1;
     total_size += 1 + 8;
@@ -4584,20 +3667,28 @@ size_t AprilTagTrans::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void AprilTagTrans::MergeFrom(const ::google::protobuf::Message& from) {
+void AprilTagTrans::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AprilTagTrans)
   GOOGLE_DCHECK_NE(&from, this);
   const AprilTagTrans* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const AprilTagTrans>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AprilTagTrans>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AprilTagTrans)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AprilTagTrans)
     MergeFrom(*source);
@@ -4607,12 +3698,12 @@ void AprilTagTrans::MergeFrom(const ::google::protobuf::Message& from) {
 void AprilTagTrans::MergeFrom(const AprilTagTrans& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagTrans)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       x_ = from.x_;
     }
@@ -4626,7 +3717,7 @@ void AprilTagTrans::MergeFrom(const AprilTagTrans& from) {
   }
 }
 
-void AprilTagTrans::CopyFrom(const ::google::protobuf::Message& from) {
+void AprilTagTrans::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AprilTagTrans)
   if (&from == this) return;
   Clear();
@@ -4641,129 +3732,92 @@ void AprilTagTrans::CopyFrom(const AprilTagTrans& from) {
 }
 
 bool AprilTagTrans::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
   return true;
 }
 
-void AprilTagTrans::Swap(AprilTagTrans* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    AprilTagTrans* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void AprilTagTrans::UnsafeArenaSwap(AprilTagTrans* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void AprilTagTrans::InternalSwap(AprilTagTrans* other) {
   using std::swap;
-  swap(x_, other->x_);
-  swap(y_, other->y_);
-  swap(z_, other->z_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(AprilTagTrans, z_)
+      + sizeof(AprilTagTrans::z_)
+      - PROTOBUF_FIELD_OFFSET(AprilTagTrans, x_)>(
+          reinterpret_cast<char*>(&x_),
+          reinterpret_cast<char*>(&other->x_));
 }
 
-::google::protobuf::Metadata AprilTagTrans::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata AprilTagTrans::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[9]);
 }
-
 
 // ===================================================================
 
-void AprilTagPose::InitAsDefaultInstance() {
-  ::mtg_fms::_AprilTagPose_default_instance_._instance.get_mutable()->r_ = const_cast< ::mtg_fms::AprilTagRot*>(
-      ::mtg_fms::AprilTagRot::internal_default_instance());
-  ::mtg_fms::_AprilTagPose_default_instance_._instance.get_mutable()->t_ = const_cast< ::mtg_fms::AprilTagTrans*>(
-      ::mtg_fms::AprilTagTrans::internal_default_instance());
-}
-void AprilTagPose::unsafe_arena_set_allocated_r(
-    ::mtg_fms::AprilTagRot* r) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete r_;
+class AprilTagPose::_Internal {
+ public:
+  using HasBits = decltype(std::declval<AprilTagPose>()._has_bits_);
+  static const ::mtg_fms::AprilTagRot& r(const AprilTagPose* msg);
+  static void set_has_r(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  r_ = r;
-  if (r) {
-    set_has_r();
-  } else {
-    clear_has_r();
+  static const ::mtg_fms::AprilTagTrans& t(const AprilTagPose* msg);
+  static void set_has_t(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.AprilTagPose.R)
-}
-void AprilTagPose::unsafe_arena_set_allocated_t(
-    ::mtg_fms::AprilTagTrans* t) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete t_;
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
   }
-  t_ = t;
-  if (t) {
-    set_has_t();
-  } else {
-    clear_has_t();
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.AprilTagPose.t)
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int AprilTagPose::kRFieldNumber;
-const int AprilTagPose::kTFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+};
 
-AprilTagPose::AprilTagPose()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_AprilTagPose.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.AprilTagPose)
+const ::mtg_fms::AprilTagRot&
+AprilTagPose::_Internal::r(const AprilTagPose* msg) {
+  return *msg->r_;
 }
-AprilTagPose::AprilTagPose(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AprilTagPose.base);
+const ::mtg_fms::AprilTagTrans&
+AprilTagPose::_Internal::t(const AprilTagPose* msg) {
+  return *msg->t_;
+}
+AprilTagPose::AprilTagPose(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AprilTagPose)
 }
 AprilTagPose::AprilTagPose(const AprilTagPose& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_r()) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_r()) {
     r_ = new ::mtg_fms::AprilTagRot(*from.r_);
   } else {
-    r_ = NULL;
+    r_ = nullptr;
   }
-  if (from.has_t()) {
+  if (from._internal_has_t()) {
     t_ = new ::mtg_fms::AprilTagTrans(*from.t_);
   } else {
-    t_ = NULL;
+    t_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AprilTagPose)
 }
 
 void AprilTagPose::SharedCtor() {
-  ::memset(&r_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&t_) -
-      reinterpret_cast<char*>(&r_)) + sizeof(t_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&r_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&t_) -
+    reinterpret_cast<char*>(&r_)) + sizeof(t_));
 }
 
 AprilTagPose::~AprilTagPose() {
   // @@protoc_insertion_point(destructor:mtg_fms.AprilTagPose)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AprilTagPose::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete r_;
   if (this != internal_default_instance()) delete t_;
 }
@@ -4772,148 +3826,104 @@ void AprilTagPose::ArenaDtor(void* object) {
   AprilTagPose* _this = reinterpret_cast< AprilTagPose* >(object);
   (void)_this;
 }
-void AprilTagPose::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void AprilTagPose::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void AprilTagPose::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* AprilTagPose::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const AprilTagPose& AprilTagPose::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AprilTagPose.base);
-  return *internal_default_instance();
-}
-
 
 void AprilTagPose::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AprilTagPose)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(r_ != NULL);
+      GOOGLE_DCHECK(r_ != nullptr);
       r_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(t_ != NULL);
+      GOOGLE_DCHECK(t_ != nullptr);
       t_->Clear();
     }
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool AprilTagPose::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.AprilTagPose)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* AprilTagPose::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required .mtg_fms.AprilTagRot R = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_r()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_r(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.AprilTagTrans t = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_t()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_t(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.AprilTagPose)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.AprilTagPose)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void AprilTagPose::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.AprilTagPose)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required .mtg_fms.AprilTagRot R = 1;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_r(), output);
-  }
-
-  // required .mtg_fms.AprilTagTrans t = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_t(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.AprilTagPose)
-}
-
-::google::protobuf::uint8* AprilTagPose::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* AprilTagPose::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AprilTagPose)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required .mtg_fms.AprilTagRot R = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, this->_internal_r(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::r(this), target, stream);
   }
 
   // required .mtg_fms.AprilTagTrans t = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, this->_internal_t(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        2, _Internal::t(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AprilTagPose)
   return target;
@@ -4923,17 +3933,17 @@ size_t AprilTagPose::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.AprilTagPose)
   size_t total_size = 0;
 
-  if (has_r()) {
+  if (_internal_has_r()) {
     // required .mtg_fms.AprilTagRot R = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *r_);
   }
 
-  if (has_t()) {
+  if (_internal_has_t()) {
     // required .mtg_fms.AprilTagTrans t = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *t_);
   }
 
@@ -4943,39 +3953,42 @@ size_t AprilTagPose::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AprilTagPose)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required .mtg_fms.AprilTagRot R = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *r_);
 
     // required .mtg_fms.AprilTagTrans t = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *t_);
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void AprilTagPose::MergeFrom(const ::google::protobuf::Message& from) {
+void AprilTagPose::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AprilTagPose)
   GOOGLE_DCHECK_NE(&from, this);
   const AprilTagPose* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const AprilTagPose>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AprilTagPose>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AprilTagPose)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AprilTagPose)
     MergeFrom(*source);
@@ -4985,22 +3998,22 @@ void AprilTagPose::MergeFrom(const ::google::protobuf::Message& from) {
 void AprilTagPose::MergeFrom(const AprilTagPose& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagPose)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      mutable_r()->::mtg_fms::AprilTagRot::MergeFrom(from.r());
+      _internal_mutable_r()->::mtg_fms::AprilTagRot::MergeFrom(from._internal_r());
     }
     if (cached_has_bits & 0x00000002u) {
-      mutable_t()->::mtg_fms::AprilTagTrans::MergeFrom(from.t());
+      _internal_mutable_t()->::mtg_fms::AprilTagTrans::MergeFrom(from._internal_t());
     }
   }
 }
 
-void AprilTagPose::CopyFrom(const ::google::protobuf::Message& from) {
+void AprilTagPose::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AprilTagPose)
   if (&from == this) return;
   Clear();
@@ -5015,115 +4028,89 @@ void AprilTagPose::CopyFrom(const AprilTagPose& from) {
 }
 
 bool AprilTagPose::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
-  if (has_r()) {
-    if (!this->r_->IsInitialized()) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_internal_has_r()) {
+    if (!r_->IsInitialized()) return false;
   }
-  if (has_t()) {
-    if (!this->t_->IsInitialized()) return false;
+  if (_internal_has_t()) {
+    if (!t_->IsInitialized()) return false;
   }
   return true;
 }
 
-void AprilTagPose::Swap(AprilTagPose* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    AprilTagPose* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void AprilTagPose::UnsafeArenaSwap(AprilTagPose* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void AprilTagPose::InternalSwap(AprilTagPose* other) {
   using std::swap;
-  swap(r_, other->r_);
-  swap(t_, other->t_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(AprilTagPose, t_)
+      + sizeof(AprilTagPose::t_)
+      - PROTOBUF_FIELD_OFFSET(AprilTagPose, r_)>(
+          reinterpret_cast<char*>(&r_),
+          reinterpret_cast<char*>(&other->r_));
 }
 
-::google::protobuf::Metadata AprilTagPose::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata AprilTagPose::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[10]);
 }
-
 
 // ===================================================================
 
-void AprilTagDetection::InitAsDefaultInstance() {
-  ::mtg_fms::_AprilTagDetection_default_instance_._instance.get_mutable()->pose_ = const_cast< ::mtg_fms::AprilTagPose*>(
-      ::mtg_fms::AprilTagPose::internal_default_instance());
-}
-void AprilTagDetection::unsafe_arena_set_allocated_pose(
-    ::mtg_fms::AprilTagPose* pose) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete pose_;
+class AprilTagDetection::_Internal {
+ public:
+  using HasBits = decltype(std::declval<AprilTagDetection>()._has_bits_);
+  static void set_has_tag_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  pose_ = pose;
-  if (pose) {
-    set_has_pose();
-  } else {
-    clear_has_pose();
+  static const ::mtg_fms::AprilTagPose& pose(const AprilTagDetection* msg);
+  static void set_has_pose(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.AprilTagDetection.pose)
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int AprilTagDetection::kTagIdFieldNumber;
-const int AprilTagDetection::kPoseFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
+  }
+};
 
-AprilTagDetection::AprilTagDetection()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_AprilTagDetection.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.AprilTagDetection)
+const ::mtg_fms::AprilTagPose&
+AprilTagDetection::_Internal::pose(const AprilTagDetection* msg) {
+  return *msg->pose_;
 }
-AprilTagDetection::AprilTagDetection(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AprilTagDetection.base);
+AprilTagDetection::AprilTagDetection(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AprilTagDetection)
 }
 AprilTagDetection::AprilTagDetection(const AprilTagDetection& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_pose()) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_pose()) {
     pose_ = new ::mtg_fms::AprilTagPose(*from.pose_);
   } else {
-    pose_ = NULL;
+    pose_ = nullptr;
   }
   tag_id_ = from.tag_id_;
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AprilTagDetection)
 }
 
 void AprilTagDetection::SharedCtor() {
-  ::memset(&pose_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&tag_id_) -
-      reinterpret_cast<char*>(&pose_)) + sizeof(tag_id_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&pose_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&tag_id_) -
+    reinterpret_cast<char*>(&pose_)) + sizeof(tag_id_));
 }
 
 AprilTagDetection::~AprilTagDetection() {
   // @@protoc_insertion_point(destructor:mtg_fms.AprilTagDetection)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AprilTagDetection::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete pose_;
 }
 
@@ -5131,142 +4118,98 @@ void AprilTagDetection::ArenaDtor(void* object) {
   AprilTagDetection* _this = reinterpret_cast< AprilTagDetection* >(object);
   (void)_this;
 }
-void AprilTagDetection::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void AprilTagDetection::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void AprilTagDetection::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* AprilTagDetection::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const AprilTagDetection& AprilTagDetection::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AprilTagDetection.base);
-  return *internal_default_instance();
-}
-
 
 void AprilTagDetection::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AprilTagDetection)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(pose_ != NULL);
+    GOOGLE_DCHECK(pose_ != nullptr);
     pose_->Clear();
   }
   tag_id_ = 0u;
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool AprilTagDetection::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.AprilTagDetection)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* AprilTagDetection::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required uint32 tag_id = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_tag_id();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &tag_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_tag_id(&has_bits);
+          tag_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.AprilTagPose pose = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_pose()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_pose(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.AprilTagDetection)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.AprilTagDetection)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void AprilTagDetection::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.AprilTagDetection)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint32 tag_id = 1;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->tag_id(), output);
-  }
-
-  // required .mtg_fms.AprilTagPose pose = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_pose(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.AprilTagDetection)
-}
-
-::google::protobuf::uint8* AprilTagDetection::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* AprilTagDetection::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AprilTagDetection)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required uint32 tag_id = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->tag_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_tag_id(), target);
   }
 
   // required .mtg_fms.AprilTagPose pose = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, this->_internal_pose(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        2, _Internal::pose(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AprilTagDetection)
   return target;
@@ -5276,18 +4219,18 @@ size_t AprilTagDetection::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.AprilTagDetection)
   size_t total_size = 0;
 
-  if (has_pose()) {
+  if (_internal_has_pose()) {
     // required .mtg_fms.AprilTagPose pose = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *pose_);
   }
 
-  if (has_tag_id()) {
+  if (_internal_has_tag_id()) {
     // required uint32 tag_id = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->tag_id());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_tag_id());
   }
 
   return total_size;
@@ -5296,39 +4239,42 @@ size_t AprilTagDetection::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AprilTagDetection)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required .mtg_fms.AprilTagPose pose = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *pose_);
 
     // required uint32 tag_id = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->tag_id());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_tag_id());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void AprilTagDetection::MergeFrom(const ::google::protobuf::Message& from) {
+void AprilTagDetection::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AprilTagDetection)
   GOOGLE_DCHECK_NE(&from, this);
   const AprilTagDetection* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const AprilTagDetection>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AprilTagDetection>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AprilTagDetection)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AprilTagDetection)
     MergeFrom(*source);
@@ -5338,14 +4284,14 @@ void AprilTagDetection::MergeFrom(const ::google::protobuf::Message& from) {
 void AprilTagDetection::MergeFrom(const AprilTagDetection& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagDetection)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      mutable_pose()->::mtg_fms::AprilTagPose::MergeFrom(from.pose());
+      _internal_mutable_pose()->::mtg_fms::AprilTagPose::MergeFrom(from._internal_pose());
     }
     if (cached_has_bits & 0x00000002u) {
       tag_id_ = from.tag_id_;
@@ -5354,7 +4300,7 @@ void AprilTagDetection::MergeFrom(const AprilTagDetection& from) {
   }
 }
 
-void AprilTagDetection::CopyFrom(const ::google::protobuf::Message& from) {
+void AprilTagDetection::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AprilTagDetection)
   if (&from == this) return;
   Clear();
@@ -5369,76 +4315,48 @@ void AprilTagDetection::CopyFrom(const AprilTagDetection& from) {
 }
 
 bool AprilTagDetection::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
-  if (has_pose()) {
-    if (!this->pose_->IsInitialized()) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_internal_has_pose()) {
+    if (!pose_->IsInitialized()) return false;
   }
   return true;
 }
 
-void AprilTagDetection::Swap(AprilTagDetection* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    AprilTagDetection* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void AprilTagDetection::UnsafeArenaSwap(AprilTagDetection* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void AprilTagDetection::InternalSwap(AprilTagDetection* other) {
   using std::swap;
-  swap(pose_, other->pose_);
-  swap(tag_id_, other->tag_id_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(AprilTagDetection, tag_id_)
+      + sizeof(AprilTagDetection::tag_id_)
+      - PROTOBUF_FIELD_OFFSET(AprilTagDetection, pose_)>(
+          reinterpret_cast<char*>(&pose_),
+          reinterpret_cast<char*>(&other->pose_));
 }
 
-::google::protobuf::Metadata AprilTagDetection::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata AprilTagDetection::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[11]);
 }
-
 
 // ===================================================================
 
-void AllDetections::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int AllDetections::kTagDetectionsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class AllDetections::_Internal {
+ public:
+};
 
-AllDetections::AllDetections()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_AllDetections.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.AllDetections)
-}
-AllDetections::AllDetections(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena),
+AllDetections::AllDetections(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   tag_detections_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AllDetections.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AllDetections)
 }
 AllDetections::AllDetections(const AllDetections& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       tag_detections_(from.tag_detections_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AllDetections)
 }
 
@@ -5448,125 +4366,91 @@ void AllDetections::SharedCtor() {
 AllDetections::~AllDetections() {
   // @@protoc_insertion_point(destructor:mtg_fms.AllDetections)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AllDetections::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void AllDetections::ArenaDtor(void* object) {
   AllDetections* _this = reinterpret_cast< AllDetections* >(object);
   (void)_this;
 }
-void AllDetections::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void AllDetections::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void AllDetections::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* AllDetections::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const AllDetections& AllDetections::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_AllDetections.base);
-  return *internal_default_instance();
-}
-
 
 void AllDetections::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AllDetections)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   tag_detections_.Clear();
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool AllDetections::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.AllDetections)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* AllDetections::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // repeated .mtg_fms.AprilTagDetection tag_detections = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-                input, add_tag_detections()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_tag_detections(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.AllDetections)
-  return true;
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.AllDetections)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void AllDetections::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.AllDetections)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated .mtg_fms.AprilTagDetection tag_detections = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->tag_detections_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1,
-      this->tag_detections(static_cast<int>(i)),
-      output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.AllDetections)
-}
-
-::google::protobuf::uint8* AllDetections::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* AllDetections::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AllDetections)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .mtg_fms.AprilTagDetection tag_detections = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->tag_detections_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, this->tag_detections(static_cast<int>(i)), deterministic, target);
+      n = static_cast<unsigned int>(this->_internal_tag_detections_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_tag_detections(i), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AllDetections)
   return target;
@@ -5576,36 +4460,35 @@ size_t AllDetections::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AllDetections)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .mtg_fms.AprilTagDetection tag_detections = 1;
-  {
-    unsigned int count = static_cast<unsigned int>(this->tag_detections_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
-          this->tag_detections(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_tag_detections_size();
+  for (const auto& msg : this->tag_detections_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void AllDetections::MergeFrom(const ::google::protobuf::Message& from) {
+void AllDetections::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AllDetections)
   GOOGLE_DCHECK_NE(&from, this);
   const AllDetections* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const AllDetections>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AllDetections>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AllDetections)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AllDetections)
     MergeFrom(*source);
@@ -5615,14 +4498,14 @@ void AllDetections::MergeFrom(const ::google::protobuf::Message& from) {
 void AllDetections::MergeFrom(const AllDetections& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AllDetections)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   tag_detections_.MergeFrom(from.tag_detections_);
 }
 
-void AllDetections::CopyFrom(const ::google::protobuf::Message& from) {
+void AllDetections::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AllDetections)
   if (&from == this) return;
   Clear();
@@ -5637,259 +4520,164 @@ void AllDetections::CopyFrom(const AllDetections& from) {
 }
 
 bool AllDetections::IsInitialized() const {
-  if (!::google::protobuf::internal::AllAreInitialized(this->tag_detections())) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(tag_detections_)) return false;
   return true;
 }
 
-void AllDetections::Swap(AllDetections* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    AllDetections* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void AllDetections::UnsafeArenaSwap(AllDetections* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void AllDetections::InternalSwap(AllDetections* other) {
   using std::swap;
-  CastToBase(&tag_detections_)->InternalSwap(CastToBase(&other->tag_detections_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  tag_detections_.InternalSwap(&other->tag_detections_);
 }
 
-::google::protobuf::Metadata AllDetections::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata AllDetections::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[12]);
 }
-
 
 // ===================================================================
 
-void SensorData::InitAsDefaultInstance() {
-  ::mtg_fms::_SensorData_default_instance_._instance.get_mutable()->accel_data_ = const_cast< ::mtg_fms::Accelerometer*>(
-      ::mtg_fms::Accelerometer::internal_default_instance());
-  ::mtg_fms::_SensorData_default_instance_._instance.get_mutable()->gyro_data_ = const_cast< ::mtg_fms::Gyroscope*>(
-      ::mtg_fms::Gyroscope::internal_default_instance());
-  ::mtg_fms::_SensorData_default_instance_._instance.get_mutable()->count_data_ = const_cast< ::mtg_fms::Encoder_count*>(
-      ::mtg_fms::Encoder_count::internal_default_instance());
-  ::mtg_fms::_SensorData_default_instance_._instance.get_mutable()->speed_data_ = const_cast< ::mtg_fms::Encoder_speed*>(
-      ::mtg_fms::Encoder_speed::internal_default_instance());
-  ::mtg_fms::_SensorData_default_instance_._instance.get_mutable()->ir_data_ = const_cast< ::mtg_fms::Infrared*>(
-      ::mtg_fms::Infrared::internal_default_instance());
-  ::mtg_fms::_SensorData_default_instance_._instance.get_mutable()->us_data_ = const_cast< ::mtg_fms::Ultrasonic*>(
-      ::mtg_fms::Ultrasonic::internal_default_instance());
-  ::mtg_fms::_SensorData_default_instance_._instance.get_mutable()->lrf_data_ = const_cast< ::mtg_fms::LaserScanner*>(
-      ::mtg_fms::LaserScanner::internal_default_instance());
-  ::mtg_fms::_SensorData_default_instance_._instance.get_mutable()->agent_status_data_ = const_cast< ::mtg_fms::AgentStatus*>(
-      ::mtg_fms::AgentStatus::internal_default_instance());
-  ::mtg_fms::_SensorData_default_instance_._instance.get_mutable()->april_detections_ = const_cast< ::mtg_fms::AllDetections*>(
-      ::mtg_fms::AllDetections::internal_default_instance());
-}
-void SensorData::unsafe_arena_set_allocated_accel_data(
-    ::mtg_fms::Accelerometer* accel_data) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete accel_data_;
+class SensorData::_Internal {
+ public:
+  using HasBits = decltype(std::declval<SensorData>()._has_bits_);
+  static void set_has_timestamp_ns(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
   }
-  accel_data_ = accel_data;
-  if (accel_data) {
-    set_has_accel_data();
-  } else {
-    clear_has_accel_data();
+  static void set_has_seq_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.SensorData.accel_data)
-}
-void SensorData::unsafe_arena_set_allocated_gyro_data(
-    ::mtg_fms::Gyroscope* gyro_data) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete gyro_data_;
+  static const ::mtg_fms::Accelerometer& accel_data(const SensorData* msg);
+  static void set_has_accel_data(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
   }
-  gyro_data_ = gyro_data;
-  if (gyro_data) {
-    set_has_gyro_data();
-  } else {
-    clear_has_gyro_data();
+  static const ::mtg_fms::Gyroscope& gyro_data(const SensorData* msg);
+  static void set_has_gyro_data(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.SensorData.gyro_data)
-}
-void SensorData::unsafe_arena_set_allocated_count_data(
-    ::mtg_fms::Encoder_count* count_data) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete count_data_;
+  static const ::mtg_fms::Encoder_count& count_data(const SensorData* msg);
+  static void set_has_count_data(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
   }
-  count_data_ = count_data;
-  if (count_data) {
-    set_has_count_data();
-  } else {
-    clear_has_count_data();
+  static const ::mtg_fms::Encoder_speed& speed_data(const SensorData* msg);
+  static void set_has_speed_data(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.SensorData.count_data)
-}
-void SensorData::unsafe_arena_set_allocated_speed_data(
-    ::mtg_fms::Encoder_speed* speed_data) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete speed_data_;
+  static const ::mtg_fms::Infrared& ir_data(const SensorData* msg);
+  static void set_has_ir_data(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
   }
-  speed_data_ = speed_data;
-  if (speed_data) {
-    set_has_speed_data();
-  } else {
-    clear_has_speed_data();
+  static const ::mtg_fms::Ultrasonic& us_data(const SensorData* msg);
+  static void set_has_us_data(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.SensorData.speed_data)
-}
-void SensorData::unsafe_arena_set_allocated_ir_data(
-    ::mtg_fms::Infrared* ir_data) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete ir_data_;
+  static const ::mtg_fms::LaserScanner& lrf_data(const SensorData* msg);
+  static void set_has_lrf_data(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
   }
-  ir_data_ = ir_data;
-  if (ir_data) {
-    set_has_ir_data();
-  } else {
-    clear_has_ir_data();
+  static const ::mtg_fms::AgentStatus& agent_status_data(const SensorData* msg);
+  static void set_has_agent_status_data(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.SensorData.ir_data)
-}
-void SensorData::unsafe_arena_set_allocated_us_data(
-    ::mtg_fms::Ultrasonic* us_data) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete us_data_;
+  static const ::mtg_fms::AllDetections& april_detections(const SensorData* msg);
+  static void set_has_april_detections(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
   }
-  us_data_ = us_data;
-  if (us_data) {
-    set_has_us_data();
-  } else {
-    clear_has_us_data();
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x000007ff) ^ 0x000007ff) != 0;
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.SensorData.us_data)
-}
-void SensorData::unsafe_arena_set_allocated_lrf_data(
-    ::mtg_fms::LaserScanner* lrf_data) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete lrf_data_;
-  }
-  lrf_data_ = lrf_data;
-  if (lrf_data) {
-    set_has_lrf_data();
-  } else {
-    clear_has_lrf_data();
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.SensorData.lrf_data)
-}
-void SensorData::unsafe_arena_set_allocated_agent_status_data(
-    ::mtg_fms::AgentStatus* agent_status_data) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete agent_status_data_;
-  }
-  agent_status_data_ = agent_status_data;
-  if (agent_status_data) {
-    set_has_agent_status_data();
-  } else {
-    clear_has_agent_status_data();
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.SensorData.agent_status_data)
-}
-void SensorData::unsafe_arena_set_allocated_april_detections(
-    ::mtg_fms::AllDetections* april_detections) {
-  if (GetArenaNoVirtual() == NULL) {
-    delete april_detections_;
-  }
-  april_detections_ = april_detections;
-  if (april_detections) {
-    set_has_april_detections();
-  } else {
-    clear_has_april_detections();
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mtg_fms.SensorData.april_detections)
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int SensorData::kTimestampNsFieldNumber;
-const int SensorData::kSeqIdFieldNumber;
-const int SensorData::kAccelDataFieldNumber;
-const int SensorData::kGyroDataFieldNumber;
-const int SensorData::kCountDataFieldNumber;
-const int SensorData::kSpeedDataFieldNumber;
-const int SensorData::kIrDataFieldNumber;
-const int SensorData::kUsDataFieldNumber;
-const int SensorData::kLrfDataFieldNumber;
-const int SensorData::kAgentStatusDataFieldNumber;
-const int SensorData::kAprilDetectionsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+};
 
-SensorData::SensorData()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_mtg_2eproto::scc_info_SensorData.base);
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mtg_fms.SensorData)
+const ::mtg_fms::Accelerometer&
+SensorData::_Internal::accel_data(const SensorData* msg) {
+  return *msg->accel_data_;
 }
-SensorData::SensorData(::google::protobuf::Arena* arena)
-  : ::google::protobuf::Message(),
-  _internal_metadata_(arena) {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_SensorData.base);
+const ::mtg_fms::Gyroscope&
+SensorData::_Internal::gyro_data(const SensorData* msg) {
+  return *msg->gyro_data_;
+}
+const ::mtg_fms::Encoder_count&
+SensorData::_Internal::count_data(const SensorData* msg) {
+  return *msg->count_data_;
+}
+const ::mtg_fms::Encoder_speed&
+SensorData::_Internal::speed_data(const SensorData* msg) {
+  return *msg->speed_data_;
+}
+const ::mtg_fms::Infrared&
+SensorData::_Internal::ir_data(const SensorData* msg) {
+  return *msg->ir_data_;
+}
+const ::mtg_fms::Ultrasonic&
+SensorData::_Internal::us_data(const SensorData* msg) {
+  return *msg->us_data_;
+}
+const ::mtg_fms::LaserScanner&
+SensorData::_Internal::lrf_data(const SensorData* msg) {
+  return *msg->lrf_data_;
+}
+const ::mtg_fms::AgentStatus&
+SensorData::_Internal::agent_status_data(const SensorData* msg) {
+  return *msg->agent_status_data_;
+}
+const ::mtg_fms::AllDetections&
+SensorData::_Internal::april_detections(const SensorData* msg) {
+  return *msg->april_detections_;
+}
+SensorData::SensorData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.SensorData)
 }
 SensorData::SensorData(const SensorData& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_accel_data()) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_accel_data()) {
     accel_data_ = new ::mtg_fms::Accelerometer(*from.accel_data_);
   } else {
-    accel_data_ = NULL;
+    accel_data_ = nullptr;
   }
-  if (from.has_gyro_data()) {
+  if (from._internal_has_gyro_data()) {
     gyro_data_ = new ::mtg_fms::Gyroscope(*from.gyro_data_);
   } else {
-    gyro_data_ = NULL;
+    gyro_data_ = nullptr;
   }
-  if (from.has_count_data()) {
+  if (from._internal_has_count_data()) {
     count_data_ = new ::mtg_fms::Encoder_count(*from.count_data_);
   } else {
-    count_data_ = NULL;
+    count_data_ = nullptr;
   }
-  if (from.has_speed_data()) {
+  if (from._internal_has_speed_data()) {
     speed_data_ = new ::mtg_fms::Encoder_speed(*from.speed_data_);
   } else {
-    speed_data_ = NULL;
+    speed_data_ = nullptr;
   }
-  if (from.has_ir_data()) {
+  if (from._internal_has_ir_data()) {
     ir_data_ = new ::mtg_fms::Infrared(*from.ir_data_);
   } else {
-    ir_data_ = NULL;
+    ir_data_ = nullptr;
   }
-  if (from.has_us_data()) {
+  if (from._internal_has_us_data()) {
     us_data_ = new ::mtg_fms::Ultrasonic(*from.us_data_);
   } else {
-    us_data_ = NULL;
+    us_data_ = nullptr;
   }
-  if (from.has_lrf_data()) {
+  if (from._internal_has_lrf_data()) {
     lrf_data_ = new ::mtg_fms::LaserScanner(*from.lrf_data_);
   } else {
-    lrf_data_ = NULL;
+    lrf_data_ = nullptr;
   }
-  if (from.has_agent_status_data()) {
+  if (from._internal_has_agent_status_data()) {
     agent_status_data_ = new ::mtg_fms::AgentStatus(*from.agent_status_data_);
   } else {
-    agent_status_data_ = NULL;
+    agent_status_data_ = nullptr;
   }
-  if (from.has_april_detections()) {
+  if (from._internal_has_april_detections()) {
     april_detections_ = new ::mtg_fms::AllDetections(*from.april_detections_);
   } else {
-    april_detections_ = NULL;
+    april_detections_ = nullptr;
   }
   ::memcpy(&timestamp_ns_, &from.timestamp_ns_,
     static_cast<size_t>(reinterpret_cast<char*>(&seq_id_) -
@@ -5898,18 +4686,20 @@ SensorData::SensorData(const SensorData& from)
 }
 
 void SensorData::SharedCtor() {
-  ::memset(&accel_data_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&seq_id_) -
-      reinterpret_cast<char*>(&accel_data_)) + sizeof(seq_id_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&accel_data_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&seq_id_) -
+    reinterpret_cast<char*>(&accel_data_)) + sizeof(seq_id_));
 }
 
 SensorData::~SensorData() {
   // @@protoc_insertion_point(destructor:mtg_fms.SensorData)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void SensorData::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == NULL);
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete accel_data_;
   if (this != internal_default_instance()) delete gyro_data_;
   if (this != internal_default_instance()) delete count_data_;
@@ -5925,404 +4715,270 @@ void SensorData::ArenaDtor(void* object) {
   SensorData* _this = reinterpret_cast< SensorData* >(object);
   (void)_this;
 }
-void SensorData::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+void SensorData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
 void SensorData::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* SensorData::descriptor() {
-  ::protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const SensorData& SensorData::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_mtg_2eproto::scc_info_SensorData.base);
-  return *internal_default_instance();
-}
-
 
 void SensorData::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.SensorData)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(accel_data_ != NULL);
+      GOOGLE_DCHECK(accel_data_ != nullptr);
       accel_data_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(gyro_data_ != NULL);
+      GOOGLE_DCHECK(gyro_data_ != nullptr);
       gyro_data_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(count_data_ != NULL);
+      GOOGLE_DCHECK(count_data_ != nullptr);
       count_data_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(speed_data_ != NULL);
+      GOOGLE_DCHECK(speed_data_ != nullptr);
       speed_data_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(ir_data_ != NULL);
+      GOOGLE_DCHECK(ir_data_ != nullptr);
       ir_data_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(us_data_ != NULL);
+      GOOGLE_DCHECK(us_data_ != nullptr);
       us_data_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(lrf_data_ != NULL);
+      GOOGLE_DCHECK(lrf_data_ != nullptr);
       lrf_data_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(agent_status_data_ != NULL);
+      GOOGLE_DCHECK(agent_status_data_ != nullptr);
       agent_status_data_->Clear();
     }
   }
   if (cached_has_bits & 0x00000100u) {
-    GOOGLE_DCHECK(april_detections_ != NULL);
+    GOOGLE_DCHECK(april_detections_ != nullptr);
     april_detections_->Clear();
   }
-  if (cached_has_bits & 1536u) {
+  if (cached_has_bits & 0x00000600u) {
     ::memset(&timestamp_ns_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&seq_id_) -
         reinterpret_cast<char*>(&timestamp_ns_)) + sizeof(seq_id_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool SensorData::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:mtg_fms.SensorData)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* SensorData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // required uint64 timestamp_ns = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_timestamp_ns();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &timestamp_ns_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_timestamp_ns(&has_bits);
+          timestamp_ns_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required uint32 seq_id = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_seq_id();
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &seq_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_seq_id(&has_bits);
+          seq_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.Accelerometer accel_data = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_accel_data()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_accel_data(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.Gyroscope gyro_data = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_gyro_data()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr = ctx->ParseMessage(_internal_mutable_gyro_data(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.Encoder_count count_data = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_count_data()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr = ctx->ParseMessage(_internal_mutable_count_data(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.Encoder_speed speed_data = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_speed_data()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ctx->ParseMessage(_internal_mutable_speed_data(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.Infrared ir_data = 7;
-      case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_ir_data()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          ptr = ctx->ParseMessage(_internal_mutable_ir_data(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.Ultrasonic us_data = 8;
-      case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_us_data()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+          ptr = ctx->ParseMessage(_internal_mutable_us_data(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.LaserScanner lrf_data = 9;
-      case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_lrf_data()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+          ptr = ctx->ParseMessage(_internal_mutable_lrf_data(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.AgentStatus agent_status_data = 10;
-      case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_agent_status_data()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+          ptr = ctx->ParseMessage(_internal_mutable_agent_status_data(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required .mtg_fms.AllDetections april_detections = 11;
-      case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_april_detections()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_april_detections(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag == 0) || ((tag & 7) == 4)) {
+          CHK_(ptr);
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:mtg_fms.SensorData)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:mtg_fms.SensorData)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void SensorData::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:mtg_fms.SensorData)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required uint64 timestamp_ns = 1;
-  if (cached_has_bits & 0x00000200u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->timestamp_ns(), output);
-  }
-
-  // required uint32 seq_id = 2;
-  if (cached_has_bits & 0x00000400u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->seq_id(), output);
-  }
-
-  // required .mtg_fms.Accelerometer accel_data = 3;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_accel_data(), output);
-  }
-
-  // required .mtg_fms.Gyroscope gyro_data = 4;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_gyro_data(), output);
-  }
-
-  // required .mtg_fms.Encoder_count count_data = 5;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_count_data(), output);
-  }
-
-  // required .mtg_fms.Encoder_speed speed_data = 6;
-  if (cached_has_bits & 0x00000008u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_speed_data(), output);
-  }
-
-  // required .mtg_fms.Infrared ir_data = 7;
-  if (cached_has_bits & 0x00000010u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_internal_ir_data(), output);
-  }
-
-  // required .mtg_fms.Ultrasonic us_data = 8;
-  if (cached_has_bits & 0x00000020u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, this->_internal_us_data(), output);
-  }
-
-  // required .mtg_fms.LaserScanner lrf_data = 9;
-  if (cached_has_bits & 0x00000040u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, this->_internal_lrf_data(), output);
-  }
-
-  // required .mtg_fms.AgentStatus agent_status_data = 10;
-  if (cached_has_bits & 0x00000080u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      10, this->_internal_agent_status_data(), output);
-  }
-
-  // required .mtg_fms.AllDetections april_detections = 11;
-  if (cached_has_bits & 0x00000100u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      11, this->_internal_april_detections(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:mtg_fms.SensorData)
-}
-
-::google::protobuf::uint8* SensorData::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* SensorData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.SensorData)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required uint64 timestamp_ns = 1;
   if (cached_has_bits & 0x00000200u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->timestamp_ns(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_timestamp_ns(), target);
   }
 
   // required uint32 seq_id = 2;
   if (cached_has_bits & 0x00000400u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->seq_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_seq_id(), target);
   }
 
   // required .mtg_fms.Accelerometer accel_data = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        3, this->_internal_accel_data(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        3, _Internal::accel_data(this), target, stream);
   }
 
   // required .mtg_fms.Gyroscope gyro_data = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, this->_internal_gyro_data(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        4, _Internal::gyro_data(this), target, stream);
   }
 
   // required .mtg_fms.Encoder_count count_data = 5;
   if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        5, this->_internal_count_data(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        5, _Internal::count_data(this), target, stream);
   }
 
   // required .mtg_fms.Encoder_speed speed_data = 6;
   if (cached_has_bits & 0x00000008u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        6, this->_internal_speed_data(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        6, _Internal::speed_data(this), target, stream);
   }
 
   // required .mtg_fms.Infrared ir_data = 7;
   if (cached_has_bits & 0x00000010u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        7, this->_internal_ir_data(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        7, _Internal::ir_data(this), target, stream);
   }
 
   // required .mtg_fms.Ultrasonic us_data = 8;
   if (cached_has_bits & 0x00000020u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        8, this->_internal_us_data(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        8, _Internal::us_data(this), target, stream);
   }
 
   // required .mtg_fms.LaserScanner lrf_data = 9;
   if (cached_has_bits & 0x00000040u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        9, this->_internal_lrf_data(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        9, _Internal::lrf_data(this), target, stream);
   }
 
   // required .mtg_fms.AgentStatus agent_status_data = 10;
   if (cached_has_bits & 0x00000080u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        10, this->_internal_agent_status_data(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        10, _Internal::agent_status_data(this), target, stream);
   }
 
   // required .mtg_fms.AllDetections april_detections = 11;
   if (cached_has_bits & 0x00000100u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        11, this->_internal_april_detections(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        11, _Internal::april_detections(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.SensorData)
   return target;
@@ -6332,81 +4988,81 @@ size_t SensorData::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:mtg_fms.SensorData)
   size_t total_size = 0;
 
-  if (has_accel_data()) {
+  if (_internal_has_accel_data()) {
     // required .mtg_fms.Accelerometer accel_data = 3;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *accel_data_);
   }
 
-  if (has_gyro_data()) {
+  if (_internal_has_gyro_data()) {
     // required .mtg_fms.Gyroscope gyro_data = 4;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *gyro_data_);
   }
 
-  if (has_count_data()) {
+  if (_internal_has_count_data()) {
     // required .mtg_fms.Encoder_count count_data = 5;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *count_data_);
   }
 
-  if (has_speed_data()) {
+  if (_internal_has_speed_data()) {
     // required .mtg_fms.Encoder_speed speed_data = 6;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *speed_data_);
   }
 
-  if (has_ir_data()) {
+  if (_internal_has_ir_data()) {
     // required .mtg_fms.Infrared ir_data = 7;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *ir_data_);
   }
 
-  if (has_us_data()) {
+  if (_internal_has_us_data()) {
     // required .mtg_fms.Ultrasonic us_data = 8;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *us_data_);
   }
 
-  if (has_lrf_data()) {
+  if (_internal_has_lrf_data()) {
     // required .mtg_fms.LaserScanner lrf_data = 9;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *lrf_data_);
   }
 
-  if (has_agent_status_data()) {
+  if (_internal_has_agent_status_data()) {
     // required .mtg_fms.AgentStatus agent_status_data = 10;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *agent_status_data_);
   }
 
-  if (has_april_detections()) {
+  if (_internal_has_april_detections()) {
     // required .mtg_fms.AllDetections april_detections = 11;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *april_detections_);
   }
 
-  if (has_timestamp_ns()) {
+  if (_internal_has_timestamp_ns()) {
     // required uint64 timestamp_ns = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->timestamp_ns());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_timestamp_ns());
   }
 
-  if (has_seq_id()) {
+  if (_internal_has_seq_id()) {
     // required uint32 seq_id = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->seq_id());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_seq_id());
   }
 
   return total_size;
@@ -6415,84 +5071,87 @@ size_t SensorData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.SensorData)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x000007ff) ^ 0x000007ff) == 0) {  // All required fields are present.
     // required .mtg_fms.Accelerometer accel_data = 3;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *accel_data_);
 
     // required .mtg_fms.Gyroscope gyro_data = 4;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *gyro_data_);
 
     // required .mtg_fms.Encoder_count count_data = 5;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *count_data_);
 
     // required .mtg_fms.Encoder_speed speed_data = 6;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *speed_data_);
 
     // required .mtg_fms.Infrared ir_data = 7;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *ir_data_);
 
     // required .mtg_fms.Ultrasonic us_data = 8;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *us_data_);
 
     // required .mtg_fms.LaserScanner lrf_data = 9;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *lrf_data_);
 
     // required .mtg_fms.AgentStatus agent_status_data = 10;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *agent_status_data_);
 
     // required .mtg_fms.AllDetections april_detections = 11;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *april_detections_);
 
     // required uint64 timestamp_ns = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->timestamp_ns());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_timestamp_ns());
 
     // required uint32 seq_id = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->seq_id());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_seq_id());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void SensorData::MergeFrom(const ::google::protobuf::Message& from) {
+void SensorData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.SensorData)
   GOOGLE_DCHECK_NE(&from, this);
   const SensorData* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const SensorData>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SensorData>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.SensorData)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.SensorData)
     MergeFrom(*source);
@@ -6502,40 +5161,40 @@ void SensorData::MergeFrom(const ::google::protobuf::Message& from) {
 void SensorData::MergeFrom(const SensorData& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.SensorData)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      mutable_accel_data()->::mtg_fms::Accelerometer::MergeFrom(from.accel_data());
+      _internal_mutable_accel_data()->::mtg_fms::Accelerometer::MergeFrom(from._internal_accel_data());
     }
     if (cached_has_bits & 0x00000002u) {
-      mutable_gyro_data()->::mtg_fms::Gyroscope::MergeFrom(from.gyro_data());
+      _internal_mutable_gyro_data()->::mtg_fms::Gyroscope::MergeFrom(from._internal_gyro_data());
     }
     if (cached_has_bits & 0x00000004u) {
-      mutable_count_data()->::mtg_fms::Encoder_count::MergeFrom(from.count_data());
+      _internal_mutable_count_data()->::mtg_fms::Encoder_count::MergeFrom(from._internal_count_data());
     }
     if (cached_has_bits & 0x00000008u) {
-      mutable_speed_data()->::mtg_fms::Encoder_speed::MergeFrom(from.speed_data());
+      _internal_mutable_speed_data()->::mtg_fms::Encoder_speed::MergeFrom(from._internal_speed_data());
     }
     if (cached_has_bits & 0x00000010u) {
-      mutable_ir_data()->::mtg_fms::Infrared::MergeFrom(from.ir_data());
+      _internal_mutable_ir_data()->::mtg_fms::Infrared::MergeFrom(from._internal_ir_data());
     }
     if (cached_has_bits & 0x00000020u) {
-      mutable_us_data()->::mtg_fms::Ultrasonic::MergeFrom(from.us_data());
+      _internal_mutable_us_data()->::mtg_fms::Ultrasonic::MergeFrom(from._internal_us_data());
     }
     if (cached_has_bits & 0x00000040u) {
-      mutable_lrf_data()->::mtg_fms::LaserScanner::MergeFrom(from.lrf_data());
+      _internal_mutable_lrf_data()->::mtg_fms::LaserScanner::MergeFrom(from._internal_lrf_data());
     }
     if (cached_has_bits & 0x00000080u) {
-      mutable_agent_status_data()->::mtg_fms::AgentStatus::MergeFrom(from.agent_status_data());
+      _internal_mutable_agent_status_data()->::mtg_fms::AgentStatus::MergeFrom(from._internal_agent_status_data());
     }
   }
-  if (cached_has_bits & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     if (cached_has_bits & 0x00000100u) {
-      mutable_april_detections()->::mtg_fms::AllDetections::MergeFrom(from.april_detections());
+      _internal_mutable_april_detections()->::mtg_fms::AllDetections::MergeFrom(from._internal_april_detections());
     }
     if (cached_has_bits & 0x00000200u) {
       timestamp_ns_ = from.timestamp_ns_;
@@ -6547,7 +5206,7 @@ void SensorData::MergeFrom(const SensorData& from) {
   }
 }
 
-void SensorData::CopyFrom(const ::google::protobuf::Message& from) {
+void SensorData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.SensorData)
   if (&from == this) return;
   Clear();
@@ -6562,123 +5221,98 @@ void SensorData::CopyFrom(const SensorData& from) {
 }
 
 bool SensorData::IsInitialized() const {
-  if ((_has_bits_[0] & 0x000007ff) != 0x000007ff) return false;
-  if (has_accel_data()) {
-    if (!this->accel_data_->IsInitialized()) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_internal_has_accel_data()) {
+    if (!accel_data_->IsInitialized()) return false;
   }
-  if (has_gyro_data()) {
-    if (!this->gyro_data_->IsInitialized()) return false;
+  if (_internal_has_gyro_data()) {
+    if (!gyro_data_->IsInitialized()) return false;
   }
-  if (has_count_data()) {
-    if (!this->count_data_->IsInitialized()) return false;
+  if (_internal_has_count_data()) {
+    if (!count_data_->IsInitialized()) return false;
   }
-  if (has_speed_data()) {
-    if (!this->speed_data_->IsInitialized()) return false;
+  if (_internal_has_speed_data()) {
+    if (!speed_data_->IsInitialized()) return false;
   }
-  if (has_ir_data()) {
-    if (!this->ir_data_->IsInitialized()) return false;
+  if (_internal_has_ir_data()) {
+    if (!ir_data_->IsInitialized()) return false;
   }
-  if (has_us_data()) {
-    if (!this->us_data_->IsInitialized()) return false;
+  if (_internal_has_us_data()) {
+    if (!us_data_->IsInitialized()) return false;
   }
-  if (has_agent_status_data()) {
-    if (!this->agent_status_data_->IsInitialized()) return false;
+  if (_internal_has_agent_status_data()) {
+    if (!agent_status_data_->IsInitialized()) return false;
   }
-  if (has_april_detections()) {
-    if (!this->april_detections_->IsInitialized()) return false;
+  if (_internal_has_april_detections()) {
+    if (!april_detections_->IsInitialized()) return false;
   }
   return true;
 }
 
-void SensorData::Swap(SensorData* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    SensorData* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
-  }
-}
-void SensorData::UnsafeArenaSwap(SensorData* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void SensorData::InternalSwap(SensorData* other) {
   using std::swap;
-  swap(accel_data_, other->accel_data_);
-  swap(gyro_data_, other->gyro_data_);
-  swap(count_data_, other->count_data_);
-  swap(speed_data_, other->speed_data_);
-  swap(ir_data_, other->ir_data_);
-  swap(us_data_, other->us_data_);
-  swap(lrf_data_, other->lrf_data_);
-  swap(agent_status_data_, other->agent_status_data_);
-  swap(april_detections_, other->april_detections_);
-  swap(timestamp_ns_, other->timestamp_ns_);
-  swap(seq_id_, other->seq_id_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(SensorData, seq_id_)
+      + sizeof(SensorData::seq_id_)
+      - PROTOBUF_FIELD_OFFSET(SensorData, accel_data_)>(
+          reinterpret_cast<char*>(&accel_data_),
+          reinterpret_cast<char*>(&other->accel_data_));
 }
 
-::google::protobuf::Metadata SensorData::GetMetadata() const {
-  protobuf_mtg_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_mtg_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata SensorData::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
+      file_level_metadata_mtg_2eproto[13]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace mtg_fms
-namespace google {
-namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::Accelerometer* Arena::CreateMaybeMessage< ::mtg_fms::Accelerometer >(Arena* arena) {
+PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::mtg_fms::Accelerometer* Arena::CreateMaybeMessage< ::mtg_fms::Accelerometer >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Accelerometer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::Ultrasonic* Arena::CreateMaybeMessage< ::mtg_fms::Ultrasonic >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Ultrasonic* Arena::CreateMaybeMessage< ::mtg_fms::Ultrasonic >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Ultrasonic >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::Infrared* Arena::CreateMaybeMessage< ::mtg_fms::Infrared >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Infrared* Arena::CreateMaybeMessage< ::mtg_fms::Infrared >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Infrared >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::Gyroscope* Arena::CreateMaybeMessage< ::mtg_fms::Gyroscope >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Gyroscope* Arena::CreateMaybeMessage< ::mtg_fms::Gyroscope >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Gyroscope >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::Encoder_count* Arena::CreateMaybeMessage< ::mtg_fms::Encoder_count >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Encoder_count* Arena::CreateMaybeMessage< ::mtg_fms::Encoder_count >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Encoder_count >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::Encoder_speed* Arena::CreateMaybeMessage< ::mtg_fms::Encoder_speed >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Encoder_speed* Arena::CreateMaybeMessage< ::mtg_fms::Encoder_speed >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Encoder_speed >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::LaserScanner* Arena::CreateMaybeMessage< ::mtg_fms::LaserScanner >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::LaserScanner* Arena::CreateMaybeMessage< ::mtg_fms::LaserScanner >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::LaserScanner >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::AgentStatus* Arena::CreateMaybeMessage< ::mtg_fms::AgentStatus >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AgentStatus* Arena::CreateMaybeMessage< ::mtg_fms::AgentStatus >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AgentStatus >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::AprilTagRot* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagRot >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagRot* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagRot >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AprilTagRot >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::AprilTagTrans* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagTrans >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagTrans* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagTrans >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AprilTagTrans >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::AprilTagPose* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagPose >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagPose* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagPose >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AprilTagPose >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::AprilTagDetection* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagDetection >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagDetection* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagDetection >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AprilTagDetection >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::AllDetections* Arena::CreateMaybeMessage< ::mtg_fms::AllDetections >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AllDetections* Arena::CreateMaybeMessage< ::mtg_fms::AllDetections >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AllDetections >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::mtg_fms::SensorData* Arena::CreateMaybeMessage< ::mtg_fms::SensorData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::SensorData* Arena::CreateMaybeMessage< ::mtg_fms::SensorData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::SensorData >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>
