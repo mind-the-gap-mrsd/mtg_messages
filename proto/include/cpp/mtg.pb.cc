@@ -16,268 +16,301 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace mtg_fms {
-constexpr Accelerometer::Accelerometer(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : acc_x_(0)
-  , acc_y_(0)
-  , acc_z_(0){}
+PROTOBUF_CONSTEXPR Accelerometer::Accelerometer(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.acc_x_)*/0
+  , /*decltype(_impl_.acc_y_)*/0
+  , /*decltype(_impl_.acc_z_)*/0} {}
 struct AccelerometerDefaultTypeInternal {
-  constexpr AccelerometerDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AccelerometerDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AccelerometerDefaultTypeInternal() {}
   union {
     Accelerometer _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AccelerometerDefaultTypeInternal _Accelerometer_default_instance_;
-constexpr Ultrasonic::Ultrasonic(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : sensor_a_(0u)
-  , sensor_b_(0u)
-  , sensor_c_(0u)
-  , sensor_d_(0u)
-  , sensor_e_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AccelerometerDefaultTypeInternal _Accelerometer_default_instance_;
+PROTOBUF_CONSTEXPR Ultrasonic::Ultrasonic(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.sensor_a_)*/0u
+  , /*decltype(_impl_.sensor_b_)*/0u
+  , /*decltype(_impl_.sensor_c_)*/0u
+  , /*decltype(_impl_.sensor_d_)*/0u
+  , /*decltype(_impl_.sensor_e_)*/0u} {}
 struct UltrasonicDefaultTypeInternal {
-  constexpr UltrasonicDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR UltrasonicDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~UltrasonicDefaultTypeInternal() {}
   union {
     Ultrasonic _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT UltrasonicDefaultTypeInternal _Ultrasonic_default_instance_;
-constexpr Infrared::Infrared(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : sensor_a_(0u)
-  , sensor_b_(0u)
-  , sensor_c_(0u)
-  , sensor_d_(0u)
-  , sensor_e_(0u)
-  , sensor_f_(0u)
-  , sensor_g_(0u)
-  , sensor_h_(0u)
-  , sensor_i_(0u)
-  , sensor_j_(0u)
-  , sensor_k_(0u)
-  , sensor_l_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UltrasonicDefaultTypeInternal _Ultrasonic_default_instance_;
+PROTOBUF_CONSTEXPR Infrared::Infrared(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.sensor_a_)*/0u
+  , /*decltype(_impl_.sensor_b_)*/0u
+  , /*decltype(_impl_.sensor_c_)*/0u
+  , /*decltype(_impl_.sensor_d_)*/0u
+  , /*decltype(_impl_.sensor_e_)*/0u
+  , /*decltype(_impl_.sensor_f_)*/0u
+  , /*decltype(_impl_.sensor_g_)*/0u
+  , /*decltype(_impl_.sensor_h_)*/0u
+  , /*decltype(_impl_.sensor_i_)*/0u
+  , /*decltype(_impl_.sensor_j_)*/0u
+  , /*decltype(_impl_.sensor_k_)*/0u
+  , /*decltype(_impl_.sensor_l_)*/0u} {}
 struct InfraredDefaultTypeInternal {
-  constexpr InfraredDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR InfraredDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~InfraredDefaultTypeInternal() {}
   union {
     Infrared _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT InfraredDefaultTypeInternal _Infrared_default_instance_;
-constexpr Gyroscope::Gyroscope(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : gyro_x_(0)
-  , gyro_y_(0)
-  , gyro_z_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InfraredDefaultTypeInternal _Infrared_default_instance_;
+PROTOBUF_CONSTEXPR Gyroscope::Gyroscope(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.gyro_x_)*/0
+  , /*decltype(_impl_.gyro_y_)*/0
+  , /*decltype(_impl_.gyro_z_)*/0} {}
 struct GyroscopeDefaultTypeInternal {
-  constexpr GyroscopeDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GyroscopeDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GyroscopeDefaultTypeInternal() {}
   union {
     Gyroscope _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GyroscopeDefaultTypeInternal _Gyroscope_default_instance_;
-constexpr Encoder_count::Encoder_count(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : left_(uint64_t{0u})
-  , right_(uint64_t{0u}){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GyroscopeDefaultTypeInternal _Gyroscope_default_instance_;
+PROTOBUF_CONSTEXPR Encoder_count::Encoder_count(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.left_)*/uint64_t{0u}
+  , /*decltype(_impl_.right_)*/uint64_t{0u}} {}
 struct Encoder_countDefaultTypeInternal {
-  constexpr Encoder_countDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Encoder_countDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Encoder_countDefaultTypeInternal() {}
   union {
     Encoder_count _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Encoder_countDefaultTypeInternal _Encoder_count_default_instance_;
-constexpr Encoder_speed::Encoder_speed(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : left_(uint64_t{0u})
-  , right_(uint64_t{0u}){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Encoder_countDefaultTypeInternal _Encoder_count_default_instance_;
+PROTOBUF_CONSTEXPR Encoder_speed::Encoder_speed(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.left_)*/uint64_t{0u}
+  , /*decltype(_impl_.right_)*/uint64_t{0u}} {}
 struct Encoder_speedDefaultTypeInternal {
-  constexpr Encoder_speedDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Encoder_speedDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Encoder_speedDefaultTypeInternal() {}
   union {
     Encoder_speed _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Encoder_speedDefaultTypeInternal _Encoder_speed_default_instance_;
-constexpr LaserScanner::LaserScanner(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : values_()
-  , _values_cached_byte_size_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Encoder_speedDefaultTypeInternal _Encoder_speed_default_instance_;
+PROTOBUF_CONSTEXPR LaserScanner::LaserScanner(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.values_)*/{}
+  , /*decltype(_impl_._values_cached_byte_size_)*/{0}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct LaserScannerDefaultTypeInternal {
-  constexpr LaserScannerDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR LaserScannerDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~LaserScannerDefaultTypeInternal() {}
   union {
     LaserScanner _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LaserScannerDefaultTypeInternal _LaserScanner_default_instance_;
-constexpr AgentStatus::AgentStatus(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : battery_level_(uint64_t{0u}){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LaserScannerDefaultTypeInternal _LaserScanner_default_instance_;
+PROTOBUF_CONSTEXPR AgentStatus::AgentStatus(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.battery_level_)*/uint64_t{0u}} {}
 struct AgentStatusDefaultTypeInternal {
-  constexpr AgentStatusDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AgentStatusDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AgentStatusDefaultTypeInternal() {}
   union {
     AgentStatus _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AgentStatusDefaultTypeInternal _AgentStatus_default_instance_;
-constexpr AprilTagRot::AprilTagRot(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : r11_(0)
-  , r12_(0)
-  , r13_(0)
-  , r21_(0)
-  , r22_(0)
-  , r23_(0)
-  , r31_(0)
-  , r32_(0)
-  , r33_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AgentStatusDefaultTypeInternal _AgentStatus_default_instance_;
+PROTOBUF_CONSTEXPR AprilTagRot::AprilTagRot(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.r11_)*/0
+  , /*decltype(_impl_.r12_)*/0
+  , /*decltype(_impl_.r13_)*/0
+  , /*decltype(_impl_.r21_)*/0
+  , /*decltype(_impl_.r22_)*/0
+  , /*decltype(_impl_.r23_)*/0
+  , /*decltype(_impl_.r31_)*/0
+  , /*decltype(_impl_.r32_)*/0
+  , /*decltype(_impl_.r33_)*/0} {}
 struct AprilTagRotDefaultTypeInternal {
-  constexpr AprilTagRotDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AprilTagRotDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AprilTagRotDefaultTypeInternal() {}
   union {
     AprilTagRot _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AprilTagRotDefaultTypeInternal _AprilTagRot_default_instance_;
-constexpr AprilTagTrans::AprilTagTrans(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : x_(0)
-  , y_(0)
-  , z_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AprilTagRotDefaultTypeInternal _AprilTagRot_default_instance_;
+PROTOBUF_CONSTEXPR AprilTagTrans::AprilTagTrans(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.x_)*/0
+  , /*decltype(_impl_.y_)*/0
+  , /*decltype(_impl_.z_)*/0} {}
 struct AprilTagTransDefaultTypeInternal {
-  constexpr AprilTagTransDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AprilTagTransDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AprilTagTransDefaultTypeInternal() {}
   union {
     AprilTagTrans _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AprilTagTransDefaultTypeInternal _AprilTagTrans_default_instance_;
-constexpr AprilTagPose::AprilTagPose(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : r_(nullptr)
-  , t_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AprilTagTransDefaultTypeInternal _AprilTagTrans_default_instance_;
+PROTOBUF_CONSTEXPR AprilTagPose::AprilTagPose(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.r_)*/nullptr
+  , /*decltype(_impl_.t_)*/nullptr} {}
 struct AprilTagPoseDefaultTypeInternal {
-  constexpr AprilTagPoseDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AprilTagPoseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AprilTagPoseDefaultTypeInternal() {}
   union {
     AprilTagPose _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AprilTagPoseDefaultTypeInternal _AprilTagPose_default_instance_;
-constexpr AprilTagDetection::AprilTagDetection(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : pose_(nullptr)
-  , tag_id_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AprilTagPoseDefaultTypeInternal _AprilTagPose_default_instance_;
+PROTOBUF_CONSTEXPR AprilTagDetection::AprilTagDetection(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.pose_)*/nullptr
+  , /*decltype(_impl_.tag_id_)*/0u} {}
 struct AprilTagDetectionDefaultTypeInternal {
-  constexpr AprilTagDetectionDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AprilTagDetectionDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AprilTagDetectionDefaultTypeInternal() {}
   union {
     AprilTagDetection _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AprilTagDetectionDefaultTypeInternal _AprilTagDetection_default_instance_;
-constexpr AllDetections::AllDetections(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : tag_detections_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AprilTagDetectionDefaultTypeInternal _AprilTagDetection_default_instance_;
+PROTOBUF_CONSTEXPR AllDetections::AllDetections(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.tag_detections_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct AllDetectionsDefaultTypeInternal {
-  constexpr AllDetectionsDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AllDetectionsDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AllDetectionsDefaultTypeInternal() {}
   union {
     AllDetections _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AllDetectionsDefaultTypeInternal _AllDetections_default_instance_;
-constexpr SensorData::SensorData(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : accel_data_(nullptr)
-  , gyro_data_(nullptr)
-  , count_data_(nullptr)
-  , speed_data_(nullptr)
-  , ir_data_(nullptr)
-  , us_data_(nullptr)
-  , lrf_data_(nullptr)
-  , agent_status_data_(nullptr)
-  , april_detections_(nullptr)
-  , timestamp_ns_(uint64_t{0u})
-  , seq_id_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AllDetectionsDefaultTypeInternal _AllDetections_default_instance_;
+PROTOBUF_CONSTEXPR SensorData::SensorData(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.accel_data_)*/nullptr
+  , /*decltype(_impl_.gyro_data_)*/nullptr
+  , /*decltype(_impl_.count_data_)*/nullptr
+  , /*decltype(_impl_.speed_data_)*/nullptr
+  , /*decltype(_impl_.ir_data_)*/nullptr
+  , /*decltype(_impl_.us_data_)*/nullptr
+  , /*decltype(_impl_.lrf_data_)*/nullptr
+  , /*decltype(_impl_.agent_status_data_)*/nullptr
+  , /*decltype(_impl_.april_detections_)*/nullptr
+  , /*decltype(_impl_.timestamp_ns_)*/uint64_t{0u}
+  , /*decltype(_impl_.seq_id_)*/0u} {}
 struct SensorDataDefaultTypeInternal {
-  constexpr SensorDataDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SensorDataDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SensorDataDefaultTypeInternal() {}
   union {
     SensorData _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SensorDataDefaultTypeInternal _SensorData_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SensorDataDefaultTypeInternal _SensorData_default_instance_;
 }  // namespace mtg_fms
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_mtg_2eproto[14];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_mtg_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_mtg_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_mtg_2eproto[14];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_mtg_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_mtg_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_mtg_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, _has_bits_),
+const uint32_t TableStruct_mtg_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, acc_x_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, acc_y_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, acc_z_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, _impl_.acc_x_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, _impl_.acc_y_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Accelerometer, _impl_.acc_z_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_a_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_b_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_c_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_d_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, sensor_e_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _impl_.sensor_a_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _impl_.sensor_b_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _impl_.sensor_c_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _impl_.sensor_d_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Ultrasonic, _impl_.sensor_e_),
   0,
   1,
   2,
   3,
   4,
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_a_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_b_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_c_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_d_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_e_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_f_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_g_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_h_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_i_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_j_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_k_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, sensor_l_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_a_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_b_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_c_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_d_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_e_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_f_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_g_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_h_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_i_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_j_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_k_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Infrared, _impl_.sensor_l_),
   0,
   1,
   2,
@@ -290,33 +323,36 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_mtg_2eproto::offsets[] PROTOBU
   9,
   10,
   11,
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, gyro_x_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, gyro_y_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, gyro_z_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, _impl_.gyro_x_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, _impl_.gyro_y_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Gyroscope, _impl_.gyro_z_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, left_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, right_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, _impl_.left_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_count, _impl_.right_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, left_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, right_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, _impl_.left_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::Encoder_speed, _impl_.right_),
   0,
   1,
   ~0u,  // no _has_bits_
@@ -324,28 +360,31 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_mtg_2eproto::offsets[] PROTOBU
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::LaserScanner, values_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AgentStatus, _has_bits_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::LaserScanner, _impl_.values_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AgentStatus, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::AgentStatus, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AgentStatus, battery_level_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AgentStatus, _impl_.battery_level_),
   0,
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r11_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r12_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r13_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r21_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r22_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r23_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r31_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r32_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, r33_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_.r11_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_.r12_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_.r13_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_.r21_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_.r22_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_.r23_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_.r31_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_.r32_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagRot, _impl_.r33_),
   0,
   1,
   2,
@@ -355,33 +394,36 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_mtg_2eproto::offsets[] PROTOBU
   6,
   7,
   8,
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, x_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, y_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, z_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _impl_.x_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _impl_.y_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagTrans, _impl_.z_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, r_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, t_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, _impl_.r_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagPose, _impl_.t_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, tag_id_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, pose_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, _impl_.tag_id_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AprilTagDetection, _impl_.pose_),
   1,
   0,
   ~0u,  // no _has_bits_
@@ -389,23 +431,25 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_mtg_2eproto::offsets[] PROTOBU
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::AllDetections, tag_detections_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _has_bits_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::AllDetections, _impl_.tag_detections_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, timestamp_ns_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, seq_id_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, accel_data_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, gyro_data_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, count_data_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, speed_data_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, ir_data_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, us_data_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, lrf_data_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, agent_status_data_),
-  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, april_detections_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.timestamp_ns_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.seq_id_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.accel_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.gyro_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.count_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.speed_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.ir_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.us_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.lrf_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.agent_status_data_),
+  PROTOBUF_FIELD_OFFSET(::mtg_fms::SensorData, _impl_.april_detections_),
   9,
   10,
   0,
@@ -418,38 +462,38 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_mtg_2eproto::offsets[] PROTOBU
   7,
   8,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::mtg_fms::Accelerometer)},
-  { 11, 21, sizeof(::mtg_fms::Ultrasonic)},
-  { 26, 43, sizeof(::mtg_fms::Infrared)},
-  { 55, 63, sizeof(::mtg_fms::Gyroscope)},
-  { 66, 73, sizeof(::mtg_fms::Encoder_count)},
-  { 75, 82, sizeof(::mtg_fms::Encoder_speed)},
-  { 84, -1, sizeof(::mtg_fms::LaserScanner)},
-  { 90, 96, sizeof(::mtg_fms::AgentStatus)},
-  { 97, 111, sizeof(::mtg_fms::AprilTagRot)},
-  { 120, 128, sizeof(::mtg_fms::AprilTagTrans)},
-  { 131, 138, sizeof(::mtg_fms::AprilTagPose)},
-  { 140, 147, sizeof(::mtg_fms::AprilTagDetection)},
-  { 149, -1, sizeof(::mtg_fms::AllDetections)},
-  { 155, 171, sizeof(::mtg_fms::SensorData)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 9, -1, sizeof(::mtg_fms::Accelerometer)},
+  { 12, 23, -1, sizeof(::mtg_fms::Ultrasonic)},
+  { 28, 46, -1, sizeof(::mtg_fms::Infrared)},
+  { 58, 67, -1, sizeof(::mtg_fms::Gyroscope)},
+  { 70, 78, -1, sizeof(::mtg_fms::Encoder_count)},
+  { 80, 88, -1, sizeof(::mtg_fms::Encoder_speed)},
+  { 90, -1, -1, sizeof(::mtg_fms::LaserScanner)},
+  { 97, 104, -1, sizeof(::mtg_fms::AgentStatus)},
+  { 105, 120, -1, sizeof(::mtg_fms::AprilTagRot)},
+  { 129, 138, -1, sizeof(::mtg_fms::AprilTagTrans)},
+  { 141, 149, -1, sizeof(::mtg_fms::AprilTagPose)},
+  { 151, 159, -1, sizeof(::mtg_fms::AprilTagDetection)},
+  { 161, -1, -1, sizeof(::mtg_fms::AllDetections)},
+  { 168, 185, -1, sizeof(::mtg_fms::SensorData)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Accelerometer_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Ultrasonic_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Infrared_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Gyroscope_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Encoder_count_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_Encoder_speed_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_LaserScanner_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AgentStatus_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AprilTagRot_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AprilTagTrans_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AprilTagPose_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AprilTagDetection_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_AllDetections_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mtg_fms::_SensorData_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::mtg_fms::_Accelerometer_default_instance_._instance,
+  &::mtg_fms::_Ultrasonic_default_instance_._instance,
+  &::mtg_fms::_Infrared_default_instance_._instance,
+  &::mtg_fms::_Gyroscope_default_instance_._instance,
+  &::mtg_fms::_Encoder_count_default_instance_._instance,
+  &::mtg_fms::_Encoder_speed_default_instance_._instance,
+  &::mtg_fms::_LaserScanner_default_instance_._instance,
+  &::mtg_fms::_AgentStatus_default_instance_._instance,
+  &::mtg_fms::_AprilTagRot_default_instance_._instance,
+  &::mtg_fms::_AprilTagTrans_default_instance_._instance,
+  &::mtg_fms::_AprilTagPose_default_instance_._instance,
+  &::mtg_fms::_AprilTagDetection_default_instance_._instance,
+  &::mtg_fms::_AllDetections_default_instance_._instance,
+  &::mtg_fms::_SensorData_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_mtg_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -492,26 +536,28 @@ const char descriptor_table_protodef_mtg_2eproto[] PROTOBUF_SECTION_VARIABLE(pro
   "\0220\n\020april_detections\030\013 \002(\0132\026.mtg_fms.All"
   "DetectionsB\003\370\001\001"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_mtg_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_mtg_2eproto = {
-  false, false, 1495, descriptor_table_protodef_mtg_2eproto, "mtg.proto", 
-  &descriptor_table_mtg_2eproto_once, nullptr, 0, 14,
-  schemas, file_default_instances, TableStruct_mtg_2eproto::offsets,
-  file_level_metadata_mtg_2eproto, file_level_enum_descriptors_mtg_2eproto, file_level_service_descriptors_mtg_2eproto,
+static ::_pbi::once_flag descriptor_table_mtg_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_mtg_2eproto = {
+    false, false, 1495, descriptor_table_protodef_mtg_2eproto,
+    "mtg.proto",
+    &descriptor_table_mtg_2eproto_once, nullptr, 0, 14,
+    schemas, file_default_instances, TableStruct_mtg_2eproto::offsets,
+    file_level_metadata_mtg_2eproto, file_level_enum_descriptors_mtg_2eproto,
+    file_level_service_descriptors_mtg_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_mtg_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_mtg_2eproto_getter() {
   return &descriptor_table_mtg_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_mtg_2eproto(&descriptor_table_mtg_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_mtg_2eproto(&descriptor_table_mtg_2eproto);
 namespace mtg_fms {
 
 // ===================================================================
 
 class Accelerometer::_Internal {
  public:
-  using HasBits = decltype(std::declval<Accelerometer>()._has_bits_);
+  using HasBits = decltype(std::declval<Accelerometer>()._impl_._has_bits_);
   static void set_has_acc_x(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -526,147 +572,160 @@ class Accelerometer::_Internal {
   }
 };
 
-Accelerometer::Accelerometer(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+Accelerometer::Accelerometer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Accelerometer)
 }
 Accelerometer::Accelerometer(const Accelerometer& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Accelerometer* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.acc_x_){}
+    , decltype(_impl_.acc_y_){}
+    , decltype(_impl_.acc_z_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&acc_x_, &from.acc_x_,
-    static_cast<size_t>(reinterpret_cast<char*>(&acc_z_) -
-    reinterpret_cast<char*>(&acc_x_)) + sizeof(acc_z_));
+  ::memcpy(&_impl_.acc_x_, &from._impl_.acc_x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.acc_z_) -
+    reinterpret_cast<char*>(&_impl_.acc_x_)) + sizeof(_impl_.acc_z_));
   // @@protoc_insertion_point(copy_constructor:mtg_fms.Accelerometer)
 }
 
-void Accelerometer::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&acc_x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&acc_z_) -
-    reinterpret_cast<char*>(&acc_x_)) + sizeof(acc_z_));
+inline void Accelerometer::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.acc_x_){0}
+    , decltype(_impl_.acc_y_){0}
+    , decltype(_impl_.acc_z_){0}
+  };
 }
 
 Accelerometer::~Accelerometer() {
   // @@protoc_insertion_point(destructor:mtg_fms.Accelerometer)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Accelerometer::SharedDtor() {
+inline void Accelerometer::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void Accelerometer::ArenaDtor(void* object) {
-  Accelerometer* _this = reinterpret_cast< Accelerometer* >(object);
-  (void)_this;
-}
-void Accelerometer::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Accelerometer::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Accelerometer::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Accelerometer)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
-    ::memset(&acc_x_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&acc_z_) -
-        reinterpret_cast<char*>(&acc_x_)) + sizeof(acc_z_));
+    ::memset(&_impl_.acc_x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.acc_z_) -
+        reinterpret_cast<char*>(&_impl_.acc_x_)) + sizeof(_impl_.acc_z_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Accelerometer::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Accelerometer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required double acc_x = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
           _Internal::set_has_acc_x(&has_bits);
-          acc_x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.acc_x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double acc_y = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
           _Internal::set_has_acc_y(&has_bits);
-          acc_y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.acc_y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double acc_z = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
           _Internal::set_has_acc_z(&has_bits);
-          acc_z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.acc_z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Accelerometer::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Accelerometer::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Accelerometer)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required double acc_x = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_acc_x(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_acc_x(), target);
   }
 
   // required double acc_y = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_acc_y(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_acc_y(), target);
   }
 
   // required double acc_z = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_acc_z(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(3, this->_internal_acc_z(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Accelerometer)
@@ -698,7 +757,7 @@ size_t Accelerometer::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Accelerometer)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required double acc_x = 1;
     total_size += 1 + 8;
 
@@ -711,61 +770,42 @@ size_t Accelerometer::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void Accelerometer::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Accelerometer)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Accelerometer* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Accelerometer>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Accelerometer)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Accelerometer)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Accelerometer::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Accelerometer::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Accelerometer::GetClassData() const { return &_class_data_; }
 
-void Accelerometer::MergeFrom(const Accelerometer& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Accelerometer)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void Accelerometer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Accelerometer*>(&to_msg);
+  auto& from = static_cast<const Accelerometer&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Accelerometer)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      acc_x_ = from.acc_x_;
+      _this->_impl_.acc_x_ = from._impl_.acc_x_;
     }
     if (cached_has_bits & 0x00000002u) {
-      acc_y_ = from.acc_y_;
+      _this->_impl_.acc_y_ = from._impl_.acc_y_;
     }
     if (cached_has_bits & 0x00000004u) {
-      acc_z_ = from.acc_z_;
+      _this->_impl_.acc_z_ = from._impl_.acc_z_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-}
-
-void Accelerometer::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Accelerometer)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Accelerometer::CopyFrom(const Accelerometer& from) {
@@ -776,24 +816,24 @@ void Accelerometer::CopyFrom(const Accelerometer& from) {
 }
 
 bool Accelerometer::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void Accelerometer::InternalSwap(Accelerometer* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Accelerometer, acc_z_)
-      + sizeof(Accelerometer::acc_z_)
-      - PROTOBUF_FIELD_OFFSET(Accelerometer, acc_x_)>(
-          reinterpret_cast<char*>(&acc_x_),
-          reinterpret_cast<char*>(&other->acc_x_));
+      PROTOBUF_FIELD_OFFSET(Accelerometer, _impl_.acc_z_)
+      + sizeof(Accelerometer::_impl_.acc_z_)
+      - PROTOBUF_FIELD_OFFSET(Accelerometer, _impl_.acc_x_)>(
+          reinterpret_cast<char*>(&_impl_.acc_x_),
+          reinterpret_cast<char*>(&other->_impl_.acc_x_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Accelerometer::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[0]);
 }
@@ -802,7 +842,7 @@ void Accelerometer::InternalSwap(Accelerometer* other) {
 
 class Ultrasonic::_Internal {
  public:
-  using HasBits = decltype(std::declval<Ultrasonic>()._has_bits_);
+  using HasBits = decltype(std::declval<Ultrasonic>()._impl_._has_bits_);
   static void set_has_sensor_a(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -823,175 +863,194 @@ class Ultrasonic::_Internal {
   }
 };
 
-Ultrasonic::Ultrasonic(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+Ultrasonic::Ultrasonic(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Ultrasonic)
 }
 Ultrasonic::Ultrasonic(const Ultrasonic& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Ultrasonic* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.sensor_a_){}
+    , decltype(_impl_.sensor_b_){}
+    , decltype(_impl_.sensor_c_){}
+    , decltype(_impl_.sensor_d_){}
+    , decltype(_impl_.sensor_e_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&sensor_a_, &from.sensor_a_,
-    static_cast<size_t>(reinterpret_cast<char*>(&sensor_e_) -
-    reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_e_));
+  ::memcpy(&_impl_.sensor_a_, &from._impl_.sensor_a_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.sensor_e_) -
+    reinterpret_cast<char*>(&_impl_.sensor_a_)) + sizeof(_impl_.sensor_e_));
   // @@protoc_insertion_point(copy_constructor:mtg_fms.Ultrasonic)
 }
 
-void Ultrasonic::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&sensor_a_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&sensor_e_) -
-    reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_e_));
+inline void Ultrasonic::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.sensor_a_){0u}
+    , decltype(_impl_.sensor_b_){0u}
+    , decltype(_impl_.sensor_c_){0u}
+    , decltype(_impl_.sensor_d_){0u}
+    , decltype(_impl_.sensor_e_){0u}
+  };
 }
 
 Ultrasonic::~Ultrasonic() {
   // @@protoc_insertion_point(destructor:mtg_fms.Ultrasonic)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Ultrasonic::SharedDtor() {
+inline void Ultrasonic::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void Ultrasonic::ArenaDtor(void* object) {
-  Ultrasonic* _this = reinterpret_cast< Ultrasonic* >(object);
-  (void)_this;
-}
-void Ultrasonic::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Ultrasonic::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Ultrasonic::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Ultrasonic)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
-    ::memset(&sensor_a_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&sensor_e_) -
-        reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_e_));
+    ::memset(&_impl_.sensor_a_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.sensor_e_) -
+        reinterpret_cast<char*>(&_impl_.sensor_a_)) + sizeof(_impl_.sensor_e_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Ultrasonic::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Ultrasonic::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint32 sensor_a = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_sensor_a(&has_bits);
-          sensor_a_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_a_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_b = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_sensor_b(&has_bits);
-          sensor_b_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_b_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_c = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_sensor_c(&has_bits);
-          sensor_c_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_c_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_d = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_sensor_d(&has_bits);
-          sensor_d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_e = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_sensor_e(&has_bits);
-          sensor_e_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_e_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Ultrasonic::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Ultrasonic::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Ultrasonic)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint32 sensor_a = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_sensor_a(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_sensor_a(), target);
   }
 
   // required uint32 sensor_b = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_sensor_b(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_sensor_b(), target);
   }
 
   // required uint32 sensor_c = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_sensor_c(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_sensor_c(), target);
   }
 
   // required uint32 sensor_d = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_sensor_d(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_sensor_d(), target);
   }
 
   // required uint32 sensor_e = 5;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_sensor_e(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_sensor_e(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Ultrasonic)
@@ -1004,37 +1063,27 @@ size_t Ultrasonic::RequiredFieldsByteSizeFallback() const {
 
   if (_internal_has_sensor_a()) {
     // required uint32 sensor_a = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_a());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_a());
   }
 
   if (_internal_has_sensor_b()) {
     // required uint32 sensor_b = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_b());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_b());
   }
 
   if (_internal_has_sensor_c()) {
     // required uint32 sensor_c = 3;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_c());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_c());
   }
 
   if (_internal_has_sensor_d()) {
     // required uint32 sensor_d = 4;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_d());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_d());
   }
 
   if (_internal_has_sensor_e()) {
     // required uint32 sensor_e = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_e());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_e());
   }
 
   return total_size;
@@ -1043,96 +1092,67 @@ size_t Ultrasonic::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Ultrasonic)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
     // required uint32 sensor_a = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_a());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_a());
 
     // required uint32 sensor_b = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_b());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_b());
 
     // required uint32 sensor_c = 3;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_c());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_c());
 
     // required uint32 sensor_d = 4;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_d());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_d());
 
     // required uint32 sensor_e = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_e());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_e());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void Ultrasonic::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Ultrasonic)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Ultrasonic* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Ultrasonic>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Ultrasonic)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Ultrasonic)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Ultrasonic::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Ultrasonic::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Ultrasonic::GetClassData() const { return &_class_data_; }
 
-void Ultrasonic::MergeFrom(const Ultrasonic& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Ultrasonic)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void Ultrasonic::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Ultrasonic*>(&to_msg);
+  auto& from = static_cast<const Ultrasonic&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Ultrasonic)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      sensor_a_ = from.sensor_a_;
+      _this->_impl_.sensor_a_ = from._impl_.sensor_a_;
     }
     if (cached_has_bits & 0x00000002u) {
-      sensor_b_ = from.sensor_b_;
+      _this->_impl_.sensor_b_ = from._impl_.sensor_b_;
     }
     if (cached_has_bits & 0x00000004u) {
-      sensor_c_ = from.sensor_c_;
+      _this->_impl_.sensor_c_ = from._impl_.sensor_c_;
     }
     if (cached_has_bits & 0x00000008u) {
-      sensor_d_ = from.sensor_d_;
+      _this->_impl_.sensor_d_ = from._impl_.sensor_d_;
     }
     if (cached_has_bits & 0x00000010u) {
-      sensor_e_ = from.sensor_e_;
+      _this->_impl_.sensor_e_ = from._impl_.sensor_e_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-}
-
-void Ultrasonic::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Ultrasonic)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Ultrasonic::CopyFrom(const Ultrasonic& from) {
@@ -1143,24 +1163,24 @@ void Ultrasonic::CopyFrom(const Ultrasonic& from) {
 }
 
 bool Ultrasonic::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void Ultrasonic::InternalSwap(Ultrasonic* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Ultrasonic, sensor_e_)
-      + sizeof(Ultrasonic::sensor_e_)
-      - PROTOBUF_FIELD_OFFSET(Ultrasonic, sensor_a_)>(
-          reinterpret_cast<char*>(&sensor_a_),
-          reinterpret_cast<char*>(&other->sensor_a_));
+      PROTOBUF_FIELD_OFFSET(Ultrasonic, _impl_.sensor_e_)
+      + sizeof(Ultrasonic::_impl_.sensor_e_)
+      - PROTOBUF_FIELD_OFFSET(Ultrasonic, _impl_.sensor_a_)>(
+          reinterpret_cast<char*>(&_impl_.sensor_a_),
+          reinterpret_cast<char*>(&other->_impl_.sensor_a_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Ultrasonic::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[1]);
 }
@@ -1169,7 +1189,7 @@ void Ultrasonic::InternalSwap(Ultrasonic* other) {
 
 class Infrared::_Internal {
  public:
-  using HasBits = decltype(std::declval<Infrared>()._has_bits_);
+  using HasBits = decltype(std::declval<Infrared>()._impl_._has_bits_);
   static void set_has_sensor_a(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -1211,278 +1231,318 @@ class Infrared::_Internal {
   }
 };
 
-Infrared::Infrared(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+Infrared::Infrared(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Infrared)
 }
 Infrared::Infrared(const Infrared& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Infrared* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.sensor_a_){}
+    , decltype(_impl_.sensor_b_){}
+    , decltype(_impl_.sensor_c_){}
+    , decltype(_impl_.sensor_d_){}
+    , decltype(_impl_.sensor_e_){}
+    , decltype(_impl_.sensor_f_){}
+    , decltype(_impl_.sensor_g_){}
+    , decltype(_impl_.sensor_h_){}
+    , decltype(_impl_.sensor_i_){}
+    , decltype(_impl_.sensor_j_){}
+    , decltype(_impl_.sensor_k_){}
+    , decltype(_impl_.sensor_l_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&sensor_a_, &from.sensor_a_,
-    static_cast<size_t>(reinterpret_cast<char*>(&sensor_l_) -
-    reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_l_));
+  ::memcpy(&_impl_.sensor_a_, &from._impl_.sensor_a_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.sensor_l_) -
+    reinterpret_cast<char*>(&_impl_.sensor_a_)) + sizeof(_impl_.sensor_l_));
   // @@protoc_insertion_point(copy_constructor:mtg_fms.Infrared)
 }
 
-void Infrared::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&sensor_a_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&sensor_l_) -
-    reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_l_));
+inline void Infrared::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.sensor_a_){0u}
+    , decltype(_impl_.sensor_b_){0u}
+    , decltype(_impl_.sensor_c_){0u}
+    , decltype(_impl_.sensor_d_){0u}
+    , decltype(_impl_.sensor_e_){0u}
+    , decltype(_impl_.sensor_f_){0u}
+    , decltype(_impl_.sensor_g_){0u}
+    , decltype(_impl_.sensor_h_){0u}
+    , decltype(_impl_.sensor_i_){0u}
+    , decltype(_impl_.sensor_j_){0u}
+    , decltype(_impl_.sensor_k_){0u}
+    , decltype(_impl_.sensor_l_){0u}
+  };
 }
 
 Infrared::~Infrared() {
   // @@protoc_insertion_point(destructor:mtg_fms.Infrared)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Infrared::SharedDtor() {
+inline void Infrared::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void Infrared::ArenaDtor(void* object) {
-  Infrared* _this = reinterpret_cast< Infrared* >(object);
-  (void)_this;
-}
-void Infrared::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Infrared::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Infrared::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Infrared)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
-    ::memset(&sensor_a_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&sensor_h_) -
-        reinterpret_cast<char*>(&sensor_a_)) + sizeof(sensor_h_));
+    ::memset(&_impl_.sensor_a_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.sensor_h_) -
+        reinterpret_cast<char*>(&_impl_.sensor_a_)) + sizeof(_impl_.sensor_h_));
   }
   if (cached_has_bits & 0x00000f00u) {
-    ::memset(&sensor_i_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&sensor_l_) -
-        reinterpret_cast<char*>(&sensor_i_)) + sizeof(sensor_l_));
+    ::memset(&_impl_.sensor_i_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.sensor_l_) -
+        reinterpret_cast<char*>(&_impl_.sensor_i_)) + sizeof(_impl_.sensor_l_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Infrared::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Infrared::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint32 sensor_a = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_sensor_a(&has_bits);
-          sensor_a_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_a_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_b = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_sensor_b(&has_bits);
-          sensor_b_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_b_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_c = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_sensor_c(&has_bits);
-          sensor_c_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_c_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_d = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_sensor_d(&has_bits);
-          sensor_d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_d_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_e = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_sensor_e(&has_bits);
-          sensor_e_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_e_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_f = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_sensor_f(&has_bits);
-          sensor_f_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_f_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_g = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
           _Internal::set_has_sensor_g(&has_bits);
-          sensor_g_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_g_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_h = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
           _Internal::set_has_sensor_h(&has_bits);
-          sensor_h_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_h_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_i = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 72)) {
           _Internal::set_has_sensor_i(&has_bits);
-          sensor_i_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_i_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_j = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
           _Internal::set_has_sensor_j(&has_bits);
-          sensor_j_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_j_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_k = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 88)) {
           _Internal::set_has_sensor_k(&has_bits);
-          sensor_k_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_k_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 sensor_l = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
           _Internal::set_has_sensor_l(&has_bits);
-          sensor_l_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.sensor_l_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Infrared::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Infrared::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Infrared)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint32 sensor_a = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_sensor_a(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_sensor_a(), target);
   }
 
   // required uint32 sensor_b = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_sensor_b(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_sensor_b(), target);
   }
 
   // required uint32 sensor_c = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_sensor_c(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_sensor_c(), target);
   }
 
   // required uint32 sensor_d = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_sensor_d(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_sensor_d(), target);
   }
 
   // required uint32 sensor_e = 5;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_sensor_e(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_sensor_e(), target);
   }
 
   // required uint32 sensor_f = 6;
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->_internal_sensor_f(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(6, this->_internal_sensor_f(), target);
   }
 
   // required uint32 sensor_g = 7;
   if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(7, this->_internal_sensor_g(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(7, this->_internal_sensor_g(), target);
   }
 
   // required uint32 sensor_h = 8;
   if (cached_has_bits & 0x00000080u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(8, this->_internal_sensor_h(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(8, this->_internal_sensor_h(), target);
   }
 
   // required uint32 sensor_i = 9;
   if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(9, this->_internal_sensor_i(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(9, this->_internal_sensor_i(), target);
   }
 
   // required uint32 sensor_j = 10;
   if (cached_has_bits & 0x00000200u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(10, this->_internal_sensor_j(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(10, this->_internal_sensor_j(), target);
   }
 
   // required uint32 sensor_k = 11;
   if (cached_has_bits & 0x00000400u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(11, this->_internal_sensor_k(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(11, this->_internal_sensor_k(), target);
   }
 
   // required uint32 sensor_l = 12;
   if (cached_has_bits & 0x00000800u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(12, this->_internal_sensor_l(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(12, this->_internal_sensor_l(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Infrared)
@@ -1495,86 +1555,62 @@ size_t Infrared::RequiredFieldsByteSizeFallback() const {
 
   if (_internal_has_sensor_a()) {
     // required uint32 sensor_a = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_a());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_a());
   }
 
   if (_internal_has_sensor_b()) {
     // required uint32 sensor_b = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_b());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_b());
   }
 
   if (_internal_has_sensor_c()) {
     // required uint32 sensor_c = 3;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_c());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_c());
   }
 
   if (_internal_has_sensor_d()) {
     // required uint32 sensor_d = 4;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_d());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_d());
   }
 
   if (_internal_has_sensor_e()) {
     // required uint32 sensor_e = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_e());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_e());
   }
 
   if (_internal_has_sensor_f()) {
     // required uint32 sensor_f = 6;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_f());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_f());
   }
 
   if (_internal_has_sensor_g()) {
     // required uint32 sensor_g = 7;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_g());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_g());
   }
 
   if (_internal_has_sensor_h()) {
     // required uint32 sensor_h = 8;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_h());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_h());
   }
 
   if (_internal_has_sensor_i()) {
     // required uint32 sensor_i = 9;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_i());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_i());
   }
 
   if (_internal_has_sensor_j()) {
     // required uint32 sensor_j = 10;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_j());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_j());
   }
 
   if (_internal_has_sensor_k()) {
     // required uint32 sensor_k = 11;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_k());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_k());
   }
 
   if (_internal_has_sensor_l()) {
     // required uint32 sensor_l = 12;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_l());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_l());
   }
 
   return total_size;
@@ -1583,155 +1619,112 @@ size_t Infrared::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Infrared)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000fff) ^ 0x00000fff) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000fff) ^ 0x00000fff) == 0) {  // All required fields are present.
     // required uint32 sensor_a = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_a());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_a());
 
     // required uint32 sensor_b = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_b());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_b());
 
     // required uint32 sensor_c = 3;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_c());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_c());
 
     // required uint32 sensor_d = 4;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_d());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_d());
 
     // required uint32 sensor_e = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_e());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_e());
 
     // required uint32 sensor_f = 6;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_f());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_f());
 
     // required uint32 sensor_g = 7;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_g());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_g());
 
     // required uint32 sensor_h = 8;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_h());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_h());
 
     // required uint32 sensor_i = 9;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_i());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_i());
 
     // required uint32 sensor_j = 10;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_j());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_j());
 
     // required uint32 sensor_k = 11;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_k());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_k());
 
     // required uint32 sensor_l = 12;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_sensor_l());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_sensor_l());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void Infrared::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Infrared)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Infrared* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Infrared>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Infrared)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Infrared)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Infrared::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Infrared::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Infrared::GetClassData() const { return &_class_data_; }
 
-void Infrared::MergeFrom(const Infrared& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Infrared)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void Infrared::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Infrared*>(&to_msg);
+  auto& from = static_cast<const Infrared&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Infrared)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      sensor_a_ = from.sensor_a_;
+      _this->_impl_.sensor_a_ = from._impl_.sensor_a_;
     }
     if (cached_has_bits & 0x00000002u) {
-      sensor_b_ = from.sensor_b_;
+      _this->_impl_.sensor_b_ = from._impl_.sensor_b_;
     }
     if (cached_has_bits & 0x00000004u) {
-      sensor_c_ = from.sensor_c_;
+      _this->_impl_.sensor_c_ = from._impl_.sensor_c_;
     }
     if (cached_has_bits & 0x00000008u) {
-      sensor_d_ = from.sensor_d_;
+      _this->_impl_.sensor_d_ = from._impl_.sensor_d_;
     }
     if (cached_has_bits & 0x00000010u) {
-      sensor_e_ = from.sensor_e_;
+      _this->_impl_.sensor_e_ = from._impl_.sensor_e_;
     }
     if (cached_has_bits & 0x00000020u) {
-      sensor_f_ = from.sensor_f_;
+      _this->_impl_.sensor_f_ = from._impl_.sensor_f_;
     }
     if (cached_has_bits & 0x00000040u) {
-      sensor_g_ = from.sensor_g_;
+      _this->_impl_.sensor_g_ = from._impl_.sensor_g_;
     }
     if (cached_has_bits & 0x00000080u) {
-      sensor_h_ = from.sensor_h_;
+      _this->_impl_.sensor_h_ = from._impl_.sensor_h_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00000f00u) {
     if (cached_has_bits & 0x00000100u) {
-      sensor_i_ = from.sensor_i_;
+      _this->_impl_.sensor_i_ = from._impl_.sensor_i_;
     }
     if (cached_has_bits & 0x00000200u) {
-      sensor_j_ = from.sensor_j_;
+      _this->_impl_.sensor_j_ = from._impl_.sensor_j_;
     }
     if (cached_has_bits & 0x00000400u) {
-      sensor_k_ = from.sensor_k_;
+      _this->_impl_.sensor_k_ = from._impl_.sensor_k_;
     }
     if (cached_has_bits & 0x00000800u) {
-      sensor_l_ = from.sensor_l_;
+      _this->_impl_.sensor_l_ = from._impl_.sensor_l_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-}
-
-void Infrared::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Infrared)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Infrared::CopyFrom(const Infrared& from) {
@@ -1742,24 +1735,24 @@ void Infrared::CopyFrom(const Infrared& from) {
 }
 
 bool Infrared::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void Infrared::InternalSwap(Infrared* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Infrared, sensor_l_)
-      + sizeof(Infrared::sensor_l_)
-      - PROTOBUF_FIELD_OFFSET(Infrared, sensor_a_)>(
-          reinterpret_cast<char*>(&sensor_a_),
-          reinterpret_cast<char*>(&other->sensor_a_));
+      PROTOBUF_FIELD_OFFSET(Infrared, _impl_.sensor_l_)
+      + sizeof(Infrared::_impl_.sensor_l_)
+      - PROTOBUF_FIELD_OFFSET(Infrared, _impl_.sensor_a_)>(
+          reinterpret_cast<char*>(&_impl_.sensor_a_),
+          reinterpret_cast<char*>(&other->_impl_.sensor_a_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Infrared::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[2]);
 }
@@ -1768,7 +1761,7 @@ void Infrared::InternalSwap(Infrared* other) {
 
 class Gyroscope::_Internal {
  public:
-  using HasBits = decltype(std::declval<Gyroscope>()._has_bits_);
+  using HasBits = decltype(std::declval<Gyroscope>()._impl_._has_bits_);
   static void set_has_gyro_x(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -1783,147 +1776,160 @@ class Gyroscope::_Internal {
   }
 };
 
-Gyroscope::Gyroscope(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+Gyroscope::Gyroscope(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Gyroscope)
 }
 Gyroscope::Gyroscope(const Gyroscope& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Gyroscope* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.gyro_x_){}
+    , decltype(_impl_.gyro_y_){}
+    , decltype(_impl_.gyro_z_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&gyro_x_, &from.gyro_x_,
-    static_cast<size_t>(reinterpret_cast<char*>(&gyro_z_) -
-    reinterpret_cast<char*>(&gyro_x_)) + sizeof(gyro_z_));
+  ::memcpy(&_impl_.gyro_x_, &from._impl_.gyro_x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.gyro_z_) -
+    reinterpret_cast<char*>(&_impl_.gyro_x_)) + sizeof(_impl_.gyro_z_));
   // @@protoc_insertion_point(copy_constructor:mtg_fms.Gyroscope)
 }
 
-void Gyroscope::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&gyro_x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&gyro_z_) -
-    reinterpret_cast<char*>(&gyro_x_)) + sizeof(gyro_z_));
+inline void Gyroscope::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.gyro_x_){0}
+    , decltype(_impl_.gyro_y_){0}
+    , decltype(_impl_.gyro_z_){0}
+  };
 }
 
 Gyroscope::~Gyroscope() {
   // @@protoc_insertion_point(destructor:mtg_fms.Gyroscope)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Gyroscope::SharedDtor() {
+inline void Gyroscope::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void Gyroscope::ArenaDtor(void* object) {
-  Gyroscope* _this = reinterpret_cast< Gyroscope* >(object);
-  (void)_this;
-}
-void Gyroscope::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Gyroscope::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Gyroscope::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Gyroscope)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
-    ::memset(&gyro_x_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&gyro_z_) -
-        reinterpret_cast<char*>(&gyro_x_)) + sizeof(gyro_z_));
+    ::memset(&_impl_.gyro_x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.gyro_z_) -
+        reinterpret_cast<char*>(&_impl_.gyro_x_)) + sizeof(_impl_.gyro_z_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Gyroscope::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Gyroscope::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required double gyro_x = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
           _Internal::set_has_gyro_x(&has_bits);
-          gyro_x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.gyro_x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double gyro_y = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
           _Internal::set_has_gyro_y(&has_bits);
-          gyro_y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.gyro_y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double gyro_z = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
           _Internal::set_has_gyro_z(&has_bits);
-          gyro_z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.gyro_z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Gyroscope::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Gyroscope::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Gyroscope)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required double gyro_x = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_gyro_x(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_gyro_x(), target);
   }
 
   // required double gyro_y = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_gyro_y(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_gyro_y(), target);
   }
 
   // required double gyro_z = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_gyro_z(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(3, this->_internal_gyro_z(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Gyroscope)
@@ -1955,7 +1961,7 @@ size_t Gyroscope::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Gyroscope)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required double gyro_x = 1;
     total_size += 1 + 8;
 
@@ -1968,61 +1974,42 @@ size_t Gyroscope::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void Gyroscope::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Gyroscope)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Gyroscope* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Gyroscope>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Gyroscope)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Gyroscope)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Gyroscope::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Gyroscope::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Gyroscope::GetClassData() const { return &_class_data_; }
 
-void Gyroscope::MergeFrom(const Gyroscope& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Gyroscope)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void Gyroscope::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Gyroscope*>(&to_msg);
+  auto& from = static_cast<const Gyroscope&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Gyroscope)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      gyro_x_ = from.gyro_x_;
+      _this->_impl_.gyro_x_ = from._impl_.gyro_x_;
     }
     if (cached_has_bits & 0x00000002u) {
-      gyro_y_ = from.gyro_y_;
+      _this->_impl_.gyro_y_ = from._impl_.gyro_y_;
     }
     if (cached_has_bits & 0x00000004u) {
-      gyro_z_ = from.gyro_z_;
+      _this->_impl_.gyro_z_ = from._impl_.gyro_z_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-}
-
-void Gyroscope::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Gyroscope)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Gyroscope::CopyFrom(const Gyroscope& from) {
@@ -2033,24 +2020,24 @@ void Gyroscope::CopyFrom(const Gyroscope& from) {
 }
 
 bool Gyroscope::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void Gyroscope::InternalSwap(Gyroscope* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Gyroscope, gyro_z_)
-      + sizeof(Gyroscope::gyro_z_)
-      - PROTOBUF_FIELD_OFFSET(Gyroscope, gyro_x_)>(
-          reinterpret_cast<char*>(&gyro_x_),
-          reinterpret_cast<char*>(&other->gyro_x_));
+      PROTOBUF_FIELD_OFFSET(Gyroscope, _impl_.gyro_z_)
+      + sizeof(Gyroscope::_impl_.gyro_z_)
+      - PROTOBUF_FIELD_OFFSET(Gyroscope, _impl_.gyro_x_)>(
+          reinterpret_cast<char*>(&_impl_.gyro_x_),
+          reinterpret_cast<char*>(&other->_impl_.gyro_x_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Gyroscope::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[3]);
 }
@@ -2059,7 +2046,7 @@ void Gyroscope::InternalSwap(Gyroscope* other) {
 
 class Encoder_count::_Internal {
  public:
-  using HasBits = decltype(std::declval<Encoder_count>()._has_bits_);
+  using HasBits = decltype(std::declval<Encoder_count>()._impl_._has_bits_);
   static void set_has_left(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -2071,133 +2058,143 @@ class Encoder_count::_Internal {
   }
 };
 
-Encoder_count::Encoder_count(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+Encoder_count::Encoder_count(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Encoder_count)
 }
 Encoder_count::Encoder_count(const Encoder_count& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Encoder_count* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.left_){}
+    , decltype(_impl_.right_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&left_, &from.left_,
-    static_cast<size_t>(reinterpret_cast<char*>(&right_) -
-    reinterpret_cast<char*>(&left_)) + sizeof(right_));
+  ::memcpy(&_impl_.left_, &from._impl_.left_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.right_) -
+    reinterpret_cast<char*>(&_impl_.left_)) + sizeof(_impl_.right_));
   // @@protoc_insertion_point(copy_constructor:mtg_fms.Encoder_count)
 }
 
-void Encoder_count::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&left_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&right_) -
-    reinterpret_cast<char*>(&left_)) + sizeof(right_));
+inline void Encoder_count::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.left_){uint64_t{0u}}
+    , decltype(_impl_.right_){uint64_t{0u}}
+  };
 }
 
 Encoder_count::~Encoder_count() {
   // @@protoc_insertion_point(destructor:mtg_fms.Encoder_count)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Encoder_count::SharedDtor() {
+inline void Encoder_count::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void Encoder_count::ArenaDtor(void* object) {
-  Encoder_count* _this = reinterpret_cast< Encoder_count* >(object);
-  (void)_this;
-}
-void Encoder_count::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Encoder_count::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Encoder_count::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Encoder_count)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
-    ::memset(&left_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&right_) -
-        reinterpret_cast<char*>(&left_)) + sizeof(right_));
+    ::memset(&_impl_.left_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.right_) -
+        reinterpret_cast<char*>(&_impl_.left_)) + sizeof(_impl_.right_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Encoder_count::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Encoder_count::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint64 left = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_left(&has_bits);
-          left_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.left_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint64 right = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_right(&has_bits);
-          right_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.right_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Encoder_count::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Encoder_count::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Encoder_count)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint64 left = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_left(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt64ToArray(1, this->_internal_left(), target);
   }
 
   // required uint64 right = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->_internal_right(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt64ToArray(2, this->_internal_right(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Encoder_count)
@@ -2210,16 +2207,12 @@ size_t Encoder_count::RequiredFieldsByteSizeFallback() const {
 
   if (_internal_has_left()) {
     // required uint64 left = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_left());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_left());
   }
 
   if (_internal_has_right()) {
     // required uint64 right = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_right());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_right());
   }
 
   return total_size;
@@ -2228,72 +2221,49 @@ size_t Encoder_count::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Encoder_count)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required uint64 left = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_left());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_left());
 
     // required uint64 right = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_right());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_right());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void Encoder_count::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Encoder_count)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Encoder_count* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Encoder_count>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Encoder_count)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Encoder_count)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Encoder_count::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Encoder_count::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Encoder_count::GetClassData() const { return &_class_data_; }
 
-void Encoder_count::MergeFrom(const Encoder_count& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Encoder_count)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void Encoder_count::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Encoder_count*>(&to_msg);
+  auto& from = static_cast<const Encoder_count&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Encoder_count)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      left_ = from.left_;
+      _this->_impl_.left_ = from._impl_.left_;
     }
     if (cached_has_bits & 0x00000002u) {
-      right_ = from.right_;
+      _this->_impl_.right_ = from._impl_.right_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-}
-
-void Encoder_count::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Encoder_count)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Encoder_count::CopyFrom(const Encoder_count& from) {
@@ -2304,24 +2274,24 @@ void Encoder_count::CopyFrom(const Encoder_count& from) {
 }
 
 bool Encoder_count::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void Encoder_count::InternalSwap(Encoder_count* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Encoder_count, right_)
-      + sizeof(Encoder_count::right_)
-      - PROTOBUF_FIELD_OFFSET(Encoder_count, left_)>(
-          reinterpret_cast<char*>(&left_),
-          reinterpret_cast<char*>(&other->left_));
+      PROTOBUF_FIELD_OFFSET(Encoder_count, _impl_.right_)
+      + sizeof(Encoder_count::_impl_.right_)
+      - PROTOBUF_FIELD_OFFSET(Encoder_count, _impl_.left_)>(
+          reinterpret_cast<char*>(&_impl_.left_),
+          reinterpret_cast<char*>(&other->_impl_.left_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Encoder_count::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[4]);
 }
@@ -2330,7 +2300,7 @@ void Encoder_count::InternalSwap(Encoder_count* other) {
 
 class Encoder_speed::_Internal {
  public:
-  using HasBits = decltype(std::declval<Encoder_speed>()._has_bits_);
+  using HasBits = decltype(std::declval<Encoder_speed>()._impl_._has_bits_);
   static void set_has_left(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -2342,133 +2312,143 @@ class Encoder_speed::_Internal {
   }
 };
 
-Encoder_speed::Encoder_speed(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+Encoder_speed::Encoder_speed(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.Encoder_speed)
 }
 Encoder_speed::Encoder_speed(const Encoder_speed& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Encoder_speed* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.left_){}
+    , decltype(_impl_.right_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&left_, &from.left_,
-    static_cast<size_t>(reinterpret_cast<char*>(&right_) -
-    reinterpret_cast<char*>(&left_)) + sizeof(right_));
+  ::memcpy(&_impl_.left_, &from._impl_.left_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.right_) -
+    reinterpret_cast<char*>(&_impl_.left_)) + sizeof(_impl_.right_));
   // @@protoc_insertion_point(copy_constructor:mtg_fms.Encoder_speed)
 }
 
-void Encoder_speed::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&left_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&right_) -
-    reinterpret_cast<char*>(&left_)) + sizeof(right_));
+inline void Encoder_speed::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.left_){uint64_t{0u}}
+    , decltype(_impl_.right_){uint64_t{0u}}
+  };
 }
 
 Encoder_speed::~Encoder_speed() {
   // @@protoc_insertion_point(destructor:mtg_fms.Encoder_speed)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Encoder_speed::SharedDtor() {
+inline void Encoder_speed::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void Encoder_speed::ArenaDtor(void* object) {
-  Encoder_speed* _this = reinterpret_cast< Encoder_speed* >(object);
-  (void)_this;
-}
-void Encoder_speed::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Encoder_speed::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Encoder_speed::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.Encoder_speed)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
-    ::memset(&left_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&right_) -
-        reinterpret_cast<char*>(&left_)) + sizeof(right_));
+    ::memset(&_impl_.left_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.right_) -
+        reinterpret_cast<char*>(&_impl_.left_)) + sizeof(_impl_.right_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Encoder_speed::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Encoder_speed::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint64 left = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_left(&has_bits);
-          left_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.left_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint64 right = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_right(&has_bits);
-          right_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.right_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Encoder_speed::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Encoder_speed::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.Encoder_speed)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint64 left = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_left(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt64ToArray(1, this->_internal_left(), target);
   }
 
   // required uint64 right = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->_internal_right(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt64ToArray(2, this->_internal_right(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.Encoder_speed)
@@ -2481,16 +2461,12 @@ size_t Encoder_speed::RequiredFieldsByteSizeFallback() const {
 
   if (_internal_has_left()) {
     // required uint64 left = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_left());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_left());
   }
 
   if (_internal_has_right()) {
     // required uint64 right = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_right());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_right());
   }
 
   return total_size;
@@ -2499,72 +2475,49 @@ size_t Encoder_speed::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.Encoder_speed)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required uint64 left = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_left());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_left());
 
     // required uint64 right = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_right());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_right());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void Encoder_speed::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.Encoder_speed)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Encoder_speed* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Encoder_speed>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.Encoder_speed)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.Encoder_speed)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Encoder_speed::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Encoder_speed::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Encoder_speed::GetClassData() const { return &_class_data_; }
 
-void Encoder_speed::MergeFrom(const Encoder_speed& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Encoder_speed)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void Encoder_speed::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Encoder_speed*>(&to_msg);
+  auto& from = static_cast<const Encoder_speed&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.Encoder_speed)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      left_ = from.left_;
+      _this->_impl_.left_ = from._impl_.left_;
     }
     if (cached_has_bits & 0x00000002u) {
-      right_ = from.right_;
+      _this->_impl_.right_ = from._impl_.right_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-}
-
-void Encoder_speed::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.Encoder_speed)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Encoder_speed::CopyFrom(const Encoder_speed& from) {
@@ -2575,24 +2528,24 @@ void Encoder_speed::CopyFrom(const Encoder_speed& from) {
 }
 
 bool Encoder_speed::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void Encoder_speed::InternalSwap(Encoder_speed* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Encoder_speed, right_)
-      + sizeof(Encoder_speed::right_)
-      - PROTOBUF_FIELD_OFFSET(Encoder_speed, left_)>(
-          reinterpret_cast<char*>(&left_),
-          reinterpret_cast<char*>(&other->left_));
+      PROTOBUF_FIELD_OFFSET(Encoder_speed, _impl_.right_)
+      + sizeof(Encoder_speed::_impl_.right_)
+      - PROTOBUF_FIELD_OFFSET(Encoder_speed, _impl_.left_)>(
+          reinterpret_cast<char*>(&_impl_.left_),
+          reinterpret_cast<char*>(&other->_impl_.left_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Encoder_speed::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[5]);
 }
@@ -2603,101 +2556,112 @@ class LaserScanner::_Internal {
  public:
 };
 
-LaserScanner::LaserScanner(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  values_(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+LaserScanner::LaserScanner(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.LaserScanner)
 }
 LaserScanner::LaserScanner(const LaserScanner& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      values_(from.values_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  LaserScanner* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.values_){from._impl_.values_}
+    , /*decltype(_impl_._values_cached_byte_size_)*/{0}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:mtg_fms.LaserScanner)
 }
 
-void LaserScanner::SharedCtor() {
+inline void LaserScanner::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.values_){arena}
+    , /*decltype(_impl_._values_cached_byte_size_)*/{0}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 LaserScanner::~LaserScanner() {
   // @@protoc_insertion_point(destructor:mtg_fms.LaserScanner)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void LaserScanner::SharedDtor() {
+inline void LaserScanner::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.values_.~RepeatedField();
 }
 
-void LaserScanner::ArenaDtor(void* object) {
-  LaserScanner* _this = reinterpret_cast< LaserScanner* >(object);
-  (void)_this;
-}
-void LaserScanner::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void LaserScanner::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void LaserScanner::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.LaserScanner)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  values_.Clear();
+  _impl_.values_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* LaserScanner::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* LaserScanner::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated uint64 values = 1 [packed = true];
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt64Parser(_internal_mutable_values(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
+        } else if (static_cast<uint8_t>(tag) == 8) {
           _internal_add_values(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* LaserScanner::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* LaserScanner::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.LaserScanner)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated uint64 values = 1 [packed = true];
   {
-    int byte_size = _values_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _impl_._values_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteUInt64Packed(
           1, _internal_values(), byte_size, target);
@@ -2705,7 +2669,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.LaserScanner)
@@ -2716,64 +2680,44 @@ size_t LaserScanner::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.LaserScanner)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated uint64 values = 1 [packed = true];
   {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      UInt64Size(this->values_);
+    size_t data_size = ::_pbi::WireFormatLite::
+      UInt64Size(this->_impl_.values_);
     if (data_size > 0) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+        ::_pbi::WireFormatLite::Int32Size(static_cast<int32_t>(data_size));
     }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _values_cached_byte_size_.store(cached_size,
+    int cached_size = ::_pbi::ToCachedSize(data_size);
+    _impl_._values_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void LaserScanner::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.LaserScanner)
-  GOOGLE_DCHECK_NE(&from, this);
-  const LaserScanner* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LaserScanner>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.LaserScanner)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.LaserScanner)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData LaserScanner::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    LaserScanner::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*LaserScanner::GetClassData() const { return &_class_data_; }
 
-void LaserScanner::MergeFrom(const LaserScanner& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.LaserScanner)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void LaserScanner::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<LaserScanner*>(&to_msg);
+  auto& from = static_cast<const LaserScanner&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.LaserScanner)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  values_.MergeFrom(from.values_);
-}
-
-void LaserScanner::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.LaserScanner)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_impl_.values_.MergeFrom(from._impl_.values_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void LaserScanner::CopyFrom(const LaserScanner& from) {
@@ -2790,11 +2734,11 @@ bool LaserScanner::IsInitialized() const {
 void LaserScanner::InternalSwap(LaserScanner* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  values_.InternalSwap(&other->values_);
+  _impl_.values_.InternalSwap(&other->_impl_.values_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LaserScanner::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[6]);
 }
@@ -2803,7 +2747,7 @@ void LaserScanner::InternalSwap(LaserScanner* other) {
 
 class AgentStatus::_Internal {
  public:
-  using HasBits = decltype(std::declval<AgentStatus>()._has_bits_);
+  using HasBits = decltype(std::declval<AgentStatus>()._impl_._has_bits_);
   static void set_has_battery_level(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -2812,109 +2756,119 @@ class AgentStatus::_Internal {
   }
 };
 
-AgentStatus::AgentStatus(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+AgentStatus::AgentStatus(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AgentStatus)
 }
 AgentStatus::AgentStatus(const AgentStatus& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  AgentStatus* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.battery_level_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  battery_level_ = from.battery_level_;
+  _this->_impl_.battery_level_ = from._impl_.battery_level_;
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AgentStatus)
 }
 
-void AgentStatus::SharedCtor() {
-battery_level_ = uint64_t{0u};
+inline void AgentStatus::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.battery_level_){uint64_t{0u}}
+  };
 }
 
 AgentStatus::~AgentStatus() {
   // @@protoc_insertion_point(destructor:mtg_fms.AgentStatus)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AgentStatus::SharedDtor() {
+inline void AgentStatus::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void AgentStatus::ArenaDtor(void* object) {
-  AgentStatus* _this = reinterpret_cast< AgentStatus* >(object);
-  (void)_this;
-}
-void AgentStatus::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AgentStatus::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void AgentStatus::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AgentStatus)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  battery_level_ = uint64_t{0u};
-  _has_bits_.Clear();
+  _impl_.battery_level_ = uint64_t{0u};
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AgentStatus::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* AgentStatus::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint64 battery_level = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_battery_level(&has_bits);
-          battery_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.battery_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AgentStatus::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AgentStatus::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AgentStatus)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint64 battery_level = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_battery_level(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt64ToArray(1, this->_internal_battery_level(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AgentStatus)
@@ -2927,55 +2881,34 @@ size_t AgentStatus::ByteSizeLong() const {
 
   // required uint64 battery_level = 1;
   if (_internal_has_battery_level()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_battery_level());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_battery_level());
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void AgentStatus::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AgentStatus)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AgentStatus* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AgentStatus>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AgentStatus)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AgentStatus)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AgentStatus::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    AgentStatus::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AgentStatus::GetClassData() const { return &_class_data_; }
 
-void AgentStatus::MergeFrom(const AgentStatus& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AgentStatus)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void AgentStatus::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<AgentStatus*>(&to_msg);
+  auto& from = static_cast<const AgentStatus&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AgentStatus)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_battery_level()) {
-    _internal_set_battery_level(from._internal_battery_level());
+    _this->_internal_set_battery_level(from._internal_battery_level());
   }
-}
-
-void AgentStatus::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AgentStatus)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AgentStatus::CopyFrom(const AgentStatus& from) {
@@ -2986,19 +2919,19 @@ void AgentStatus::CopyFrom(const AgentStatus& from) {
 }
 
 bool AgentStatus::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void AgentStatus::InternalSwap(AgentStatus* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(battery_level_, other->battery_level_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.battery_level_, other->_impl_.battery_level_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AgentStatus::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[7]);
 }
@@ -3007,7 +2940,7 @@ void AgentStatus::InternalSwap(AgentStatus* other) {
 
 class AprilTagRot::_Internal {
  public:
-  using HasBits = decltype(std::declval<AprilTagRot>()._has_bits_);
+  using HasBits = decltype(std::declval<AprilTagRot>()._impl_._has_bits_);
   static void set_has_r11(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -3040,232 +2973,263 @@ class AprilTagRot::_Internal {
   }
 };
 
-AprilTagRot::AprilTagRot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+AprilTagRot::AprilTagRot(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AprilTagRot)
 }
 AprilTagRot::AprilTagRot(const AprilTagRot& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  AprilTagRot* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.r11_){}
+    , decltype(_impl_.r12_){}
+    , decltype(_impl_.r13_){}
+    , decltype(_impl_.r21_){}
+    , decltype(_impl_.r22_){}
+    , decltype(_impl_.r23_){}
+    , decltype(_impl_.r31_){}
+    , decltype(_impl_.r32_){}
+    , decltype(_impl_.r33_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&r11_, &from.r11_,
-    static_cast<size_t>(reinterpret_cast<char*>(&r33_) -
-    reinterpret_cast<char*>(&r11_)) + sizeof(r33_));
+  ::memcpy(&_impl_.r11_, &from._impl_.r11_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.r33_) -
+    reinterpret_cast<char*>(&_impl_.r11_)) + sizeof(_impl_.r33_));
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AprilTagRot)
 }
 
-void AprilTagRot::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&r11_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&r33_) -
-    reinterpret_cast<char*>(&r11_)) + sizeof(r33_));
+inline void AprilTagRot::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.r11_){0}
+    , decltype(_impl_.r12_){0}
+    , decltype(_impl_.r13_){0}
+    , decltype(_impl_.r21_){0}
+    , decltype(_impl_.r22_){0}
+    , decltype(_impl_.r23_){0}
+    , decltype(_impl_.r31_){0}
+    , decltype(_impl_.r32_){0}
+    , decltype(_impl_.r33_){0}
+  };
 }
 
 AprilTagRot::~AprilTagRot() {
   // @@protoc_insertion_point(destructor:mtg_fms.AprilTagRot)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AprilTagRot::SharedDtor() {
+inline void AprilTagRot::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void AprilTagRot::ArenaDtor(void* object) {
-  AprilTagRot* _this = reinterpret_cast< AprilTagRot* >(object);
-  (void)_this;
-}
-void AprilTagRot::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AprilTagRot::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void AprilTagRot::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AprilTagRot)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
-    ::memset(&r11_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&r32_) -
-        reinterpret_cast<char*>(&r11_)) + sizeof(r32_));
+    ::memset(&_impl_.r11_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.r32_) -
+        reinterpret_cast<char*>(&_impl_.r11_)) + sizeof(_impl_.r32_));
   }
-  r33_ = 0;
-  _has_bits_.Clear();
+  _impl_.r33_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AprilTagRot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* AprilTagRot::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required double r11 = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
           _Internal::set_has_r11(&has_bits);
-          r11_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.r11_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double r12 = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
           _Internal::set_has_r12(&has_bits);
-          r12_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.r12_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double r13 = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
           _Internal::set_has_r13(&has_bits);
-          r13_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.r13_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double r21 = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 33)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 33)) {
           _Internal::set_has_r21(&has_bits);
-          r21_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.r21_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double r22 = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 41)) {
           _Internal::set_has_r22(&has_bits);
-          r22_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.r22_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double r23 = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 49)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 49)) {
           _Internal::set_has_r23(&has_bits);
-          r23_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.r23_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double r31 = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 57)) {
           _Internal::set_has_r31(&has_bits);
-          r31_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.r31_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double r32 = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 65)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 65)) {
           _Internal::set_has_r32(&has_bits);
-          r32_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.r32_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double r33 = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 73)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 73)) {
           _Internal::set_has_r33(&has_bits);
-          r33_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.r33_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AprilTagRot::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AprilTagRot::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AprilTagRot)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required double r11 = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_r11(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_r11(), target);
   }
 
   // required double r12 = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_r12(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_r12(), target);
   }
 
   // required double r13 = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_r13(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(3, this->_internal_r13(), target);
   }
 
   // required double r21 = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_r21(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(4, this->_internal_r21(), target);
   }
 
   // required double r22 = 5;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_r22(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(5, this->_internal_r22(), target);
   }
 
   // required double r23 = 6;
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_r23(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(6, this->_internal_r23(), target);
   }
 
   // required double r31 = 7;
   if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_r31(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(7, this->_internal_r31(), target);
   }
 
   // required double r32 = 8;
   if (cached_has_bits & 0x00000080u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(8, this->_internal_r32(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(8, this->_internal_r32(), target);
   }
 
   // required double r33 = 9;
   if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(9, this->_internal_r33(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(9, this->_internal_r33(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AprilTagRot)
@@ -3327,7 +3291,7 @@ size_t AprilTagRot::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AprilTagRot)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x000001ff) ^ 0x000001ff) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x000001ff) ^ 0x000001ff) == 0) {  // All required fields are present.
     // required double r11 = 1;
     total_size += 1 + 8;
 
@@ -3358,79 +3322,60 @@ size_t AprilTagRot::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void AprilTagRot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AprilTagRot)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AprilTagRot* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AprilTagRot>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AprilTagRot)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AprilTagRot)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AprilTagRot::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    AprilTagRot::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AprilTagRot::GetClassData() const { return &_class_data_; }
 
-void AprilTagRot::MergeFrom(const AprilTagRot& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagRot)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void AprilTagRot::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<AprilTagRot*>(&to_msg);
+  auto& from = static_cast<const AprilTagRot&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagRot)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      r11_ = from.r11_;
+      _this->_impl_.r11_ = from._impl_.r11_;
     }
     if (cached_has_bits & 0x00000002u) {
-      r12_ = from.r12_;
+      _this->_impl_.r12_ = from._impl_.r12_;
     }
     if (cached_has_bits & 0x00000004u) {
-      r13_ = from.r13_;
+      _this->_impl_.r13_ = from._impl_.r13_;
     }
     if (cached_has_bits & 0x00000008u) {
-      r21_ = from.r21_;
+      _this->_impl_.r21_ = from._impl_.r21_;
     }
     if (cached_has_bits & 0x00000010u) {
-      r22_ = from.r22_;
+      _this->_impl_.r22_ = from._impl_.r22_;
     }
     if (cached_has_bits & 0x00000020u) {
-      r23_ = from.r23_;
+      _this->_impl_.r23_ = from._impl_.r23_;
     }
     if (cached_has_bits & 0x00000040u) {
-      r31_ = from.r31_;
+      _this->_impl_.r31_ = from._impl_.r31_;
     }
     if (cached_has_bits & 0x00000080u) {
-      r32_ = from.r32_;
+      _this->_impl_.r32_ = from._impl_.r32_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00000100u) {
-    _internal_set_r33(from._internal_r33());
+    _this->_internal_set_r33(from._internal_r33());
   }
-}
-
-void AprilTagRot::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AprilTagRot)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AprilTagRot::CopyFrom(const AprilTagRot& from) {
@@ -3441,24 +3386,24 @@ void AprilTagRot::CopyFrom(const AprilTagRot& from) {
 }
 
 bool AprilTagRot::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void AprilTagRot::InternalSwap(AprilTagRot* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AprilTagRot, r33_)
-      + sizeof(AprilTagRot::r33_)
-      - PROTOBUF_FIELD_OFFSET(AprilTagRot, r11_)>(
-          reinterpret_cast<char*>(&r11_),
-          reinterpret_cast<char*>(&other->r11_));
+      PROTOBUF_FIELD_OFFSET(AprilTagRot, _impl_.r33_)
+      + sizeof(AprilTagRot::_impl_.r33_)
+      - PROTOBUF_FIELD_OFFSET(AprilTagRot, _impl_.r11_)>(
+          reinterpret_cast<char*>(&_impl_.r11_),
+          reinterpret_cast<char*>(&other->_impl_.r11_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AprilTagRot::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[8]);
 }
@@ -3467,7 +3412,7 @@ void AprilTagRot::InternalSwap(AprilTagRot* other) {
 
 class AprilTagTrans::_Internal {
  public:
-  using HasBits = decltype(std::declval<AprilTagTrans>()._has_bits_);
+  using HasBits = decltype(std::declval<AprilTagTrans>()._impl_._has_bits_);
   static void set_has_x(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -3482,147 +3427,160 @@ class AprilTagTrans::_Internal {
   }
 };
 
-AprilTagTrans::AprilTagTrans(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+AprilTagTrans::AprilTagTrans(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AprilTagTrans)
 }
 AprilTagTrans::AprilTagTrans(const AprilTagTrans& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  AprilTagTrans* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.x_){}
+    , decltype(_impl_.y_){}
+    , decltype(_impl_.z_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&x_, &from.x_,
-    static_cast<size_t>(reinterpret_cast<char*>(&z_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(z_));
+  ::memcpy(&_impl_.x_, &from._impl_.x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.z_) -
+    reinterpret_cast<char*>(&_impl_.x_)) + sizeof(_impl_.z_));
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AprilTagTrans)
 }
 
-void AprilTagTrans::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&z_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(z_));
+inline void AprilTagTrans::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.x_){0}
+    , decltype(_impl_.y_){0}
+    , decltype(_impl_.z_){0}
+  };
 }
 
 AprilTagTrans::~AprilTagTrans() {
   // @@protoc_insertion_point(destructor:mtg_fms.AprilTagTrans)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AprilTagTrans::SharedDtor() {
+inline void AprilTagTrans::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void AprilTagTrans::ArenaDtor(void* object) {
-  AprilTagTrans* _this = reinterpret_cast< AprilTagTrans* >(object);
-  (void)_this;
-}
-void AprilTagTrans::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AprilTagTrans::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void AprilTagTrans::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AprilTagTrans)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
-    ::memset(&x_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&z_) -
-        reinterpret_cast<char*>(&x_)) + sizeof(z_));
+    ::memset(&_impl_.x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.z_) -
+        reinterpret_cast<char*>(&_impl_.x_)) + sizeof(_impl_.z_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AprilTagTrans::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* AprilTagTrans::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required double x = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
           _Internal::set_has_x(&has_bits);
-          x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double y = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 17)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
           _Internal::set_has_y(&has_bits);
-          y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double z = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
           _Internal::set_has_z(&has_bits);
-          z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AprilTagTrans::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AprilTagTrans::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AprilTagTrans)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required double x = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_x(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_x(), target);
   }
 
   // required double y = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_y(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_y(), target);
   }
 
   // required double z = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_z(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(3, this->_internal_z(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AprilTagTrans)
@@ -3654,7 +3612,7 @@ size_t AprilTagTrans::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AprilTagTrans)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required double x = 1;
     total_size += 1 + 8;
 
@@ -3667,61 +3625,42 @@ size_t AprilTagTrans::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void AprilTagTrans::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AprilTagTrans)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AprilTagTrans* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AprilTagTrans>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AprilTagTrans)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AprilTagTrans)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AprilTagTrans::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    AprilTagTrans::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AprilTagTrans::GetClassData() const { return &_class_data_; }
 
-void AprilTagTrans::MergeFrom(const AprilTagTrans& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagTrans)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void AprilTagTrans::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<AprilTagTrans*>(&to_msg);
+  auto& from = static_cast<const AprilTagTrans&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagTrans)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      x_ = from.x_;
+      _this->_impl_.x_ = from._impl_.x_;
     }
     if (cached_has_bits & 0x00000002u) {
-      y_ = from.y_;
+      _this->_impl_.y_ = from._impl_.y_;
     }
     if (cached_has_bits & 0x00000004u) {
-      z_ = from.z_;
+      _this->_impl_.z_ = from._impl_.z_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-}
-
-void AprilTagTrans::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AprilTagTrans)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AprilTagTrans::CopyFrom(const AprilTagTrans& from) {
@@ -3732,24 +3671,24 @@ void AprilTagTrans::CopyFrom(const AprilTagTrans& from) {
 }
 
 bool AprilTagTrans::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void AprilTagTrans::InternalSwap(AprilTagTrans* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AprilTagTrans, z_)
-      + sizeof(AprilTagTrans::z_)
-      - PROTOBUF_FIELD_OFFSET(AprilTagTrans, x_)>(
-          reinterpret_cast<char*>(&x_),
-          reinterpret_cast<char*>(&other->x_));
+      PROTOBUF_FIELD_OFFSET(AprilTagTrans, _impl_.z_)
+      + sizeof(AprilTagTrans::_impl_.z_)
+      - PROTOBUF_FIELD_OFFSET(AprilTagTrans, _impl_.x_)>(
+          reinterpret_cast<char*>(&_impl_.x_),
+          reinterpret_cast<char*>(&other->_impl_.x_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AprilTagTrans::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[9]);
 }
@@ -3758,7 +3697,7 @@ void AprilTagTrans::InternalSwap(AprilTagTrans* other) {
 
 class AprilTagPose::_Internal {
  public:
-  using HasBits = decltype(std::declval<AprilTagPose>()._has_bits_);
+  using HasBits = decltype(std::declval<AprilTagPose>()._impl_._has_bits_);
   static const ::mtg_fms::AprilTagRot& r(const AprilTagPose* msg);
   static void set_has_r(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -3774,155 +3713,159 @@ class AprilTagPose::_Internal {
 
 const ::mtg_fms::AprilTagRot&
 AprilTagPose::_Internal::r(const AprilTagPose* msg) {
-  return *msg->r_;
+  return *msg->_impl_.r_;
 }
 const ::mtg_fms::AprilTagTrans&
 AprilTagPose::_Internal::t(const AprilTagPose* msg) {
-  return *msg->t_;
+  return *msg->_impl_.t_;
 }
-AprilTagPose::AprilTagPose(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+AprilTagPose::AprilTagPose(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AprilTagPose)
 }
 AprilTagPose::AprilTagPose(const AprilTagPose& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  AprilTagPose* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.r_){nullptr}
+    , decltype(_impl_.t_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_r()) {
-    r_ = new ::mtg_fms::AprilTagRot(*from.r_);
-  } else {
-    r_ = nullptr;
+    _this->_impl_.r_ = new ::mtg_fms::AprilTagRot(*from._impl_.r_);
   }
   if (from._internal_has_t()) {
-    t_ = new ::mtg_fms::AprilTagTrans(*from.t_);
-  } else {
-    t_ = nullptr;
+    _this->_impl_.t_ = new ::mtg_fms::AprilTagTrans(*from._impl_.t_);
   }
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AprilTagPose)
 }
 
-void AprilTagPose::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&r_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&t_) -
-    reinterpret_cast<char*>(&r_)) + sizeof(t_));
+inline void AprilTagPose::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.r_){nullptr}
+    , decltype(_impl_.t_){nullptr}
+  };
 }
 
 AprilTagPose::~AprilTagPose() {
   // @@protoc_insertion_point(destructor:mtg_fms.AprilTagPose)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AprilTagPose::SharedDtor() {
+inline void AprilTagPose::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete r_;
-  if (this != internal_default_instance()) delete t_;
+  if (this != internal_default_instance()) delete _impl_.r_;
+  if (this != internal_default_instance()) delete _impl_.t_;
 }
 
-void AprilTagPose::ArenaDtor(void* object) {
-  AprilTagPose* _this = reinterpret_cast< AprilTagPose* >(object);
-  (void)_this;
-}
-void AprilTagPose::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AprilTagPose::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void AprilTagPose::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AprilTagPose)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(r_ != nullptr);
-      r_->Clear();
+      GOOGLE_DCHECK(_impl_.r_ != nullptr);
+      _impl_.r_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(t_ != nullptr);
-      t_->Clear();
+      GOOGLE_DCHECK(_impl_.t_ != nullptr);
+      _impl_.t_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AprilTagPose::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* AprilTagPose::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .mtg_fms.AprilTagRot R = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_r(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.AprilTagTrans t = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_t(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AprilTagPose::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AprilTagPose::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AprilTagPose)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .mtg_fms.AprilTagRot R = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::r(this), target, stream);
+      InternalWriteMessage(1, _Internal::r(this),
+        _Internal::r(this).GetCachedSize(), target, stream);
   }
 
   // required .mtg_fms.AprilTagTrans t = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::t(this), target, stream);
+      InternalWriteMessage(2, _Internal::t(this),
+        _Internal::t(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AprilTagPose)
@@ -3937,14 +3880,14 @@ size_t AprilTagPose::RequiredFieldsByteSizeFallback() const {
     // required .mtg_fms.AprilTagRot R = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *r_);
+        *_impl_.r_);
   }
 
   if (_internal_has_t()) {
     // required .mtg_fms.AprilTagTrans t = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *t_);
+        *_impl_.t_);
   }
 
   return total_size;
@@ -3953,71 +3896,54 @@ size_t AprilTagPose::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AprilTagPose)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required .mtg_fms.AprilTagRot R = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *r_);
+        *_impl_.r_);
 
     // required .mtg_fms.AprilTagTrans t = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *t_);
+        *_impl_.t_);
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void AprilTagPose::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AprilTagPose)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AprilTagPose* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AprilTagPose>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AprilTagPose)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AprilTagPose)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AprilTagPose::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    AprilTagPose::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AprilTagPose::GetClassData() const { return &_class_data_; }
 
-void AprilTagPose::MergeFrom(const AprilTagPose& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagPose)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void AprilTagPose::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<AprilTagPose*>(&to_msg);
+  auto& from = static_cast<const AprilTagPose&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagPose)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_r()->::mtg_fms::AprilTagRot::MergeFrom(from._internal_r());
+      _this->_internal_mutable_r()->::mtg_fms::AprilTagRot::MergeFrom(
+          from._internal_r());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_t()->::mtg_fms::AprilTagTrans::MergeFrom(from._internal_t());
+      _this->_internal_mutable_t()->::mtg_fms::AprilTagTrans::MergeFrom(
+          from._internal_t());
     }
   }
-}
-
-void AprilTagPose::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AprilTagPose)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AprilTagPose::CopyFrom(const AprilTagPose& from) {
@@ -4028,12 +3954,12 @@ void AprilTagPose::CopyFrom(const AprilTagPose& from) {
 }
 
 bool AprilTagPose::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_r()) {
-    if (!r_->IsInitialized()) return false;
+    if (!_impl_.r_->IsInitialized()) return false;
   }
   if (_internal_has_t()) {
-    if (!t_->IsInitialized()) return false;
+    if (!_impl_.t_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4041,17 +3967,17 @@ bool AprilTagPose::IsInitialized() const {
 void AprilTagPose::InternalSwap(AprilTagPose* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AprilTagPose, t_)
-      + sizeof(AprilTagPose::t_)
-      - PROTOBUF_FIELD_OFFSET(AprilTagPose, r_)>(
-          reinterpret_cast<char*>(&r_),
-          reinterpret_cast<char*>(&other->r_));
+      PROTOBUF_FIELD_OFFSET(AprilTagPose, _impl_.t_)
+      + sizeof(AprilTagPose::_impl_.t_)
+      - PROTOBUF_FIELD_OFFSET(AprilTagPose, _impl_.r_)>(
+          reinterpret_cast<char*>(&_impl_.r_),
+          reinterpret_cast<char*>(&other->_impl_.r_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AprilTagPose::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[10]);
 }
@@ -4060,7 +3986,7 @@ void AprilTagPose::InternalSwap(AprilTagPose* other) {
 
 class AprilTagDetection::_Internal {
  public:
-  using HasBits = decltype(std::declval<AprilTagDetection>()._has_bits_);
+  using HasBits = decltype(std::declval<AprilTagDetection>()._impl_._has_bits_);
   static void set_has_tag_id(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
@@ -4075,140 +4001,147 @@ class AprilTagDetection::_Internal {
 
 const ::mtg_fms::AprilTagPose&
 AprilTagDetection::_Internal::pose(const AprilTagDetection* msg) {
-  return *msg->pose_;
+  return *msg->_impl_.pose_;
 }
-AprilTagDetection::AprilTagDetection(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+AprilTagDetection::AprilTagDetection(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AprilTagDetection)
 }
 AprilTagDetection::AprilTagDetection(const AprilTagDetection& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  AprilTagDetection* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.pose_){nullptr}
+    , decltype(_impl_.tag_id_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_pose()) {
-    pose_ = new ::mtg_fms::AprilTagPose(*from.pose_);
-  } else {
-    pose_ = nullptr;
+    _this->_impl_.pose_ = new ::mtg_fms::AprilTagPose(*from._impl_.pose_);
   }
-  tag_id_ = from.tag_id_;
+  _this->_impl_.tag_id_ = from._impl_.tag_id_;
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AprilTagDetection)
 }
 
-void AprilTagDetection::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&pose_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&tag_id_) -
-    reinterpret_cast<char*>(&pose_)) + sizeof(tag_id_));
+inline void AprilTagDetection::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.pose_){nullptr}
+    , decltype(_impl_.tag_id_){0u}
+  };
 }
 
 AprilTagDetection::~AprilTagDetection() {
   // @@protoc_insertion_point(destructor:mtg_fms.AprilTagDetection)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AprilTagDetection::SharedDtor() {
+inline void AprilTagDetection::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete pose_;
+  if (this != internal_default_instance()) delete _impl_.pose_;
 }
 
-void AprilTagDetection::ArenaDtor(void* object) {
-  AprilTagDetection* _this = reinterpret_cast< AprilTagDetection* >(object);
-  (void)_this;
-}
-void AprilTagDetection::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AprilTagDetection::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void AprilTagDetection::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AprilTagDetection)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(pose_ != nullptr);
-    pose_->Clear();
+    GOOGLE_DCHECK(_impl_.pose_ != nullptr);
+    _impl_.pose_->Clear();
   }
-  tag_id_ = 0u;
-  _has_bits_.Clear();
+  _impl_.tag_id_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AprilTagDetection::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* AprilTagDetection::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint32 tag_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_tag_id(&has_bits);
-          tag_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.tag_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.AprilTagPose pose = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_pose(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AprilTagDetection::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AprilTagDetection::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AprilTagDetection)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint32 tag_id = 1;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_tag_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_tag_id(), target);
   }
 
   // required .mtg_fms.AprilTagPose pose = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::pose(this), target, stream);
+      InternalWriteMessage(2, _Internal::pose(this),
+        _Internal::pose(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AprilTagDetection)
@@ -4223,14 +4156,12 @@ size_t AprilTagDetection::RequiredFieldsByteSizeFallback() const {
     // required .mtg_fms.AprilTagPose pose = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *pose_);
+        *_impl_.pose_);
   }
 
   if (_internal_has_tag_id()) {
     // required uint32 tag_id = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_tag_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_tag_id());
   }
 
   return total_size;
@@ -4239,72 +4170,52 @@ size_t AprilTagDetection::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AprilTagDetection)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required .mtg_fms.AprilTagPose pose = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *pose_);
+        *_impl_.pose_);
 
     // required uint32 tag_id = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_tag_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_tag_id());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void AprilTagDetection::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AprilTagDetection)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AprilTagDetection* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AprilTagDetection>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AprilTagDetection)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AprilTagDetection)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AprilTagDetection::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    AprilTagDetection::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AprilTagDetection::GetClassData() const { return &_class_data_; }
 
-void AprilTagDetection::MergeFrom(const AprilTagDetection& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagDetection)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void AprilTagDetection::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<AprilTagDetection*>(&to_msg);
+  auto& from = static_cast<const AprilTagDetection&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AprilTagDetection)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_pose()->::mtg_fms::AprilTagPose::MergeFrom(from._internal_pose());
+      _this->_internal_mutable_pose()->::mtg_fms::AprilTagPose::MergeFrom(
+          from._internal_pose());
     }
     if (cached_has_bits & 0x00000002u) {
-      tag_id_ = from.tag_id_;
+      _this->_impl_.tag_id_ = from._impl_.tag_id_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-}
-
-void AprilTagDetection::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AprilTagDetection)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AprilTagDetection::CopyFrom(const AprilTagDetection& from) {
@@ -4315,9 +4226,9 @@ void AprilTagDetection::CopyFrom(const AprilTagDetection& from) {
 }
 
 bool AprilTagDetection::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_pose()) {
-    if (!pose_->IsInitialized()) return false;
+    if (!_impl_.pose_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4325,17 +4236,17 @@ bool AprilTagDetection::IsInitialized() const {
 void AprilTagDetection::InternalSwap(AprilTagDetection* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AprilTagDetection, tag_id_)
-      + sizeof(AprilTagDetection::tag_id_)
-      - PROTOBUF_FIELD_OFFSET(AprilTagDetection, pose_)>(
-          reinterpret_cast<char*>(&pose_),
-          reinterpret_cast<char*>(&other->pose_));
+      PROTOBUF_FIELD_OFFSET(AprilTagDetection, _impl_.tag_id_)
+      + sizeof(AprilTagDetection::_impl_.tag_id_)
+      - PROTOBUF_FIELD_OFFSET(AprilTagDetection, _impl_.pose_)>(
+          reinterpret_cast<char*>(&_impl_.pose_),
+          reinterpret_cast<char*>(&other->_impl_.pose_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AprilTagDetection::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[11]);
 }
@@ -4346,62 +4257,70 @@ class AllDetections::_Internal {
  public:
 };
 
-AllDetections::AllDetections(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  tag_detections_(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+AllDetections::AllDetections(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.AllDetections)
 }
 AllDetections::AllDetections(const AllDetections& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      tag_detections_(from.tag_detections_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  AllDetections* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.tag_detections_){from._impl_.tag_detections_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:mtg_fms.AllDetections)
 }
 
-void AllDetections::SharedCtor() {
+inline void AllDetections::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.tag_detections_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 AllDetections::~AllDetections() {
   // @@protoc_insertion_point(destructor:mtg_fms.AllDetections)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AllDetections::SharedDtor() {
+inline void AllDetections::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.tag_detections_.~RepeatedPtrField();
 }
 
-void AllDetections::ArenaDtor(void* object) {
-  AllDetections* _this = reinterpret_cast< AllDetections* >(object);
-  (void)_this;
-}
-void AllDetections::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AllDetections::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void AllDetections::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.AllDetections)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  tag_detections_.Clear();
+  _impl_.tag_detections_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AllDetections::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* AllDetections::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .mtg_fms.AprilTagDetection tag_detections = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4409,47 +4328,48 @@ const char* AllDetections::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AllDetections::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AllDetections::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.AllDetections)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .mtg_fms.AprilTagDetection tag_detections = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_tag_detections_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_tag_detections_size()); i < n; i++) {
+    const auto& repfield = this->_internal_tag_detections(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_tag_detections(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.AllDetections)
@@ -4460,56 +4380,37 @@ size_t AllDetections::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.AllDetections)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .mtg_fms.AprilTagDetection tag_detections = 1;
   total_size += 1UL * this->_internal_tag_detections_size();
-  for (const auto& msg : this->tag_detections_) {
+  for (const auto& msg : this->_impl_.tag_detections_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void AllDetections::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.AllDetections)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AllDetections* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AllDetections>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.AllDetections)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.AllDetections)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AllDetections::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    AllDetections::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AllDetections::GetClassData() const { return &_class_data_; }
 
-void AllDetections::MergeFrom(const AllDetections& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AllDetections)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void AllDetections::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<AllDetections*>(&to_msg);
+  auto& from = static_cast<const AllDetections&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.AllDetections)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  tag_detections_.MergeFrom(from.tag_detections_);
-}
-
-void AllDetections::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.AllDetections)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_impl_.tag_detections_.MergeFrom(from._impl_.tag_detections_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AllDetections::CopyFrom(const AllDetections& from) {
@@ -4520,18 +4421,19 @@ void AllDetections::CopyFrom(const AllDetections& from) {
 }
 
 bool AllDetections::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(tag_detections_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.tag_detections_))
+    return false;
   return true;
 }
 
 void AllDetections::InternalSwap(AllDetections* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  tag_detections_.InternalSwap(&other->tag_detections_);
+  _impl_.tag_detections_.InternalSwap(&other->_impl_.tag_detections_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AllDetections::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[12]);
 }
@@ -4540,7 +4442,7 @@ void AllDetections::InternalSwap(AllDetections* other) {
 
 class SensorData::_Internal {
  public:
-  using HasBits = decltype(std::declval<SensorData>()._has_bits_);
+  using HasBits = decltype(std::declval<SensorData>()._impl_._has_bits_);
   static void set_has_timestamp_ns(HasBits* has_bits) {
     (*has_bits)[0] |= 512u;
   }
@@ -4590,394 +4492,404 @@ class SensorData::_Internal {
 
 const ::mtg_fms::Accelerometer&
 SensorData::_Internal::accel_data(const SensorData* msg) {
-  return *msg->accel_data_;
+  return *msg->_impl_.accel_data_;
 }
 const ::mtg_fms::Gyroscope&
 SensorData::_Internal::gyro_data(const SensorData* msg) {
-  return *msg->gyro_data_;
+  return *msg->_impl_.gyro_data_;
 }
 const ::mtg_fms::Encoder_count&
 SensorData::_Internal::count_data(const SensorData* msg) {
-  return *msg->count_data_;
+  return *msg->_impl_.count_data_;
 }
 const ::mtg_fms::Encoder_speed&
 SensorData::_Internal::speed_data(const SensorData* msg) {
-  return *msg->speed_data_;
+  return *msg->_impl_.speed_data_;
 }
 const ::mtg_fms::Infrared&
 SensorData::_Internal::ir_data(const SensorData* msg) {
-  return *msg->ir_data_;
+  return *msg->_impl_.ir_data_;
 }
 const ::mtg_fms::Ultrasonic&
 SensorData::_Internal::us_data(const SensorData* msg) {
-  return *msg->us_data_;
+  return *msg->_impl_.us_data_;
 }
 const ::mtg_fms::LaserScanner&
 SensorData::_Internal::lrf_data(const SensorData* msg) {
-  return *msg->lrf_data_;
+  return *msg->_impl_.lrf_data_;
 }
 const ::mtg_fms::AgentStatus&
 SensorData::_Internal::agent_status_data(const SensorData* msg) {
-  return *msg->agent_status_data_;
+  return *msg->_impl_.agent_status_data_;
 }
 const ::mtg_fms::AllDetections&
 SensorData::_Internal::april_detections(const SensorData* msg) {
-  return *msg->april_detections_;
+  return *msg->_impl_.april_detections_;
 }
-SensorData::SensorData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+SensorData::SensorData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:mtg_fms.SensorData)
 }
 SensorData::SensorData(const SensorData& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SensorData* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.accel_data_){nullptr}
+    , decltype(_impl_.gyro_data_){nullptr}
+    , decltype(_impl_.count_data_){nullptr}
+    , decltype(_impl_.speed_data_){nullptr}
+    , decltype(_impl_.ir_data_){nullptr}
+    , decltype(_impl_.us_data_){nullptr}
+    , decltype(_impl_.lrf_data_){nullptr}
+    , decltype(_impl_.agent_status_data_){nullptr}
+    , decltype(_impl_.april_detections_){nullptr}
+    , decltype(_impl_.timestamp_ns_){}
+    , decltype(_impl_.seq_id_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_accel_data()) {
-    accel_data_ = new ::mtg_fms::Accelerometer(*from.accel_data_);
-  } else {
-    accel_data_ = nullptr;
+    _this->_impl_.accel_data_ = new ::mtg_fms::Accelerometer(*from._impl_.accel_data_);
   }
   if (from._internal_has_gyro_data()) {
-    gyro_data_ = new ::mtg_fms::Gyroscope(*from.gyro_data_);
-  } else {
-    gyro_data_ = nullptr;
+    _this->_impl_.gyro_data_ = new ::mtg_fms::Gyroscope(*from._impl_.gyro_data_);
   }
   if (from._internal_has_count_data()) {
-    count_data_ = new ::mtg_fms::Encoder_count(*from.count_data_);
-  } else {
-    count_data_ = nullptr;
+    _this->_impl_.count_data_ = new ::mtg_fms::Encoder_count(*from._impl_.count_data_);
   }
   if (from._internal_has_speed_data()) {
-    speed_data_ = new ::mtg_fms::Encoder_speed(*from.speed_data_);
-  } else {
-    speed_data_ = nullptr;
+    _this->_impl_.speed_data_ = new ::mtg_fms::Encoder_speed(*from._impl_.speed_data_);
   }
   if (from._internal_has_ir_data()) {
-    ir_data_ = new ::mtg_fms::Infrared(*from.ir_data_);
-  } else {
-    ir_data_ = nullptr;
+    _this->_impl_.ir_data_ = new ::mtg_fms::Infrared(*from._impl_.ir_data_);
   }
   if (from._internal_has_us_data()) {
-    us_data_ = new ::mtg_fms::Ultrasonic(*from.us_data_);
-  } else {
-    us_data_ = nullptr;
+    _this->_impl_.us_data_ = new ::mtg_fms::Ultrasonic(*from._impl_.us_data_);
   }
   if (from._internal_has_lrf_data()) {
-    lrf_data_ = new ::mtg_fms::LaserScanner(*from.lrf_data_);
-  } else {
-    lrf_data_ = nullptr;
+    _this->_impl_.lrf_data_ = new ::mtg_fms::LaserScanner(*from._impl_.lrf_data_);
   }
   if (from._internal_has_agent_status_data()) {
-    agent_status_data_ = new ::mtg_fms::AgentStatus(*from.agent_status_data_);
-  } else {
-    agent_status_data_ = nullptr;
+    _this->_impl_.agent_status_data_ = new ::mtg_fms::AgentStatus(*from._impl_.agent_status_data_);
   }
   if (from._internal_has_april_detections()) {
-    april_detections_ = new ::mtg_fms::AllDetections(*from.april_detections_);
-  } else {
-    april_detections_ = nullptr;
+    _this->_impl_.april_detections_ = new ::mtg_fms::AllDetections(*from._impl_.april_detections_);
   }
-  ::memcpy(&timestamp_ns_, &from.timestamp_ns_,
-    static_cast<size_t>(reinterpret_cast<char*>(&seq_id_) -
-    reinterpret_cast<char*>(&timestamp_ns_)) + sizeof(seq_id_));
+  ::memcpy(&_impl_.timestamp_ns_, &from._impl_.timestamp_ns_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.seq_id_) -
+    reinterpret_cast<char*>(&_impl_.timestamp_ns_)) + sizeof(_impl_.seq_id_));
   // @@protoc_insertion_point(copy_constructor:mtg_fms.SensorData)
 }
 
-void SensorData::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&accel_data_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&seq_id_) -
-    reinterpret_cast<char*>(&accel_data_)) + sizeof(seq_id_));
+inline void SensorData::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.accel_data_){nullptr}
+    , decltype(_impl_.gyro_data_){nullptr}
+    , decltype(_impl_.count_data_){nullptr}
+    , decltype(_impl_.speed_data_){nullptr}
+    , decltype(_impl_.ir_data_){nullptr}
+    , decltype(_impl_.us_data_){nullptr}
+    , decltype(_impl_.lrf_data_){nullptr}
+    , decltype(_impl_.agent_status_data_){nullptr}
+    , decltype(_impl_.april_detections_){nullptr}
+    , decltype(_impl_.timestamp_ns_){uint64_t{0u}}
+    , decltype(_impl_.seq_id_){0u}
+  };
 }
 
 SensorData::~SensorData() {
   // @@protoc_insertion_point(destructor:mtg_fms.SensorData)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SensorData::SharedDtor() {
+inline void SensorData::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete accel_data_;
-  if (this != internal_default_instance()) delete gyro_data_;
-  if (this != internal_default_instance()) delete count_data_;
-  if (this != internal_default_instance()) delete speed_data_;
-  if (this != internal_default_instance()) delete ir_data_;
-  if (this != internal_default_instance()) delete us_data_;
-  if (this != internal_default_instance()) delete lrf_data_;
-  if (this != internal_default_instance()) delete agent_status_data_;
-  if (this != internal_default_instance()) delete april_detections_;
+  if (this != internal_default_instance()) delete _impl_.accel_data_;
+  if (this != internal_default_instance()) delete _impl_.gyro_data_;
+  if (this != internal_default_instance()) delete _impl_.count_data_;
+  if (this != internal_default_instance()) delete _impl_.speed_data_;
+  if (this != internal_default_instance()) delete _impl_.ir_data_;
+  if (this != internal_default_instance()) delete _impl_.us_data_;
+  if (this != internal_default_instance()) delete _impl_.lrf_data_;
+  if (this != internal_default_instance()) delete _impl_.agent_status_data_;
+  if (this != internal_default_instance()) delete _impl_.april_detections_;
 }
 
-void SensorData::ArenaDtor(void* object) {
-  SensorData* _this = reinterpret_cast< SensorData* >(object);
-  (void)_this;
-}
-void SensorData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SensorData::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SensorData::Clear() {
 // @@protoc_insertion_point(message_clear_start:mtg_fms.SensorData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(accel_data_ != nullptr);
-      accel_data_->Clear();
+      GOOGLE_DCHECK(_impl_.accel_data_ != nullptr);
+      _impl_.accel_data_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(gyro_data_ != nullptr);
-      gyro_data_->Clear();
+      GOOGLE_DCHECK(_impl_.gyro_data_ != nullptr);
+      _impl_.gyro_data_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(count_data_ != nullptr);
-      count_data_->Clear();
+      GOOGLE_DCHECK(_impl_.count_data_ != nullptr);
+      _impl_.count_data_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(speed_data_ != nullptr);
-      speed_data_->Clear();
+      GOOGLE_DCHECK(_impl_.speed_data_ != nullptr);
+      _impl_.speed_data_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(ir_data_ != nullptr);
-      ir_data_->Clear();
+      GOOGLE_DCHECK(_impl_.ir_data_ != nullptr);
+      _impl_.ir_data_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(us_data_ != nullptr);
-      us_data_->Clear();
+      GOOGLE_DCHECK(_impl_.us_data_ != nullptr);
+      _impl_.us_data_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(lrf_data_ != nullptr);
-      lrf_data_->Clear();
+      GOOGLE_DCHECK(_impl_.lrf_data_ != nullptr);
+      _impl_.lrf_data_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(agent_status_data_ != nullptr);
-      agent_status_data_->Clear();
+      GOOGLE_DCHECK(_impl_.agent_status_data_ != nullptr);
+      _impl_.agent_status_data_->Clear();
     }
   }
   if (cached_has_bits & 0x00000100u) {
-    GOOGLE_DCHECK(april_detections_ != nullptr);
-    april_detections_->Clear();
+    GOOGLE_DCHECK(_impl_.april_detections_ != nullptr);
+    _impl_.april_detections_->Clear();
   }
   if (cached_has_bits & 0x00000600u) {
-    ::memset(&timestamp_ns_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&seq_id_) -
-        reinterpret_cast<char*>(&timestamp_ns_)) + sizeof(seq_id_));
+    ::memset(&_impl_.timestamp_ns_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.seq_id_) -
+        reinterpret_cast<char*>(&_impl_.timestamp_ns_)) + sizeof(_impl_.seq_id_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SensorData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SensorData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint64 timestamp_ns = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_timestamp_ns(&has_bits);
-          timestamp_ns_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.timestamp_ns_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 seq_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_seq_id(&has_bits);
-          seq_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.seq_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.Accelerometer accel_data = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_accel_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.Gyroscope gyro_data = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_gyro_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.Encoder_count count_data = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_count_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.Encoder_speed speed_data = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_speed_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.Infrared ir_data = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_ir_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.Ultrasonic us_data = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
           ptr = ctx->ParseMessage(_internal_mutable_us_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.LaserScanner lrf_data = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_lrf_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.AgentStatus agent_status_data = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_agent_status_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .mtg_fms.AllDetections april_detections = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_april_detections(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SensorData::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SensorData::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mtg_fms.SensorData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint64 timestamp_ns = 1;
   if (cached_has_bits & 0x00000200u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_timestamp_ns(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt64ToArray(1, this->_internal_timestamp_ns(), target);
   }
 
   // required uint32 seq_id = 2;
   if (cached_has_bits & 0x00000400u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_seq_id(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_seq_id(), target);
   }
 
   // required .mtg_fms.Accelerometer accel_data = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::accel_data(this), target, stream);
+      InternalWriteMessage(3, _Internal::accel_data(this),
+        _Internal::accel_data(this).GetCachedSize(), target, stream);
   }
 
   // required .mtg_fms.Gyroscope gyro_data = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::gyro_data(this), target, stream);
+      InternalWriteMessage(4, _Internal::gyro_data(this),
+        _Internal::gyro_data(this).GetCachedSize(), target, stream);
   }
 
   // required .mtg_fms.Encoder_count count_data = 5;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::count_data(this), target, stream);
+      InternalWriteMessage(5, _Internal::count_data(this),
+        _Internal::count_data(this).GetCachedSize(), target, stream);
   }
 
   // required .mtg_fms.Encoder_speed speed_data = 6;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::speed_data(this), target, stream);
+      InternalWriteMessage(6, _Internal::speed_data(this),
+        _Internal::speed_data(this).GetCachedSize(), target, stream);
   }
 
   // required .mtg_fms.Infrared ir_data = 7;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::ir_data(this), target, stream);
+      InternalWriteMessage(7, _Internal::ir_data(this),
+        _Internal::ir_data(this).GetCachedSize(), target, stream);
   }
 
   // required .mtg_fms.Ultrasonic us_data = 8;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        8, _Internal::us_data(this), target, stream);
+      InternalWriteMessage(8, _Internal::us_data(this),
+        _Internal::us_data(this).GetCachedSize(), target, stream);
   }
 
   // required .mtg_fms.LaserScanner lrf_data = 9;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        9, _Internal::lrf_data(this), target, stream);
+      InternalWriteMessage(9, _Internal::lrf_data(this),
+        _Internal::lrf_data(this).GetCachedSize(), target, stream);
   }
 
   // required .mtg_fms.AgentStatus agent_status_data = 10;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        10, _Internal::agent_status_data(this), target, stream);
+      InternalWriteMessage(10, _Internal::agent_status_data(this),
+        _Internal::agent_status_data(this).GetCachedSize(), target, stream);
   }
 
   // required .mtg_fms.AllDetections april_detections = 11;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        11, _Internal::april_detections(this), target, stream);
+      InternalWriteMessage(11, _Internal::april_detections(this),
+        _Internal::april_detections(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mtg_fms.SensorData)
@@ -4992,77 +4904,73 @@ size_t SensorData::RequiredFieldsByteSizeFallback() const {
     // required .mtg_fms.Accelerometer accel_data = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *accel_data_);
+        *_impl_.accel_data_);
   }
 
   if (_internal_has_gyro_data()) {
     // required .mtg_fms.Gyroscope gyro_data = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *gyro_data_);
+        *_impl_.gyro_data_);
   }
 
   if (_internal_has_count_data()) {
     // required .mtg_fms.Encoder_count count_data = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *count_data_);
+        *_impl_.count_data_);
   }
 
   if (_internal_has_speed_data()) {
     // required .mtg_fms.Encoder_speed speed_data = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *speed_data_);
+        *_impl_.speed_data_);
   }
 
   if (_internal_has_ir_data()) {
     // required .mtg_fms.Infrared ir_data = 7;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *ir_data_);
+        *_impl_.ir_data_);
   }
 
   if (_internal_has_us_data()) {
     // required .mtg_fms.Ultrasonic us_data = 8;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *us_data_);
+        *_impl_.us_data_);
   }
 
   if (_internal_has_lrf_data()) {
     // required .mtg_fms.LaserScanner lrf_data = 9;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *lrf_data_);
+        *_impl_.lrf_data_);
   }
 
   if (_internal_has_agent_status_data()) {
     // required .mtg_fms.AgentStatus agent_status_data = 10;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *agent_status_data_);
+        *_impl_.agent_status_data_);
   }
 
   if (_internal_has_april_detections()) {
     // required .mtg_fms.AllDetections april_detections = 11;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *april_detections_);
+        *_impl_.april_detections_);
   }
 
   if (_internal_has_timestamp_ns()) {
     // required uint64 timestamp_ns = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_timestamp_ns());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_timestamp_ns());
   }
 
   if (_internal_has_seq_id()) {
     // required uint32 seq_id = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_seq_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_seq_id());
   }
 
   return total_size;
@@ -5071,146 +4979,132 @@ size_t SensorData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mtg_fms.SensorData)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x000007ff) ^ 0x000007ff) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x000007ff) ^ 0x000007ff) == 0) {  // All required fields are present.
     // required .mtg_fms.Accelerometer accel_data = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *accel_data_);
+        *_impl_.accel_data_);
 
     // required .mtg_fms.Gyroscope gyro_data = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *gyro_data_);
+        *_impl_.gyro_data_);
 
     // required .mtg_fms.Encoder_count count_data = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *count_data_);
+        *_impl_.count_data_);
 
     // required .mtg_fms.Encoder_speed speed_data = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *speed_data_);
+        *_impl_.speed_data_);
 
     // required .mtg_fms.Infrared ir_data = 7;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *ir_data_);
+        *_impl_.ir_data_);
 
     // required .mtg_fms.Ultrasonic us_data = 8;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *us_data_);
+        *_impl_.us_data_);
 
     // required .mtg_fms.LaserScanner lrf_data = 9;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *lrf_data_);
+        *_impl_.lrf_data_);
 
     // required .mtg_fms.AgentStatus agent_status_data = 10;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *agent_status_data_);
+        *_impl_.agent_status_data_);
 
     // required .mtg_fms.AllDetections april_detections = 11;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *april_detections_);
+        *_impl_.april_detections_);
 
     // required uint64 timestamp_ns = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_timestamp_ns());
+    total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_timestamp_ns());
 
     // required uint32 seq_id = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_seq_id());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_seq_id());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void SensorData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mtg_fms.SensorData)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SensorData* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SensorData>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mtg_fms.SensorData)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mtg_fms.SensorData)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SensorData::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    SensorData::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SensorData::GetClassData() const { return &_class_data_; }
 
-void SensorData::MergeFrom(const SensorData& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.SensorData)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void SensorData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SensorData*>(&to_msg);
+  auto& from = static_cast<const SensorData&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mtg_fms.SensorData)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_accel_data()->::mtg_fms::Accelerometer::MergeFrom(from._internal_accel_data());
+      _this->_internal_mutable_accel_data()->::mtg_fms::Accelerometer::MergeFrom(
+          from._internal_accel_data());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_gyro_data()->::mtg_fms::Gyroscope::MergeFrom(from._internal_gyro_data());
+      _this->_internal_mutable_gyro_data()->::mtg_fms::Gyroscope::MergeFrom(
+          from._internal_gyro_data());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_count_data()->::mtg_fms::Encoder_count::MergeFrom(from._internal_count_data());
+      _this->_internal_mutable_count_data()->::mtg_fms::Encoder_count::MergeFrom(
+          from._internal_count_data());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_speed_data()->::mtg_fms::Encoder_speed::MergeFrom(from._internal_speed_data());
+      _this->_internal_mutable_speed_data()->::mtg_fms::Encoder_speed::MergeFrom(
+          from._internal_speed_data());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_ir_data()->::mtg_fms::Infrared::MergeFrom(from._internal_ir_data());
+      _this->_internal_mutable_ir_data()->::mtg_fms::Infrared::MergeFrom(
+          from._internal_ir_data());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_us_data()->::mtg_fms::Ultrasonic::MergeFrom(from._internal_us_data());
+      _this->_internal_mutable_us_data()->::mtg_fms::Ultrasonic::MergeFrom(
+          from._internal_us_data());
     }
     if (cached_has_bits & 0x00000040u) {
-      _internal_mutable_lrf_data()->::mtg_fms::LaserScanner::MergeFrom(from._internal_lrf_data());
+      _this->_internal_mutable_lrf_data()->::mtg_fms::LaserScanner::MergeFrom(
+          from._internal_lrf_data());
     }
     if (cached_has_bits & 0x00000080u) {
-      _internal_mutable_agent_status_data()->::mtg_fms::AgentStatus::MergeFrom(from._internal_agent_status_data());
+      _this->_internal_mutable_agent_status_data()->::mtg_fms::AgentStatus::MergeFrom(
+          from._internal_agent_status_data());
     }
   }
   if (cached_has_bits & 0x00000700u) {
     if (cached_has_bits & 0x00000100u) {
-      _internal_mutable_april_detections()->::mtg_fms::AllDetections::MergeFrom(from._internal_april_detections());
+      _this->_internal_mutable_april_detections()->::mtg_fms::AllDetections::MergeFrom(
+          from._internal_april_detections());
     }
     if (cached_has_bits & 0x00000200u) {
-      timestamp_ns_ = from.timestamp_ns_;
+      _this->_impl_.timestamp_ns_ = from._impl_.timestamp_ns_;
     }
     if (cached_has_bits & 0x00000400u) {
-      seq_id_ = from.seq_id_;
+      _this->_impl_.seq_id_ = from._impl_.seq_id_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-}
-
-void SensorData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mtg_fms.SensorData)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SensorData::CopyFrom(const SensorData& from) {
@@ -5221,30 +5115,30 @@ void SensorData::CopyFrom(const SensorData& from) {
 }
 
 bool SensorData::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_accel_data()) {
-    if (!accel_data_->IsInitialized()) return false;
+    if (!_impl_.accel_data_->IsInitialized()) return false;
   }
   if (_internal_has_gyro_data()) {
-    if (!gyro_data_->IsInitialized()) return false;
+    if (!_impl_.gyro_data_->IsInitialized()) return false;
   }
   if (_internal_has_count_data()) {
-    if (!count_data_->IsInitialized()) return false;
+    if (!_impl_.count_data_->IsInitialized()) return false;
   }
   if (_internal_has_speed_data()) {
-    if (!speed_data_->IsInitialized()) return false;
+    if (!_impl_.speed_data_->IsInitialized()) return false;
   }
   if (_internal_has_ir_data()) {
-    if (!ir_data_->IsInitialized()) return false;
+    if (!_impl_.ir_data_->IsInitialized()) return false;
   }
   if (_internal_has_us_data()) {
-    if (!us_data_->IsInitialized()) return false;
+    if (!_impl_.us_data_->IsInitialized()) return false;
   }
   if (_internal_has_agent_status_data()) {
-    if (!agent_status_data_->IsInitialized()) return false;
+    if (!_impl_.agent_status_data_->IsInitialized()) return false;
   }
   if (_internal_has_april_detections()) {
-    if (!april_detections_->IsInitialized()) return false;
+    if (!_impl_.april_detections_->IsInitialized()) return false;
   }
   return true;
 }
@@ -5252,17 +5146,17 @@ bool SensorData::IsInitialized() const {
 void SensorData::InternalSwap(SensorData* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SensorData, seq_id_)
-      + sizeof(SensorData::seq_id_)
-      - PROTOBUF_FIELD_OFFSET(SensorData, accel_data_)>(
-          reinterpret_cast<char*>(&accel_data_),
-          reinterpret_cast<char*>(&other->accel_data_));
+      PROTOBUF_FIELD_OFFSET(SensorData, _impl_.seq_id_)
+      + sizeof(SensorData::_impl_.seq_id_)
+      - PROTOBUF_FIELD_OFFSET(SensorData, _impl_.accel_data_)>(
+          reinterpret_cast<char*>(&_impl_.accel_data_),
+          reinterpret_cast<char*>(&other->_impl_.accel_data_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SensorData::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_mtg_2eproto_getter, &descriptor_table_mtg_2eproto_once,
       file_level_metadata_mtg_2eproto[13]);
 }
@@ -5270,46 +5164,60 @@ void SensorData::InternalSwap(SensorData* other) {
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace mtg_fms
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::mtg_fms::Accelerometer* Arena::CreateMaybeMessage< ::mtg_fms::Accelerometer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Accelerometer*
+Arena::CreateMaybeMessage< ::mtg_fms::Accelerometer >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Accelerometer >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::Ultrasonic* Arena::CreateMaybeMessage< ::mtg_fms::Ultrasonic >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Ultrasonic*
+Arena::CreateMaybeMessage< ::mtg_fms::Ultrasonic >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Ultrasonic >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::Infrared* Arena::CreateMaybeMessage< ::mtg_fms::Infrared >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Infrared*
+Arena::CreateMaybeMessage< ::mtg_fms::Infrared >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Infrared >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::Gyroscope* Arena::CreateMaybeMessage< ::mtg_fms::Gyroscope >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Gyroscope*
+Arena::CreateMaybeMessage< ::mtg_fms::Gyroscope >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Gyroscope >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::Encoder_count* Arena::CreateMaybeMessage< ::mtg_fms::Encoder_count >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Encoder_count*
+Arena::CreateMaybeMessage< ::mtg_fms::Encoder_count >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Encoder_count >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::Encoder_speed* Arena::CreateMaybeMessage< ::mtg_fms::Encoder_speed >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::Encoder_speed*
+Arena::CreateMaybeMessage< ::mtg_fms::Encoder_speed >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::Encoder_speed >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::LaserScanner* Arena::CreateMaybeMessage< ::mtg_fms::LaserScanner >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::LaserScanner*
+Arena::CreateMaybeMessage< ::mtg_fms::LaserScanner >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::LaserScanner >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::AgentStatus* Arena::CreateMaybeMessage< ::mtg_fms::AgentStatus >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AgentStatus*
+Arena::CreateMaybeMessage< ::mtg_fms::AgentStatus >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AgentStatus >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagRot* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagRot >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagRot*
+Arena::CreateMaybeMessage< ::mtg_fms::AprilTagRot >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AprilTagRot >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagTrans* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagTrans >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagTrans*
+Arena::CreateMaybeMessage< ::mtg_fms::AprilTagTrans >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AprilTagTrans >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagPose* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagPose >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagPose*
+Arena::CreateMaybeMessage< ::mtg_fms::AprilTagPose >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AprilTagPose >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagDetection* Arena::CreateMaybeMessage< ::mtg_fms::AprilTagDetection >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AprilTagDetection*
+Arena::CreateMaybeMessage< ::mtg_fms::AprilTagDetection >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AprilTagDetection >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::AllDetections* Arena::CreateMaybeMessage< ::mtg_fms::AllDetections >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::AllDetections*
+Arena::CreateMaybeMessage< ::mtg_fms::AllDetections >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::AllDetections >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mtg_fms::SensorData* Arena::CreateMaybeMessage< ::mtg_fms::SensorData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::mtg_fms::SensorData*
+Arena::CreateMaybeMessage< ::mtg_fms::SensorData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::mtg_fms::SensorData >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
