@@ -1,0 +1,8 @@
+# request 
+string req
+
+---
+#response
+geometry_msgs/Pose[] agent_locations
+geometry_msgs/Pose[] agent_goal_locations
+string[] agent_names

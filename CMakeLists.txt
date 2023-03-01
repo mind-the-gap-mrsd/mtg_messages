@@ -70,6 +70,8 @@ add_service_files(
   task_graph_getter.srv
   task_graph_setter.srv
   rrt_connect.srv
+  task_allocator_input.srv
+  sim_set_init_position.srv
 )
 
 ## Generate actions in the 'action' folder
