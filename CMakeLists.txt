@@ -72,6 +72,7 @@ add_service_files(
   rrt_connect.srv
   task_allocator_input.srv
   sim_set_init_position.srv
+  ta_out.srv
 )
 
 ## Generate actions in the 'action' folder
