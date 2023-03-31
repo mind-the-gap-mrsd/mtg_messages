@@ -1,0 +1,8 @@
+# request 
+string[] agent_id
+geometry_msgs/Pose[] agent_locations
+int32[] goal_status
+
+---
+#response
+bool done_mf

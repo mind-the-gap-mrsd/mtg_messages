@@ -57,6 +57,8 @@ add_message_files(
   controller_status.msg
   mission_command.msg
   PointArray.msg
+  agent_route.msg
+  task.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -73,6 +75,7 @@ add_service_files(
   task_allocator_input.srv
   sim_set_init_position.srv
   ta_out.srv
+  controller_replan.srv
 )
 
 ## Generate actions in the 'action' folder
