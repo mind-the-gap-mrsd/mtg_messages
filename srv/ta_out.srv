@@ -3,4 +3,6 @@ string req
 #agent[i] corresponds to goal[i]
 #int32[] agent_numbers
 agent_route[] agent_routes
+float32 gap_centroid_x
+float32 gap_centroid_y
 #geometry_msgs/Pose[] agent_start
