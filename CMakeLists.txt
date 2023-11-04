@@ -59,6 +59,8 @@ add_message_files(
   PointArray.msg
   agent_route.msg
   task.msg
+  agent_controller_group.msg
+  agent_controller_group_vector.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -76,6 +78,7 @@ add_service_files(
   sim_set_init_position.srv
   ta_out.srv
   controller_replan.srv
+  mpc_control.srv
 )
 
 ## Generate actions in the 'action' folder
