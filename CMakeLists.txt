@@ -79,6 +79,7 @@ add_service_files(
   ta_out.srv
   controller_replan.srv
   mpc_control.srv
+  autonomous_coupling.srv
 )
 
 ## Generate actions in the 'action' folder
