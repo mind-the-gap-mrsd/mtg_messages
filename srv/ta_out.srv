@@ -5,4 +5,5 @@ string req
 agent_route[] agent_routes
 float32 gap_centroid_x
 float32 gap_centroid_y
+float32 gap_orientation
 #geometry_msgs/Pose[] agent_start
