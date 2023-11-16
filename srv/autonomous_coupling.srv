@@ -3,6 +3,7 @@ int32[] agent_ids
 float32 gap_orientation
 string pull_or_push
 string front_or_back
+bool is_retry
 ---
 #response
 bool done_mf
